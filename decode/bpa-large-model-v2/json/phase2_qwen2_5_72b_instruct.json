@@ -1,0 +1,35 @@
+{
+  "phase": "phase2_ratio_classifier",
+  "model_info": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "n_params": 72700000000,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "load_time_s": 119,
+    "gpu": "NVIDIA H200 SXM",
+    "gpu_mem_gb": 141.0,
+    "n_gpu_modules": 74,
+    "n_cpu_modules": 10
+  },
+  "int8_error": 0.5121,
+  "int6_error": 0.5625,
+  "ratio": 1.10,
+  "threshold": 3.0,
+  "needs_fp16_keys": false,
+  "details": {
+    "INT8": {
+      "avg_logit_error": 0.5121,
+      "avg_token_agreement": 0.9563,
+      "per_prompt_errors": [0.6875, 0.3438, 0.4062, 0.5547, 0.875, 0.3438, 0.2812, 0.2852, 1.0625, 0.2812],
+      "per_prompt_agrees": [1.0, 1.0, 1.0, 0.875, 1.0, 0.6875, 1.0, 1.0, 1.0, 1.0]
+    },
+    "INT6": {
+      "avg_logit_error": 0.5625,
+      "avg_token_agreement": 0.9688,
+      "per_prompt_errors": [0.6719, 0.375, 0.5156, 0.75, 0.75, 0.375, 0.25, 0.4375, 1.1875, 0.3125],
+      "per_prompt_agrees": [0.75, 1.0, 1.0, 1.0, 0.9375, 1.0, 1.0, 1.0, 1.0, 1.0]
+    }
+  },
+  "note": "WikiText-103 prompts. 10 CPU-offloaded modules. Key finding: Qwen sensitivity attenuates at 72B scale (ratio 1.10 vs 5.07-5.40 at 7B)."
+}

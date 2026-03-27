@@ -1,0 +1,31 @@
+{
+  "phase": "phase2_ratio_classifier",
+  "model_info": {
+    "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "n_params": 46700000000,
+    "n_layers": 32,
+    "n_kv_heads": 8,
+    "head_dim": null,
+    "load_time_s": 42,
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 141.0
+  },
+  "int8_error": 0.5492,
+  "int6_error": 0.5755,
+  "ratio": 1.05,
+  "threshold": 3.0,
+  "needs_fp16_keys": false,
+  "details": {
+    "INT8": {
+      "avg_logit_error": 0.5492,
+      "avg_token_agreement": 0.6109,
+      "per_prompt_errors": [0.4531, 0.2656, 0.3125, 0.2734, 0.9375, 1.6875, 0.4375, 0.5625, 0.25, 0.3125]
+    },
+    "INT6": {
+      "avg_logit_error": 0.5755,
+      "avg_token_agreement": 0.7656,
+      "per_prompt_errors": [0.5156, 0.3125, 0.3125, 0.3125, 0.3477, 1.6875, 0.5166, 0.9375, 0.3125, 0.5]
+    }
+  },
+  "note": "Extracted from stdout. WikiText-103 prompts. Full GPU (no CPU offload)."
+}

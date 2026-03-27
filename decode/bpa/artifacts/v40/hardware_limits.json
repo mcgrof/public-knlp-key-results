@@ -1,0 +1,9 @@
+{
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "pytorch_version": "2.10.0+cu126",
+  "triton_version": "3.6.0",
+  "hbm_bandwidth_GBs": 2888.39,
+  "peak_fp16_TFLOPs": 740.287,
+  "ridge_point": 256.3,
+  "timestamp": "2026-03-05T04:48:26.754522"
+}

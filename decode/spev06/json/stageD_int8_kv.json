@@ -1,0 +1,673 @@
+{
+  "experiment": "spev06_stageD",
+  "timestamp": "2026-03-16T23:13:57.413558+00:00",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "stage": "D",
+      "configs": [
+        {
+          "mean_latency_s": 3.6986,
+          "std_latency_s": 0.0436,
+          "tokens_per_sec": 34.61,
+          "ms_per_token": 28.895,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 16353,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.7599,
+            3.674,
+            3.6619
+          ],
+          "k_bits": 8,
+          "v_bits": 8,
+          "context_len": 2048,
+          "batch_size": 1,
+          "label": "INT8_KV_ctx2048_B1",
+          "kv_config": "K_INT8/V_INT8"
+        },
+        {
+          "mean_latency_s": 3.708,
+          "std_latency_s": 0.0264,
+          "tokens_per_sec": 34.52,
+          "ms_per_token": 28.968,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 19966,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.6829,
+            3.7445,
+            3.6965
+          ],
+          "k_bits": 8,
+          "v_bits": 8,
+          "context_len": 4096,
+          "batch_size": 1,
+          "label": "INT8_KV_ctx4096_B1",
+          "kv_config": "K_INT8/V_INT8"
+        },
+        {
+          "mean_latency_s": 3.6793,
+          "std_latency_s": 0.0213,
+          "tokens_per_sec": 34.79,
+          "ms_per_token": 28.745,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 32620,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.6795,
+            3.7053,
+            3.6531
+          ],
+          "k_bits": 8,
+          "v_bits": 8,
+          "context_len": 8192,
+          "batch_size": 1,
+          "label": "INT8_KV_ctx8192_B1",
+          "kv_config": "K_INT8/V_INT8"
+        },
+        {
+          "label": "INT8_KV_ctx16384_B1",
+          "error": "CUDA out of memory. Tried to allocate 28.00 GiB. GPU 0 has a total capacity of 79.25 GiB of which 20.07 GiB is free. Including non-PyTorch memory, this process has 59.17 GiB memory in use. Of the allocated memory 34.80 GiB is allocated by PyTorch, and 23.87 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+          "context_len": 16384,
+          "batch_size": 1
+        },
+        {
+          "mean_latency_s": 3.6879,
+          "std_latency_s": 0.0108,
+          "tokens_per_sec": 34.71,
+          "ms_per_token": 28.811,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73989,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.7018,
+            3.6865,
+            3.6753
+          ],
+          "k_bits": 8,
+          "v_bits": 4,
+          "context_len": 2048,
+          "batch_size": 1,
+          "label": "K8V4_ctx2048_B1",
+          "kv_config": "K_INT8/V_INT4"
+        },
+        {
+          "mean_latency_s": 3.666,
+          "std_latency_s": 0.0055,
+          "tokens_per_sec": 34.92,
+          "ms_per_token": 28.641,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 19964,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.6589,
+            3.6668,
+            3.6724
+          ],
+          "k_bits": 8,
+          "v_bits": 4,
+          "context_len": 4096,
+          "batch_size": 1,
+          "label": "K8V4_ctx4096_B1",
+          "kv_config": "K_INT8/V_INT4"
+        },
+        {
+          "mean_latency_s": 3.6565,
+          "std_latency_s": 0.0056,
+          "tokens_per_sec": 35.01,
+          "ms_per_token": 28.567,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 32619,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.6612,
+            3.6486,
+            3.6597
+          ],
+          "k_bits": 8,
+          "v_bits": 4,
+          "context_len": 8192,
+          "batch_size": 1,
+          "label": "K8V4_ctx8192_B1",
+          "kv_config": "K_INT8/V_INT4"
+        },
+        {
+          "label": "K8V4_ctx16384_B1",
+          "error": "CUDA out of memory. Tried to allocate 28.00 GiB. GPU 0 has a total capacity of 79.25 GiB of which 20.07 GiB is free. Including non-PyTorch memory, this process has 59.17 GiB memory in use. Of the allocated memory 34.80 GiB is allocated by PyTorch, and 23.87 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+          "context_len": 16384,
+          "batch_size": 1
+        },
+        {
+          "mean_latency_s": 3.673,
+          "std_latency_s": 0.0154,
+          "tokens_per_sec": 34.85,
+          "ms_per_token": 28.696,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73989,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.6943,
+            3.6667,
+            3.6581
+          ],
+          "k_bits": 16,
+          "v_bits": 16,
+          "context_len": 2048,
+          "batch_size": 1,
+          "label": "FP16_baseline_ctx2048_B1",
+          "kv_config": "FP16/FP16"
+        },
+        {
+          "mean_latency_s": 3.6632,
+          "std_latency_s": 0.005,
+          "tokens_per_sec": 34.94,
+          "ms_per_token": 28.619,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 19964,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.6701,
+            3.6613,
+            3.6583
+          ],
+          "k_bits": 16,
+          "v_bits": 16,
+          "context_len": 4096,
+          "batch_size": 1,
+          "label": "FP16_baseline_ctx4096_B1",
+          "kv_config": "FP16/FP16"
+        },
+        {
+          "mean_latency_s": 3.671,
+          "std_latency_s": 0.0092,
+          "tokens_per_sec": 34.87,
+          "ms_per_token": 28.68,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 32619,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.658,
+            3.6764,
+            3.6786
+          ],
+          "k_bits": 16,
+          "v_bits": 16,
+          "context_len": 8192,
+          "batch_size": 1,
+          "label": "FP16_baseline_ctx8192_B1",
+          "kv_config": "FP16/FP16"
+        },
+        {
+          "label": "FP16_baseline_ctx16384_B1",
+          "error": "CUDA out of memory. Tried to allocate 28.00 GiB. GPU 0 has a total capacity of 79.25 GiB of which 20.07 GiB is free. Including non-PyTorch memory, this process has 59.17 GiB memory in use. Of the allocated memory 34.80 GiB is allocated by PyTorch, and 23.87 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+          "context_len": 16384,
+          "batch_size": 1
+        }
+      ]
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "stage": "D",
+      "configs": [
+        {
+          "mean_latency_s": 3.8671,
+          "std_latency_s": 0.0222,
+          "tokens_per_sec": 33.1,
+          "ms_per_token": 30.212,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73989,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8981,
+            3.8554,
+            3.8477
+          ],
+          "k_bits": 8,
+          "v_bits": 8,
+          "context_len": 2048,
+          "batch_size": 1,
+          "label": "INT8_KV_ctx2048_B1",
+          "kv_config": "K_INT8/V_INT8"
+        },
+        {
+          "mean_latency_s": 3.8555,
+          "std_latency_s": 0.008,
+          "tokens_per_sec": 33.2,
+          "ms_per_token": 30.121,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 19452,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8669,
+            3.8503,
+            3.8494
+          ],
+          "k_bits": 8,
+          "v_bits": 8,
+          "context_len": 4096,
+          "batch_size": 1,
+          "label": "INT8_KV_ctx4096_B1",
+          "kv_config": "K_INT8/V_INT8"
+        },
+        {
+          "mean_latency_s": 3.8464,
+          "std_latency_s": 0.0038,
+          "tokens_per_sec": 33.28,
+          "ms_per_token": 30.05,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 33310,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8433,
+            3.844,
+            3.8518
+          ],
+          "k_bits": 8,
+          "v_bits": 8,
+          "context_len": 8192,
+          "batch_size": 1,
+          "label": "INT8_KV_ctx8192_B1",
+          "kv_config": "K_INT8/V_INT8"
+        },
+        {
+          "label": "INT8_KV_ctx16384_B1",
+          "error": "CUDA out of memory. Tried to allocate 16.00 GiB. GPU 0 has a total capacity of 79.25 GiB of which 13.56 GiB is free. Including non-PyTorch memory, this process has 65.68 GiB memory in use. Of the allocated memory 62.72 GiB is allocated by PyTorch, and 2.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+          "context_len": 16384,
+          "batch_size": 1
+        },
+        {
+          "mean_latency_s": 3.8772,
+          "std_latency_s": 0.0159,
+          "tokens_per_sec": 33.01,
+          "ms_per_token": 30.291,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 64221,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.857,
+            3.8788,
+            3.8958
+          ],
+          "k_bits": 8,
+          "v_bits": 4,
+          "context_len": 2048,
+          "batch_size": 1,
+          "label": "K8V4_ctx2048_B1",
+          "kv_config": "K_INT8/V_INT4"
+        },
+        {
+          "mean_latency_s": 3.8566,
+          "std_latency_s": 0.0262,
+          "tokens_per_sec": 33.19,
+          "ms_per_token": 30.129,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 19452,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8932,
+            3.8428,
+            3.8336
+          ],
+          "k_bits": 8,
+          "v_bits": 4,
+          "context_len": 4096,
+          "batch_size": 1,
+          "label": "K8V4_ctx4096_B1",
+          "kv_config": "K_INT8/V_INT4"
+        },
+        {
+          "mean_latency_s": 3.8312,
+          "std_latency_s": 0.005,
+          "tokens_per_sec": 33.41,
+          "ms_per_token": 29.931,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 33310,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8369,
+            3.8319,
+            3.8247
+          ],
+          "k_bits": 8,
+          "v_bits": 4,
+          "context_len": 8192,
+          "batch_size": 1,
+          "label": "K8V4_ctx8192_B1",
+          "kv_config": "K_INT8/V_INT4"
+        },
+        {
+          "label": "K8V4_ctx16384_B1",
+          "error": "CUDA out of memory. Tried to allocate 16.00 GiB. GPU 0 has a total capacity of 79.25 GiB of which 13.56 GiB is free. Including non-PyTorch memory, this process has 65.68 GiB memory in use. Of the allocated memory 62.72 GiB is allocated by PyTorch, and 2.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+          "context_len": 16384,
+          "batch_size": 1
+        },
+        {
+          "mean_latency_s": 3.8494,
+          "std_latency_s": 0.0045,
+          "tokens_per_sec": 33.25,
+          "ms_per_token": 30.073,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 64221,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8546,
+            3.85,
+            3.8436
+          ],
+          "k_bits": 16,
+          "v_bits": 16,
+          "context_len": 2048,
+          "batch_size": 1,
+          "label": "FP16_baseline_ctx2048_B1",
+          "kv_config": "FP16/FP16"
+        },
+        {
+          "mean_latency_s": 3.836,
+          "std_latency_s": 0.0016,
+          "tokens_per_sec": 33.37,
+          "ms_per_token": 29.968,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 19452,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.834,
+            3.838,
+            3.8358
+          ],
+          "k_bits": 16,
+          "v_bits": 16,
+          "context_len": 4096,
+          "batch_size": 1,
+          "label": "FP16_baseline_ctx4096_B1",
+          "kv_config": "FP16/FP16"
+        },
+        {
+          "mean_latency_s": 3.8443,
+          "std_latency_s": 0.0036,
+          "tokens_per_sec": 33.3,
+          "ms_per_token": 30.033,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 33310,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8418,
+            3.8493,
+            3.8417
+          ],
+          "k_bits": 16,
+          "v_bits": 16,
+          "context_len": 8192,
+          "batch_size": 1,
+          "label": "FP16_baseline_ctx8192_B1",
+          "kv_config": "FP16/FP16"
+        },
+        {
+          "label": "FP16_baseline_ctx16384_B1",
+          "error": "CUDA out of memory. Tried to allocate 16.00 GiB. GPU 0 has a total capacity of 79.25 GiB of which 13.56 GiB is free. Including non-PyTorch memory, this process has 65.68 GiB memory in use. Of the allocated memory 62.72 GiB is allocated by PyTorch, and 2.46 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+          "context_len": 16384,
+          "batch_size": 1
+        }
+      ]
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "stage": "D",
+      "configs": [
+        {
+          "mean_latency_s": 3.861,
+          "std_latency_s": 0.0124,
+          "tokens_per_sec": 33.15,
+          "ms_per_token": 30.164,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 64221,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8548,
+            3.8499,
+            3.8782
+          ],
+          "k_bits": 8,
+          "v_bits": 8,
+          "context_len": 2048,
+          "batch_size": 1,
+          "label": "INT8_KV_ctx2048_B1",
+          "kv_config": "K_INT8/V_INT8"
+        },
+        {
+          "mean_latency_s": 3.8532,
+          "std_latency_s": 0.0122,
+          "tokens_per_sec": 33.22,
+          "ms_per_token": 30.103,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 21690,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8699,
+            3.8489,
+            3.8409
+          ],
+          "k_bits": 8,
+          "v_bits": 8,
+          "context_len": 4096,
+          "batch_size": 1,
+          "label": "INT8_KV_ctx4096_B1",
+          "kv_config": "K_INT8/V_INT8"
+        },
+        {
+          "mean_latency_s": 3.8502,
+          "std_latency_s": 0.0005,
+          "tokens_per_sec": 33.24,
+          "ms_per_token": 30.08,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 36295,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8509,
+            3.8502,
+            3.8496
+          ],
+          "k_bits": 8,
+          "v_bits": 8,
+          "context_len": 8192,
+          "batch_size": 1,
+          "label": "INT8_KV_ctx8192_B1",
+          "kv_config": "K_INT8/V_INT8"
+        },
+        {
+          "label": "INT8_KV_ctx16384_B1",
+          "error": "CUDA out of memory. Tried to allocate 16.00 GiB. GPU 0 has a total capacity of 79.25 GiB of which 12.58 GiB is free. Including non-PyTorch memory, this process has 66.66 GiB memory in use. Of the allocated memory 64.19 GiB is allocated by PyTorch, and 1.97 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+          "context_len": 16384,
+          "batch_size": 1
+        },
+        {
+          "mean_latency_s": 3.8431,
+          "std_latency_s": 0.0018,
+          "tokens_per_sec": 33.31,
+          "ms_per_token": 30.024,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 65725,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8428,
+            3.8454,
+            3.8411
+          ],
+          "k_bits": 8,
+          "v_bits": 4,
+          "context_len": 2048,
+          "batch_size": 1,
+          "label": "K8V4_ctx2048_B1",
+          "kv_config": "K_INT8/V_INT4"
+        },
+        {
+          "mean_latency_s": 3.8463,
+          "std_latency_s": 0.0176,
+          "tokens_per_sec": 33.28,
+          "ms_per_token": 30.049,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 21690,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8349,
+            3.8327,
+            3.8711
+          ],
+          "k_bits": 8,
+          "v_bits": 4,
+          "context_len": 4096,
+          "batch_size": 1,
+          "label": "K8V4_ctx4096_B1",
+          "kv_config": "K_INT8/V_INT4"
+        },
+        {
+          "mean_latency_s": 3.8544,
+          "std_latency_s": 0.0019,
+          "tokens_per_sec": 33.21,
+          "ms_per_token": 30.113,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 36295,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8542,
+            3.8522,
+            3.8569
+          ],
+          "k_bits": 8,
+          "v_bits": 4,
+          "context_len": 8192,
+          "batch_size": 1,
+          "label": "K8V4_ctx8192_B1",
+          "kv_config": "K_INT8/V_INT4"
+        },
+        {
+          "label": "K8V4_ctx16384_B1",
+          "error": "CUDA out of memory. Tried to allocate 16.00 GiB. GPU 0 has a total capacity of 79.25 GiB of which 12.58 GiB is free. Including non-PyTorch memory, this process has 66.66 GiB memory in use. Of the allocated memory 64.19 GiB is allocated by PyTorch, and 1.97 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+          "context_len": 16384,
+          "batch_size": 1
+        },
+        {
+          "mean_latency_s": 3.8606,
+          "std_latency_s": 0.005,
+          "tokens_per_sec": 33.16,
+          "ms_per_token": 30.161,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 65725,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8588,
+            3.8675,
+            3.8556
+          ],
+          "k_bits": 16,
+          "v_bits": 16,
+          "context_len": 2048,
+          "batch_size": 1,
+          "label": "FP16_baseline_ctx2048_B1",
+          "kv_config": "FP16/FP16"
+        },
+        {
+          "mean_latency_s": 3.8589,
+          "std_latency_s": 0.0018,
+          "tokens_per_sec": 33.17,
+          "ms_per_token": 30.148,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 21690,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8573,
+            3.8615,
+            3.858
+          ],
+          "k_bits": 16,
+          "v_bits": 16,
+          "context_len": 4096,
+          "batch_size": 1,
+          "label": "FP16_baseline_ctx4096_B1",
+          "kv_config": "FP16/FP16"
+        },
+        {
+          "mean_latency_s": 3.8498,
+          "std_latency_s": 0.001,
+          "tokens_per_sec": 33.25,
+          "ms_per_token": 30.077,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 36295,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.8501,
+            3.8509,
+            3.8485
+          ],
+          "k_bits": 16,
+          "v_bits": 16,
+          "context_len": 8192,
+          "batch_size": 1,
+          "label": "FP16_baseline_ctx8192_B1",
+          "kv_config": "FP16/FP16"
+        },
+        {
+          "label": "FP16_baseline_ctx16384_B1",
+          "error": "CUDA out of memory. Tried to allocate 16.00 GiB. GPU 0 has a total capacity of 79.25 GiB of which 12.58 GiB is free. Including non-PyTorch memory, this process has 66.66 GiB memory in use. Of the allocated memory 64.19 GiB is allocated by PyTorch, and 1.97 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+          "context_len": 16384,
+          "batch_size": 1
+        }
+      ]
+    }
+  ]
+}

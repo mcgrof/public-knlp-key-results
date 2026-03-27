@@ -1,0 +1,94 @@
+{
+  "experiment": "SPEv-01",
+  "title": "Speculative Decoding + KV Cache Offload Evaluation",
+  "date": "2026-03-12",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "instance": "bpa-latency-h100 (86.38.238.14)",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "vllm_version": "0.6.4.post1",
+  "lmcache_version": "0.3.15",
+
+  "tier0_disk": {
+    "storage_type": "virtual_disk_vda3 (not NVMe)",
+    "seq_read_gbps": 1.613,
+    "rand_read_iops": 36813,
+    "rand_read_p50_us": 419.8,
+    "rand_read_p99_us": 659.5
+  },
+
+  "tier0_baselines": {
+    "Qwen2.5-7B_seq512":  {"tokens_per_sec": 1805.5, "latency_ms": 0.55, "vram_gb": 70.06},
+    "Qwen2.5-7B_seq2048": {"tokens_per_sec": 1566.88, "latency_ms": 0.64, "vram_gb": 70.35},
+    "Qwen2.5-7B_seq8192": {"tokens_per_sec": 1124.59, "latency_ms": 0.89, "vram_gb": 71.19}
+  },
+
+  "tier2_ngram_speculation": {
+    "ngram3_seq512":  {"tokens_per_sec": 1484.41, "vs_baseline": 0.822},
+    "ngram3_seq2048": {"tokens_per_sec": 1232.77, "vs_baseline": 0.787},
+    "ngram3_seq8192": {"tokens_per_sec": 730.62,  "vs_baseline": 0.650},
+    "ngram5_seq512":  {"tokens_per_sec": 1452.22, "vs_baseline": 0.804},
+    "ngram5_seq2048": {"tokens_per_sec": 1183.54, "vs_baseline": 0.755},
+    "ngram5_seq8192": {"tokens_per_sec": 675.56,  "vs_baseline": 0.601},
+    "note": "Ngram speculation SLOWER than baseline due to verification overhead with enforce_eager=True. Acceptance rate too low for general text."
+  },
+
+  "tier2_draft_model": {
+    "status": "BLOCKED",
+    "reason": "Qwen2.5-7B vocab_size=152064 != Qwen2.5-1.5B vocab_size=151936. vLLM 0.6.4 assertion error in spec_decode_worker._vocab_size."
+  },
+
+  "tier4_kv_quantization": {
+    "auto_seq512":  {"tokens_per_sec": 1226.43, "vram_gb": 54.09, "kv_blocks": 42175},
+    "auto_seq2048": {"tokens_per_sec": 1544.76, "vram_gb": 70.35, "kv_blocks": 59548},
+    "auto_seq8192": {"tokens_per_sec": 1038.12, "vram_gb": 71.19, "kv_blocks": 59502},
+    "fp8_seq512":   {"tokens_per_sec": 859.78,  "vram_gb": 54.09, "kv_blocks": 84318},
+    "fp8_seq2048":  {"tokens_per_sec": 609.74,  "vram_gb": 52.84, "kv_blocks": 80922},
+    "fp8_kv_block_ratio": 1.41,
+    "note": "FP8 KV gives ~41% more KV cache blocks (2x theoretical, minus overhead). But throughput is LOWER due to XFormers backend fallback (FlashAttention-2 doesn't support FP8 KV in this version)."
+  },
+
+  "kv_offload_analysis": {
+    "kv_per_token_bytes": 57344,
+    "kv_per_token_kb": 56.0,
+    "kv_config": "28 layers x 4 KV heads x 128 head_dim x 2 (K+V) x 2 bytes (bf16)",
+    "offload_cliff": "ALL context lengths are disk-bottlenecked at 1.6 GB/s. Even seq=512 (28MB KV) limits to 59 tok/s vs GPU's 1806 tok/s.",
+    "max_disk_tokps_by_seqlen": {
+      "512": 59.0,
+      "1024": 29.5,
+      "2048": 14.7,
+      "4096": 7.4,
+      "8192": 3.7,
+      "16384": 1.8,
+      "32768": 0.9
+    }
+  },
+
+  "key_findings": {
+    "primary_hypothesis_result": "NEGATIVE",
+    "primary_finding": "Speculative decoding does NOT reduce effective KV cache reads per output token in standard attention architectures. The verification step reads the FULL KV cache regardless of speculation count.",
+
+    "detailed_findings": [
+      "1. Ngram speculation (n=3,5) is 18-40% SLOWER than baseline autoregressive decode on H100, due to verification overhead exceeding acceptance benefit for general text prompts.",
+      "2. Draft model speculation is blocked by vocab size mismatch in the Qwen2.5 family (7B: 152064 vs 1.5B/0.5B: 151936).",
+      "3. KV offload to disk is bandwidth-limited at ALL context lengths. At 1.6 GB/s seq read, even 512-token context is 30x slower than GPU decode.",
+      "4. FP8 KV quantization provides ~41% more KV cache blocks but with throughput penalty (XFormers fallback, no FlashAttention FP8 support in vLLM 0.6.4).",
+      "5. For KV offload to be viable, disk bandwidth must exceed KV_size/target_latency. For 10ms decode @ 8K context: need 44.8 GB/s (requires HBM-to-host fabric, not NVMe)."
+    ],
+
+    "architectural_insight": "Speculation reduces decode STEPS but not KV reads PER STEP. Each verification pass reads full KV for all speculative positions. Net: ~1 full KV read per output token regardless of speculation.",
+
+    "potential_fixes": [
+      "Tree-attention verification that only loads KV for accepted token positions",
+      "KV cache streaming/paging that shares reads across speculative positions",
+      "Prefix caching with LMCache to avoid re-reading shared KV prefix from disk",
+      "HBM-speed storage tiers (CXL memory, persistent memory) instead of NVMe"
+    ]
+  },
+
+  "success_criteria_evaluation": {
+    "primary_30pct_nvme_reduction": "FAIL — Speculation does not reduce NVMe reads. Architectural limitation.",
+    "secondary_3x_combined_offload": "PARTIAL — FP8 KV gives 1.4x more blocks, but speculation provides no additional benefit for offload.",
+    "secondary_cartridge_acceptance": "NOT TESTED — Blocked by disk space and draft model incompatibility.",
+    "negative_result_documented": "YES — Verification reads all KV regardless of speculation."
+  }
+}

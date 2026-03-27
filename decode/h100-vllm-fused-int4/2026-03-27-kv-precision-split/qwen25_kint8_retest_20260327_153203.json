@@ -1,0 +1,219 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "tag": "qwen25",
+  "timestamp": "2026-03-27T15:36:15",
+  "results": {
+    "k_int8_v_int4_msl48": {
+      "matches": 7,
+      "total": 7,
+      "k_precision": "int8",
+      "msl": 48,
+      "elapsed_s": 24.6,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you have",
+        "short_16": "Gravity is the natural force of attraction between any two objects with mass, pulling them towards each other.",
+        "med_32": "Haiku is a form of Japanese poetry that typically consists of three lines with a 5-7",
+        "med_48": "First 10 prime numbers: 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of the most commonly used",
+        "long_96": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, its",
+        "long_128": "The history of the Internet is a fascinating journey from a government-funded research project to the global network tha"
+      }
+    },
+    "k_int8_v_int4_msl8": {
+      "matches": 4,
+      "total": 7,
+      "k_precision": "int8",
+      "msl": 8,
+      "elapsed_s": 23.5,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.1,
+          "first_diverge": 2
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.75,
+          "first_diverge": 15
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.1,
+          "first_diverge": 2
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you have",
+        "short_16": "Gravity is the natural force of attraction between any two objects with mass, pulling them towards each other.",
+        "med_32": "Haiku about the ocean:\n\nWaves kiss sandy shores,\nEndless blue whispers secrets,\nTides",
+        "med_48": "First 10 prime numbers: 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two fundamental protocols used for transmitting",
+        "long_96": "In the quiet workshop of Dr. Elara Myles, a sleek, metallic robot named Zephy",
+        "long_128": "The history of the Internet is a fascinating journey from a government-funded research project to the global network tha"
+      }
+    },
+    "k_int8_v_int4_msl24": {
+      "matches": 5,
+      "total": 7,
+      "k_precision": "int8",
+      "msl": 24,
+      "elapsed_s": 24.2,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.75,
+          "first_diverge": 15
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.1,
+          "first_diverge": 2
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you have",
+        "short_16": "Gravity is the natural force of attraction between any two objects with mass, pulling them towards each other.",
+        "med_32": "Haiku is a form of Japanese poetry that typically consists of three lines with a 5-7",
+        "med_48": "First 10 prime numbers: 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two fundamental protocols in the Internet",
+        "long_96": "In the quiet workshop of Dr. Elara Myles, a sleek, metallic robot named Zephy",
+        "long_128": "The history of the Internet is a fascinating journey from a government-funded research project to the global network tha"
+      }
+    },
+    "k_int8_v_int4_msl1": {
+      "matches": 4,
+      "total": 7,
+      "k_precision": "int8",
+      "msl": 1,
+      "elapsed_s": 23.6,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.1,
+          "first_diverge": 2
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.75,
+          "first_diverge": 15
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.1,
+          "first_diverge": 2
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you have",
+        "short_16": "Gravity is the natural force of attraction between any two objects with mass, pulling them towards each other.",
+        "med_32": "Haiku about the ocean:\n\nWaves kiss sandy shores,\nEndless blue whispers secrets,\nTides",
+        "med_48": "First 10 prime numbers: 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two fundamental protocols used for transmitting",
+        "long_96": "In the quiet workshop of Dr. Elara Myles, a sleek, metallic robot named Zephy",
+        "long_128": "The history of the Internet is a fascinating journey from a government-funded research project to the global network tha"
+      }
+    }
+  }
+}

@@ -1,0 +1,1361 @@
+{
+  "0": {
+    "inject_layer": 0,
+    "noise_norm": 5.12890625,
+    "layer_errors": [
+      {
+        "layer": 0,
+        "error_norm": 5.132812,
+        "relative_error": 0.01000548,
+        "ref_norm": 513.0
+      },
+      {
+        "layer": 1,
+        "error_norm": 6.199219,
+        "relative_error": 0.00843431,
+        "ref_norm": 735.0
+      },
+      {
+        "layer": 2,
+        "error_norm": 7.429688,
+        "relative_error": 0.0064606,
+        "ref_norm": 1150.0
+      },
+      {
+        "layer": 3,
+        "error_norm": 7.953125,
+        "relative_error": 0.00418806,
+        "ref_norm": 1899.0
+      },
+      {
+        "layer": 4,
+        "error_norm": 7.820312,
+        "relative_error": 0.00402073,
+        "ref_norm": 1945.0
+      },
+      {
+        "layer": 5,
+        "error_norm": 7.519531,
+        "relative_error": 0.00374479,
+        "ref_norm": 2008.0
+      },
+      {
+        "layer": 6,
+        "error_norm": 7.386719,
+        "relative_error": 0.00355473,
+        "ref_norm": 2078.0
+      },
+      {
+        "layer": 7,
+        "error_norm": 7.300781,
+        "relative_error": 0.0034276,
+        "ref_norm": 2130.0
+      },
+      {
+        "layer": 8,
+        "error_norm": 7.257812,
+        "relative_error": 0.00337259,
+        "ref_norm": 2152.0
+      },
+      {
+        "layer": 9,
+        "error_norm": 7.265625,
+        "relative_error": 0.0033575,
+        "ref_norm": 2164.0
+      },
+      {
+        "layer": 10,
+        "error_norm": 7.210938,
+        "relative_error": 0.00329869,
+        "ref_norm": 2186.0
+      },
+      {
+        "layer": 11,
+        "error_norm": 7.359375,
+        "relative_error": 0.00332102,
+        "ref_norm": 2216.0
+      },
+      {
+        "layer": 12,
+        "error_norm": 7.222656,
+        "relative_error": 0.00321007,
+        "ref_norm": 2250.0
+      },
+      {
+        "layer": 13,
+        "error_norm": 7.335938,
+        "relative_error": 0.00318124,
+        "ref_norm": 2306.0
+      },
+      {
+        "layer": 14,
+        "error_norm": 7.390625,
+        "relative_error": 0.00305146,
+        "ref_norm": 2422.0
+      },
+      {
+        "layer": 15,
+        "error_norm": 7.679688,
+        "relative_error": 0.00294241,
+        "ref_norm": 2610.0
+      },
+      {
+        "layer": 16,
+        "error_norm": 9.304688,
+        "relative_error": 0.00323079,
+        "ref_norm": 2880.0
+      },
+      {
+        "layer": 17,
+        "error_norm": 10.164062,
+        "relative_error": 0.00303949,
+        "ref_norm": 3344.0
+      },
+      {
+        "layer": 18,
+        "error_norm": 11.226562,
+        "relative_error": 0.00303585,
+        "ref_norm": 3698.0
+      },
+      {
+        "layer": 19,
+        "error_norm": 12.859375,
+        "relative_error": 0.00305884,
+        "ref_norm": 4204.0
+      },
+      {
+        "layer": 20,
+        "error_norm": 15.492188,
+        "relative_error": 0.00297241,
+        "ref_norm": 5212.0
+      },
+      {
+        "layer": 21,
+        "error_norm": 18.25,
+        "relative_error": 0.00291534,
+        "ref_norm": 6260.0
+      },
+      {
+        "layer": 22,
+        "error_norm": 21.5625,
+        "relative_error": 0.0031052,
+        "ref_norm": 6944.0
+      },
+      {
+        "layer": 23,
+        "error_norm": 26.96875,
+        "relative_error": 0.00368224,
+        "ref_norm": 7324.0
+      }
+    ],
+    "amplification": 5.2542
+  },
+  "3": {
+    "inject_layer": 3,
+    "noise_norm": 19.0,
+    "layer_errors": [
+      {
+        "layer": 0,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 513.0
+      },
+      {
+        "layer": 1,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 735.0
+      },
+      {
+        "layer": 2,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1150.0
+      },
+      {
+        "layer": 3,
+        "error_norm": 19.0,
+        "relative_error": 0.01000527,
+        "ref_norm": 1899.0
+      },
+      {
+        "layer": 4,
+        "error_norm": 17.9375,
+        "relative_error": 0.00922237,
+        "ref_norm": 1945.0
+      },
+      {
+        "layer": 5,
+        "error_norm": 16.578125,
+        "relative_error": 0.00825604,
+        "ref_norm": 2008.0
+      },
+      {
+        "layer": 6,
+        "error_norm": 15.710938,
+        "relative_error": 0.00756061,
+        "ref_norm": 2078.0
+      },
+      {
+        "layer": 7,
+        "error_norm": 15.03125,
+        "relative_error": 0.00705692,
+        "ref_norm": 2130.0
+      },
+      {
+        "layer": 8,
+        "error_norm": 14.710938,
+        "relative_error": 0.00683594,
+        "ref_norm": 2152.0
+      },
+      {
+        "layer": 9,
+        "error_norm": 14.484375,
+        "relative_error": 0.00669333,
+        "ref_norm": 2164.0
+      },
+      {
+        "layer": 10,
+        "error_norm": 14.242188,
+        "relative_error": 0.00651518,
+        "ref_norm": 2186.0
+      },
+      {
+        "layer": 11,
+        "error_norm": 14.34375,
+        "relative_error": 0.00647281,
+        "ref_norm": 2216.0
+      },
+      {
+        "layer": 12,
+        "error_norm": 14.0625,
+        "relative_error": 0.00625,
+        "ref_norm": 2250.0
+      },
+      {
+        "layer": 13,
+        "error_norm": 14.1875,
+        "relative_error": 0.00615243,
+        "ref_norm": 2306.0
+      },
+      {
+        "layer": 14,
+        "error_norm": 14.1875,
+        "relative_error": 0.00585776,
+        "ref_norm": 2422.0
+      },
+      {
+        "layer": 15,
+        "error_norm": 14.640625,
+        "relative_error": 0.00560943,
+        "ref_norm": 2610.0
+      },
+      {
+        "layer": 16,
+        "error_norm": 17.5625,
+        "relative_error": 0.00609809,
+        "ref_norm": 2880.0
+      },
+      {
+        "layer": 17,
+        "error_norm": 18.90625,
+        "relative_error": 0.00565378,
+        "ref_norm": 3344.0
+      },
+      {
+        "layer": 18,
+        "error_norm": 20.671875,
+        "relative_error": 0.00559001,
+        "ref_norm": 3698.0
+      },
+      {
+        "layer": 19,
+        "error_norm": 23.4375,
+        "relative_error": 0.00557505,
+        "ref_norm": 4204.0
+      },
+      {
+        "layer": 20,
+        "error_norm": 27.90625,
+        "relative_error": 0.00535423,
+        "ref_norm": 5212.0
+      },
+      {
+        "layer": 21,
+        "error_norm": 32.3125,
+        "relative_error": 0.00516174,
+        "ref_norm": 6260.0
+      },
+      {
+        "layer": 22,
+        "error_norm": 38.0,
+        "relative_error": 0.00547235,
+        "ref_norm": 6944.0
+      },
+      {
+        "layer": 23,
+        "error_norm": 46.09375,
+        "relative_error": 0.00629352,
+        "ref_norm": 7324.0
+      }
+    ],
+    "amplification": 2.426
+  },
+  "6": {
+    "inject_layer": 6,
+    "noise_norm": 20.78125,
+    "layer_errors": [
+      {
+        "layer": 0,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 513.0
+      },
+      {
+        "layer": 1,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 735.0
+      },
+      {
+        "layer": 2,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1150.0
+      },
+      {
+        "layer": 3,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1899.0
+      },
+      {
+        "layer": 4,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1945.0
+      },
+      {
+        "layer": 5,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2008.0
+      },
+      {
+        "layer": 6,
+        "error_norm": 20.78125,
+        "relative_error": 0.0100006,
+        "ref_norm": 2078.0
+      },
+      {
+        "layer": 7,
+        "error_norm": 18.5625,
+        "relative_error": 0.00871479,
+        "ref_norm": 2130.0
+      },
+      {
+        "layer": 8,
+        "error_norm": 17.25,
+        "relative_error": 0.0080158,
+        "ref_norm": 2152.0
+      },
+      {
+        "layer": 9,
+        "error_norm": 16.359375,
+        "relative_error": 0.00755979,
+        "ref_norm": 2164.0
+      },
+      {
+        "layer": 10,
+        "error_norm": 15.757812,
+        "relative_error": 0.00720851,
+        "ref_norm": 2186.0
+      },
+      {
+        "layer": 11,
+        "error_norm": 15.648438,
+        "relative_error": 0.00706157,
+        "ref_norm": 2216.0
+      },
+      {
+        "layer": 12,
+        "error_norm": 15.140625,
+        "relative_error": 0.00672917,
+        "ref_norm": 2250.0
+      },
+      {
+        "layer": 13,
+        "error_norm": 15.09375,
+        "relative_error": 0.00654542,
+        "ref_norm": 2306.0
+      },
+      {
+        "layer": 14,
+        "error_norm": 14.804688,
+        "relative_error": 0.00611259,
+        "ref_norm": 2422.0
+      },
+      {
+        "layer": 15,
+        "error_norm": 15.109375,
+        "relative_error": 0.00578903,
+        "ref_norm": 2610.0
+      },
+      {
+        "layer": 16,
+        "error_norm": 17.59375,
+        "relative_error": 0.00610894,
+        "ref_norm": 2880.0
+      },
+      {
+        "layer": 17,
+        "error_norm": 18.8125,
+        "relative_error": 0.00562575,
+        "ref_norm": 3344.0
+      },
+      {
+        "layer": 18,
+        "error_norm": 20.53125,
+        "relative_error": 0.00555199,
+        "ref_norm": 3698.0
+      },
+      {
+        "layer": 19,
+        "error_norm": 23.125,
+        "relative_error": 0.00550071,
+        "ref_norm": 4204.0
+      },
+      {
+        "layer": 20,
+        "error_norm": 27.3125,
+        "relative_error": 0.00524031,
+        "ref_norm": 5212.0
+      },
+      {
+        "layer": 21,
+        "error_norm": 31.171875,
+        "relative_error": 0.00497953,
+        "ref_norm": 6260.0
+      },
+      {
+        "layer": 22,
+        "error_norm": 36.46875,
+        "relative_error": 0.00525184,
+        "ref_norm": 6944.0
+      },
+      {
+        "layer": 23,
+        "error_norm": 43.5625,
+        "relative_error": 0.00594791,
+        "ref_norm": 7324.0
+      }
+    ],
+    "amplification": 2.0962
+  },
+  "9": {
+    "inject_layer": 9,
+    "noise_norm": 21.640625,
+    "layer_errors": [
+      {
+        "layer": 0,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 513.0
+      },
+      {
+        "layer": 1,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 735.0
+      },
+      {
+        "layer": 2,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1150.0
+      },
+      {
+        "layer": 3,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1899.0
+      },
+      {
+        "layer": 4,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1945.0
+      },
+      {
+        "layer": 5,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2008.0
+      },
+      {
+        "layer": 6,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2078.0
+      },
+      {
+        "layer": 7,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2130.0
+      },
+      {
+        "layer": 8,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2152.0
+      },
+      {
+        "layer": 9,
+        "error_norm": 21.640625,
+        "relative_error": 0.01000029,
+        "ref_norm": 2164.0
+      },
+      {
+        "layer": 10,
+        "error_norm": 19.90625,
+        "relative_error": 0.00910624,
+        "ref_norm": 2186.0
+      },
+      {
+        "layer": 11,
+        "error_norm": 19.296875,
+        "relative_error": 0.00870798,
+        "ref_norm": 2216.0
+      },
+      {
+        "layer": 12,
+        "error_norm": 17.953125,
+        "relative_error": 0.00797917,
+        "ref_norm": 2250.0
+      },
+      {
+        "layer": 13,
+        "error_norm": 17.359375,
+        "relative_error": 0.00752792,
+        "ref_norm": 2306.0
+      },
+      {
+        "layer": 14,
+        "error_norm": 16.546875,
+        "relative_error": 0.00683191,
+        "ref_norm": 2422.0
+      },
+      {
+        "layer": 15,
+        "error_norm": 16.546875,
+        "relative_error": 0.0063398,
+        "ref_norm": 2610.0
+      },
+      {
+        "layer": 16,
+        "error_norm": 18.765625,
+        "relative_error": 0.00651584,
+        "ref_norm": 2880.0
+      },
+      {
+        "layer": 17,
+        "error_norm": 19.90625,
+        "relative_error": 0.00595283,
+        "ref_norm": 3344.0
+      },
+      {
+        "layer": 18,
+        "error_norm": 21.640625,
+        "relative_error": 0.00585198,
+        "ref_norm": 3698.0
+      },
+      {
+        "layer": 19,
+        "error_norm": 24.28125,
+        "relative_error": 0.00577575,
+        "ref_norm": 4204.0
+      },
+      {
+        "layer": 20,
+        "error_norm": 28.515625,
+        "relative_error": 0.00547115,
+        "ref_norm": 5212.0
+      },
+      {
+        "layer": 21,
+        "error_norm": 32.46875,
+        "relative_error": 0.0051867,
+        "ref_norm": 6260.0
+      },
+      {
+        "layer": 22,
+        "error_norm": 37.75,
+        "relative_error": 0.00543635,
+        "ref_norm": 6944.0
+      },
+      {
+        "layer": 23,
+        "error_norm": 44.78125,
+        "relative_error": 0.00611432,
+        "ref_norm": 7324.0
+      }
+    ],
+    "amplification": 2.0693
+  },
+  "12": {
+    "inject_layer": 12,
+    "noise_norm": 22.5,
+    "layer_errors": [
+      {
+        "layer": 0,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 513.0
+      },
+      {
+        "layer": 1,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 735.0
+      },
+      {
+        "layer": 2,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1150.0
+      },
+      {
+        "layer": 3,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1899.0
+      },
+      {
+        "layer": 4,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1945.0
+      },
+      {
+        "layer": 5,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2008.0
+      },
+      {
+        "layer": 6,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2078.0
+      },
+      {
+        "layer": 7,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2130.0
+      },
+      {
+        "layer": 8,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2152.0
+      },
+      {
+        "layer": 9,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2164.0
+      },
+      {
+        "layer": 10,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2186.0
+      },
+      {
+        "layer": 11,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2216.0
+      },
+      {
+        "layer": 12,
+        "error_norm": 22.5,
+        "relative_error": 0.01,
+        "ref_norm": 2250.0
+      },
+      {
+        "layer": 13,
+        "error_norm": 21.59375,
+        "relative_error": 0.00936416,
+        "ref_norm": 2306.0
+      },
+      {
+        "layer": 14,
+        "error_norm": 20.0,
+        "relative_error": 0.00825764,
+        "ref_norm": 2422.0
+      },
+      {
+        "layer": 15,
+        "error_norm": 19.1875,
+        "relative_error": 0.00735153,
+        "ref_norm": 2610.0
+      },
+      {
+        "layer": 16,
+        "error_norm": 21.265625,
+        "relative_error": 0.0073839,
+        "ref_norm": 2880.0
+      },
+      {
+        "layer": 17,
+        "error_norm": 22.390625,
+        "relative_error": 0.00669576,
+        "ref_norm": 3344.0
+      },
+      {
+        "layer": 18,
+        "error_norm": 24.21875,
+        "relative_error": 0.00654915,
+        "ref_norm": 3698.0
+      },
+      {
+        "layer": 19,
+        "error_norm": 26.875,
+        "relative_error": 0.00639272,
+        "ref_norm": 4204.0
+      },
+      {
+        "layer": 20,
+        "error_norm": 31.375,
+        "relative_error": 0.00601976,
+        "ref_norm": 5212.0
+      },
+      {
+        "layer": 21,
+        "error_norm": 35.71875,
+        "relative_error": 0.00570587,
+        "ref_norm": 6260.0
+      },
+      {
+        "layer": 22,
+        "error_norm": 41.40625,
+        "relative_error": 0.00596288,
+        "ref_norm": 6944.0
+      },
+      {
+        "layer": 23,
+        "error_norm": 49.09375,
+        "relative_error": 0.00670313,
+        "ref_norm": 7324.0
+      }
+    ],
+    "amplification": 2.1819
+  },
+  "15": {
+    "inject_layer": 15,
+    "noise_norm": 26.09375,
+    "layer_errors": [
+      {
+        "layer": 0,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 513.0
+      },
+      {
+        "layer": 1,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 735.0
+      },
+      {
+        "layer": 2,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1150.0
+      },
+      {
+        "layer": 3,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1899.0
+      },
+      {
+        "layer": 4,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1945.0
+      },
+      {
+        "layer": 5,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2008.0
+      },
+      {
+        "layer": 6,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2078.0
+      },
+      {
+        "layer": 7,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2130.0
+      },
+      {
+        "layer": 8,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2152.0
+      },
+      {
+        "layer": 9,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2164.0
+      },
+      {
+        "layer": 10,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2186.0
+      },
+      {
+        "layer": 11,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2216.0
+      },
+      {
+        "layer": 12,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2250.0
+      },
+      {
+        "layer": 13,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2306.0
+      },
+      {
+        "layer": 14,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2422.0
+      },
+      {
+        "layer": 15,
+        "error_norm": 26.09375,
+        "relative_error": 0.00999761,
+        "ref_norm": 2610.0
+      },
+      {
+        "layer": 16,
+        "error_norm": 28.671875,
+        "relative_error": 0.00995551,
+        "ref_norm": 2880.0
+      },
+      {
+        "layer": 17,
+        "error_norm": 29.671875,
+        "relative_error": 0.00887317,
+        "ref_norm": 3344.0
+      },
+      {
+        "layer": 18,
+        "error_norm": 31.546875,
+        "relative_error": 0.00853079,
+        "ref_norm": 3698.0
+      },
+      {
+        "layer": 19,
+        "error_norm": 34.0,
+        "relative_error": 0.00808754,
+        "ref_norm": 4204.0
+      },
+      {
+        "layer": 20,
+        "error_norm": 38.34375,
+        "relative_error": 0.00735682,
+        "ref_norm": 5212.0
+      },
+      {
+        "layer": 21,
+        "error_norm": 42.8125,
+        "relative_error": 0.00683906,
+        "ref_norm": 6260.0
+      },
+      {
+        "layer": 22,
+        "error_norm": 49.65625,
+        "relative_error": 0.00715096,
+        "ref_norm": 6944.0
+      },
+      {
+        "layer": 23,
+        "error_norm": 59.28125,
+        "relative_error": 0.00809411,
+        "ref_norm": 7324.0
+      }
+    ],
+    "amplification": 2.2719
+  },
+  "18": {
+    "inject_layer": 18,
+    "noise_norm": 37.0,
+    "layer_errors": [
+      {
+        "layer": 0,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 513.0
+      },
+      {
+        "layer": 1,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 735.0
+      },
+      {
+        "layer": 2,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1150.0
+      },
+      {
+        "layer": 3,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1899.0
+      },
+      {
+        "layer": 4,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1945.0
+      },
+      {
+        "layer": 5,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2008.0
+      },
+      {
+        "layer": 6,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2078.0
+      },
+      {
+        "layer": 7,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2130.0
+      },
+      {
+        "layer": 8,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2152.0
+      },
+      {
+        "layer": 9,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2164.0
+      },
+      {
+        "layer": 10,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2186.0
+      },
+      {
+        "layer": 11,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2216.0
+      },
+      {
+        "layer": 12,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2250.0
+      },
+      {
+        "layer": 13,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2306.0
+      },
+      {
+        "layer": 14,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2422.0
+      },
+      {
+        "layer": 15,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2610.0
+      },
+      {
+        "layer": 16,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2880.0
+      },
+      {
+        "layer": 17,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 3344.0
+      },
+      {
+        "layer": 18,
+        "error_norm": 37.0,
+        "relative_error": 0.01000541,
+        "ref_norm": 3698.0
+      },
+      {
+        "layer": 19,
+        "error_norm": 39.09375,
+        "relative_error": 0.00929918,
+        "ref_norm": 4204.0
+      },
+      {
+        "layer": 20,
+        "error_norm": 42.875,
+        "relative_error": 0.00822621,
+        "ref_norm": 5212.0
+      },
+      {
+        "layer": 21,
+        "error_norm": 47.0,
+        "relative_error": 0.00750799,
+        "ref_norm": 6260.0
+      },
+      {
+        "layer": 22,
+        "error_norm": 53.90625,
+        "relative_error": 0.007763,
+        "ref_norm": 6944.0
+      },
+      {
+        "layer": 23,
+        "error_norm": 64.3125,
+        "relative_error": 0.00878106,
+        "ref_norm": 7324.0
+      }
+    ],
+    "amplification": 1.7382
+  },
+  "21": {
+    "inject_layer": 21,
+    "noise_norm": 62.59375,
+    "layer_errors": [
+      {
+        "layer": 0,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 513.0
+      },
+      {
+        "layer": 1,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 735.0
+      },
+      {
+        "layer": 2,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1150.0
+      },
+      {
+        "layer": 3,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1899.0
+      },
+      {
+        "layer": 4,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1945.0
+      },
+      {
+        "layer": 5,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2008.0
+      },
+      {
+        "layer": 6,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2078.0
+      },
+      {
+        "layer": 7,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2130.0
+      },
+      {
+        "layer": 8,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2152.0
+      },
+      {
+        "layer": 9,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2164.0
+      },
+      {
+        "layer": 10,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2186.0
+      },
+      {
+        "layer": 11,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2216.0
+      },
+      {
+        "layer": 12,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2250.0
+      },
+      {
+        "layer": 13,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2306.0
+      },
+      {
+        "layer": 14,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2422.0
+      },
+      {
+        "layer": 15,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2610.0
+      },
+      {
+        "layer": 16,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2880.0
+      },
+      {
+        "layer": 17,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 3344.0
+      },
+      {
+        "layer": 18,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 3698.0
+      },
+      {
+        "layer": 19,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 4204.0
+      },
+      {
+        "layer": 20,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 5212.0
+      },
+      {
+        "layer": 21,
+        "error_norm": 62.625,
+        "relative_error": 0.01000399,
+        "ref_norm": 6260.0
+      },
+      {
+        "layer": 22,
+        "error_norm": 72.25,
+        "relative_error": 0.01040467,
+        "ref_norm": 6944.0
+      },
+      {
+        "layer": 23,
+        "error_norm": 85.3125,
+        "relative_error": 0.01164835,
+        "ref_norm": 7324.0
+      }
+    ],
+    "amplification": 1.3623
+  },
+  "23": {
+    "inject_layer": 23,
+    "noise_norm": 73.25,
+    "layer_errors": [
+      {
+        "layer": 0,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 513.0
+      },
+      {
+        "layer": 1,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 735.0
+      },
+      {
+        "layer": 2,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1150.0
+      },
+      {
+        "layer": 3,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1899.0
+      },
+      {
+        "layer": 4,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 1945.0
+      },
+      {
+        "layer": 5,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2008.0
+      },
+      {
+        "layer": 6,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2078.0
+      },
+      {
+        "layer": 7,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2130.0
+      },
+      {
+        "layer": 8,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2152.0
+      },
+      {
+        "layer": 9,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2164.0
+      },
+      {
+        "layer": 10,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2186.0
+      },
+      {
+        "layer": 11,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2216.0
+      },
+      {
+        "layer": 12,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2250.0
+      },
+      {
+        "layer": 13,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2306.0
+      },
+      {
+        "layer": 14,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2422.0
+      },
+      {
+        "layer": 15,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2610.0
+      },
+      {
+        "layer": 16,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 2880.0
+      },
+      {
+        "layer": 17,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 3344.0
+      },
+      {
+        "layer": 18,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 3698.0
+      },
+      {
+        "layer": 19,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 4204.0
+      },
+      {
+        "layer": 20,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 5212.0
+      },
+      {
+        "layer": 21,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 6260.0
+      },
+      {
+        "layer": 22,
+        "error_norm": 0.0,
+        "relative_error": 0.0,
+        "ref_norm": 6944.0
+      },
+      {
+        "layer": 23,
+        "error_norm": 73.25,
+        "relative_error": 0.01000137,
+        "ref_norm": 7324.0
+      }
+    ],
+    "amplification": 1.0
+  }
+}

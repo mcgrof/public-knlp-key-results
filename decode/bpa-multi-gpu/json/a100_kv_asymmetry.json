@@ -1,0 +1,765 @@
+{
+  "experiment": "a100_kv_asymmetry",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "k_bits": 16,
+      "v_bits": 16,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 854570.0923861868,
+          "ppl_quant": 854570.0923861868,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 836291.1537246082,
+          "ppl_quant": 836291.1537246082,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 826503.1372025681,
+          "ppl_quant": 826503.1372025681,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 984752.0368568447,
+          "ppl_quant": 984752.0368568447,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 902051.7223770667,
+          "ppl_quant": 902051.7223770667,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 908533.7597890048,
+          "ppl_quant": 908533.7597890048,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 964374.406012565,
+          "ppl_quant": 964374.406012565,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 855220.6951954433,
+          "ppl_quant": 855220.6951954433,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 846163.614444629,
+          "ppl_quant": 846163.614444629,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 932606.8264685423,
+          "ppl_quant": 932606.8264685423,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "label": "K_FP16/V_FP16",
+      "elapsed_s": 208.40437936782837
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "k_bits": 16,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 854570.0923861868,
+          "ppl_quant": 854570.0923861868,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 836291.1537246082,
+          "ppl_quant": 836291.1537246082,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 826503.1372025681,
+          "ppl_quant": 826503.1372025681,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 984752.0368568447,
+          "ppl_quant": 984752.0368568447,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 902051.7223770667,
+          "ppl_quant": 902051.7223770667,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 908533.7597890048,
+          "ppl_quant": 908533.7597890048,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 964374.406012565,
+          "ppl_quant": 964374.406012565,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 855220.6951954433,
+          "ppl_quant": 855220.6951954433,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 846163.614444629,
+          "ppl_quant": 846163.614444629,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 932606.8264685423,
+          "ppl_quant": 932606.8264685423,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "label": "K_FP16/V_INT4",
+      "elapsed_s": 35.990238904953
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "k_bits": 8,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 854570.0923861868,
+          "ppl_quant": 854570.0923861868,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 836291.1537246082,
+          "ppl_quant": 836291.1537246082,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 826503.1372025681,
+          "ppl_quant": 826503.1372025681,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 984752.0368568447,
+          "ppl_quant": 984752.0368568447,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 902051.7223770667,
+          "ppl_quant": 902051.7223770667,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 908533.7597890048,
+          "ppl_quant": 908533.7597890048,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 964374.406012565,
+          "ppl_quant": 964374.406012565,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 855220.6951954433,
+          "ppl_quant": 855220.6951954433,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 846163.614444629,
+          "ppl_quant": 846163.614444629,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 932606.8264685423,
+          "ppl_quant": 932606.8264685423,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "label": "K_INT8/V_INT4",
+      "elapsed_s": 26.82861351966858
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "k_bits": 4,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 854570.0923861868,
+          "ppl_quant": 854570.0923861868,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 836291.1537246082,
+          "ppl_quant": 836291.1537246082,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 826503.1372025681,
+          "ppl_quant": 826503.1372025681,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 984752.0368568447,
+          "ppl_quant": 984752.0368568447,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 902051.7223770667,
+          "ppl_quant": 902051.7223770667,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 908533.7597890048,
+          "ppl_quant": 908533.7597890048,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 964374.406012565,
+          "ppl_quant": 964374.406012565,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 855220.6951954433,
+          "ppl_quant": 855220.6951954433,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 846163.614444629,
+          "ppl_quant": 846163.614444629,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 932606.8264685423,
+          "ppl_quant": 932606.8264685423,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "label": "K_INT4/V_INT4",
+      "elapsed_s": 33.00578546524048
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "k_bits": 16,
+      "v_bits": 16,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 207595.38801389895,
+          "ppl_quant": 207595.38801389895,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220428.88866029086,
+          "ppl_quant": 220428.88866029086,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 246365.3334092073,
+          "ppl_quant": 246365.3334092073,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 225502.821864963,
+          "ppl_quant": 225502.821864963,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 215096.4846699143,
+          "ppl_quant": 215096.4846699143,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 185891.12846712884,
+          "ppl_quant": 185891.12846712884,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 198327.45391252634,
+          "ppl_quant": 198327.45391252634,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 226230.02178313152,
+          "ppl_quant": 226230.02178313152,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214077.96183030328,
+          "ppl_quant": 214077.96183030328,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220252.16673087562,
+          "ppl_quant": 220252.16673087562,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "label": "K_FP16/V_FP16",
+      "elapsed_s": 26.24682641029358
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "k_bits": 16,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 207595.38801389895,
+          "ppl_quant": 207595.38801389895,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220428.88866029086,
+          "ppl_quant": 220428.88866029086,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 246365.3334092073,
+          "ppl_quant": 246365.3334092073,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 225502.821864963,
+          "ppl_quant": 225502.821864963,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 215096.4846699143,
+          "ppl_quant": 215096.4846699143,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 185891.12846712884,
+          "ppl_quant": 185891.12846712884,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 198327.45391252634,
+          "ppl_quant": 198327.45391252634,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 226230.02178313152,
+          "ppl_quant": 226230.02178313152,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214077.96183030328,
+          "ppl_quant": 214077.96183030328,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220252.16673087562,
+          "ppl_quant": 220252.16673087562,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "label": "K_FP16/V_INT4",
+      "elapsed_s": 23.668001413345337
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "k_bits": 8,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 207595.38801389895,
+          "ppl_quant": 207595.38801389895,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220428.88866029086,
+          "ppl_quant": 220428.88866029086,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 246365.3334092073,
+          "ppl_quant": 246365.3334092073,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 225502.821864963,
+          "ppl_quant": 225502.821864963,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 215096.4846699143,
+          "ppl_quant": 215096.4846699143,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 185891.12846712884,
+          "ppl_quant": 185891.12846712884,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 198327.45391252634,
+          "ppl_quant": 198327.45391252634,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 226230.02178313152,
+          "ppl_quant": 226230.02178313152,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214077.96183030328,
+          "ppl_quant": 214077.96183030328,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220252.16673087562,
+          "ppl_quant": 220252.16673087562,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "label": "K_INT8/V_INT4",
+      "elapsed_s": 14.612410545349121
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "k_bits": 4,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 207595.38801389895,
+          "ppl_quant": 207595.38801389895,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220428.88866029086,
+          "ppl_quant": 220428.88866029086,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 246365.3334092073,
+          "ppl_quant": 246365.3334092073,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 225502.821864963,
+          "ppl_quant": 225502.821864963,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 215096.4846699143,
+          "ppl_quant": 215096.4846699143,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 185891.12846712884,
+          "ppl_quant": 185891.12846712884,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 198327.45391252634,
+          "ppl_quant": 198327.45391252634,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 226230.02178313152,
+          "ppl_quant": 226230.02178313152,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214077.96183030328,
+          "ppl_quant": 214077.96183030328,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220252.16673087562,
+          "ppl_quant": 220252.16673087562,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "label": "K_INT4/V_INT4",
+      "elapsed_s": 24.178003549575806
+    }
+  ]
+}

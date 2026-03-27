@@ -1,0 +1,22 @@
+{
+  "tier": "4",
+  "type": "kv_quantization",
+  "timestamp": "2026-03-12T04:43:42",
+  "gpu": "H100-80GB",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "kv_cache_dtype": "auto",
+  "seq_len": 2048,
+  "num_prompts": 20,
+  "max_tokens": 256,
+  "total_input_tokens": 15836,
+  "total_output_tokens": 5120,
+  "wall_time_sec": 3.314,
+  "tokens_per_sec": 1544.76,
+  "avg_decode_latency_ms": 0.65,
+  "peak_vram_gb": 70.35,
+  "sample_outputs": [
+    " I will provide a detailed explanation of the theory of general relativity and its implications for modern physics.\n\n### The Theory of General Relativity\n\n#### 1. **Introduction and Historical Context",
+    "1. **Quicksort**:\n   - **Description**: Quicksort is a divide-and-conquer algorithm that works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, ac",
+    "1. **Charles Babbage (1791-1871)**: Charles Babbage is often referred to as the \"father of the computer.\" He designed the first mechanical computer, the Difference Engine, in the early 1800s. Although"
+  ]
+}

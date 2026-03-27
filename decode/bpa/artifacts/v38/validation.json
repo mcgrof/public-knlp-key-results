@@ -1,0 +1,44 @@
+[
+  {
+    "config": "qwen25_05b",
+    "max_abs_error": 0.0169677734375,
+    "max_rel_error": 0.13714848422772194,
+    "pass": false
+  },
+  {
+    "config": "qwen25_1.8b",
+    "max_abs_error": 0.0216064453125,
+    "max_rel_error": 0.1541811736667929,
+    "pass": false
+  },
+  {
+    "config": "qwen25_7b",
+    "max_abs_error": 0.022674560546875,
+    "max_rel_error": 0.16138139598578283,
+    "pass": false
+  },
+  {
+    "config": "mistral_7b",
+    "max_abs_error": 0.0200958251953125,
+    "max_rel_error": 0.12140485992220787,
+    "pass": false
+  },
+  {
+    "config": "llama31_8b",
+    "max_abs_error": 0.020538330078125,
+    "max_rel_error": 0.1365665493607697,
+    "pass": false
+  },
+  {
+    "config": "nemotron3_nano",
+    "max_abs_error": 0.0247344970703125,
+    "max_rel_error": 0.1381220100102556,
+    "pass": false
+  },
+  {
+    "config": "deepseek_mla",
+    "max_abs_error": 0.0182952880859375,
+    "max_rel_error": 0.11801180341139612,
+    "pass": false
+  }
+]

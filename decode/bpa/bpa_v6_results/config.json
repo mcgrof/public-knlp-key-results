@@ -1,0 +1,33 @@
+{
+  "checkpoint": "test_matrix_results_20260206_184612/gpt2_adamwspam_none_none/final_model_stepV0.pt",
+  "seq_lens": [
+    512,
+    1024,
+    2048
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "far_budgets": [
+    4,
+    8
+  ],
+  "n_eval": 30,
+  "batch_size": 1,
+  "local_window": 256,
+  "chunk_size": 64,
+  "top_b": 8,
+  "target_enabled_rate": 0.7,
+  "tau": 4.0,
+  "ra_update_period": 1,
+  "fast_gate": false,
+  "variant_set": "full",
+  "strategies": [
+    "recency",
+    "random",
+    "ra_value",
+    "ra_blend"
+  ]
+}

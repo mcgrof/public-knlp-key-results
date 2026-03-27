@@ -1,0 +1,22 @@
+{
+  "tier": "4",
+  "type": "kv_quantization",
+  "timestamp": "2026-03-12T04:43:30",
+  "gpu": "H100-80GB",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "kv_cache_dtype": "auto",
+  "seq_len": 512,
+  "num_prompts": 20,
+  "max_tokens": 256,
+  "total_input_tokens": 316,
+  "total_output_tokens": 5120,
+  "wall_time_sec": 4.175,
+  "tokens_per_sec": 1226.43,
+  "avg_decode_latency_ms": 0.82,
+  "peak_vram_gb": 54.09,
+  "sample_outputs": [
+    " General relativity is a theory of gravitation that was developed by Albert Einstein between 1907 and 1915. It is a geometric theory of gravitation that describes gravity as a curvature of spacetime c",
+    " Sorting algorithms are fundamental to computer science and are used in a wide range of applications, from database management to data analysis. In this analysis, we will discuss three popular sorting",
+    " The history of computing spans from the conceptualization of the first mechanical computers to the development of modern high-performance graphics processing units (GPUs). Here's a comprehensive over"
+  ]
+}

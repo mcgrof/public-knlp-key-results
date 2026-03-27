@@ -1,0 +1,40 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+############################################################
+# facebook/opt-30b
+############################################################
+Loading facebook/opt-30b in float16...
+
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]
+Fetching 7 files:  14%|█▍        | 1/7 [02:25<14:31, 145.27s/it]
+Fetching 7 files: 100%|██████████| 7/7 [02:25<00:00, 20.75s/it] 
+Traceback (most recent call last):
+  File "/workspace/experiment.py", line 466, in <module>
+    result = run_all_tests(model_name, dtype_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/experiment.py", line 74, in run_all_tests
+    model = AutoModelForCausalLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/transformers/models/auto/auto_factory.py", line 374, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/transformers/modeling_utils.py", line 4137, in from_pretrained
+    loading_info, disk_offload_index = cls._load_pretrained_model(model, state_dict, checkpoint_files, load_config)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/transformers/modeling_utils.py", line 4252, in _load_pretrained_model
+    merged_state_dict.update(load_state_dict(ckpt_file))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/transformers/modeling_utils.py", line 319, in load_state_dict
+    check_torch_load_is_safe()
+  File "/usr/local/lib/python3.11/dist-packages/transformers/utils/import_utils.py", line 1270, in check_torch_load_is_safe
+    raise ValueError(
+ValueError: Due to a serious vulnerability issue in `torch.load`, even with `weights_only=True`, we now require users to upgrade torch to at least v2.6 in order to use the function. This version restriction does not apply when loading files with safetensors.
+See the vulnerability report here https://nvd.nist.gov/vuln/detail/CVE-2025-32434
+FAILED: Due to a serious vulnerability issue in `torch.load`, even with `weights_only=True`, we now require users to upgrade torch to at least v2.6 in order to use the function. This version restriction does not apply when loading files with safetensors.
+See the vulnerability report here https://nvd.nist.gov/vuln/detail/CVE-2025-32434
+
+Saved: /workspace/large_opt_30b.json
+
+Total time: 151s
+
+DONE

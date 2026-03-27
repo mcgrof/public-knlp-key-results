@@ -1,0 +1,436 @@
+{
+  "model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-03-27T14:21:36",
+  "baseline_samples": {
+    "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+    "short_16": "Gravity is the force that attracts two objects towards each other based on their",
+    "med_32": "Haiku about the ocean:\nWhispers of the sea,\nEndless blue, vast and deep,",
+    "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+    "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both tr",
+    "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its crea",
+    "long_128": "The history of the Internet can be traced back to the late 1960s, with"
+  },
+  "sweeps": {
+    "8": {
+      "matches": 0,
+      "total": 7,
+      "elapsed_s": 24.9,
+      "details": {
+        "short_8": {
+          "match": false,
+          "tok_rate": 0.25,
+          "first_diverge": 4
+        },
+        "short_16": {
+          "match": false,
+          "tok_rate": 0.2,
+          "first_diverge": 4
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.1,
+          "first_diverge": 2
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.45,
+          "first_diverge": 8
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.35,
+          "first_diverge": 6
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.2,
+          "first_diverge": 4
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.15,
+          "first_diverge": 3
+        }
+      }
+    },
+    "16": {
+      "matches": 0,
+      "total": 7,
+      "elapsed_s": 23.7,
+      "details": {
+        "short_8": {
+          "match": false,
+          "tok_rate": 0.85,
+          "first_diverge": 13
+        },
+        "short_16": {
+          "match": false,
+          "tok_rate": 0.35,
+          "first_diverge": 7
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.1,
+          "first_diverge": 2
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.45,
+          "first_diverge": 8
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.35,
+          "first_diverge": 6
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.2,
+          "first_diverge": 4
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.15,
+          "first_diverge": 3
+        }
+      }
+    },
+    "24": {
+      "matches": 0,
+      "total": 7,
+      "elapsed_s": 23.7,
+      "details": {
+        "short_8": {
+          "match": false,
+          "tok_rate": 0.9,
+          "first_diverge": 18
+        },
+        "short_16": {
+          "match": false,
+          "tok_rate": 0.75,
+          "first_diverge": 15
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.45,
+          "first_diverge": 9
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.65,
+          "first_diverge": 11
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.3,
+          "first_diverge": 6
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.2,
+          "first_diverge": 4
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.15,
+          "first_diverge": 3
+        }
+      }
+    },
+    "32": {
+      "matches": 2,
+      "total": 7,
+      "elapsed_s": 24.2,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.8,
+          "first_diverge": 16
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.65,
+          "first_diverge": 11
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.65,
+          "first_diverge": 13
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.2,
+          "first_diverge": 4
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.3,
+          "first_diverge": 6
+        }
+      }
+    },
+    "40": {
+      "matches": 4,
+      "total": 7,
+      "elapsed_s": 23.7,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 19
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.6,
+          "first_diverge": 12
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.6,
+          "first_diverge": 12
+        }
+      }
+    },
+    "48": {
+      "matches": 7,
+      "total": 7,
+      "elapsed_s": 24.4,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      }
+    },
+    "56": {
+      "matches": 7,
+      "total": 7,
+      "elapsed_s": 25.2,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      }
+    },
+    "64": {
+      "matches": 7,
+      "total": 7,
+      "elapsed_s": 23.2,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      }
+    },
+    "80": {
+      "matches": 7,
+      "total": 7,
+      "elapsed_s": 24.7,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      }
+    },
+    "96": {
+      "matches": 7,
+      "total": 7,
+      "elapsed_s": 23.8,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      }
+    }
+  },
+  "lowest_perfect_msl": 48
+}

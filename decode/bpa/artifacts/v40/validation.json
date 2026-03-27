@@ -1,0 +1,86 @@
+[
+  {
+    "config": "qwen25_05b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.0004177109297331331,
+    "pass": true
+  },
+  {
+    "config": "qwen25_1.8b",
+    "max_abs_error": 0.000244140625,
+    "max_rel_error": 0.0007680491309836464,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "max_abs_error": 0.000244140625,
+    "max_rel_error": 0.0008628127391364886,
+    "pass": true
+  },
+  {
+    "config": "mistral_7b",
+    "max_abs_error": 0.000244140625,
+    "max_rel_error": 0.0007917656116938088,
+    "pass": true
+  },
+  {
+    "config": "llama31_8b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.00038491145822480883,
+    "pass": true
+  },
+  {
+    "config": "nemotron3_nano",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.00043591977519156583,
+    "pass": true
+  },
+  {
+    "config": "deepseek_mla",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.00041736225618100334,
+    "pass": true
+  },
+  {
+    "config": "gemma3_4b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.0004899558843031916,
+    "pass": true
+  },
+  {
+    "config": "gemma3_12b",
+    "max_abs_error": 0.000244140625,
+    "max_rel_error": 0.0007468259666990354,
+    "pass": true
+  },
+  {
+    "config": "gemma3n_e4b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.0004807692118343203,
+    "pass": true
+  },
+  {
+    "config": "deepseek_r1_7b",
+    "max_abs_error": 0.000244140625,
+    "max_rel_error": 0.0009425070324174476,
+    "pass": true
+  },
+  {
+    "config": "phi4_14b",
+    "max_abs_error": 0.000244140625,
+    "max_rel_error": 0.0009380862678949216,
+    "pass": true
+  },
+  {
+    "config": "qwen3_8b",
+    "max_abs_error": 0.000244140625,
+    "max_rel_error": 0.000815660657904192,
+    "pass": true
+  },
+  {
+    "config": "mistral_small_24b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.0004468275082197902,
+    "pass": true
+  }
+]

@@ -1,0 +1,4730 @@
+{
+  "kv_memory": {
+    "qwen25_05b": {
+      "kv_per_layer_bytes": 512,
+      "n_layers": 24,
+      "total_kv_per_tok_bytes": 12288,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 0.375,
+          "kv_int4_gb": 0.199
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 12.0,
+          "kv_int4_gb": 6.36
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 48.0,
+          "kv_int4_gb": 25.44
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 0.75,
+          "kv_int4_gb": 0.398
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 24.0,
+          "kv_int4_gb": 12.72
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 96.0,
+          "kv_int4_gb": 50.88
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 1.5,
+          "kv_int4_gb": 0.795
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 48.0,
+          "kv_int4_gb": 25.44
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 192.0,
+          "kv_int4_gb": 101.76
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 3.0,
+          "kv_int4_gb": 1.59
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 96.0,
+          "kv_int4_gb": 50.88
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 384.0,
+          "kv_int4_gb": 203.52
+        }
+      }
+    },
+    "qwen25_1.8b": {
+      "kv_per_layer_bytes": 1024,
+      "n_layers": 28,
+      "total_kv_per_tok_bytes": 28672,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 0.875,
+          "kv_int4_gb": 0.464
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 28.0,
+          "kv_int4_gb": 14.84
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 112.0,
+          "kv_int4_gb": 59.36
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 1.75,
+          "kv_int4_gb": 0.927
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 56.0,
+          "kv_int4_gb": 29.68
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 224.0,
+          "kv_int4_gb": 118.72
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 3.5,
+          "kv_int4_gb": 1.855
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 112.0,
+          "kv_int4_gb": 59.36
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 448.0,
+          "kv_int4_gb": 237.44
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 7.0,
+          "kv_int4_gb": 3.71
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 224.0,
+          "kv_int4_gb": 118.72
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 896.0,
+          "kv_int4_gb": 474.88
+        }
+      }
+    },
+    "qwen25_7b": {
+      "kv_per_layer_bytes": 2048,
+      "n_layers": 28,
+      "total_kv_per_tok_bytes": 57344,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 1.75,
+          "kv_int4_gb": 0.927
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 56.0,
+          "kv_int4_gb": 29.68
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 224.0,
+          "kv_int4_gb": 118.72
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 3.5,
+          "kv_int4_gb": 1.855
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 112.0,
+          "kv_int4_gb": 59.36
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 448.0,
+          "kv_int4_gb": 237.44
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 7.0,
+          "kv_int4_gb": 3.71
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 224.0,
+          "kv_int4_gb": 118.72
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 896.0,
+          "kv_int4_gb": 474.88
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 14.0,
+          "kv_int4_gb": 7.42
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 448.0,
+          "kv_int4_gb": 237.44
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 1792.0,
+          "kv_int4_gb": 949.76
+        }
+      }
+    },
+    "mistral_7b": {
+      "kv_per_layer_bytes": 4096,
+      "n_layers": 32,
+      "total_kv_per_tok_bytes": 131072,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 4.0,
+          "kv_int4_gb": 2.12
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 128.0,
+          "kv_int4_gb": 67.84
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 512.0,
+          "kv_int4_gb": 271.36
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 8.0,
+          "kv_int4_gb": 4.24
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 256.0,
+          "kv_int4_gb": 135.68
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 1024.0,
+          "kv_int4_gb": 542.72
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 16.0,
+          "kv_int4_gb": 8.48
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 512.0,
+          "kv_int4_gb": 271.36
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 2048.0,
+          "kv_int4_gb": 1085.44
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 32.0,
+          "kv_int4_gb": 16.96
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 1024.0,
+          "kv_int4_gb": 542.72
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 4096.0,
+          "kv_int4_gb": 2170.88
+        }
+      }
+    },
+    "llama31_8b": {
+      "kv_per_layer_bytes": 4096,
+      "n_layers": 32,
+      "total_kv_per_tok_bytes": 131072,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 4.0,
+          "kv_int4_gb": 2.12
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 128.0,
+          "kv_int4_gb": 67.84
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 512.0,
+          "kv_int4_gb": 271.36
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 8.0,
+          "kv_int4_gb": 4.24
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 256.0,
+          "kv_int4_gb": 135.68
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 1024.0,
+          "kv_int4_gb": 542.72
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 16.0,
+          "kv_int4_gb": 8.48
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 512.0,
+          "kv_int4_gb": 271.36
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 2048.0,
+          "kv_int4_gb": 1085.44
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 32.0,
+          "kv_int4_gb": 16.96
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 1024.0,
+          "kv_int4_gb": 542.72
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 4096.0,
+          "kv_int4_gb": 2170.88
+        }
+      }
+    },
+    "nemotron3_nano": {
+      "kv_per_layer_bytes": 1024,
+      "n_layers": 32,
+      "total_kv_per_tok_bytes": 32768,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 1.0,
+          "kv_int4_gb": 0.53
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 32.0,
+          "kv_int4_gb": 16.96
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 128.0,
+          "kv_int4_gb": 67.84
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 2.0,
+          "kv_int4_gb": 1.06
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 64.0,
+          "kv_int4_gb": 33.92
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 256.0,
+          "kv_int4_gb": 135.68
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 4.0,
+          "kv_int4_gb": 2.12
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 128.0,
+          "kv_int4_gb": 67.84
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 512.0,
+          "kv_int4_gb": 271.36
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 8.0,
+          "kv_int4_gb": 4.24
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 256.0,
+          "kv_int4_gb": 135.68
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 1024.0,
+          "kv_int4_gb": 542.72
+        }
+      }
+    },
+    "deepseek_mla": {
+      "kv_per_layer_bytes": 512,
+      "n_layers": 28,
+      "total_kv_per_tok_bytes": 14336,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 0.438,
+          "kv_int4_gb": 0.232
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 14.0,
+          "kv_int4_gb": 7.42
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 56.0,
+          "kv_int4_gb": 29.68
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 0.875,
+          "kv_int4_gb": 0.464
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 28.0,
+          "kv_int4_gb": 14.84
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 112.0,
+          "kv_int4_gb": 59.36
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 1.75,
+          "kv_int4_gb": 0.927
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 56.0,
+          "kv_int4_gb": 29.68
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 224.0,
+          "kv_int4_gb": 118.72
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 3.5,
+          "kv_int4_gb": 1.855
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 112.0,
+          "kv_int4_gb": 59.36
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 448.0,
+          "kv_int4_gb": 237.44
+        }
+      }
+    },
+    "gemma3_4b": {
+      "kv_per_layer_bytes": 4096,
+      "n_layers": 34,
+      "total_kv_per_tok_bytes": 139264,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 4.25,
+          "kv_int4_gb": 2.252
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 136.0,
+          "kv_int4_gb": 72.08
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 544.0,
+          "kv_int4_gb": 288.32
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 8.5,
+          "kv_int4_gb": 4.505
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 272.0,
+          "kv_int4_gb": 144.16
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 1088.0,
+          "kv_int4_gb": 576.64
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 17.0,
+          "kv_int4_gb": 9.01
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 544.0,
+          "kv_int4_gb": 288.32
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 2176.0,
+          "kv_int4_gb": 1153.28
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 34.0,
+          "kv_int4_gb": 18.02
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 1088.0,
+          "kv_int4_gb": 576.64
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 4352.0,
+          "kv_int4_gb": 2306.56
+        }
+      }
+    },
+    "gemma3_12b": {
+      "kv_per_layer_bytes": 8192,
+      "n_layers": 48,
+      "total_kv_per_tok_bytes": 393216,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 12.0,
+          "kv_int4_gb": 6.36
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 384.0,
+          "kv_int4_gb": 203.52
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 1536.0,
+          "kv_int4_gb": 814.08
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 24.0,
+          "kv_int4_gb": 12.72
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 768.0,
+          "kv_int4_gb": 407.04
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 3072.0,
+          "kv_int4_gb": 1628.16
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 48.0,
+          "kv_int4_gb": 25.44
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 1536.0,
+          "kv_int4_gb": 814.08
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 6144.0,
+          "kv_int4_gb": 3256.32
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 96.0,
+          "kv_int4_gb": 50.88
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 3072.0,
+          "kv_int4_gb": 1628.16
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 12288.0,
+          "kv_int4_gb": 6512.64
+        }
+      }
+    },
+    "gemma3n_e4b": {
+      "kv_per_layer_bytes": 2048,
+      "n_layers": 35,
+      "total_kv_per_tok_bytes": 71680,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 2.188,
+          "kv_int4_gb": 1.159
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 70.0,
+          "kv_int4_gb": 37.1
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 280.0,
+          "kv_int4_gb": 148.4
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 4.375,
+          "kv_int4_gb": 2.319
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 140.0,
+          "kv_int4_gb": 74.2
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 560.0,
+          "kv_int4_gb": 296.8
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 8.75,
+          "kv_int4_gb": 4.638
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 280.0,
+          "kv_int4_gb": 148.4
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 1120.0,
+          "kv_int4_gb": 593.6
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 17.5,
+          "kv_int4_gb": 9.275
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 560.0,
+          "kv_int4_gb": 296.8
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 2240.0,
+          "kv_int4_gb": 1187.2
+        }
+      }
+    },
+    "deepseek_r1_7b": {
+      "kv_per_layer_bytes": 2048,
+      "n_layers": 28,
+      "total_kv_per_tok_bytes": 57344,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 1.75,
+          "kv_int4_gb": 0.927
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 56.0,
+          "kv_int4_gb": 29.68
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 224.0,
+          "kv_int4_gb": 118.72
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 3.5,
+          "kv_int4_gb": 1.855
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 112.0,
+          "kv_int4_gb": 59.36
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 448.0,
+          "kv_int4_gb": 237.44
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 7.0,
+          "kv_int4_gb": 3.71
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 224.0,
+          "kv_int4_gb": 118.72
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 896.0,
+          "kv_int4_gb": 474.88
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 14.0,
+          "kv_int4_gb": 7.42
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 448.0,
+          "kv_int4_gb": 237.44
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 1792.0,
+          "kv_int4_gb": 949.76
+        }
+      }
+    },
+    "phi4_14b": {
+      "kv_per_layer_bytes": 5120,
+      "n_layers": 40,
+      "total_kv_per_tok_bytes": 204800,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 6.25,
+          "kv_int4_gb": 3.312
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 200.0,
+          "kv_int4_gb": 106.0
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 800.0,
+          "kv_int4_gb": 424.0
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 12.5,
+          "kv_int4_gb": 6.625
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 400.0,
+          "kv_int4_gb": 212.0
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 1600.0,
+          "kv_int4_gb": 848.0
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 25.0,
+          "kv_int4_gb": 13.25
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 800.0,
+          "kv_int4_gb": 424.0
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 3200.0,
+          "kv_int4_gb": 1696.0
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 50.0,
+          "kv_int4_gb": 26.5
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 1600.0,
+          "kv_int4_gb": 848.0
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 6400.0,
+          "kv_int4_gb": 3392.0
+        }
+      }
+    },
+    "qwen3_8b": {
+      "kv_per_layer_bytes": 4096,
+      "n_layers": 36,
+      "total_kv_per_tok_bytes": 147456,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 4.5,
+          "kv_int4_gb": 2.385
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 144.0,
+          "kv_int4_gb": 76.32
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 576.0,
+          "kv_int4_gb": 305.28
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 9.0,
+          "kv_int4_gb": 4.77
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 288.0,
+          "kv_int4_gb": 152.64
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 1152.0,
+          "kv_int4_gb": 610.56
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 18.0,
+          "kv_int4_gb": 9.54
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 576.0,
+          "kv_int4_gb": 305.28
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 2304.0,
+          "kv_int4_gb": 1221.12
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 36.0,
+          "kv_int4_gb": 19.08
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 1152.0,
+          "kv_int4_gb": 610.56
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 4608.0,
+          "kv_int4_gb": 2442.24
+        }
+      }
+    },
+    "mistral_small_24b": {
+      "kv_per_layer_bytes": 4096,
+      "n_layers": 40,
+      "total_kv_per_tok_bytes": 163840,
+      "contexts": {
+        "T=32768_B=1": {
+          "T": 32768,
+          "B": 1,
+          "kv_fp16_gb": 5.0,
+          "kv_int4_gb": 2.65
+        },
+        "T=32768_B=32": {
+          "T": 32768,
+          "B": 32,
+          "kv_fp16_gb": 160.0,
+          "kv_int4_gb": 84.8
+        },
+        "T=32768_B=128": {
+          "T": 32768,
+          "B": 128,
+          "kv_fp16_gb": 640.0,
+          "kv_int4_gb": 339.2
+        },
+        "T=65536_B=1": {
+          "T": 65536,
+          "B": 1,
+          "kv_fp16_gb": 10.0,
+          "kv_int4_gb": 5.3
+        },
+        "T=65536_B=32": {
+          "T": 65536,
+          "B": 32,
+          "kv_fp16_gb": 320.0,
+          "kv_int4_gb": 169.6
+        },
+        "T=65536_B=128": {
+          "T": 65536,
+          "B": 128,
+          "kv_fp16_gb": 1280.0,
+          "kv_int4_gb": 678.4
+        },
+        "T=131072_B=1": {
+          "T": 131072,
+          "B": 1,
+          "kv_fp16_gb": 20.0,
+          "kv_int4_gb": 10.6
+        },
+        "T=131072_B=32": {
+          "T": 131072,
+          "B": 32,
+          "kv_fp16_gb": 640.0,
+          "kv_int4_gb": 339.2
+        },
+        "T=131072_B=128": {
+          "T": 131072,
+          "B": 128,
+          "kv_fp16_gb": 2560.0,
+          "kv_int4_gb": 1356.8
+        },
+        "T=262144_B=1": {
+          "T": 262144,
+          "B": 1,
+          "kv_fp16_gb": 40.0,
+          "kv_int4_gb": 21.2
+        },
+        "T=262144_B=32": {
+          "T": 262144,
+          "B": 32,
+          "kv_fp16_gb": 1280.0,
+          "kv_int4_gb": 678.4
+        },
+        "T=262144_B=128": {
+          "T": 262144,
+          "B": 128,
+          "kv_fp16_gb": 5120.0,
+          "kv_int4_gb": 2713.6
+        }
+      }
+    }
+  },
+  "tiering": {
+    "H100-80GB": {
+      "qwen25_05b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 77.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 77.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 77.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 77.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 77.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 19.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 77.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 77.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 77.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 115.0,
+          "overflow_int4_gb": 24.76,
+          "available_gb": 77.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 77.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 19.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 77.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 307.0,
+          "overflow_int4_gb": 126.52,
+          "available_gb": 77.0
+        }
+      },
+      "qwen25_1.8b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 74.4
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 74.4
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 37.6,
+          "overflow_int4_gb": 0,
+          "available_gb": 74.4
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 74.4
+        },
+        "T=65536_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 74.4
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 149.6,
+          "overflow_int4_gb": 44.32,
+          "available_gb": 74.4
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 74.4
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 37.6,
+          "overflow_int4_gb": 0,
+          "available_gb": 74.4
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 373.6,
+          "overflow_int4_gb": 163.04,
+          "available_gb": 74.4
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 74.4
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 149.6,
+          "overflow_int4_gb": 44.32,
+          "available_gb": 74.4
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 821.6,
+          "overflow_int4_gb": 400.48,
+          "available_gb": 74.4
+        }
+      },
+      "qwen25_7b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 160.0,
+          "overflow_int4_gb": 54.72,
+          "available_gb": 64.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 48.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 384.0,
+          "overflow_int4_gb": 173.44,
+          "available_gb": 64.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 160.0,
+          "overflow_int4_gb": 54.72,
+          "available_gb": 64.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 832.0,
+          "overflow_int4_gb": 410.88,
+          "available_gb": 64.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 384.0,
+          "overflow_int4_gb": 173.44,
+          "available_gb": 64.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1728.0,
+          "overflow_int4_gb": 885.76,
+          "available_gb": 64.0
+        }
+      },
+      "mistral_7b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 64.0,
+          "overflow_int4_gb": 3.84,
+          "available_gb": 64.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 448.0,
+          "overflow_int4_gb": 207.36,
+          "available_gb": 64.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 192.0,
+          "overflow_int4_gb": 71.68,
+          "available_gb": 64.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 960.0,
+          "overflow_int4_gb": 478.72,
+          "available_gb": 64.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 448.0,
+          "overflow_int4_gb": 207.36,
+          "available_gb": 64.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1984.0,
+          "overflow_int4_gb": 1021.44,
+          "available_gb": 64.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 960.0,
+          "overflow_int4_gb": 478.72,
+          "available_gb": 64.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4032.0,
+          "overflow_int4_gb": 2106.88,
+          "available_gb": 64.0
+        }
+      },
+      "llama31_8b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 62.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 66.0,
+          "overflow_int4_gb": 5.84,
+          "available_gb": 62.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 450.0,
+          "overflow_int4_gb": 209.36,
+          "available_gb": 62.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 62.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 194.0,
+          "overflow_int4_gb": 73.68,
+          "available_gb": 62.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 962.0,
+          "overflow_int4_gb": 480.72,
+          "available_gb": 62.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 62.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 450.0,
+          "overflow_int4_gb": 209.36,
+          "available_gb": 62.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1986.0,
+          "overflow_int4_gb": 1023.44,
+          "available_gb": 62.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 62.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 962.0,
+          "overflow_int4_gb": 480.72,
+          "available_gb": 62.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4034.0,
+          "overflow_int4_gb": 2108.88,
+          "available_gb": 62.0
+        }
+      },
+      "nemotron3_nano": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 18.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 14.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 18.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 110.0,
+          "overflow_int4_gb": 49.84,
+          "available_gb": 18.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 18.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 46.0,
+          "overflow_int4_gb": 15.92,
+          "available_gb": 18.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 238.0,
+          "overflow_int4_gb": 117.68,
+          "available_gb": 18.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 18.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 110.0,
+          "overflow_int4_gb": 49.84,
+          "available_gb": 18.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 494.0,
+          "overflow_int4_gb": 253.36,
+          "available_gb": 18.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 18.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 238.0,
+          "overflow_int4_gb": 117.68,
+          "available_gb": 18.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1006.0,
+          "overflow_int4_gb": 524.72,
+          "available_gb": 18.0
+        }
+      },
+      "deepseek_mla": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 48.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 160.0,
+          "overflow_int4_gb": 54.72,
+          "available_gb": 64.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 48.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 384.0,
+          "overflow_int4_gb": 173.44,
+          "available_gb": 64.0
+        }
+      },
+      "gemma3_4b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 70.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 66.0,
+          "overflow_int4_gb": 2.08,
+          "available_gb": 70.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 474.0,
+          "overflow_int4_gb": 218.32,
+          "available_gb": 70.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 70.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 202.0,
+          "overflow_int4_gb": 74.16,
+          "available_gb": 70.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1018.0,
+          "overflow_int4_gb": 506.64,
+          "available_gb": 70.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 70.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 474.0,
+          "overflow_int4_gb": 218.32,
+          "available_gb": 70.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2106.0,
+          "overflow_int4_gb": 1083.28,
+          "available_gb": 70.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 70.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1018.0,
+          "overflow_int4_gb": 506.64,
+          "available_gb": 70.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4282.0,
+          "overflow_int4_gb": 2236.56,
+          "available_gb": 70.0
+        }
+      },
+      "gemma3_12b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 54.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 330.0,
+          "overflow_int4_gb": 149.52,
+          "available_gb": 54.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1482.0,
+          "overflow_int4_gb": 760.08,
+          "available_gb": 54.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 54.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 714.0,
+          "overflow_int4_gb": 353.04,
+          "available_gb": 54.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 3018.0,
+          "overflow_int4_gb": 1574.16,
+          "available_gb": 54.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 54.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1482.0,
+          "overflow_int4_gb": 760.08,
+          "available_gb": 54.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 6090.0,
+          "overflow_int4_gb": 3202.32,
+          "available_gb": 54.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 42.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 54.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 3018.0,
+          "overflow_int4_gb": 1574.16,
+          "available_gb": 54.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 12234.0,
+          "overflow_int4_gb": 6458.64,
+          "available_gb": 54.0
+        }
+      },
+      "gemma3n_e4b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 70.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 70.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 210.0,
+          "overflow_int4_gb": 78.4,
+          "available_gb": 70.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 70.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 70.0,
+          "overflow_int4_gb": 4.2,
+          "available_gb": 70.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 490.0,
+          "overflow_int4_gb": 226.8,
+          "available_gb": 70.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 70.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 210.0,
+          "overflow_int4_gb": 78.4,
+          "available_gb": 70.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1050.0,
+          "overflow_int4_gb": 523.6,
+          "available_gb": 70.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 70.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 490.0,
+          "overflow_int4_gb": 226.8,
+          "available_gb": 70.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2170.0,
+          "overflow_int4_gb": 1117.2,
+          "available_gb": 70.0
+        }
+      },
+      "deepseek_r1_7b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 160.0,
+          "overflow_int4_gb": 54.72,
+          "available_gb": 64.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 48.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 384.0,
+          "overflow_int4_gb": 173.44,
+          "available_gb": 64.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 160.0,
+          "overflow_int4_gb": 54.72,
+          "available_gb": 64.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 832.0,
+          "overflow_int4_gb": 410.88,
+          "available_gb": 64.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 64.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 384.0,
+          "overflow_int4_gb": 173.44,
+          "available_gb": 64.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1728.0,
+          "overflow_int4_gb": 885.76,
+          "available_gb": 64.0
+        }
+      },
+      "phi4_14b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 50.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 150.0,
+          "overflow_int4_gb": 56.0,
+          "available_gb": 50.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 750.0,
+          "overflow_int4_gb": 374.0,
+          "available_gb": 50.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 50.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 350.0,
+          "overflow_int4_gb": 162.0,
+          "available_gb": 50.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1550.0,
+          "overflow_int4_gb": 798.0,
+          "available_gb": 50.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 50.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 750.0,
+          "overflow_int4_gb": 374.0,
+          "available_gb": 50.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 3150.0,
+          "overflow_int4_gb": 1646.0,
+          "available_gb": 50.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 50.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1550.0,
+          "overflow_int4_gb": 798.0,
+          "available_gb": 50.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 6350.0,
+          "overflow_int4_gb": 3342.0,
+          "available_gb": 50.0
+        }
+      },
+      "qwen3_8b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 62.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 82.0,
+          "overflow_int4_gb": 14.32,
+          "available_gb": 62.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 514.0,
+          "overflow_int4_gb": 243.28,
+          "available_gb": 62.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 62.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 226.0,
+          "overflow_int4_gb": 90.64,
+          "available_gb": 62.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1090.0,
+          "overflow_int4_gb": 548.56,
+          "available_gb": 62.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 62.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 514.0,
+          "overflow_int4_gb": 243.28,
+          "available_gb": 62.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2242.0,
+          "overflow_int4_gb": 1159.12,
+          "available_gb": 62.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 62.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1090.0,
+          "overflow_int4_gb": 548.56,
+          "available_gb": 62.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4546.0,
+          "overflow_int4_gb": 2380.24,
+          "available_gb": 62.0
+        }
+      },
+      "mistral_small_24b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 130.0,
+          "overflow_int4_gb": 54.8,
+          "available_gb": 30.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 610.0,
+          "overflow_int4_gb": 309.2,
+          "available_gb": 30.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 290.0,
+          "overflow_int4_gb": 139.6,
+          "available_gb": 30.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1250.0,
+          "overflow_int4_gb": 648.4,
+          "available_gb": 30.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 610.0,
+          "overflow_int4_gb": 309.2,
+          "available_gb": 30.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2530.0,
+          "overflow_int4_gb": 1326.8,
+          "available_gb": 30.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 10.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1250.0,
+          "overflow_int4_gb": 648.4,
+          "available_gb": 30.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 5090.0,
+          "overflow_int4_gb": 2683.6,
+          "available_gb": 30.0
+        }
+      }
+    },
+    "A100-40GB": {
+      "qwen25_05b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 37.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 37.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 11.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 37.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 37.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 37.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 59.0,
+          "overflow_int4_gb": 13.88,
+          "available_gb": 37.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 37.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 11.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 37.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 155.0,
+          "overflow_int4_gb": 64.76,
+          "available_gb": 37.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 37.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 59.0,
+          "overflow_int4_gb": 13.88,
+          "available_gb": 37.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 347.0,
+          "overflow_int4_gb": 166.52,
+          "available_gb": 37.0
+        }
+      },
+      "qwen25_1.8b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 34.4
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 34.4
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 77.6,
+          "overflow_int4_gb": 24.96,
+          "available_gb": 34.4
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 34.4
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 21.6,
+          "overflow_int4_gb": 0,
+          "available_gb": 34.4
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 189.6,
+          "overflow_int4_gb": 84.32,
+          "available_gb": 34.4
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 34.4
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 77.6,
+          "overflow_int4_gb": 24.96,
+          "available_gb": 34.4
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 413.6,
+          "overflow_int4_gb": 203.04,
+          "available_gb": 34.4
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 34.4
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 189.6,
+          "overflow_int4_gb": 84.32,
+          "available_gb": 34.4
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 861.6,
+          "overflow_int4_gb": 440.48,
+          "available_gb": 34.4
+        }
+      },
+      "qwen25_7b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 32.0,
+          "overflow_int4_gb": 5.68,
+          "available_gb": 24.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 200.0,
+          "overflow_int4_gb": 94.72,
+          "available_gb": 24.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 88.0,
+          "overflow_int4_gb": 35.36,
+          "available_gb": 24.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 424.0,
+          "overflow_int4_gb": 213.44,
+          "available_gb": 24.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 200.0,
+          "overflow_int4_gb": 94.72,
+          "available_gb": 24.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 872.0,
+          "overflow_int4_gb": 450.88,
+          "available_gb": 24.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 424.0,
+          "overflow_int4_gb": 213.44,
+          "available_gb": 24.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1768.0,
+          "overflow_int4_gb": 925.76,
+          "available_gb": 24.0
+        }
+      },
+      "mistral_7b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 104.0,
+          "overflow_int4_gb": 43.84,
+          "available_gb": 24.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 488.0,
+          "overflow_int4_gb": 247.36,
+          "available_gb": 24.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 232.0,
+          "overflow_int4_gb": 111.68,
+          "available_gb": 24.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1000.0,
+          "overflow_int4_gb": 518.72,
+          "available_gb": 24.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 488.0,
+          "overflow_int4_gb": 247.36,
+          "available_gb": 24.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2024.0,
+          "overflow_int4_gb": 1061.44,
+          "available_gb": 24.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 8.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1000.0,
+          "overflow_int4_gb": 518.72,
+          "available_gb": 24.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4072.0,
+          "overflow_int4_gb": 2146.88,
+          "available_gb": 24.0
+        }
+      },
+      "llama31_8b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 22.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 106.0,
+          "overflow_int4_gb": 45.84,
+          "available_gb": 22.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 490.0,
+          "overflow_int4_gb": 249.36,
+          "available_gb": 22.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 22.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 234.0,
+          "overflow_int4_gb": 113.68,
+          "available_gb": 22.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1002.0,
+          "overflow_int4_gb": 520.72,
+          "available_gb": 22.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 22.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 490.0,
+          "overflow_int4_gb": 249.36,
+          "available_gb": 22.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2026.0,
+          "overflow_int4_gb": 1063.44,
+          "available_gb": 22.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 10.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 22.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1002.0,
+          "overflow_int4_gb": 520.72,
+          "available_gb": 22.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4074.0,
+          "overflow_int4_gb": 2148.88,
+          "available_gb": 22.0
+        }
+      },
+      "nemotron3_nano": {
+        "T=32768_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1.0,
+          "overflow_int4_gb": 0.53,
+          "available_gb": 0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 32.0,
+          "overflow_int4_gb": 16.96,
+          "available_gb": 0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 128.0,
+          "overflow_int4_gb": 67.84,
+          "available_gb": 0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2.0,
+          "overflow_int4_gb": 1.06,
+          "available_gb": 0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 64.0,
+          "overflow_int4_gb": 33.92,
+          "available_gb": 0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 256.0,
+          "overflow_int4_gb": 135.68,
+          "available_gb": 0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4.0,
+          "overflow_int4_gb": 2.12,
+          "available_gb": 0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 128.0,
+          "overflow_int4_gb": 67.84,
+          "available_gb": 0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 512.0,
+          "overflow_int4_gb": 271.36,
+          "available_gb": 0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 8.0,
+          "overflow_int4_gb": 4.24,
+          "available_gb": 0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 256.0,
+          "overflow_int4_gb": 135.68,
+          "available_gb": 0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1024.0,
+          "overflow_int4_gb": 542.72,
+          "available_gb": 0
+        }
+      },
+      "deepseek_mla": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 32.0,
+          "overflow_int4_gb": 5.68,
+          "available_gb": 24.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 4.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 88.0,
+          "overflow_int4_gb": 35.36,
+          "available_gb": 24.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 32.0,
+          "overflow_int4_gb": 5.68,
+          "available_gb": 24.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 200.0,
+          "overflow_int4_gb": 94.72,
+          "available_gb": 24.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 88.0,
+          "overflow_int4_gb": 35.36,
+          "available_gb": 24.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 424.0,
+          "overflow_int4_gb": 213.44,
+          "available_gb": 24.0
+        }
+      },
+      "gemma3_4b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 106.0,
+          "overflow_int4_gb": 42.08,
+          "available_gb": 30.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 514.0,
+          "overflow_int4_gb": 258.32,
+          "available_gb": 30.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 242.0,
+          "overflow_int4_gb": 114.16,
+          "available_gb": 30.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1058.0,
+          "overflow_int4_gb": 546.64,
+          "available_gb": 30.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 514.0,
+          "overflow_int4_gb": 258.32,
+          "available_gb": 30.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2146.0,
+          "overflow_int4_gb": 1123.28,
+          "available_gb": 30.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 4.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1058.0,
+          "overflow_int4_gb": 546.64,
+          "available_gb": 30.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4322.0,
+          "overflow_int4_gb": 2276.56,
+          "available_gb": 30.0
+        }
+      },
+      "gemma3_12b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 14.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 370.0,
+          "overflow_int4_gb": 189.52,
+          "available_gb": 14.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1522.0,
+          "overflow_int4_gb": 800.08,
+          "available_gb": 14.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 10.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 14.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 754.0,
+          "overflow_int4_gb": 393.04,
+          "available_gb": 14.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 3058.0,
+          "overflow_int4_gb": 1614.16,
+          "available_gb": 14.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 34.0,
+          "overflow_int4_gb": 11.44,
+          "available_gb": 14.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1522.0,
+          "overflow_int4_gb": 800.08,
+          "available_gb": 14.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 6130.0,
+          "overflow_int4_gb": 3242.32,
+          "available_gb": 14.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 82.0,
+          "overflow_int4_gb": 36.88,
+          "available_gb": 14.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 3058.0,
+          "overflow_int4_gb": 1614.16,
+          "available_gb": 14.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 12274.0,
+          "overflow_int4_gb": 6498.64,
+          "available_gb": 14.0
+        }
+      },
+      "gemma3n_e4b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 40.0,
+          "overflow_int4_gb": 7.1,
+          "available_gb": 30.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 250.0,
+          "overflow_int4_gb": 118.4,
+          "available_gb": 30.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 110.0,
+          "overflow_int4_gb": 44.2,
+          "available_gb": 30.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 530.0,
+          "overflow_int4_gb": 266.8,
+          "available_gb": 30.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 250.0,
+          "overflow_int4_gb": 118.4,
+          "available_gb": 30.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1090.0,
+          "overflow_int4_gb": 563.6,
+          "available_gb": 30.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 530.0,
+          "overflow_int4_gb": 266.8,
+          "available_gb": 30.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2210.0,
+          "overflow_int4_gb": 1157.2,
+          "available_gb": 30.0
+        }
+      },
+      "deepseek_r1_7b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 32.0,
+          "overflow_int4_gb": 5.68,
+          "available_gb": 24.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 200.0,
+          "overflow_int4_gb": 94.72,
+          "available_gb": 24.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 88.0,
+          "overflow_int4_gb": 35.36,
+          "available_gb": 24.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 424.0,
+          "overflow_int4_gb": 213.44,
+          "available_gb": 24.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 200.0,
+          "overflow_int4_gb": 94.72,
+          "available_gb": 24.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 872.0,
+          "overflow_int4_gb": 450.88,
+          "available_gb": 24.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 24.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 424.0,
+          "overflow_int4_gb": 213.44,
+          "available_gb": 24.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1768.0,
+          "overflow_int4_gb": 925.76,
+          "available_gb": 24.0
+        }
+      },
+      "phi4_14b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 10.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 190.0,
+          "overflow_int4_gb": 96.0,
+          "available_gb": 10.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 790.0,
+          "overflow_int4_gb": 414.0,
+          "available_gb": 10.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 2.5,
+          "overflow_int4_gb": 0,
+          "available_gb": 10.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 390.0,
+          "overflow_int4_gb": 202.0,
+          "available_gb": 10.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1590.0,
+          "overflow_int4_gb": 838.0,
+          "available_gb": 10.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 15.0,
+          "overflow_int4_gb": 3.25,
+          "available_gb": 10.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 790.0,
+          "overflow_int4_gb": 414.0,
+          "available_gb": 10.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 3190.0,
+          "overflow_int4_gb": 1686.0,
+          "available_gb": 10.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 40.0,
+          "overflow_int4_gb": 16.5,
+          "available_gb": 10.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1590.0,
+          "overflow_int4_gb": 838.0,
+          "available_gb": 10.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 6390.0,
+          "overflow_int4_gb": 3382.0,
+          "available_gb": 10.0
+        }
+      },
+      "qwen3_8b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 22.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 122.0,
+          "overflow_int4_gb": 54.32,
+          "available_gb": 22.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 554.0,
+          "overflow_int4_gb": 283.28,
+          "available_gb": 22.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 22.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 266.0,
+          "overflow_int4_gb": 130.64,
+          "available_gb": 22.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1130.0,
+          "overflow_int4_gb": 588.56,
+          "available_gb": 22.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 22.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 554.0,
+          "overflow_int4_gb": 283.28,
+          "available_gb": 22.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2282.0,
+          "overflow_int4_gb": 1199.12,
+          "available_gb": 22.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 14.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 22.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1130.0,
+          "overflow_int4_gb": 588.56,
+          "available_gb": 22.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4586.0,
+          "overflow_int4_gb": 2420.24,
+          "available_gb": 22.0
+        }
+      },
+      "mistral_small_24b": {
+        "T=32768_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 5.0,
+          "overflow_int4_gb": 2.65,
+          "available_gb": 0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 160.0,
+          "overflow_int4_gb": 84.8,
+          "available_gb": 0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 640.0,
+          "overflow_int4_gb": 339.2,
+          "available_gb": 0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 10.0,
+          "overflow_int4_gb": 5.3,
+          "available_gb": 0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 320.0,
+          "overflow_int4_gb": 169.6,
+          "available_gb": 0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1280.0,
+          "overflow_int4_gb": 678.4,
+          "available_gb": 0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 20.0,
+          "overflow_int4_gb": 10.6,
+          "available_gb": 0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 640.0,
+          "overflow_int4_gb": 339.2,
+          "available_gb": 0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2560.0,
+          "overflow_int4_gb": 1356.8,
+          "available_gb": 0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 40.0,
+          "overflow_int4_gb": 21.2,
+          "available_gb": 0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1280.0,
+          "overflow_int4_gb": 678.4,
+          "available_gb": 0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 5120.0,
+          "overflow_int4_gb": 2713.6,
+          "available_gb": 0
+        }
+      }
+    },
+    "L40S-48GB": {
+      "qwen25_05b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 45.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 45.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 3.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 45.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 45.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 45.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 51.0,
+          "overflow_int4_gb": 5.88,
+          "available_gb": 45.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 45.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 3.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 45.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 147.0,
+          "overflow_int4_gb": 56.76,
+          "available_gb": 45.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 45.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 51.0,
+          "overflow_int4_gb": 5.88,
+          "available_gb": 45.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 339.0,
+          "overflow_int4_gb": 158.52,
+          "available_gb": 45.0
+        }
+      },
+      "qwen25_1.8b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 42.4
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 42.4
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 69.6,
+          "overflow_int4_gb": 16.96,
+          "available_gb": 42.4
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 42.4
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 13.6,
+          "overflow_int4_gb": 0,
+          "available_gb": 42.4
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 181.6,
+          "overflow_int4_gb": 76.32,
+          "available_gb": 42.4
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 42.4
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 69.6,
+          "overflow_int4_gb": 16.96,
+          "available_gb": 42.4
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 405.6,
+          "overflow_int4_gb": 195.04,
+          "available_gb": 42.4
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 42.4
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 181.6,
+          "overflow_int4_gb": 76.32,
+          "available_gb": 42.4
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 853.6,
+          "overflow_int4_gb": 432.48,
+          "available_gb": 42.4
+        }
+      },
+      "qwen25_7b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 24.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 192.0,
+          "overflow_int4_gb": 86.72,
+          "available_gb": 32.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 80.0,
+          "overflow_int4_gb": 27.36,
+          "available_gb": 32.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 416.0,
+          "overflow_int4_gb": 205.44,
+          "available_gb": 32.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 192.0,
+          "overflow_int4_gb": 86.72,
+          "available_gb": 32.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 864.0,
+          "overflow_int4_gb": 442.88,
+          "available_gb": 32.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 416.0,
+          "overflow_int4_gb": 205.44,
+          "available_gb": 32.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1760.0,
+          "overflow_int4_gb": 917.76,
+          "available_gb": 32.0
+        }
+      },
+      "mistral_7b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 96.0,
+          "overflow_int4_gb": 35.84,
+          "available_gb": 32.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 480.0,
+          "overflow_int4_gb": 239.36,
+          "available_gb": 32.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 224.0,
+          "overflow_int4_gb": 103.68,
+          "available_gb": 32.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 992.0,
+          "overflow_int4_gb": 510.72,
+          "available_gb": 32.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 480.0,
+          "overflow_int4_gb": 239.36,
+          "available_gb": 32.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2016.0,
+          "overflow_int4_gb": 1053.44,
+          "available_gb": 32.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 992.0,
+          "overflow_int4_gb": 510.72,
+          "available_gb": 32.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4064.0,
+          "overflow_int4_gb": 2138.88,
+          "available_gb": 32.0
+        }
+      },
+      "llama31_8b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 98.0,
+          "overflow_int4_gb": 37.84,
+          "available_gb": 30.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 482.0,
+          "overflow_int4_gb": 241.36,
+          "available_gb": 30.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 226.0,
+          "overflow_int4_gb": 105.68,
+          "available_gb": 30.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 994.0,
+          "overflow_int4_gb": 512.72,
+          "available_gb": 30.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 482.0,
+          "overflow_int4_gb": 241.36,
+          "available_gb": 30.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2018.0,
+          "overflow_int4_gb": 1055.44,
+          "available_gb": 30.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 2.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 994.0,
+          "overflow_int4_gb": 512.72,
+          "available_gb": 30.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4066.0,
+          "overflow_int4_gb": 2140.88,
+          "available_gb": 30.0
+        }
+      },
+      "nemotron3_nano": {
+        "T=32768_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1.0,
+          "overflow_int4_gb": 0.53,
+          "available_gb": 0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 32.0,
+          "overflow_int4_gb": 16.96,
+          "available_gb": 0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 128.0,
+          "overflow_int4_gb": 67.84,
+          "available_gb": 0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2.0,
+          "overflow_int4_gb": 1.06,
+          "available_gb": 0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 64.0,
+          "overflow_int4_gb": 33.92,
+          "available_gb": 0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 256.0,
+          "overflow_int4_gb": 135.68,
+          "available_gb": 0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4.0,
+          "overflow_int4_gb": 2.12,
+          "available_gb": 0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 128.0,
+          "overflow_int4_gb": 67.84,
+          "available_gb": 0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 512.0,
+          "overflow_int4_gb": 271.36,
+          "available_gb": 0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 8.0,
+          "overflow_int4_gb": 4.24,
+          "available_gb": 0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 256.0,
+          "overflow_int4_gb": 135.68,
+          "available_gb": 0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1024.0,
+          "overflow_int4_gb": 542.72,
+          "available_gb": 0
+        }
+      },
+      "deepseek_mla": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 24.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 80.0,
+          "overflow_int4_gb": 27.36,
+          "available_gb": 32.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 24.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 192.0,
+          "overflow_int4_gb": 86.72,
+          "available_gb": 32.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 80.0,
+          "overflow_int4_gb": 27.36,
+          "available_gb": 32.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 416.0,
+          "overflow_int4_gb": 205.44,
+          "available_gb": 32.0
+        }
+      },
+      "gemma3_4b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 38.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 98.0,
+          "overflow_int4_gb": 34.08,
+          "available_gb": 38.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 506.0,
+          "overflow_int4_gb": 250.32,
+          "available_gb": 38.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 38.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 234.0,
+          "overflow_int4_gb": 106.16,
+          "available_gb": 38.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1050.0,
+          "overflow_int4_gb": 538.64,
+          "available_gb": 38.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 38.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 506.0,
+          "overflow_int4_gb": 250.32,
+          "available_gb": 38.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2138.0,
+          "overflow_int4_gb": 1115.28,
+          "available_gb": 38.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 38.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1050.0,
+          "overflow_int4_gb": 538.64,
+          "available_gb": 38.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4314.0,
+          "overflow_int4_gb": 2268.56,
+          "available_gb": 38.0
+        }
+      },
+      "gemma3_12b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 22.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 362.0,
+          "overflow_int4_gb": 181.52,
+          "available_gb": 22.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1514.0,
+          "overflow_int4_gb": 792.08,
+          "available_gb": 22.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 2.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 22.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 746.0,
+          "overflow_int4_gb": 385.04,
+          "available_gb": 22.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 3050.0,
+          "overflow_int4_gb": 1606.16,
+          "available_gb": 22.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 26.0,
+          "overflow_int4_gb": 3.44,
+          "available_gb": 22.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1514.0,
+          "overflow_int4_gb": 792.08,
+          "available_gb": 22.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 6122.0,
+          "overflow_int4_gb": 3234.32,
+          "available_gb": 22.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 74.0,
+          "overflow_int4_gb": 28.88,
+          "available_gb": 22.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 3050.0,
+          "overflow_int4_gb": 1606.16,
+          "available_gb": 22.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 12266.0,
+          "overflow_int4_gb": 6490.64,
+          "available_gb": 22.0
+        }
+      },
+      "gemma3n_e4b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 38.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 32.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 38.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 242.0,
+          "overflow_int4_gb": 110.4,
+          "available_gb": 38.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 38.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 102.0,
+          "overflow_int4_gb": 36.2,
+          "available_gb": 38.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 522.0,
+          "overflow_int4_gb": 258.8,
+          "available_gb": 38.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 38.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 242.0,
+          "overflow_int4_gb": 110.4,
+          "available_gb": 38.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1082.0,
+          "overflow_int4_gb": 555.6,
+          "available_gb": 38.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 38.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 522.0,
+          "overflow_int4_gb": 258.8,
+          "available_gb": 38.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2202.0,
+          "overflow_int4_gb": 1149.2,
+          "available_gb": 38.0
+        }
+      },
+      "deepseek_r1_7b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 24.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 192.0,
+          "overflow_int4_gb": 86.72,
+          "available_gb": 32.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 80.0,
+          "overflow_int4_gb": 27.36,
+          "available_gb": 32.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 416.0,
+          "overflow_int4_gb": 205.44,
+          "available_gb": 32.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 192.0,
+          "overflow_int4_gb": 86.72,
+          "available_gb": 32.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 864.0,
+          "overflow_int4_gb": 442.88,
+          "available_gb": 32.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 32.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 416.0,
+          "overflow_int4_gb": 205.44,
+          "available_gb": 32.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1760.0,
+          "overflow_int4_gb": 917.76,
+          "available_gb": 32.0
+        }
+      },
+      "phi4_14b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 18.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 182.0,
+          "overflow_int4_gb": 88.0,
+          "available_gb": 18.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 782.0,
+          "overflow_int4_gb": 406.0,
+          "available_gb": 18.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 18.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 382.0,
+          "overflow_int4_gb": 194.0,
+          "available_gb": 18.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1582.0,
+          "overflow_int4_gb": 830.0,
+          "available_gb": 18.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 7.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 18.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 782.0,
+          "overflow_int4_gb": 406.0,
+          "available_gb": 18.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 3182.0,
+          "overflow_int4_gb": 1678.0,
+          "available_gb": 18.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 32.0,
+          "overflow_int4_gb": 8.5,
+          "available_gb": 18.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1582.0,
+          "overflow_int4_gb": 830.0,
+          "available_gb": 18.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 6382.0,
+          "overflow_int4_gb": 3374.0,
+          "available_gb": 18.0
+        }
+      },
+      "qwen3_8b": {
+        "T=32768_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 114.0,
+          "overflow_int4_gb": 46.32,
+          "available_gb": 30.0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 546.0,
+          "overflow_int4_gb": 275.28,
+          "available_gb": 30.0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 258.0,
+          "overflow_int4_gb": 122.64,
+          "available_gb": 30.0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1122.0,
+          "overflow_int4_gb": 580.56,
+          "available_gb": 30.0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": true,
+          "fits_int4": true,
+          "overflow_fp16_gb": 0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 546.0,
+          "overflow_int4_gb": 275.28,
+          "available_gb": 30.0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2274.0,
+          "overflow_int4_gb": 1191.12,
+          "available_gb": 30.0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": true,
+          "overflow_fp16_gb": 6.0,
+          "overflow_int4_gb": 0,
+          "available_gb": 30.0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1122.0,
+          "overflow_int4_gb": 580.56,
+          "available_gb": 30.0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 4578.0,
+          "overflow_int4_gb": 2412.24,
+          "available_gb": 30.0
+        }
+      },
+      "mistral_small_24b": {
+        "T=32768_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 5.0,
+          "overflow_int4_gb": 2.65,
+          "available_gb": 0
+        },
+        "T=32768_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 160.0,
+          "overflow_int4_gb": 84.8,
+          "available_gb": 0
+        },
+        "T=32768_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 640.0,
+          "overflow_int4_gb": 339.2,
+          "available_gb": 0
+        },
+        "T=65536_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 10.0,
+          "overflow_int4_gb": 5.3,
+          "available_gb": 0
+        },
+        "T=65536_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 320.0,
+          "overflow_int4_gb": 169.6,
+          "available_gb": 0
+        },
+        "T=65536_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1280.0,
+          "overflow_int4_gb": 678.4,
+          "available_gb": 0
+        },
+        "T=131072_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 20.0,
+          "overflow_int4_gb": 10.6,
+          "available_gb": 0
+        },
+        "T=131072_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 640.0,
+          "overflow_int4_gb": 339.2,
+          "available_gb": 0
+        },
+        "T=131072_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 2560.0,
+          "overflow_int4_gb": 1356.8,
+          "available_gb": 0
+        },
+        "T=262144_B=1": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 40.0,
+          "overflow_int4_gb": 21.2,
+          "available_gb": 0
+        },
+        "T=262144_B=32": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 1280.0,
+          "overflow_int4_gb": 678.4,
+          "available_gb": 0
+        },
+        "T=262144_B=128": {
+          "fits_fp16": false,
+          "fits_int4": false,
+          "overflow_fp16_gb": 5120.0,
+          "overflow_int4_gb": 2713.6,
+          "available_gb": 0
+        }
+      }
+    }
+  }
+}

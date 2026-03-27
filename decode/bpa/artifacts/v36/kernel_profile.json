@@ -1,0 +1,188 @@
+{
+  "hardware_limits": {
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "hbm_bandwidth_GBs": 2886.75,
+    "l2_bandwidth_GBs": 295.1,
+    "peak_fp16_TFLOPs": 750.161,
+    "gemm_sustained_TFLOPs": 416.906,
+    "ridge_point": 259.86
+  },
+  "validation": [
+    {
+      "config": "qwen25_05b",
+      "max_abs_error": 0.0001220703125,
+      "max_rel_error": 0.000543478236672969,
+      "pass": true
+    },
+    {
+      "config": "qwen25_1.8b",
+      "max_abs_error": 0.0001220703125,
+      "max_rel_error": 0.00042955324948926025,
+      "pass": true
+    },
+    {
+      "config": "qwen25_7b",
+      "max_abs_error": 0.000244140625,
+      "max_rel_error": 0.0008285003861347342,
+      "pass": true
+    },
+    {
+      "config": "mistral_7b",
+      "max_abs_error": 0.0001220703125,
+      "max_rel_error": 0.0003843197419356367,
+      "pass": true
+    },
+    {
+      "config": "llama31_8b",
+      "max_abs_error": 0.000244140625,
+      "max_rel_error": 0.0007662835008528948,
+      "pass": true
+    },
+    {
+      "config": "nemotron3_nano",
+      "max_abs_error": 0.000244140625,
+      "max_rel_error": 0.0008510638001195121,
+      "pass": true
+    },
+    {
+      "config": "deepseek_mla",
+      "max_abs_error": 0.000244140625,
+      "max_rel_error": 0.0007849293311218953,
+      "pass": true
+    }
+  ],
+  "decode_summary": {
+    "qwen25_05b": {
+      "speedup_min": 0.26,
+      "speedup_max": 3.33,
+      "speedup_mean": 1.62,
+      "n_configs": 42
+    },
+    "qwen25_1.8b": {
+      "speedup_min": 0.3,
+      "speedup_max": 4.12,
+      "speedup_mean": 1.83,
+      "n_configs": 42
+    },
+    "qwen25_7b": {
+      "speedup_min": 0.43,
+      "speedup_max": 3.69,
+      "speedup_mean": 2.08,
+      "n_configs": 41
+    },
+    "mistral_7b": {
+      "speedup_min": 0.5,
+      "speedup_max": 4.09,
+      "speedup_mean": 2.31,
+      "n_configs": 41
+    },
+    "llama31_8b": {
+      "speedup_min": 0.5,
+      "speedup_max": 4.06,
+      "speedup_mean": 2.3,
+      "n_configs": 41
+    },
+    "nemotron3_nano": {
+      "speedup_min": 0.58,
+      "speedup_max": 4.16,
+      "speedup_mean": 2.33,
+      "n_configs": 41
+    },
+    "deepseek_mla": {
+      "speedup_min": 0.27,
+      "speedup_max": 3.41,
+      "speedup_mean": 1.88,
+      "n_configs": 9
+    }
+  },
+  "head_dim_results": {
+    "head_dims": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "P0_ms": [
+      0.05790200084447861,
+      0.058788000023923814,
+      0.0814601982710883,
+      0.133013998856768
+    ],
+    "P3_ms": [
+      0.16567200364079326,
+      0.20473219628911465,
+      0.348370400024578,
+      0.5436904000816867
+    ]
+  },
+  "bandwidth_scaling": {
+    "R_values": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "config": "qwen25_05b",
+    "P0_ms": [
+      0.07016220188234001,
+      0.09140000038314611,
+      0.1322841999353841,
+      0.21502020535990596,
+      0.378860198543407
+    ],
+    "P1_ms": [
+      0.31206819985527545,
+      0.5246303975582123,
+      1.0192730027483776,
+      1.9742457981919868,
+      3.812385199125856
+    ],
+    "P3_ms": [
+      0.20052219333592802,
+      0.20080220128875226,
+      0.20105820149183273,
+      0.20187220361549407,
+      0.2038802020251751
+    ],
+    "P5_ms": [
+      0.19915220327675343,
+      0.19756420224439353,
+      0.20419019856490195,
+      0.19766819896176457,
+      0.19929420086555183
+    ]
+  },
+  "quant_sweep": {
+    "INT8": {
+      "latency_ms": 0.4457,
+      "speedup_vs_fp16": 0.8,
+      "max_rel_error": 0.007344,
+      "compression_ratio": 2.0,
+      "kv_bytes_MB": 16.78
+    },
+    "INT4": {
+      "latency_ms": 0.5998,
+      "speedup_vs_fp16": 0.59,
+      "max_rel_error": 0.139789,
+      "compression_ratio": 4.0,
+      "kv_bytes_MB": 8.39
+    },
+    "INT2": {
+      "latency_ms": 0.7357,
+      "speedup_vs_fp16": 0.48,
+      "max_rel_error": 1.43517,
+      "compression_ratio": 8.0,
+      "kv_bytes_MB": 4.19
+    }
+  },
+  "kernel_variants": {
+    "baseline_BN64": 0.2801,
+    "vectorized_BN128": 0.2009,
+    "adaptive_P3": 0.2014,
+    "small_BN32": 0.3314,
+    "large_BN256": 0.1564
+  },
+  "total_runs": 1460,
+  "timestamp": "2026-03-05T00:31:57.235523"
+}

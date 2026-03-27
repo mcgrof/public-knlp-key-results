@@ -1,0 +1,114 @@
+A new version of the following files was downloaded from https://huggingface.co/tiiuae/falcon-40b:
+- configuration_falcon.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+WARNING: You are currently loading Falcon using legacy code contained in the model repository. Falcon has now been fully ported into the Hugging Face transformers library. For the most up-to-date and high-performance version of the Falcon model code, please update to the latest version of transformers and then load the model without the trust_remote_code=True argument.
+
+A new version of the following files was downloaded from https://huggingface.co/tiiuae/falcon-40b:
+- modeling_falcon.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+
+############################################################
+# tiiuae/falcon-40b
+############################################################
+Loading tiiuae/falcon-40b in bfloat16...
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files:  11%|█         | 1/9 [00:17<02:20, 17.50s/it]
+Fetching 9 files:  44%|████▍     | 4/9 [00:19<00:19,  3.85s/it]
+Fetching 9 files:  56%|█████▌    | 5/9 [00:20<00:12,  3.00s/it]
+Fetching 9 files: 100%|██████████| 9/9 [00:27<00:00,  2.31s/it]
+Fetching 9 files: 100%|██████████| 9/9 [00:27<00:00,  3.09s/it]
+
+Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s]
+Loading checkpoint shards:  11%|█         | 1/9 [00:01<00:10,  1.27s/it]
+Loading checkpoint shards:  22%|██▏       | 2/9 [00:02<00:08,  1.28s/it]
+Loading checkpoint shards:  33%|███▎      | 3/9 [00:04<00:08,  1.40s/it]
+Loading checkpoint shards:  44%|████▍     | 4/9 [00:05<00:06,  1.36s/it]
+Loading checkpoint shards:  56%|█████▌    | 5/9 [00:06<00:05,  1.40s/it]
+Loading checkpoint shards:  67%|██████▋   | 6/9 [00:08<00:04,  1.37s/it]
+Loading checkpoint shards:  78%|███████▊  | 7/9 [00:09<00:02,  1.40s/it]
+Loading checkpoint shards:  89%|████████▉ | 8/9 [00:11<00:01,  1.39s/it]
+Loading checkpoint shards: 100%|██████████| 9/9 [00:12<00:00,  1.27s/it]
+Loading checkpoint shards: 100%|██████████| 9/9 [00:12<00:00,  1.33s/it]
+Loaded in 42s
+Device map uses: {'0'}
+  GPU modules: 1, CPU modules: 0
+Transformers version: 4.57.6
+query_key_value output shape: [1, 4, 9216]
+Fused QKV: True
+Model: 41.3B params, 60 layers, GPU: NVIDIA H200 (150GB)
+
+=== Test 1: KV Precision Asymmetry ===
+  Computing baseline...
+    prompt 1/5... (1s)
+    prompt 2/5... (1s)
+    prompt 3/5... (1s)
+    prompt 4/5... (1s)
+    prompt 5/5... (1s)
+  K_FP16/V_FP16... err=0.0000 agree=1.0000 ppl_d=+0.00% (0s)
+  K_FP16/V_INT4... err=0.0451 agree=0.9749 ppl_d=-0.56% (6s)
+  K_INT8/V_INT4... err=0.0452 agree=0.9754 ppl_d=-0.45% (6s)
+  K_INT4/V_INT4... err=0.1661 agree=0.9153 ppl_d=+1.03% (6s)
+
+=== Test 2: Ratio Classifier ===
+  INT6 keys... err=0.0321
+  INT8 keys... err=0.0187
+  Ratio: 1.71 (needs_fp16=False)
+
+=== Test 3: KV Cache Size ===
+  L=2048: KV_FP16=0.25GB KV_INT4=0.06GB frac=0.3% status=ok
+  L=4096: KV_FP16=0.50GB KV_INT4=0.13GB frac=0.6% status=ok
+  L=8192: KV_FP16=1.01GB KV_INT4=0.25GB frac=1.2% status=ok
+
+=== Test 4: Decode Latency ===
+  Warmup...
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:11 for open-end generation.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Traceback (most recent call last):
+  File "/workspace/experiment.py", line 541, in <module>
+    result = run_all_tests(model_name, dtype_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/experiment.py", line 462, in run_all_tests
+    _ = model.generate(
+        ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/transformers/generation/utils.py", line 2566, in generate
+    result = decoding_method(
+             ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/transformers/generation/utils.py", line 2786, in _sample
+    outputs = self(**model_inputs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.cache/huggingface/modules/transformers_modules/tiiuae/falcon_hyphen_40b/05ab2ee8d6b593bdbab17d728de5c028a7a94d83/modeling_falcon.py", line 900, in forward
+    transformer_outputs = self.transformer(
+                          ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.cache/huggingface/modules/transformers_modules/tiiuae/falcon_hyphen_40b/05ab2ee8d6b593bdbab17d728de5c028a7a94d83/modeling_falcon.py", line 734, in forward
+    past_key_values = self._convert_to_rw_cache(past_key_values)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.cache/huggingface/modules/transformers_modules/tiiuae/falcon_hyphen_40b/05ab2ee8d6b593bdbab17d728de5c028a7a94d83/modeling_falcon.py", line 622, in _convert_to_rw_cache
+    batch_size, num_heads, kv_length, head_dim = past_key_value[0][0].shape
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'shape'
+FAILED: 'NoneType' object has no attribute 'shape'
+
+Saved: /workspace/large_falcon_40b.json
+
+Total time: 78s
+
+DONE

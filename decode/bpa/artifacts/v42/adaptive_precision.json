@@ -1,0 +1,190 @@
+{
+  "qwen25_7b": {
+    "configs": {
+      "int4_all": {
+        "n_int8": 0,
+        "n_int4": 28,
+        "ppl": 6.513803593511983,
+        "kv_ratio": 0.53,
+        "description": "INT4 everywhere"
+      },
+      "top4_int8": {
+        "n_int8": 4,
+        "n_int4": 24,
+        "int8_layers": [
+          15,
+          18,
+          19,
+          27
+        ],
+        "ppl": 6.496529932108304,
+        "kv_ratio": 0.5971,
+        "description": "Top-4 sensitive layers INT8"
+      },
+      "top8_int8": {
+        "n_int8": 8,
+        "n_int4": 20,
+        "int8_layers": [
+          13,
+          15,
+          16,
+          18,
+          19,
+          21,
+          24,
+          27
+        ],
+        "ppl": 6.485796526169578,
+        "kv_ratio": 0.6643,
+        "description": "Top-8 sensitive layers INT8"
+      },
+      "adaptive": {
+        "n_int8": 3,
+        "n_int4": 25,
+        "int8_layers": [
+          18,
+          19,
+          27
+        ],
+        "ppl": 6.499610997927299,
+        "kv_ratio": 0.5804,
+        "threshold": 0.003252,
+        "description": "Adaptive (imp > 0.003252): 3 INT8 layers"
+      },
+      "fp16_all": {
+        "n_int8": 28,
+        "n_int4": 0,
+        "ppl": 6.464290294610541,
+        "kv_ratio": 1.0,
+        "description": "FP16 everywhere"
+      }
+    },
+    "n_layers": 28,
+    "ppl_fp16": 6.464290294610541
+  },
+  "mistral_7b": {
+    "configs": {
+      "int4_all": {
+        "n_int8": 0,
+        "n_int4": 32,
+        "ppl": 4.907820224192843,
+        "kv_ratio": 0.53,
+        "description": "INT4 everywhere"
+      },
+      "top4_int8": {
+        "n_int8": 4,
+        "n_int4": 28,
+        "int8_layers": [
+          0,
+          1,
+          3,
+          12
+        ],
+        "ppl": 4.887415327894905,
+        "kv_ratio": 0.5887,
+        "description": "Top-4 sensitive layers INT8"
+      },
+      "top8_int8": {
+        "n_int8": 8,
+        "n_int4": 24,
+        "int8_layers": [
+          0,
+          1,
+          3,
+          4,
+          6,
+          11,
+          12,
+          14
+        ],
+        "ppl": 4.878414547905417,
+        "kv_ratio": 0.6475,
+        "description": "Top-8 sensitive layers INT8"
+      },
+      "adaptive": {
+        "n_int8": 3,
+        "n_int4": 29,
+        "int8_layers": [
+          0,
+          1,
+          3
+        ],
+        "ppl": 4.890539897011202,
+        "kv_ratio": 0.5741,
+        "threshold": 0.003265,
+        "description": "Adaptive (imp > 0.003265): 3 INT8 layers"
+      },
+      "fp16_all": {
+        "n_int8": 32,
+        "n_int4": 0,
+        "ppl": 4.863931976049263,
+        "kv_ratio": 1.0,
+        "description": "FP16 everywhere"
+      }
+    },
+    "n_layers": 32,
+    "ppl_fp16": 4.863931976049263
+  },
+  "llama2_7b": {
+    "configs": {
+      "int4_all": {
+        "n_int8": 0,
+        "n_int4": 32,
+        "ppl": 5.083306764636347,
+        "kv_ratio": 0.53,
+        "description": "INT4 everywhere"
+      },
+      "top4_int8": {
+        "n_int8": 4,
+        "n_int4": 28,
+        "int8_layers": [
+          1,
+          6,
+          10,
+          13
+        ],
+        "ppl": 5.06008676266257,
+        "kv_ratio": 0.5887,
+        "description": "Top-4 sensitive layers INT8"
+      },
+      "top8_int8": {
+        "n_int8": 8,
+        "n_int4": 24,
+        "int8_layers": [
+          1,
+          3,
+          6,
+          7,
+          10,
+          11,
+          13,
+          14
+        ],
+        "ppl": 5.049467167328442,
+        "kv_ratio": 0.6475,
+        "description": "Top-8 sensitive layers INT8"
+      },
+      "adaptive": {
+        "n_int8": 2,
+        "n_int4": 30,
+        "int8_layers": [
+          1,
+          10
+        ],
+        "ppl": 5.067192995477799,
+        "kv_ratio": 0.5594,
+        "threshold": 0.003931,
+        "description": "Adaptive (imp > 0.003931): 2 INT8 layers"
+      },
+      "fp16_all": {
+        "n_int8": 32,
+        "n_int4": 0,
+        "ppl": 5.038461338499165,
+        "kv_ratio": 1.0,
+        "description": "FP16 everywhere"
+      }
+    },
+    "n_layers": 32,
+    "ppl_fp16": 5.038461338499165
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "variant": "cheap_ra_rank",
+  "seq_len": 1024,
+  "seed": 3,
+  "far_budget": 4,
+  "mode": "cheap-features",
+  "ppl_mean": 256.63962071736654,
+  "ppl_std": 96.9793252719169,
+  "enabled_rate": 0.69921875,
+  "effective_kept_tokens": 358.375,
+  "kv_bytes_read_per_token": 16035840.0,
+  "peak_kv_bytes": 37748736,
+  "flops_relative": 0.4248046875,
+  "wall_ms_per_token": 0.9266370580007788,
+  "gate_ms_per_token": 0.6338526773106423,
+  "fwd_ms_per_token": 0.2947914354081149,
+  "budget_mean": 4.0,
+  "budget_p95": 4.0,
+  "budget_p99": 4.0,
+  "tokens_seen": 30720,
+  "n_eval_batches": 30,
+  "extra": {
+    "cheap_strategy": "ra_rank",
+    "ema_gamma": 0.0
+  }
+}

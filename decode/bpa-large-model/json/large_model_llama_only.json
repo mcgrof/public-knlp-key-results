@@ -1,0 +1,166 @@
+{
+  "meta-llama/Llama-3.1-70B-Instruct": {
+    "model_info": {
+      "model": "meta-llama/Llama-3.1-70B-Instruct",
+      "n_params": 70553706496,
+      "n_layers": 80,
+      "n_kv_heads": 8,
+      "head_dim": 128,
+      "dtype": "bfloat16",
+      "gpu": "NVIDIA H200",
+      "gpu_mem_gb": 150.120759296,
+      "load_time_s": 113.90855050086975,
+      "k_proj_shape": [
+        1,
+        4,
+        1024
+      ]
+    },
+    "kv_asymmetry": [
+      {
+        "label": "K_FP16/V_FP16",
+        "k_bits": 16,
+        "v_bits": 16,
+        "avg_logit_error": 0.0,
+        "avg_token_agreement": 1.0,
+        "avg_ppl_delta_pct": 0.0,
+        "elapsed_s": 3.0994415283203125e-06
+      },
+      {
+        "label": "K_FP16/V_INT4",
+        "k_bits": 16,
+        "v_bits": 4,
+        "avg_logit_error": 0.10767563283443451,
+        "avg_token_agreement": 0.7998046875,
+        "avg_ppl_delta_pct": -5.176798382789061,
+        "elapsed_s": 20.476008892059326
+      },
+      {
+        "label": "K_INT8/V_INT4",
+        "k_bits": 8,
+        "v_bits": 4,
+        "avg_logit_error": 0.10758360177278518,
+        "avg_token_agreement": 0.80087890625,
+        "avg_ppl_delta_pct": -5.180971658454,
+        "elapsed_s": 19.56785488128662
+      },
+      {
+        "label": "K_INT4/V_INT4",
+        "k_bits": 4,
+        "v_bits": 4,
+        "avg_logit_error": 0.28312318325042723,
+        "avg_token_agreement": 0.44130859375,
+        "avg_ppl_delta_pct": -3.1242501130943823,
+        "elapsed_s": 19.17928147315979
+      }
+    ],
+    "ratio_classifier": {
+      "logit_error_INT6": 0.029504797980189325,
+      "logit_error_INT8": 0.014768526889383793,
+      "ratio_INT6_INT8": 1.997815909547387,
+      "needs_fp16_keys": false,
+      "threshold": 3.0
+    },
+    "kv_cache_size": {
+      "model_size_gb": 141.107412992,
+      "per_seq_len": [
+        {
+          "seq_len": 2048,
+          "kv_cache_fp16_gb": 0.67108864,
+          "kv_cache_int4_gb": 0.16777216,
+          "kv_savings_gb": 0.5033164800000001,
+          "kv_fraction_of_total_fp16": 0.00473335965802401,
+          "gpu_mem_peak_gb": 135.762963968,
+          "gpu_mem_used_gb": 3.5662397440000007,
+          "status": "ok"
+        },
+        {
+          "seq_len": 4096,
+          "kv_cache_fp16_gb": 1.34217728,
+          "kv_cache_int4_gb": 0.33554432,
+          "kv_savings_gb": 1.0066329600000001,
+          "kv_fraction_of_total_fp16": 0.009422121028478798,
+          "gpu_mem_peak_gb": -1,
+          "gpu_mem_used_gb": -1,
+          "status": "oom"
+        },
+        {
+          "seq_len": 8192,
+          "kv_cache_fp16_gb": 2.68435456,
+          "kv_cache_int4_gb": 0.67108864,
+          "kv_savings_gb": 2.0132659200000003,
+          "kv_fraction_of_total_fp16": 0.018668346635555794,
+          "gpu_mem_peak_gb": -1,
+          "gpu_mem_used_gb": -1,
+          "status": "oom"
+        }
+      ]
+    },
+    "decode_latency": [
+      {
+        "label": "FP16/FP16",
+        "k_bits": 16,
+        "v_bits": 16,
+        "mean_ms_per_token": 964.6568665777644,
+        "mean_tokens_per_sec": 1.0366789581172964,
+        "all_latencies": [
+          {
+            "ms_per_token": 973.2209221273661,
+            "tokens_per_sec": 1.0275159290802107
+          },
+          {
+            "ms_per_token": 960.9499096311629,
+            "tokens_per_sec": 1.0406369676269864
+          },
+          {
+            "ms_per_token": 959.7997679747641,
+            "tokens_per_sec": 1.0418839776446922
+          }
+        ]
+      },
+      {
+        "label": "FP16/INT4",
+        "k_bits": 16,
+        "v_bits": 4,
+        "mean_ms_per_token": 72.90870007748406,
+        "mean_tokens_per_sec": 13.715787628449812,
+        "all_latencies": [
+          {
+            "ms_per_token": 72.94456783682108,
+            "tokens_per_sec": 13.709040023885347
+          },
+          {
+            "ms_per_token": 72.92239420115948,
+            "tokens_per_sec": 13.713208554857074
+          },
+          {
+            "ms_per_token": 72.8591381944716,
+            "tokens_per_sec": 13.725114306607018
+          }
+        ]
+      },
+      {
+        "label": "INT8/INT4",
+        "k_bits": 8,
+        "v_bits": 4,
+        "mean_ms_per_token": 73.09525538856785,
+        "mean_tokens_per_sec": 13.680804444069551,
+        "all_latencies": [
+          {
+            "ms_per_token": 73.04643416777253,
+            "tokens_per_sec": 13.68992218981158
+          },
+          {
+            "ms_per_token": 73.23546962812543,
+            "tokens_per_sec": 13.654585750290034
+          },
+          {
+            "ms_per_token": 73.00386236980557,
+            "tokens_per_sec": 13.69790539210704
+          }
+        ]
+      }
+    ],
+    "total_elapsed_s": 392.57666969299316
+  }
+}

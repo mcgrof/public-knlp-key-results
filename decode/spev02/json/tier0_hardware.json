@@ -1,0 +1,21 @@
+{
+  "stage": "tier0",
+  "test_name": "hardware_validation",
+  "timestamp": "2026-03-14T20:42:46.615644+00:00",
+  "gpu": {
+    "gpu_name": "NVIDIA A100-SXM4-80GB",
+    "memory_total_mib": 81920,
+    "memory_used_mib": 0,
+    "memory_free_mib": 81152,
+    "temperature_c": 39,
+    "power_draw_w": 67.1
+  },
+  "cpu_cores": 128,
+  "system_memory": "total        used        free      shared  buff/cache   available\nMem:            2003          65         318          30        1619        1888\nSwap:              0           0           0",
+  "disk_info": "Filesystem                   Size  Used Avail Use% Mounted on\nmfs#us-md-1.runpod.net:9421  299T  171T  129T  57% /workspace\noverlay                      120G   29G   92G  24% /\noverlay                      120G   29G   92G  24% /",
+  "lsblk": "NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS\nsr0          11:0    1 1024M  0 rom  \nnvme0n1     259:1    0  3.5T  0 disk \nnvme3n1     259:5    0  3.5T  0 disk \nnvme1n1     259:6    0  3.5T  0 disk \nnvme5n1     259:7    0  3.5T  0 disk \nnvme7n1     259:9    0  3.5T  0 disk \nnvme2n1     259:11   0  3.5T  0 disk \nnvme4n1     259:12   0  1.7T  0 disk \n|-nvme4n1p1 259:13   0    1G  0 part \n|-nvme4n1p2 259:14   0    2G  0 part \n`-nvme4n1p3 259:15   0  1.7T  0 part \nnvme6n1     259:16   0  1.7T  0 disk \nnvme9n1     259:19   0  3.5T  0 disk \nnvme8n1     259:20   0  3.5T  0 disk",
+  "has_nvme_device_nodes": false,
+  "disk_write_speed": "268435456 bytes (268 MB, 256 MiB) copied, 0.0958512 s, 2.8 GB/s",
+  "disk_read_speed": "268435456 bytes (268 MB, 256 MiB) copied, 0.179792 s, 1.5 GB/s",
+  "notes": "NVMe devices visible in lsblk but no /dev/nvme* nodes - virtual disk"
+}

@@ -1,0 +1,51 @@
+{
+  "model": "Qwen/Qwen2.5-7B",
+  "context_len": 4096,
+  "results": [
+    {
+      "batch_size": 1,
+      "tokens_per_sec": 118.7
+    },
+    {
+      "batch_size": 2,
+      "tokens_per_sec": 230.9
+    },
+    {
+      "batch_size": 4,
+      "tokens_per_sec": 452.3
+    },
+    {
+      "batch_size": 8,
+      "tokens_per_sec": 809.3
+    },
+    {
+      "batch_size": 16,
+      "tokens_per_sec": 1514.7
+    },
+    {
+      "batch_size": 24,
+      "tokens_per_sec": 2136.7
+    },
+    {
+      "batch_size": 32,
+      "tokens_per_sec": 2587.5
+    },
+    {
+      "batch_size": 48,
+      "tokens_per_sec": 3368.4
+    },
+    {
+      "batch_size": 64,
+      "tokens_per_sec": 3401.6
+    },
+    {
+      "batch_size": 96,
+      "tokens_per_sec": 3886.7
+    }
+  ],
+  "hill_fit": {
+    "Smax": 4698.484723571587,
+    "B_half": 27.120544069196846,
+    "gamma": 1.263561140789109
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "experiment": "kv_precision_split_final_retest",
+  "timestamp": "2026-03-27T16:46:36",
+  "description": "Focused retest to resolve Qwen2 vs Qwen2.5 K/V precision-split ambiguity. Extended from 7 to 12 prompts. Reproducibility check with 2 repetitions at MSL=8.",
+  "models_tested": [
+    "Qwen/Qwen2-7B-Instruct",
+    "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "n_prompts": 12
+}

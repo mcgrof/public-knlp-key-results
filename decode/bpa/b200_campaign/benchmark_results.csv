@@ -1,0 +1,2 @@
+pipeline,hellaswag,mmlu,gsm8k
+FP16,78.92,71.95,83.09

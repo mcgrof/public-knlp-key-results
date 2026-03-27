@@ -1,0 +1,98 @@
+{
+  "universal_fit": {
+    "a": 1.046329,
+    "b": -0.0338,
+    "r_squared": 0.0048,
+    "n_points": 286
+  },
+  "per_model_fits": {
+    "qwen25_05b": {
+      "a": 7.436151,
+      "b": -0.1818,
+      "r_squared": 0.0938,
+      "n_points": 42
+    },
+    "qwen25_1.8b": {
+      "a": 2.689648,
+      "b": -0.0991,
+      "r_squared": 0.0287,
+      "n_points": 42
+    },
+    "qwen25_7b": {
+      "a": 2.578425,
+      "b": -0.0772,
+      "r_squared": 0.0236,
+      "n_points": 41
+    },
+    "mistral_7b": {
+      "a": 4.963244,
+      "b": -0.1104,
+      "r_squared": 0.0499,
+      "n_points": 39
+    },
+    "llama31_8b": {
+      "a": 4.702562,
+      "b": -0.1073,
+      "r_squared": 0.0472,
+      "n_points": 39
+    },
+    "nemotron3_nano": {
+      "a": 2.115831,
+      "b": -0.0629,
+      "r_squared": 0.0171,
+      "n_points": 41
+    },
+    "deepseek_mla": {
+      "a": 2.416043,
+      "b": -0.0969,
+      "r_squared": 0.0279,
+      "n_points": 42
+    }
+  },
+  "residuals": {
+    "qwen25_05b": {
+      "mean_residual": -0.1054,
+      "max_residual": 0.9736,
+      "std_residual": 0.6123,
+      "n_points": 42
+    },
+    "qwen25_1.8b": {
+      "mean_residual": 0.1544,
+      "max_residual": 1.6231,
+      "std_residual": 0.7872,
+      "n_points": 42
+    },
+    "qwen25_7b": {
+      "mean_residual": 0.4183,
+      "max_residual": 1.5655,
+      "std_residual": 0.7638,
+      "n_points": 41
+    },
+    "mistral_7b": {
+      "mean_residual": 0.4442,
+      "max_residual": 1.6208,
+      "std_residual": 0.7511,
+      "n_points": 39
+    },
+    "llama31_8b": {
+      "mean_residual": 0.4476,
+      "max_residual": 1.63,
+      "std_residual": 0.7547,
+      "n_points": 39
+    },
+    "nemotron3_nano": {
+      "mean_residual": 0.498,
+      "max_residual": 1.695,
+      "std_residual": 0.7816,
+      "n_points": 41
+    },
+    "deepseek_mla": {
+      "mean_residual": 0.1179,
+      "max_residual": 1.5395,
+      "std_residual": 0.7523,
+      "n_points": 42
+    }
+  },
+  "total_runs": 290,
+  "timestamp": "2026-03-05T00:57:30.211135"
+}

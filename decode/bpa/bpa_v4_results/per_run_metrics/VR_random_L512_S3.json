@@ -1,0 +1,23 @@
+{
+  "variant": "VR_random",
+  "seq_len": 512,
+  "seed": 3,
+  "ppl_mean": 245.3986444091797,
+  "ppl_std": 65.83390803310174,
+  "enabled_rate": 0.50515625,
+  "tokens_per_query_mean": 224.3615625,
+  "tokens_per_query_p50": 224.06640625,
+  "tokens_per_query_p95": 227.33212890625,
+  "tokens_per_query_p99": 228.1077734375,
+  "kv_bytes_written_per_token": 36864,
+  "kv_bytes_read_per_token": 14204436.48,
+  "kv_bytes_total_per_token": 14241300.48,
+  "peak_kv_bytes": 18874368,
+  "effective_kept_tokens": 224.3615625,
+  "flops_proxy": 3551109.12,
+  "flops_relative": 0.752578125,
+  "wall_ms_per_token": 0.2498667809049948,
+  "tokens_per_sec": 4002.1326419546076,
+  "tokens_seen": 51200,
+  "n_eval_batches": 50
+}

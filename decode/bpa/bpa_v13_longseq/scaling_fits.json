@@ -1,0 +1,32 @@
+{
+  "bitter1": {
+    "beta": 0.9989,
+    "gamma": 0.0004,
+    "delta": 0.7436,
+    "n_L_points": 2,
+    "L_values": [
+      8192,
+      16384
+    ]
+  },
+  "bitter2": {
+    "beta": 0.9991,
+    "gamma": 0.0004,
+    "delta": 0.7461,
+    "n_L_points": 2,
+    "L_values": [
+      8192,
+      16384
+    ]
+  },
+  "bitter3": {
+    "beta": 0.9989,
+    "gamma": 0.0004,
+    "delta": 0.7447,
+    "n_L_points": 2,
+    "L_values": [
+      8192,
+      16384
+    ]
+  }
+}

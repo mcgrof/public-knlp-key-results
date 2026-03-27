@@ -1,0 +1,26 @@
+
+############################################################
+# MODEL: mistralai/Mixtral-8x7B-Instruct-v0.1
+############################################################
+2026-03-10 19:57:54,722 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+!!! Mixtral-8x7B-Instruct-v0.1 FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+############################################################
+# MODEL: Qwen/Qwen2.5-32B-Instruct
+############################################################
+2026-03-10 19:57:54,925 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+!!! Qwen2.5-32B-Instruct FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+Combined: /data/knlp-key-results/bpa-large-model/json/large_model_combined.json
+
+Total: 0s (0.0m)
+
+======================================================================
+SUMMARY
+======================================================================
+
+Mixtral-8x7B-Instruct-v0.1: FAILED — GraphQL errors: Max workers across all endpoints must not exceed your workers qu
+
+Qwen2.5-32B-Instruct: FAILED — GraphQL errors: Max workers across all endpoints must not exceed your workers qu

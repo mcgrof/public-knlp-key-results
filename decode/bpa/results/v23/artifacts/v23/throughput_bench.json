@@ -1,0 +1,519 @@
+{
+  "gpu": {
+    "device_name": "AMD Radeon Pro W7900",
+    "total_gb": 48.3,
+    "torch_version": "2.6.0+rocm6.2.4",
+    "hip_version": "6.2.41134-65d174c3e"
+  },
+  "model_mem_mb": 982,
+  "methods": [
+    "dense",
+    "INT8_all",
+    "g32_k4",
+    "amort_g8_S8_k4"
+  ],
+  "results": {
+    "L8192_b1": {
+      "dense": {
+        "tokens_per_sec": 45.76,
+        "ms_per_token": 21.85,
+        "total_tokens": 256,
+        "total_time_ms": 5594.86,
+        "peak_mem_mb": 3526,
+        "batch": 1,
+        "L": 8192
+      },
+      "INT8_all": {
+        "tokens_per_sec": 47.13,
+        "ms_per_token": 21.22,
+        "total_tokens": 256,
+        "total_time_ms": 5431.38,
+        "peak_mem_mb": 3540,
+        "batch": 1,
+        "L": 8192
+      },
+      "g32_k4": {
+        "tokens_per_sec": 47.12,
+        "ms_per_token": 21.22,
+        "total_tokens": 256,
+        "total_time_ms": 5433.14,
+        "peak_mem_mb": 3540,
+        "batch": 1,
+        "L": 8192
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 43.63,
+        "ms_per_token": 22.92,
+        "total_tokens": 256,
+        "total_time_ms": 5867.55,
+        "peak_mem_mb": 3540,
+        "batch": 1,
+        "L": 8192
+      }
+    },
+    "L8192_b4": {
+      "dense": {
+        "tokens_per_sec": 46.96,
+        "ms_per_token": 21.29,
+        "total_tokens": 1024,
+        "total_time_ms": 21804.84,
+        "peak_mem_mb": 3526,
+        "batch": 4,
+        "L": 8192
+      },
+      "INT8_all": {
+        "tokens_per_sec": 47.1,
+        "ms_per_token": 21.23,
+        "total_tokens": 1024,
+        "total_time_ms": 21742.29,
+        "peak_mem_mb": 3540,
+        "batch": 4,
+        "L": 8192
+      },
+      "g32_k4": {
+        "tokens_per_sec": 47.07,
+        "ms_per_token": 21.24,
+        "total_tokens": 1024,
+        "total_time_ms": 21752.59,
+        "peak_mem_mb": 3540,
+        "batch": 4,
+        "L": 8192
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 43.63,
+        "ms_per_token": 22.92,
+        "total_tokens": 1024,
+        "total_time_ms": 23472.6,
+        "peak_mem_mb": 3540,
+        "batch": 4,
+        "L": 8192
+      }
+    },
+    "L8192_b8": {
+      "dense": {
+        "tokens_per_sec": 46.96,
+        "ms_per_token": 21.3,
+        "total_tokens": 2048,
+        "total_time_ms": 43615.55,
+        "peak_mem_mb": 3526,
+        "batch": 8,
+        "L": 8192
+      },
+      "INT8_all": {
+        "tokens_per_sec": 47.07,
+        "ms_per_token": 21.25,
+        "total_tokens": 2048,
+        "total_time_ms": 43511.8,
+        "peak_mem_mb": 3540,
+        "batch": 8,
+        "L": 8192
+      },
+      "g32_k4": {
+        "tokens_per_sec": 47.01,
+        "ms_per_token": 21.27,
+        "total_tokens": 2048,
+        "total_time_ms": 43562.3,
+        "peak_mem_mb": 3540,
+        "batch": 8,
+        "L": 8192
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 43.58,
+        "ms_per_token": 22.95,
+        "total_tokens": 2048,
+        "total_time_ms": 46994.86,
+        "peak_mem_mb": 3540,
+        "batch": 8,
+        "L": 8192
+      }
+    },
+    "L8192_b16": {
+      "dense": {
+        "tokens_per_sec": 46.85,
+        "ms_per_token": 21.34,
+        "total_tokens": 4096,
+        "total_time_ms": 87418.86,
+        "peak_mem_mb": 3526,
+        "batch": 16,
+        "L": 8192
+      },
+      "INT8_all": {
+        "tokens_per_sec": 46.99,
+        "ms_per_token": 21.28,
+        "total_tokens": 4096,
+        "total_time_ms": 87165.36,
+        "peak_mem_mb": 3540,
+        "batch": 16,
+        "L": 8192
+      },
+      "g32_k4": {
+        "tokens_per_sec": 47.0,
+        "ms_per_token": 21.28,
+        "total_tokens": 4096,
+        "total_time_ms": 87153.48,
+        "peak_mem_mb": 3540,
+        "batch": 16,
+        "L": 8192
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 43.52,
+        "ms_per_token": 22.98,
+        "total_tokens": 4096,
+        "total_time_ms": 94124.47,
+        "peak_mem_mb": 3540,
+        "batch": 16,
+        "L": 8192
+      }
+    },
+    "L16384_b1": {
+      "dense": {
+        "tokens_per_sec": 27.67,
+        "ms_per_token": 36.14,
+        "total_tokens": 256,
+        "total_time_ms": 9250.56,
+        "peak_mem_mb": 5997,
+        "batch": 1,
+        "L": 16384
+      },
+      "INT8_all": {
+        "tokens_per_sec": 27.61,
+        "ms_per_token": 36.22,
+        "total_tokens": 256,
+        "total_time_ms": 9272.07,
+        "peak_mem_mb": 6064,
+        "batch": 1,
+        "L": 16384
+      },
+      "g32_k4": {
+        "tokens_per_sec": 27.61,
+        "ms_per_token": 36.22,
+        "total_tokens": 256,
+        "total_time_ms": 9273.15,
+        "peak_mem_mb": 6064,
+        "batch": 1,
+        "L": 16384
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 25.05,
+        "ms_per_token": 39.92,
+        "total_tokens": 256,
+        "total_time_ms": 10219.6,
+        "peak_mem_mb": 6065,
+        "batch": 1,
+        "L": 16384
+      }
+    },
+    "L16384_b4": {
+      "dense": {
+        "tokens_per_sec": 27.66,
+        "ms_per_token": 36.15,
+        "total_tokens": 1024,
+        "total_time_ms": 37015.46,
+        "peak_mem_mb": 5997,
+        "batch": 4,
+        "L": 16384
+      },
+      "INT8_all": {
+        "tokens_per_sec": 27.63,
+        "ms_per_token": 36.2,
+        "total_tokens": 1024,
+        "total_time_ms": 37066.09,
+        "peak_mem_mb": 6064,
+        "batch": 4,
+        "L": 16384
+      },
+      "g32_k4": {
+        "tokens_per_sec": 27.63,
+        "ms_per_token": 36.19,
+        "total_tokens": 1024,
+        "total_time_ms": 37060.99,
+        "peak_mem_mb": 6064,
+        "batch": 4,
+        "L": 16384
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 25.09,
+        "ms_per_token": 39.86,
+        "total_tokens": 1024,
+        "total_time_ms": 40812.61,
+        "peak_mem_mb": 6065,
+        "batch": 4,
+        "L": 16384
+      }
+    },
+    "L16384_b8": {
+      "dense": {
+        "tokens_per_sec": 27.68,
+        "ms_per_token": 36.13,
+        "total_tokens": 2048,
+        "total_time_ms": 73992.56,
+        "peak_mem_mb": 5997,
+        "batch": 8,
+        "L": 16384
+      },
+      "INT8_all": {
+        "tokens_per_sec": 27.62,
+        "ms_per_token": 36.2,
+        "total_tokens": 2048,
+        "total_time_ms": 74142.3,
+        "peak_mem_mb": 6064,
+        "batch": 8,
+        "L": 16384
+      },
+      "g32_k4": {
+        "tokens_per_sec": 27.63,
+        "ms_per_token": 36.19,
+        "total_tokens": 2048,
+        "total_time_ms": 74115.25,
+        "peak_mem_mb": 6064,
+        "batch": 8,
+        "L": 16384
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 25.09,
+        "ms_per_token": 39.85,
+        "total_tokens": 2048,
+        "total_time_ms": 81612.06,
+        "peak_mem_mb": 6065,
+        "batch": 8,
+        "L": 16384
+      }
+    },
+    "L16384_b16": {
+      "dense": {
+        "tokens_per_sec": 27.69,
+        "ms_per_token": 36.11,
+        "total_tokens": 4096,
+        "total_time_ms": 147923.08,
+        "peak_mem_mb": 5997,
+        "batch": 16,
+        "L": 16384
+      },
+      "INT8_all": {
+        "tokens_per_sec": 27.64,
+        "ms_per_token": 36.18,
+        "total_tokens": 4096,
+        "total_time_ms": 148179.53,
+        "peak_mem_mb": 6064,
+        "batch": 16,
+        "L": 16384
+      },
+      "g32_k4": {
+        "tokens_per_sec": 27.64,
+        "ms_per_token": 36.18,
+        "total_tokens": 4096,
+        "total_time_ms": 148206.99,
+        "peak_mem_mb": 6064,
+        "batch": 16,
+        "L": 16384
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 25.09,
+        "ms_per_token": 39.86,
+        "total_tokens": 4096,
+        "total_time_ms": 163273.58,
+        "peak_mem_mb": 6065,
+        "batch": 16,
+        "L": 16384
+      }
+    },
+    "L32768_b1": {
+      "dense": {
+        "tokens_per_sec": 14.7,
+        "ms_per_token": 68.02,
+        "total_tokens": 256,
+        "total_time_ms": 17414.33,
+        "peak_mem_mb": 10937,
+        "batch": 1,
+        "L": 32768
+      },
+      "INT8_all": {
+        "tokens_per_sec": 14.66,
+        "ms_per_token": 68.21,
+        "total_tokens": 256,
+        "total_time_ms": 17460.73,
+        "peak_mem_mb": 11224,
+        "batch": 1,
+        "L": 32768
+      },
+      "g32_k4": {
+        "tokens_per_sec": 14.67,
+        "ms_per_token": 68.16,
+        "total_tokens": 256,
+        "total_time_ms": 17449.12,
+        "peak_mem_mb": 11224,
+        "batch": 1,
+        "L": 32768
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 13.18,
+        "ms_per_token": 75.87,
+        "total_tokens": 256,
+        "total_time_ms": 19423.47,
+        "peak_mem_mb": 11226,
+        "batch": 1,
+        "L": 32768
+      }
+    },
+    "L32768_b4": {
+      "dense": {
+        "tokens_per_sec": 14.7,
+        "ms_per_token": 68.03,
+        "total_tokens": 1024,
+        "total_time_ms": 69666.52,
+        "peak_mem_mb": 10937,
+        "batch": 4,
+        "L": 32768
+      },
+      "INT8_all": {
+        "tokens_per_sec": 14.67,
+        "ms_per_token": 68.15,
+        "total_tokens": 1024,
+        "total_time_ms": 69790.63,
+        "peak_mem_mb": 11224,
+        "batch": 4,
+        "L": 32768
+      },
+      "g32_k4": {
+        "tokens_per_sec": 14.66,
+        "ms_per_token": 68.21,
+        "total_tokens": 1024,
+        "total_time_ms": 69851.46,
+        "peak_mem_mb": 11224,
+        "batch": 4,
+        "L": 32768
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 13.18,
+        "ms_per_token": 75.85,
+        "total_tokens": 1024,
+        "total_time_ms": 77665.42,
+        "peak_mem_mb": 11226,
+        "batch": 4,
+        "L": 32768
+      }
+    },
+    "L32768_b8": {
+      "dense": {
+        "tokens_per_sec": 14.7,
+        "ms_per_token": 68.02,
+        "total_tokens": 2048,
+        "total_time_ms": 139309.09,
+        "peak_mem_mb": 10937,
+        "batch": 8,
+        "L": 32768
+      },
+      "INT8_all": {
+        "tokens_per_sec": 14.66,
+        "ms_per_token": 68.21,
+        "total_tokens": 2048,
+        "total_time_ms": 139702.86,
+        "peak_mem_mb": 11224,
+        "batch": 8,
+        "L": 32768
+      },
+      "g32_k4": {
+        "tokens_per_sec": 14.66,
+        "ms_per_token": 68.21,
+        "total_tokens": 2048,
+        "total_time_ms": 139704.23,
+        "peak_mem_mb": 11224,
+        "batch": 8,
+        "L": 32768
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 13.17,
+        "ms_per_token": 75.91,
+        "total_tokens": 2048,
+        "total_time_ms": 155460.37,
+        "peak_mem_mb": 11226,
+        "batch": 8,
+        "L": 32768
+      }
+    },
+    "L32768_b16": {
+      "dense": {
+        "tokens_per_sec": 14.7,
+        "ms_per_token": 68.03,
+        "total_tokens": 4096,
+        "total_time_ms": 278654.03,
+        "peak_mem_mb": 10937,
+        "batch": 16,
+        "L": 32768
+      },
+      "INT8_all": {
+        "tokens_per_sec": 14.65,
+        "ms_per_token": 68.24,
+        "total_tokens": 4096,
+        "total_time_ms": 279502.56,
+        "peak_mem_mb": 11224,
+        "batch": 16,
+        "L": 32768
+      },
+      "g32_k4": {
+        "tokens_per_sec": 14.65,
+        "ms_per_token": 68.26,
+        "total_tokens": 4096,
+        "total_time_ms": 279595.82,
+        "peak_mem_mb": 11224,
+        "batch": 16,
+        "L": 32768
+      },
+      "amort_g8_S8_k4": {
+        "tokens_per_sec": 13.18,
+        "ms_per_token": 75.87,
+        "total_tokens": 4096,
+        "total_time_ms": 310746.13,
+        "peak_mem_mb": 11226,
+        "batch": 16,
+        "L": 32768
+      }
+    }
+  },
+  "kv_estimates": {
+    "L8192": {
+      "dense_kv_bytes": 100663296,
+      "dense_kv_mb": 96.0,
+      "amort_g8_S8_k4_kv_mb": 29.5,
+      "g32_k4_kv_mb": 30.75,
+      "int8_kv_mb": 49.5
+    },
+    "L16384": {
+      "dense_kv_bytes": 201326592,
+      "dense_kv_mb": 192.0,
+      "amort_g8_S8_k4_kv_mb": 59.0,
+      "g32_k4_kv_mb": 61.5,
+      "int8_kv_mb": 99.0
+    },
+    "L32768": {
+      "dense_kv_bytes": 402653184,
+      "dense_kv_mb": 384.0,
+      "amort_g8_S8_k4_kv_mb": 118.0,
+      "g32_k4_kv_mb": 123.0,
+      "int8_kv_mb": 197.99
+    }
+  },
+  "capacity": {
+    "L8192": {
+      "dense_max_seqs": 494,
+      "amort_g8_S8_k4_max_seqs": 1608,
+      "g32_k4_max_seqs": 1543,
+      "capacity_gain_vs_dense": 3.26,
+      "capacity_gain_vs_g32": 1.04
+    },
+    "L16384": {
+      "dense_max_seqs": 247,
+      "amort_g8_S8_k4_max_seqs": 804,
+      "g32_k4_max_seqs": 771,
+      "capacity_gain_vs_dense": 3.26,
+      "capacity_gain_vs_g32": 1.04
+    },
+    "L32768": {
+      "dense_max_seqs": 123,
+      "amort_g8_S8_k4_max_seqs": 402,
+      "g32_k4_max_seqs": 385,
+      "capacity_gain_vs_dense": 3.27,
+      "capacity_gain_vs_g32": 1.04
+    }
+  }
+}

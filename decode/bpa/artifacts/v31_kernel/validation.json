@@ -1,0 +1,434 @@
+[
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 64,
+    "pipeline": "B",
+    "max_err": 0.0003662109375,
+    "mean_err": 4.780292510986328e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 64,
+    "pipeline": "C",
+    "max_err": 0.0003662109375,
+    "mean_err": 4.780292510986328e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 64,
+    "pipeline": "D",
+    "max_err": 0.0003662109375,
+    "mean_err": 4.780292510986328e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 64,
+    "pipeline": "E",
+    "max_err": 0.0003662109375,
+    "mean_err": 4.780292510986328e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 256,
+    "pipeline": "B",
+    "max_err": 0.000244140625,
+    "mean_err": 2.9027462005615234e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 256,
+    "pipeline": "C",
+    "max_err": 0.000244140625,
+    "mean_err": 2.9027462005615234e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 256,
+    "pipeline": "D",
+    "max_err": 0.000244140625,
+    "mean_err": 2.9027462005615234e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 256,
+    "pipeline": "E",
+    "max_err": 0.000244140625,
+    "mean_err": 2.9027462005615234e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 1024,
+    "pipeline": "B",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.52587890625e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 1024,
+    "pipeline": "C",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.52587890625e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 1024,
+    "pipeline": "D",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.52587890625e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 1024,
+    "pipeline": "E",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.52587890625e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 64,
+    "pipeline": "B",
+    "max_err": 0.00048828125,
+    "mean_err": 4.291534423828125e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 64,
+    "pipeline": "C",
+    "max_err": 0.00048828125,
+    "mean_err": 4.291534423828125e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 64,
+    "pipeline": "D",
+    "max_err": 0.00048828125,
+    "mean_err": 4.291534423828125e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 64,
+    "pipeline": "E",
+    "max_err": 0.00048828125,
+    "mean_err": 4.291534423828125e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 256,
+    "pipeline": "B",
+    "max_err": 0.000244140625,
+    "mean_err": 2.5510787963867188e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 256,
+    "pipeline": "C",
+    "max_err": 0.000244140625,
+    "mean_err": 2.5510787963867188e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 256,
+    "pipeline": "D",
+    "max_err": 0.000244140625,
+    "mean_err": 2.5510787963867188e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 256,
+    "pipeline": "E",
+    "max_err": 0.000244140625,
+    "mean_err": 2.5510787963867188e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 1024,
+    "pipeline": "B",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.2874603271484375e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 1024,
+    "pipeline": "C",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.2874603271484375e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 1024,
+    "pipeline": "D",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.2874603271484375e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 1024,
+    "pipeline": "E",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.2874603271484375e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 64,
+    "pipeline": "B",
+    "max_err": 0.00048828125,
+    "mean_err": 4.881620407104492e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 64,
+    "pipeline": "C",
+    "max_err": 0.00048828125,
+    "mean_err": 4.881620407104492e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 64,
+    "pipeline": "D",
+    "max_err": 0.00048828125,
+    "mean_err": 4.881620407104492e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 64,
+    "pipeline": "E",
+    "max_err": 0.00048828125,
+    "mean_err": 4.881620407104492e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 256,
+    "pipeline": "B",
+    "max_err": 0.000244140625,
+    "mean_err": 2.4974346160888672e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 256,
+    "pipeline": "C",
+    "max_err": 0.000244140625,
+    "mean_err": 2.4974346160888672e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 256,
+    "pipeline": "D",
+    "max_err": 0.000244140625,
+    "mean_err": 2.4974346160888672e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 256,
+    "pipeline": "E",
+    "max_err": 0.000244140625,
+    "mean_err": 2.4974346160888672e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 1024,
+    "pipeline": "B",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.3709068298339844e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 1024,
+    "pipeline": "C",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.3709068298339844e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 1024,
+    "pipeline": "D",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.3709068298339844e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 1024,
+    "pipeline": "E",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.3709068298339844e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 64,
+    "pipeline": "B",
+    "max_err": 0.00048828125,
+    "mean_err": 4.5299530029296875e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 64,
+    "pipeline": "C",
+    "max_err": 0.00048828125,
+    "mean_err": 4.5299530029296875e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 64,
+    "pipeline": "D",
+    "max_err": 0.00048828125,
+    "mean_err": 4.5299530029296875e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 64,
+    "pipeline": "E",
+    "max_err": 0.00048828125,
+    "mean_err": 4.5299530029296875e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 256,
+    "pipeline": "B",
+    "max_err": 0.00048828125,
+    "mean_err": 2.568960189819336e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 256,
+    "pipeline": "C",
+    "max_err": 0.00048828125,
+    "mean_err": 2.568960189819336e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 256,
+    "pipeline": "D",
+    "max_err": 0.00048828125,
+    "mean_err": 2.562999725341797e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 256,
+    "pipeline": "E",
+    "max_err": 0.00048828125,
+    "mean_err": 2.562999725341797e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 1024,
+    "pipeline": "B",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.3530254364013672e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 1024,
+    "pipeline": "C",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.3530254364013672e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 1024,
+    "pipeline": "D",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.3530254364013672e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 1024,
+    "pipeline": "E",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.3530254364013672e-05,
+    "pass": true
+  }
+]

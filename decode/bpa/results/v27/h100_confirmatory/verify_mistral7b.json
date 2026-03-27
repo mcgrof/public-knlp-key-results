@@ -1,0 +1,59 @@
+{
+  "model": "mistral7b",
+  "k": 0,
+  "protected": [],
+  "kv_ratio": 0.28125,
+  "evals": {
+    "L8192_s0": {
+      "dense_ppl": 3.2402,
+      "quant_ppl": 3.2471,
+      "delta_pct": 0.22,
+      "pass_3pct": true,
+      "pass_1pct": true,
+      "p50_ms": 42.73
+    },
+    "L8192_s1": {
+      "dense_ppl": 9.1942,
+      "quant_ppl": 9.1962,
+      "delta_pct": 0.02,
+      "pass_3pct": true,
+      "pass_1pct": true,
+      "p50_ms": 42.74
+    },
+    "L8192_s2": {
+      "dense_ppl": 6.8104,
+      "quant_ppl": 6.8079,
+      "delta_pct": -0.04,
+      "pass_3pct": true,
+      "pass_1pct": true,
+      "p50_ms": 42.71
+    },
+    "L32768_s0": {
+      "dense_ppl": 1.9706,
+      "quant_ppl": 1.976,
+      "delta_pct": 0.27,
+      "pass_3pct": true,
+      "pass_1pct": true,
+      "p50_ms": 42.7
+    },
+    "L32768_s1": {
+      "dense_ppl": 5.696,
+      "quant_ppl": 5.6741,
+      "delta_pct": -0.38,
+      "pass_3pct": true,
+      "pass_1pct": true,
+      "p50_ms": 42.78
+    },
+    "L32768_s2": {
+      "dense_ppl": 9.1322,
+      "quant_ppl": 9.1467,
+      "delta_pct": 0.16,
+      "pass_3pct": true,
+      "pass_1pct": true,
+      "p50_ms": 42.75
+    }
+  },
+  "max_delta": 0.38,
+  "pass_3pct": true,
+  "pass_1pct": true
+}

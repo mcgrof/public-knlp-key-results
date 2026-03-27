@@ -1,0 +1,68 @@
+You are running SPEv-02 on a remote A100 80GB instance.
+
+SSH: ssh -i ~/.ssh/rqv -o StrictHostKeyChecking=no ubuntu@216.81.245.242
+Results dir: /data/knlp-key-results/spev02/json/ (on THIS machine, not remote)
+Copy results from remote: scp -i ~/.ssh/rqv ubuntu@216.81.245.242:/tmp/*.json /data/knlp-key-results/spev02/json/
+
+IMPORTANT: The instance has NO NVMe - only virtual disk. This limits Stage A
+but we can still get useful LMCache baseline data.
+
+## TIER 0: Hardware validation
+1. Check GPU: nvidia-smi
+2. Run fio benchmark on /tmp (get actual disk bandwidth)
+3. Check for NVMe: lsblk, ls /dev/nvme*
+4. Save as tier0_hardware.json
+
+## SETUP
+Install on the remote instance:
+- pip install vllm lmcache transformers accelerate
+- Verify: python3 -c "import vllm; print(vllm.__version__)"
+- Verify: python3 -c "import lmcache; print(dir(lmcache))"
+- Model: Use meta-llama/Llama-3.1-8B-Instruct (matching vocab with Llama-3.2-1B for Stage B)
+
+## STAGE A: LMCache KV Offloading (memory savings)
+
+A1. BASELINE - No offload, no LMCache
+- Run Llama-3.1-8B autoregressive at context lengths: 512, 2048, 4096, 8192, 16384
+- For each: measure tokens/sec, TTFT (time to first token), peak VRAM, max batch size
+- Find the OOM point (max context before crash)
+- Save as stageA1_baseline.json
+
+A2. LMCache with disk offload
+- Configure LMCache to offload KV to disk (/tmp)
+- Same tests as A1 at same context lengths
+- Key measurement: can we serve LONGER contexts than A1 by offloading KV?
+- Measure: throughput penalty vs A1, max context extension
+- Test prefix caching: send same system prompt twice, measure TTFT improvement on 2nd request
+- Save as stageA2_lmcache_offload.json
+
+A3. If vLLM 0.8+ has FP8 KV with FlashInfer:
+- Same as A2 but with FP8 KV quantization
+- Measure quality (sample outputs), throughput, memory savings
+- Save as stageA3_fp8_kv.json
+
+## STAGE B: Speculative Decoding Baseline (pure GPU, no offload)
+
+B1. Same as A1 baseline (reuse data)
+
+B2. Draft model speculation
+- Draft model: meta-llama/Llama-3.2-1B-Instruct (same vocab as 8B)
+- Run at context lengths: 512, 2048, 4096, 8192
+- Measure: tokens/sec, acceptance rate, latency
+- Compare to B1 baseline — speculation MUST be faster
+- If vLLM 0.8 supports Eagle/Medusa, try those too
+- Save as stageB2_speculation.json
+
+## STAGE C: Combined (only if A and B independently succeed)
+
+C1. LMCache offload + speculation (naive combination)
+- No prefetching yet — just run both together
+- Measure: throughput vs B2 (pure GPU speculation)
+- Save as stageC1_naive_combined.json
+
+## IMPORTANT
+- Save results as JSON files in /tmp/ on the remote, then scp them here
+- Each JSON should have: stage, test_name, model, results dict
+- After ALL tests, create spev02_summary.json comparing all stages
+- Git commit results: cd /data/knlp-key-results && git add spev02/ && git commit -m "SPEv-02 results"
+- Print COMPLETE when done

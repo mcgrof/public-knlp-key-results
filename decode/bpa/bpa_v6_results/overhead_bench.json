@@ -1,0 +1,52 @@
+[
+  {
+    "name": "baseline",
+    "fast_gate": false,
+    "ra_update_period": 1,
+    "ppl_mean": 278.8588165283203,
+    "ppl_std": 87.01455169793435,
+    "wall_ms_per_token": 1.1901750067409012,
+    "gate_ms_per_token": 0.7499858083974686,
+    "fwd_ms_per_token": 0.43176586495974334
+  },
+  {
+    "name": "fast_gate",
+    "fast_gate": true,
+    "ra_update_period": 1,
+    "ppl_mean": 270.7181427001953,
+    "ppl_std": 85.71087596472242,
+    "wall_ms_per_token": 0.7063005486998009,
+    "gate_ms_per_token": 0.24876612951629795,
+    "fwd_ms_per_token": 0.45597915959660895
+  },
+  {
+    "name": "sparse_ra_4",
+    "fast_gate": false,
+    "ra_update_period": 4,
+    "ppl_mean": 278.94434356689453,
+    "ppl_std": 87.1223415675514,
+    "wall_ms_per_token": 1.2268142081666156,
+    "gate_ms_per_token": 0.7753887775834301,
+    "fwd_ms_per_token": 0.4518308905971935
+  },
+  {
+    "name": "sparse_ra_8",
+    "fast_gate": false,
+    "ra_update_period": 8,
+    "ppl_mean": 279.00719146728517,
+    "ppl_std": 87.1553539280743,
+    "wall_ms_per_token": 1.205892802317976,
+    "gate_ms_per_token": 0.7600578746860265,
+    "fwd_ms_per_token": 0.447244594397489
+  },
+  {
+    "name": "fast+sparse4",
+    "fast_gate": true,
+    "ra_update_period": 4,
+    "ppl_mean": 270.84230575561526,
+    "ppl_std": 85.19073682585079,
+    "wall_ms_per_token": 0.6955131557333516,
+    "gate_ms_per_token": 0.25162112251564395,
+    "fwd_ms_per_token": 0.4349753044152749
+  }
+]

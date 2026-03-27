@@ -1,0 +1,131 @@
+A new version of the following files was downloaded from https://huggingface.co/tiiuae/falcon-40b:
+- configuration_falcon.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+
+WARNING: You are currently loading Falcon using legacy code contained in the model repository. Falcon has now been fully ported into the Hugging Face transformers library. For the most up-to-date and high-performance version of the Falcon model code, please update to the latest version of transformers and then load the model without the trust_remote_code=True argument.
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+A new version of the following files was downloaded from https://huggingface.co/tiiuae/falcon-40b:
+- modeling_falcon.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+
+############################################################
+# tiiuae/falcon-40b
+############################################################
+Loading tiiuae/falcon-40b in bfloat16...
+
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]
+Fetching 9 files:  11%|█         | 1/9 [09:47<1:18:21, 587.66s/it]
+Fetching 9 files:  22%|██▏       | 2/9 [10:29<31:05, 266.52s/it]  
+Fetching 9 files:  33%|███▎      | 3/9 [10:34<14:43, 147.28s/it]
+Fetching 9 files:  44%|████▍     | 4/9 [10:41<07:38, 91.79s/it] 
+Fetching 9 files:  56%|█████▌    | 5/9 [11:39<05:18, 79.52s/it]
+Fetching 9 files: 100%|██████████| 9/9 [12:48<00:00, 37.71s/it]
+Fetching 9 files: 100%|██████████| 9/9 [12:48<00:00, 85.44s/it]
+
+Loading weights:   0%|          | 0/484 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/484 [00:00<00:57,  8.34it/s]
+Loading weights:   0%|          | 2/484 [00:00<01:23,  5.77it/s]
+Loading weights:   1%|▏         | 7/484 [00:00<00:29, 16.02it/s]
+Loading weights:   3%|▎         | 14/484 [00:00<00:30, 15.31it/s]
+Loading weights:   4%|▍         | 21/484 [00:01<00:25, 18.07it/s]
+Loading weights:   6%|▌         | 30/484 [00:01<00:19, 23.33it/s]
+Loading weights:   7%|▋         | 33/484 [00:01<00:19, 22.72it/s]
+Loading weights:   8%|▊         | 38/484 [00:01<00:16, 26.37it/s]
+Loading weights:   9%|▉         | 45/484 [00:01<00:13, 31.65it/s]
+Loading weights:  10%|█         | 49/484 [00:02<00:13, 32.43it/s]
+Loading weights:  11%|█         | 54/484 [00:02<00:13, 32.73it/s]
+Loading weights:  12%|█▏        | 58/484 [00:02<00:14, 28.86it/s]
+Loading weights:  13%|█▎        | 65/484 [00:02<00:11, 36.56it/s]
+Loading weights:  15%|█▍        | 71/484 [00:02<00:10, 37.81it/s]
+Loading weights:  16%|█▌        | 78/484 [00:02<00:11, 36.32it/s]
+Loading weights:  18%|█▊        | 87/484 [00:03<00:09, 41.66it/s]
+Loading weights:  19%|█▉        | 94/484 [00:03<00:09, 39.29it/s]
+Loading weights:  21%|██        | 102/484 [00:03<00:09, 39.91it/s]
+Loading weights:  23%|██▎       | 110/484 [00:03<00:09, 41.16it/s]
+Loading weights:  24%|██▍       | 115/484 [00:03<00:09, 39.08it/s]
+Loading weights:  25%|██▍       | 119/484 [00:04<00:14, 25.40it/s]
+Loading weights:  26%|██▌       | 126/484 [00:04<00:12, 27.89it/s]
+Loading weights:  27%|██▋       | 130/484 [00:04<00:14, 24.81it/s]
+Loading weights:  27%|██▋       | 133/484 [00:04<00:14, 23.60it/s]
+Loading weights:  28%|██▊       | 136/484 [00:04<00:15, 22.33it/s]
+Loading weights:  29%|██▉       | 142/484 [00:05<00:13, 25.81it/s]
+Loading weights:  31%|███       | 149/484 [00:05<00:11, 28.28it/s]
+Loading weights:  33%|███▎      | 159/484 [00:05<00:09, 35.70it/s]
+Loading weights:  34%|███▍      | 166/484 [00:05<00:08, 36.57it/s]
+Loading weights:  36%|███▌      | 173/484 [00:05<00:07, 42.20it/s]
+Loading weights:  37%|███▋      | 178/484 [00:05<00:07, 42.53it/s]
+Loading weights:  38%|███▊      | 183/484 [00:06<00:08, 34.92it/s]
+Loading weights:  39%|███▉      | 190/484 [00:06<00:08, 33.77it/s]
+Loading weights:  41%|████      | 198/484 [00:06<00:06, 41.21it/s]
+Loading weights:  42%|████▏     | 203/484 [00:06<00:06, 41.82it/s]
+Loading weights:  43%|████▎     | 208/484 [00:06<00:07, 38.19it/s]
+Loading weights:  44%|████▍     | 213/484 [00:06<00:06, 39.33it/s]
+Loading weights:  45%|████▌     | 218/484 [00:06<00:06, 41.76it/s]
+Loading weights:  46%|████▌     | 223/484 [00:07<00:09, 27.22it/s]
+Loading weights:  48%|████▊     | 230/484 [00:07<00:09, 28.15it/s]
+Loading weights:  48%|████▊     | 234/484 [00:07<00:09, 26.89it/s]
+Loading weights:  49%|████▉     | 238/484 [00:07<00:09, 24.71it/s]
+Loading weights:  50%|████▉     | 241/484 [00:08<00:10, 22.85it/s]
+Loading weights:  51%|█████     | 246/484 [00:08<00:09, 24.55it/s]
+Loading weights:  52%|█████▏    | 253/484 [00:08<00:07, 32.20it/s]
+Loading weights:  53%|█████▎    | 257/484 [00:08<00:06, 32.84it/s]
+Loading weights:  54%|█████▍    | 262/484 [00:08<00:06, 35.53it/s]
+Loading weights:  56%|█████▌    | 270/484 [00:08<00:05, 41.74it/s]
+Loading weights:  57%|█████▋    | 275/484 [00:08<00:04, 42.21it/s]
+Loading weights:  58%|█████▊    | 280/484 [00:09<00:07, 26.14it/s]
+Loading weights:  59%|█████▉    | 286/484 [00:09<00:08, 23.33it/s]
+Loading weights:  61%|██████    | 294/484 [00:09<00:08, 21.44it/s]
+Loading weights:  62%|██████▏   | 301/484 [00:10<00:06, 27.05it/s]
+Loading weights:  63%|██████▎   | 305/484 [00:10<00:06, 26.08it/s]
+Loading weights:  64%|██████▍   | 311/484 [00:10<00:05, 29.27it/s]
+Loading weights:  66%|██████▌   | 318/484 [00:10<00:04, 35.34it/s]
+Loading weights:  67%|██████▋   | 323/484 [00:10<00:04, 37.16it/s]
+Loading weights:  68%|██████▊   | 328/484 [00:10<00:04, 34.56it/s]
+Loading weights:  69%|██████▉   | 334/484 [00:10<00:03, 39.72it/s]
+Loading weights:  70%|███████   | 339/484 [00:10<00:03, 41.74it/s]
+Loading weights:  71%|███████   | 344/484 [00:11<00:03, 36.92it/s]
+Loading weights:  72%|███████▏  | 350/484 [00:11<00:03, 41.60it/s]
+Loading weights:  73%|███████▎  | 355/484 [00:11<00:03, 40.62it/s]
+Loading weights:  74%|███████▍  | 360/484 [00:11<00:05, 23.60it/s]
+Loading weights:  75%|███████▌  | 365/484 [00:11<00:04, 26.81it/s]
+Loading weights:  76%|███████▌  | 369/484 [00:12<00:04, 27.97it/s]
+Loading weights:  77%|███████▋  | 375/484 [00:12<00:03, 29.69it/s]
+Loading weights:  79%|███████▉  | 382/484 [00:12<00:03, 32.13it/s]
+Loading weights:  81%|████████  | 391/484 [00:12<00:02, 38.32it/s]
+Loading weights:  82%|████████▏ | 398/484 [00:12<00:02, 42.65it/s]
+Loading weights:  83%|████████▎ | 403/484 [00:12<00:01, 42.31it/s]
+Loading weights:  84%|████████▍ | 408/484 [00:13<00:02, 27.62it/s]
+Loading weights:  86%|████████▌ | 414/484 [00:13<00:02, 27.64it/s]
+Loading weights:  86%|████████▋ | 418/484 [00:13<00:02, 26.58it/s]
+Loading weights:  87%|████████▋ | 422/484 [00:13<00:02, 27.62it/s]
+Loading weights:  88%|████████▊ | 426/484 [00:13<00:02, 26.91it/s]
+Loading weights:  89%|████████▉ | 431/484 [00:14<00:01, 28.50it/s]
+Loading weights:  90%|█████████ | 437/484 [00:14<00:01, 33.88it/s]
+Loading weights:  91%|█████████ | 441/484 [00:14<00:01, 34.27it/s]
+Loading weights:  92%|█████████▏| 446/484 [00:14<00:01, 33.01it/s]
+Loading weights:  94%|█████████▍| 454/484 [00:14<00:00, 37.00it/s]
+Loading weights:  95%|█████████▌| 462/484 [00:14<00:00, 37.43it/s]
+Loading weights:  97%|█████████▋| 471/484 [00:14<00:00, 41.90it/s]
+Loading weights:  99%|█████████▊| 477/484 [00:15<00:00, 38.98it/s]
+Loading weights: 100%|██████████| 484/484 [00:15<00:00, 38.64it/s]
+Loading weights: 100%|██████████| 484/484 [00:15<00:00, 31.51it/s]
+Traceback (most recent call last):
+  File "/workspace/experiment.py", line 539, in <module>
+    result = run_all_tests(model_name, dtype_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/experiment.py", line 216, in run_all_tests
+    attn0 = get_self_attn(layers[0])
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/experiment.py", line 151, in get_self_attn
+    raise AttributeError(
+AttributeError: Cannot find attention in layer of type FalconDecoderLayer
+Loaded in 792s
+Transformers version: 5.3.0
+FAILED: Cannot find attention in layer of type FalconDecoderLayer
+
+Saved: /workspace/large_falcon_40b.json
+
+Total time: 792s
+
+DONE

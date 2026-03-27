@@ -1,0 +1,20 @@
+{
+  "phase": "phase1_wikitext_ppl",
+  "model_info": {
+    "model": "meta-llama/Llama-3.1-70B-Instruct",
+    "n_params": 70554000000,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "load_time_s": 72,
+    "gpu": "NVIDIA H200 SXM",
+    "n_gpu_modules": 77,
+    "n_cpu_modules": 7
+  },
+  "results": {
+    "FP16_baseline": {"ppl": 3.998, "n_tokens": 199902, "time_s": 199},
+    "K_FP16__V_INT4": {"ppl": 4.0215, "n_tokens": 199902, "time_s": 183, "ppl_delta_pct": 0.5878},
+    "K_INT8__V_INT4": {"ppl": 4.0228, "n_tokens": 199902, "time_s": 185, "ppl_delta_pct": 0.6203},
+    "K_INT4__V_INT4": {"ppl": 4.1185, "n_tokens": 199902, "time_s": 184, "ppl_delta_pct": 3.0140}
+  }
+}

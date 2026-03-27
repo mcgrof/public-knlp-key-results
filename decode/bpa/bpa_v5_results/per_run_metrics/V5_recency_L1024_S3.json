@@ -1,0 +1,23 @@
+{
+  "variant": "V5_recency",
+  "seq_len": 1024,
+  "seed": 3,
+  "ppl_mean": 256.39515731811525,
+  "ppl_std": 91.38774940039215,
+  "enabled_rate": 0.69921875,
+  "tokens_per_query_mean": 358.375,
+  "tokens_per_query_p50": 358.375,
+  "tokens_per_query_p95": 358.375,
+  "tokens_per_query_p99": 358.375,
+  "kv_bytes_written_per_token": 36864,
+  "kv_bytes_read_per_token": 29233152.0,
+  "kv_bytes_total_per_token": 29270016.0,
+  "peak_kv_bytes": 37748736,
+  "effective_kept_tokens": 358.375,
+  "flops_proxy": 7308288.0,
+  "flops_relative": 0.7744140625,
+  "wall_ms_per_token": 0.9160453200820484,
+  "tokens_per_sec": 1091.6490462616325,
+  "tokens_seen": 51200,
+  "n_eval_batches": 50
+}

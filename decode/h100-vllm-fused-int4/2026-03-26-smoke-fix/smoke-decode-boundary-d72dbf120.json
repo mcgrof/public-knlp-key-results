@@ -1,0 +1,243 @@
+{
+  "probe": "decode_boundary_probe",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "max_tokens": 2,
+  "prompt_lengths": [
+    1,
+    2,
+    15,
+    16,
+    17
+  ],
+  "batch_size": 1,
+  "timestamp": "2026-03-26T22:16:58Z",
+  "baseline": {
+    "mode": "baseline",
+    "kv_cache_dtype": "auto",
+    "max_tokens": 2,
+    "init_s": 23.74,
+    "results": [
+      {
+        "prompt_label": "len_1",
+        "prompt_target_len": 1,
+        "prompt_actual_len": 1,
+        "prompt": "The",
+        "generated_text": " following is",
+        "generated_token_ids": [
+          2701,
+          374
+        ],
+        "generate_s": 0.1258
+      },
+      {
+        "prompt_label": "len_2",
+        "prompt_target_len": 2,
+        "prompt_actual_len": 2,
+        "prompt": "The quick",
+        "generated_text": " and dirty",
+        "generated_token_ids": [
+          323,
+          18595
+        ],
+        "generate_s": 0.027
+      },
+      {
+        "prompt_label": "len_15",
+        "prompt_target_len": 15,
+        "prompt_actual_len": 15,
+        "prompt": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps",
+        "generated_text": " over the",
+        "generated_token_ids": [
+          916,
+          279
+        ],
+        "generate_s": 0.0327
+      },
+      {
+        "prompt_label": "len_16",
+        "prompt_target_len": 16,
+        "prompt_actual_len": 16,
+        "prompt": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over",
+        "generated_text": " the lazy",
+        "generated_token_ids": [
+          279,
+          15678
+        ],
+        "generate_s": 0.0245
+      },
+      {
+        "prompt_label": "len_17",
+        "prompt_target_len": 17,
+        "prompt_actual_len": 17,
+        "prompt": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the",
+        "generated_text": " lazy dog",
+        "generated_token_ids": [
+          15678,
+          5562
+        ],
+        "generate_s": 0.0208
+      }
+    ]
+  },
+  "fused": {
+    "mode": "fused",
+    "kv_cache_dtype": "int4_fused",
+    "max_tokens": 2,
+    "init_s": 21.05,
+    "results": [
+      {
+        "prompt_label": "len_1",
+        "prompt_target_len": 1,
+        "prompt_actual_len": 1,
+        "prompt": "The",
+        "generated_text": " following is",
+        "generated_token_ids": [
+          2701,
+          374
+        ],
+        "generate_s": 0.138
+      },
+      {
+        "prompt_label": "len_2",
+        "prompt_target_len": 2,
+        "prompt_actual_len": 2,
+        "prompt": "The quick",
+        "generated_text": " and dirty",
+        "generated_token_ids": [
+          323,
+          18595
+        ],
+        "generate_s": 0.0399
+      },
+      {
+        "prompt_label": "len_15",
+        "prompt_target_len": 15,
+        "prompt_actual_len": 15,
+        "prompt": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps",
+        "generated_text": " over the",
+        "generated_token_ids": [
+          916,
+          279
+        ],
+        "generate_s": 0.0461
+      },
+      {
+        "prompt_label": "len_16",
+        "prompt_target_len": 16,
+        "prompt_actual_len": 16,
+        "prompt": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over",
+        "generated_text": " the lazy",
+        "generated_token_ids": [
+          279,
+          15678
+        ],
+        "generate_s": 0.0326
+      },
+      {
+        "prompt_label": "len_17",
+        "prompt_target_len": 17,
+        "prompt_actual_len": 17,
+        "prompt": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the",
+        "generated_text": " lazy dog",
+        "generated_token_ids": [
+          15678,
+          5562
+        ],
+        "generate_s": 0.0253
+      }
+    ]
+  },
+  "comparisons": [
+    {
+      "prompt_label": "len_1",
+      "prompt_len": 1,
+      "baseline_ids": [
+        2701,
+        374
+      ],
+      "fused_ids": [
+        2701,
+        374
+      ],
+      "baseline_text": " following is",
+      "fused_text": " following is",
+      "token1_match": true,
+      "token2_match": true,
+      "all_match": true
+    },
+    {
+      "prompt_label": "len_2",
+      "prompt_len": 2,
+      "baseline_ids": [
+        323,
+        18595
+      ],
+      "fused_ids": [
+        323,
+        18595
+      ],
+      "baseline_text": " and dirty",
+      "fused_text": " and dirty",
+      "token1_match": true,
+      "token2_match": true,
+      "all_match": true
+    },
+    {
+      "prompt_label": "len_15",
+      "prompt_len": 15,
+      "baseline_ids": [
+        916,
+        279
+      ],
+      "fused_ids": [
+        916,
+        279
+      ],
+      "baseline_text": " over the",
+      "fused_text": " over the",
+      "token1_match": true,
+      "token2_match": true,
+      "all_match": true
+    },
+    {
+      "prompt_label": "len_16",
+      "prompt_len": 16,
+      "baseline_ids": [
+        279,
+        15678
+      ],
+      "fused_ids": [
+        279,
+        15678
+      ],
+      "baseline_text": " the lazy",
+      "fused_text": " the lazy",
+      "token1_match": true,
+      "token2_match": true,
+      "all_match": true
+    },
+    {
+      "prompt_label": "len_17",
+      "prompt_len": 17,
+      "baseline_ids": [
+        15678,
+        5562
+      ],
+      "fused_ids": [
+        15678,
+        5562
+      ],
+      "baseline_text": " lazy dog",
+      "fused_text": " lazy dog",
+      "token1_match": true,
+      "token2_match": true,
+      "all_match": true
+    }
+  ],
+  "summary": {
+    "total_cases": 5,
+    "token1_match_count": 5,
+    "token2_match_count": 5,
+    "all_match_count": 5
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "stage": "C1",
+  "test_name": "combined_lmcache_speculation",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "draft_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "num_speculative_tokens": 5,
+  "enable_prefix_caching": true,
+  "timestamp": "2026-03-14T20:50:11.277950+00:00",
+  "results": [
+    {
+      "context_length": 512,
+      "prompt_tokens": 257,
+      "output_tokens": 128,
+      "total_time_s": 1.69,
+      "tokens_per_sec": 75.74,
+      "peak_vram_mib": 73657,
+      "speculation_method": "ngram",
+      "draft_model": "ngram",
+      "num_speculative_tokens": 5,
+      "enable_prefix_caching": true,
+      "status": "ok"
+    },
+    {
+      "context_length": 2048,
+      "prompt_tokens": 1025,
+      "output_tokens": 128,
+      "total_time_s": 0.432,
+      "tokens_per_sec": 296.32,
+      "peak_vram_mib": 73659,
+      "speculation_method": "ngram",
+      "draft_model": "ngram",
+      "num_speculative_tokens": 5,
+      "enable_prefix_caching": true,
+      "status": "ok"
+    },
+    {
+      "context_length": 4096,
+      "prompt_tokens": 2049,
+      "output_tokens": 128,
+      "total_time_s": 1.42,
+      "tokens_per_sec": 90.17,
+      "peak_vram_mib": 73659,
+      "speculation_method": "ngram",
+      "draft_model": "ngram",
+      "num_speculative_tokens": 5,
+      "enable_prefix_caching": true,
+      "status": "ok"
+    },
+    {
+      "context_length": 8192,
+      "prompt_tokens": 4097,
+      "output_tokens": 128,
+      "total_time_s": 1.316,
+      "tokens_per_sec": 97.29,
+      "peak_vram_mib": 73563,
+      "speculation_method": "ngram",
+      "draft_model": "ngram",
+      "num_speculative_tokens": 5,
+      "enable_prefix_caching": true,
+      "status": "ok"
+    }
+  ]
+}

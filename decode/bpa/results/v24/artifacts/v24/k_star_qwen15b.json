@@ -1,0 +1,531 @@
+{
+  "model": "qwen15b",
+  "n_layers": 28,
+  "k_star_1pct": 3,
+  "k_star_3pct": 2,
+  "k_over_D_3pct": 0.0714,
+  "k_results": {
+    "g32_k0": {
+      "k": 0,
+      "protected_layers": [],
+      "evals": {
+        "L8192_s0": {
+          "ppl": 18.0134,
+          "delta_pct": 167.2,
+          "pass_1pct": false,
+          "pass_3pct": false,
+          "p50_ms": 52.94,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s1": {
+          "ppl": 63.1967,
+          "delta_pct": 889.34,
+          "pass_1pct": false,
+          "pass_3pct": false,
+          "p50_ms": 52.99,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s2": {
+          "ppl": 55.7068,
+          "delta_pct": 860.24,
+          "pass_1pct": false,
+          "pass_3pct": false,
+          "p50_ms": 53.05,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s0": {
+          "ppl": 6298.1764,
+          "delta_pct": 67928.54,
+          "pass_1pct": false,
+          "pass_3pct": false,
+          "p50_ms": 173.11,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s1": {
+          "ppl": 3010.424,
+          "delta_pct": 27385.07,
+          "pass_1pct": false,
+          "pass_3pct": false,
+          "p50_ms": 173.27,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s2": {
+          "ppl": 4141.7932,
+          "delta_pct": 67043.31,
+          "pass_1pct": false,
+          "pass_3pct": false,
+          "p50_ms": 173.38,
+          "kv_bytes_ratio": 1.0
+        }
+      },
+      "max_delta": 67928.54,
+      "pass_1pct": false,
+      "pass_3pct": false,
+      "kv_ratio": 0.28125
+    },
+    "g32_k1": {
+      "k": 1,
+      "protected_layers": [
+        0
+      ],
+      "evals": {
+        "L8192_s0": {
+          "ppl": 6.9082,
+          "delta_pct": 2.47,
+          "pass_1pct": false,
+          "pass_3pct": true,
+          "p50_ms": 53.06,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s1": {
+          "ppl": 6.6338,
+          "delta_pct": 3.85,
+          "pass_1pct": false,
+          "pass_3pct": false,
+          "p50_ms": 53.0,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s2": {
+          "ppl": 5.8187,
+          "delta_pct": 0.3,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.04,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s0": {
+          "ppl": 9.509,
+          "delta_pct": 2.71,
+          "pass_1pct": false,
+          "pass_3pct": true,
+          "p50_ms": 173.07,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s1": {
+          "ppl": 11.1562,
+          "delta_pct": 1.86,
+          "pass_1pct": false,
+          "pass_3pct": true,
+          "p50_ms": 173.34,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s2": {
+          "ppl": 6.3294,
+          "delta_pct": 2.61,
+          "pass_1pct": false,
+          "pass_3pct": true,
+          "p50_ms": 173.34,
+          "kv_bytes_ratio": 1.0
+        }
+      },
+      "max_delta": 3.85,
+      "pass_1pct": false,
+      "pass_3pct": false,
+      "kv_ratio": 0.289342
+    },
+    "g32_k2": {
+      "k": 2,
+      "protected_layers": [
+        0,
+        15
+      ],
+      "evals": {
+        "L8192_s0": {
+          "ppl": 6.8123,
+          "delta_pct": 1.05,
+          "pass_1pct": false,
+          "pass_3pct": true,
+          "p50_ms": 53.08,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s1": {
+          "ppl": 6.3973,
+          "delta_pct": 0.15,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.01,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s2": {
+          "ppl": 5.8332,
+          "delta_pct": 0.55,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.04,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s0": {
+          "ppl": 9.2624,
+          "delta_pct": 0.05,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.02,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s1": {
+          "ppl": 10.9831,
+          "delta_pct": 0.27,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.47,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s2": {
+          "ppl": 6.1715,
+          "delta_pct": 0.05,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.38,
+          "kv_bytes_ratio": 1.0
+        }
+      },
+      "max_delta": 1.05,
+      "pass_1pct": false,
+      "pass_3pct": true,
+      "kv_ratio": 0.297433
+    },
+    "g32_k3": {
+      "k": 3,
+      "protected_layers": [
+        0,
+        15,
+        1
+      ],
+      "evals": {
+        "L8192_s0": {
+          "ppl": 6.7592,
+          "delta_pct": 0.26,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.1,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s1": {
+          "ppl": 6.3768,
+          "delta_pct": -0.17,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.06,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s2": {
+          "ppl": 5.8436,
+          "delta_pct": 0.73,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.06,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s0": {
+          "ppl": 9.2483,
+          "delta_pct": -0.11,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.07,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s1": {
+          "ppl": 10.9665,
+          "delta_pct": 0.12,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.3,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s2": {
+          "ppl": 6.1808,
+          "delta_pct": 0.2,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.43,
+          "kv_bytes_ratio": 1.0
+        }
+      },
+      "max_delta": 0.73,
+      "pass_1pct": true,
+      "pass_3pct": true,
+      "kv_ratio": 0.305525
+    },
+    "g32_k4": {
+      "k": 4,
+      "protected_layers": [
+        0,
+        15,
+        1,
+        19
+      ],
+      "evals": {
+        "L8192_s0": {
+          "ppl": 6.7698,
+          "delta_pct": 0.42,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.12,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s1": {
+          "ppl": 6.3757,
+          "delta_pct": -0.19,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.04,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s2": {
+          "ppl": 5.8164,
+          "delta_pct": 0.26,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.09,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s0": {
+          "ppl": 9.2489,
+          "delta_pct": -0.1,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.14,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s1": {
+          "ppl": 10.9301,
+          "delta_pct": -0.21,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.54,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s2": {
+          "ppl": 6.1747,
+          "delta_pct": 0.1,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.44,
+          "kv_bytes_ratio": 1.0
+        }
+      },
+      "max_delta": 0.42,
+      "pass_1pct": true,
+      "pass_3pct": true,
+      "kv_ratio": 0.313616
+    },
+    "g32_k6": {
+      "k": 6,
+      "protected_layers": [
+        0,
+        15,
+        1,
+        19,
+        25,
+        14
+      ],
+      "evals": {
+        "L8192_s0": {
+          "ppl": 6.774,
+          "delta_pct": 0.48,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.06,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s1": {
+          "ppl": 6.3733,
+          "delta_pct": -0.23,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.05,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s2": {
+          "ppl": 5.8134,
+          "delta_pct": 0.21,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.03,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s0": {
+          "ppl": 9.2461,
+          "delta_pct": -0.13,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.17,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s1": {
+          "ppl": 10.9314,
+          "delta_pct": -0.2,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.25,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s2": {
+          "ppl": 6.1639,
+          "delta_pct": -0.08,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.38,
+          "kv_bytes_ratio": 1.0
+        }
+      },
+      "max_delta": 0.48,
+      "pass_1pct": true,
+      "pass_3pct": true,
+      "kv_ratio": 0.329799
+    },
+    "g32_k8": {
+      "k": 8,
+      "protected_layers": [
+        0,
+        15,
+        1,
+        19,
+        25,
+        14,
+        23,
+        26
+      ],
+      "evals": {
+        "L8192_s0": {
+          "ppl": 6.767,
+          "delta_pct": 0.38,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.12,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s1": {
+          "ppl": 6.3772,
+          "delta_pct": -0.17,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.07,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s2": {
+          "ppl": 5.8287,
+          "delta_pct": 0.47,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.07,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s0": {
+          "ppl": 9.2337,
+          "delta_pct": -0.26,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.27,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s1": {
+          "ppl": 10.9045,
+          "delta_pct": -0.44,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.37,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s2": {
+          "ppl": 6.1654,
+          "delta_pct": -0.05,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.42,
+          "kv_bytes_ratio": 1.0
+        }
+      },
+      "max_delta": 0.47,
+      "pass_1pct": true,
+      "pass_3pct": true,
+      "kv_ratio": 0.345982
+    },
+    "g32_k12": {
+      "k": 12,
+      "protected_layers": [
+        0,
+        15,
+        1,
+        19,
+        25,
+        14,
+        23,
+        26,
+        2,
+        8,
+        12,
+        21
+      ],
+      "evals": {
+        "L8192_s0": {
+          "ppl": 6.7616,
+          "delta_pct": 0.3,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.16,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s1": {
+          "ppl": 6.3794,
+          "delta_pct": -0.13,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.06,
+          "kv_bytes_ratio": 1.0
+        },
+        "L8192_s2": {
+          "ppl": 5.8083,
+          "delta_pct": 0.12,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 53.06,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s0": {
+          "ppl": 9.2349,
+          "delta_pct": -0.25,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.09,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s1": {
+          "ppl": 10.9264,
+          "delta_pct": -0.24,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.28,
+          "kv_bytes_ratio": 1.0
+        },
+        "L32768_s2": {
+          "ppl": 6.1502,
+          "delta_pct": -0.3,
+          "pass_1pct": true,
+          "pass_3pct": true,
+          "p50_ms": 173.32,
+          "kv_bytes_ratio": 1.0
+        }
+      },
+      "max_delta": 0.3,
+      "pass_1pct": true,
+      "pass_3pct": true,
+      "kv_ratio": 0.378348
+    }
+  },
+  "oracle_ranking_used": [
+    0,
+    15,
+    1,
+    19,
+    25,
+    14,
+    23,
+    26,
+    2,
+    8,
+    12,
+    21
+  ],
+  "timestamp": "2026-02-17T13:47:58.167940"
+}

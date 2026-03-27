@@ -1,0 +1,84 @@
+{
+  "experiment": "large_decode_latency",
+  "model_info": {
+    "model": "01-ai/Yi-1.5-34B-Chat",
+    "n_params": 34388917248,
+    "n_layers": 60,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "dtype": "bfloat16",
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 150.121545728,
+    "load_time_s": 49.8295578956604,
+    "k_proj_shape": [
+      1,
+      4,
+      1024
+    ]
+  },
+  "results": [
+    {
+      "label": "FP16/FP16",
+      "k_bits": 16,
+      "v_bits": 16,
+      "mean_ms_per_token": 45.042969000836216,
+      "mean_tokens_per_sec": 22.201222126955063,
+      "all_latencies": [
+        {
+          "ms_per_token": 45.23320585489273,
+          "tokens_per_sec": 22.107652577356138
+        },
+        {
+          "ms_per_token": 44.93438232690096,
+          "tokens_per_sec": 22.254673330656377
+        },
+        {
+          "ms_per_token": 44.96131882071495,
+          "tokens_per_sec": 22.241340472852674
+        }
+      ]
+    },
+    {
+      "label": "FP16/INT4",
+      "k_bits": 16,
+      "v_bits": 4,
+      "mean_ms_per_token": 48.58624868094921,
+      "mean_tokens_per_sec": 20.58198798851386,
+      "all_latencies": [
+        {
+          "ms_per_token": 48.65961156785488,
+          "tokens_per_sec": 20.55092442744882
+        },
+        {
+          "ms_per_token": 48.58933500945568,
+          "tokens_per_sec": 20.580647992103533
+        },
+        {
+          "ms_per_token": 48.50979946553707,
+          "tokens_per_sec": 20.614391545989225
+        }
+      ]
+    },
+    {
+      "label": "INT8/INT4",
+      "k_bits": 8,
+      "v_bits": 4,
+      "mean_ms_per_token": 51.95873579631249,
+      "mean_tokens_per_sec": 19.24604810583607,
+      "all_latencies": [
+        {
+          "ms_per_token": 51.9254582375288,
+          "tokens_per_sec": 19.258376024831232
+        },
+        {
+          "ms_per_token": 51.95300105959177,
+          "tokens_per_sec": 19.248166219560016
+        },
+        {
+          "ms_per_token": 51.9977480918169,
+          "tokens_per_sec": 19.23160207311697
+        }
+      ]
+    }
+  ]
+}

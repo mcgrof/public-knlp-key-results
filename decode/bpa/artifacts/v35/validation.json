@@ -1,0 +1,32 @@
+[
+  {
+    "config": "qwen25_05b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.0004061738288896182,
+    "pass": true
+  },
+  {
+    "config": "qwen25_1.8b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.00045372049130273023,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.000473036878547218,
+    "pass": true
+  },
+  {
+    "config": "mistral_7b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.00047892718427504073,
+    "pass": true
+  },
+  {
+    "config": "llama31_8b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.0003878975827088557,
+    "pass": true
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "model": "Qwen/Qwen2.5-7B",
+  "context_len": 2048,
+  "results": [
+    {
+      "batch_size": 1,
+      "context_len": 2048,
+      "tokens_per_sec": 123.5,
+      "latency_ms": 8.094,
+      "kv_bandwidth_gb_s": 14.6
+    },
+    {
+      "batch_size": 2,
+      "context_len": 2048,
+      "tokens_per_sec": 240.8,
+      "latency_ms": 8.306,
+      "kv_bandwidth_gb_s": 28.5
+    },
+    {
+      "batch_size": 4,
+      "context_len": 2048,
+      "tokens_per_sec": 472.8,
+      "latency_ms": 8.461,
+      "kv_bandwidth_gb_s": 56.0
+    },
+    {
+      "batch_size": 8,
+      "context_len": 2048,
+      "tokens_per_sec": 894.8,
+      "latency_ms": 8.941,
+      "kv_bandwidth_gb_s": 105.9
+    },
+    {
+      "batch_size": 16,
+      "context_len": 2048,
+      "tokens_per_sec": 1698.6,
+      "latency_ms": 9.42,
+      "kv_bandwidth_gb_s": 201.0
+    },
+    {
+      "batch_size": 32,
+      "context_len": 2048,
+      "tokens_per_sec": 3098.6,
+      "latency_ms": 10.327,
+      "kv_bandwidth_gb_s": 366.7
+    },
+    {
+      "batch_size": 64,
+      "context_len": 2048,
+      "tokens_per_sec": 4666.0,
+      "latency_ms": 13.716,
+      "kv_bandwidth_gb_s": 552.3
+    },
+    {
+      "batch_size": 128,
+      "context_len": 2048,
+      "tokens_per_sec": 6633.3,
+      "latency_ms": 19.296,
+      "kv_bandwidth_gb_s": 785.1
+    }
+  ]
+}

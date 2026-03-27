@@ -1,0 +1,49 @@
+{
+  "model": "Qwen/Qwen2.5-7B",
+  "batch_size": 1,
+  "results": [
+    {
+      "context_len": 65536,
+      "latency_ms": 10.97,
+      "tokens_per_sec": 91.13,
+      "peak_memory_gb": 36.7,
+      "prefill_memory_gb": 36.7
+    },
+    {
+      "context_len": 131072,
+      "latency_ms": 13.42,
+      "tokens_per_sec": 74.5,
+      "peak_memory_gb": 59.2,
+      "prefill_memory_gb": 59.2
+    },
+    {
+      "context_len": 196608,
+      "latency_ms": 14.56,
+      "tokens_per_sec": 68.66,
+      "peak_memory_gb": 81.7,
+      "prefill_memory_gb": 81.7
+    },
+    {
+      "context_len": 262144,
+      "latency_ms": 17.51,
+      "tokens_per_sec": 57.09,
+      "peak_memory_gb": 104.2,
+      "prefill_memory_gb": 104.2
+    },
+    {
+      "context_len": 393216,
+      "latency_ms": 20.45,
+      "tokens_per_sec": 48.89,
+      "peak_memory_gb": 149.2,
+      "prefill_memory_gb": 149.2
+    },
+    {
+      "context_len": 524288,
+      "latency_ms": null,
+      "tokens_per_sec": null,
+      "peak_memory_gb": null,
+      "prefill_memory_gb": null,
+      "status": "OOM"
+    }
+  ]
+}

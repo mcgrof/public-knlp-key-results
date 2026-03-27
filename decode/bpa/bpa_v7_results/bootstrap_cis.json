@@ -1,0 +1,272 @@
+{
+  "stress_control_512_stress": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "stress_frozen_512_stress": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "stress_shuffled_512_stress": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "stress_corrupt_512_stress": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "stress_recency_512_stress": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "dynbudget_constant_ra_value_512_dynamic-budget": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "dynbudget_constant_recency_512_dynamic-budget": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "dynbudget_entropy_ra_value_512_dynamic-budget": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "dynbudget_entropy_recency_512_dynamic-budget": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "dynbudget_concentration_ra_value_512_dynamic-budget": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "dynbudget_concentration_recency_512_dynamic-budget": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "cheap_ra_value_512_cheap-features": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "cheap_ra_ema_512_cheap-features": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "cheap_ra_rank_512_cheap-features": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "cheap_recency_512_cheap-features": {
+    "mean": 251.86630961100263,
+    "ci_lo": 246.23969904581705,
+    "ci_hi": 260.62383728027345,
+    "n": 3
+  },
+  "stress_control_1024_stress": {
+    "mean": 256.31164050632054,
+    "ci_lo": 247.6584019978841,
+    "ci_hi": 264.63689880371095,
+    "n": 3
+  },
+  "stress_frozen_1024_stress": {
+    "mean": 256.356878153483,
+    "ci_lo": 247.76816024780274,
+    "ci_hi": 264.5763432820638,
+    "n": 3
+  },
+  "stress_shuffled_1024_stress": {
+    "mean": 256.4828771803114,
+    "ci_lo": 247.72792434692383,
+    "ci_hi": 264.724636332194,
+    "n": 3
+  },
+  "stress_corrupt_1024_stress": {
+    "mean": 256.28549965752495,
+    "ci_lo": 247.37553380330402,
+    "ci_hi": 264.6223332722982,
+    "n": 3
+  },
+  "stress_recency_1024_stress": {
+    "mean": 258.4801628960504,
+    "ci_lo": 249.74222717285156,
+    "ci_hi": 266.7664505004883,
+    "n": 3
+  },
+  "dynbudget_constant_ra_value_1024_dynamic-budget": {
+    "mean": 256.31164050632054,
+    "ci_lo": 247.6584019978841,
+    "ci_hi": 264.63689880371095,
+    "n": 3
+  },
+  "dynbudget_constant_recency_1024_dynamic-budget": {
+    "mean": 258.4801628960504,
+    "ci_lo": 249.74222717285156,
+    "ci_hi": 266.7664505004883,
+    "n": 3
+  },
+  "dynbudget_entropy_ra_value_1024_dynamic-budget": {
+    "mean": 256.30977808634447,
+    "ci_lo": 247.6584019978841,
+    "ci_hi": 264.63034871419273,
+    "n": 3
+  },
+  "dynbudget_entropy_recency_1024_dynamic-budget": {
+    "mean": 258.48118709988063,
+    "ci_lo": 249.74222717285156,
+    "ci_hi": 266.76541188557945,
+    "n": 3
+  },
+  "dynbudget_concentration_ra_value_1024_dynamic-budget": {
+    "mean": 256.30244488186304,
+    "ci_lo": 247.60303293863933,
+    "ci_hi": 264.6217803955078,
+    "n": 3
+  },
+  "dynbudget_concentration_recency_1024_dynamic-budget": {
+    "mean": 258.5354051378038,
+    "ci_lo": 249.76840642293294,
+    "ci_hi": 266.79354298909504,
+    "n": 3
+  },
+  "cheap_ra_value_1024_cheap-features": {
+    "mean": 256.31164050632054,
+    "ci_lo": 247.6584019978841,
+    "ci_hi": 264.63689880371095,
+    "n": 3
+  },
+  "cheap_ra_ema_1024_cheap-features": {
+    "mean": 256.29436111450195,
+    "ci_lo": 247.5394187927246,
+    "ci_hi": 264.5892562866211,
+    "n": 3
+  },
+  "cheap_ra_rank_1024_cheap-features": {
+    "mean": 256.31164050632054,
+    "ci_lo": 247.6584019978841,
+    "ci_hi": 264.63689880371095,
+    "n": 3
+  },
+  "cheap_recency_1024_cheap-features": {
+    "mean": 258.4801628960504,
+    "ci_lo": 249.74222717285156,
+    "ci_hi": 266.7664505004883,
+    "n": 3
+  },
+  "stress_control_2048_stress": {
+    "mean": 279.90131352742515,
+    "ci_lo": 267.7461883544922,
+    "ci_hi": 292.05643870035806,
+    "n": 2
+  },
+  "stress_frozen_2048_stress": {
+    "mean": 280.15781326293944,
+    "ci_lo": 269.31918182373045,
+    "ci_hi": 290.99644470214844,
+    "n": 2
+  },
+  "stress_shuffled_2048_stress": {
+    "mean": 281.2296142578125,
+    "ci_lo": 268.35789286295574,
+    "ci_hi": 294.10133565266926,
+    "n": 2
+  },
+  "stress_corrupt_2048_stress": {
+    "mean": 279.98723017374675,
+    "ci_lo": 268.517094930013,
+    "ci_hi": 291.45736541748045,
+    "n": 2
+  },
+  "stress_recency_2048_stress": {
+    "mean": 291.42679697672526,
+    "ci_lo": 278.26369222005206,
+    "ci_hi": 304.58990173339845,
+    "n": 2
+  },
+  "dynbudget_constant_ra_value_2048_dynamic-budget": {
+    "mean": 279.90131352742515,
+    "ci_lo": 267.7461883544922,
+    "ci_hi": 292.05643870035806,
+    "n": 2
+  },
+  "dynbudget_constant_recency_2048_dynamic-budget": {
+    "mean": 291.42679697672526,
+    "ci_lo": 278.26369222005206,
+    "ci_hi": 304.58990173339845,
+    "n": 2
+  },
+  "dynbudget_entropy_ra_value_2048_dynamic-budget": {
+    "mean": 279.9021642049154,
+    "ci_lo": 267.7441940307617,
+    "ci_hi": 292.060134379069,
+    "n": 2
+  },
+  "dynbudget_entropy_recency_2048_dynamic-budget": {
+    "mean": 291.41909535725915,
+    "ci_lo": 278.25980478922526,
+    "ci_hi": 304.578385925293,
+    "n": 2
+  },
+  "dynbudget_concentration_ra_value_2048_dynamic-budget": {
+    "mean": 280.05261535644536,
+    "ci_lo": 267.87218170166017,
+    "ci_hi": 292.2330490112305,
+    "n": 2
+  },
+  "dynbudget_concentration_recency_2048_dynamic-budget": {
+    "mean": 291.4880065917969,
+    "ci_lo": 278.3283391316732,
+    "ci_hi": 304.64767405192055,
+    "n": 2
+  },
+  "cheap_ra_value_2048_cheap-features": {
+    "mean": 279.90131352742515,
+    "ci_lo": 267.7461883544922,
+    "ci_hi": 292.05643870035806,
+    "n": 2
+  },
+  "cheap_ra_ema_2048_cheap-features": {
+    "mean": 279.73440907796225,
+    "ci_lo": 267.5826227823893,
+    "ci_hi": 291.88619537353514,
+    "n": 2
+  },
+  "cheap_ra_rank_2048_cheap-features": {
+    "mean": 279.90131352742515,
+    "ci_lo": 267.7461883544922,
+    "ci_hi": 292.05643870035806,
+    "n": 2
+  },
+  "cheap_recency_2048_cheap-features": {
+    "mean": 291.42679697672526,
+    "ci_lo": 278.26369222005206,
+    "ci_hi": 304.58990173339845,
+    "n": 2
+  }
+}

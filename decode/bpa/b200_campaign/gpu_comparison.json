@@ -1,0 +1,60 @@
+{
+  "b200": {
+    "gpu": "NVIDIA B200",
+    "memory_gb": 178.4,
+    "peak_bandwidth_gb_s": 6549.8,
+    "measured_bandwidth_gb_s": 785.1,
+    "peak_fp16_tflops": 1604.8,
+    "batch_scaling": {
+      "saturates": true,
+      "hill_Smax": 4698.484723571587,
+      "hill_B_half": 27.120544069196846,
+      "hill_gamma": 1.263561140789109
+    },
+    "context_scaling": {
+      "linear": true,
+      "tested_range": "1K-384K"
+    },
+    "max_context_b1": 393216,
+    "decode_tps_b1_t2k": 123.5,
+    "decode_tps_b8_t2k": 894.8
+  },
+  "h100": {
+    "gpu": "NVIDIA H100 80GB",
+    "memory_gb": 80,
+    "peak_bandwidth_gb_s": 3350,
+    "measured_bandwidth_gb_s": 850,
+    "batch_scaling": {
+      "saturates": true,
+      "saturation_batch": 16,
+      "note": "Saturates at B>=16"
+    },
+    "context_scaling": {
+      "linear": true,
+      "tested_range": "1K-32K"
+    },
+    "decode_tps_b1_t2k": 85.0,
+    "decode_tps_b8_t2k": 620.0,
+    "fused_int4_available": false,
+    "cuda_version": "12.4"
+  },
+  "w7900": {
+    "gpu": "AMD W7900",
+    "memory_gb": 48,
+    "peak_bandwidth_gb_s": 864,
+    "measured_bandwidth_gb_s": 54,
+    "batch_scaling": {
+      "saturates": false,
+      "max_batch_tested": 64,
+      "note": "Linear through B=64, no saturation"
+    },
+    "context_scaling": {
+      "linear": true,
+      "tested_range": "1K-32K"
+    },
+    "decode_tps_b1_t2k": 28.5,
+    "decode_tps_b8_t2k": 210.0,
+    "fused_int4_available": false,
+    "rocm_version": "6.4.3"
+  }
+}

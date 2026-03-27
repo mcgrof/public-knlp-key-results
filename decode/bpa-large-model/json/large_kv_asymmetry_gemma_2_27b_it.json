@@ -1,0 +1,57 @@
+{
+  "experiment": "large_kv_asymmetry",
+  "model_info": {
+    "model": "google/gemma-2-27b-it",
+    "n_params": 27227128320,
+    "n_layers": 46,
+    "n_kv_heads": 16,
+    "head_dim": 128,
+    "dtype": "bfloat16",
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 150.0217344,
+    "load_time_s": 35.70090293884277,
+    "k_proj_shape": [
+      1,
+      4,
+      2048
+    ]
+  },
+  "results": [
+    {
+      "label": "K_FP16/V_FP16",
+      "k_bits": 16,
+      "v_bits": 16,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "elapsed_s": 2.6226043701171875e-06
+    },
+    {
+      "label": "K_FP16/V_INT4",
+      "k_bits": 16,
+      "v_bits": 4,
+      "avg_logit_error": 0.6411784887313843,
+      "avg_token_agreement": 0.7115234375,
+      "avg_ppl_delta_pct": -1.2844389014032385,
+      "elapsed_s": 17.4920973777771
+    },
+    {
+      "label": "K_INT8/V_INT4",
+      "k_bits": 8,
+      "v_bits": 4,
+      "avg_logit_error": 0.7127771615982056,
+      "avg_token_agreement": 0.73125,
+      "avg_ppl_delta_pct": -1.7181292766548766,
+      "elapsed_s": 17.221017360687256
+    },
+    {
+      "label": "K_INT4/V_INT4",
+      "k_bits": 4,
+      "v_bits": 4,
+      "avg_logit_error": 0.8532230734825135,
+      "avg_token_agreement": 0.617578125,
+      "avg_ppl_delta_pct": -15.740883175604665,
+      "elapsed_s": 17.274367809295654
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "variant": "dynbudget_constant_ra_value",
+  "seq_len": 1024,
+  "seed": 3,
+  "far_budget": 4,
+  "mode": "dynamic-budget",
+  "ppl_mean": 256.63962071736654,
+  "ppl_std": 96.9793252719169,
+  "enabled_rate": 0.69921875,
+  "effective_kept_tokens": 317.9951171875,
+  "kv_bytes_read_per_token": 14051088.0,
+  "peak_kv_bytes": 37748736,
+  "flops_relative": 0.3722267150878906,
+  "wall_ms_per_token": 0.9300698420702247,
+  "gate_ms_per_token": 0.6118162455095444,
+  "fwd_ms_per_token": 0.3157907849526964,
+  "budget_mean": 2.796875,
+  "budget_p95": 4.0,
+  "budget_p99": 4.0,
+  "tokens_seen": 30720,
+  "n_eval_batches": 30,
+  "extra": {
+    "budget_mode": "constant",
+    "strategy": "ra_value"
+  }
+}

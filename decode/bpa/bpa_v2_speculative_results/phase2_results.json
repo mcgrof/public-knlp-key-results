@@ -1,0 +1,27 @@
+{
+  "ppl_uniform_mean": 58554.74322916667,
+  "ppl_uniform_std": 1634.3897017272081,
+  "ppl_local_mean": 58554.74322916667,
+  "ppl_local_std": 1634.3897017272081,
+  "gate_enabled_rate_mean": 0.4527138779560725,
+  "gate_enabled_rate_std": 0.00013156841528558601,
+  "oracle_enabled_rate_mean": 0.2449592500925064,
+  "oracle_enabled_rate_std": 0.001253762574617995,
+  "tokens_per_query_uniform_mean": 256.0,
+  "tokens_per_query_uniform_std": 0.0,
+  "tokens_per_query_gate_mean": 150.9210645675659,
+  "tokens_per_query_gate_std": 0.02526113573483252,
+  "flops_gate_mean": 25033.266666666666,
+  "config": {
+    "n_eval": 30,
+    "batch_size": 2,
+    "seq_len": 256,
+    "local_window": 64,
+    "gate_threshold": 0.5,
+    "seed": 1
+  },
+  "acceptance": {
+    "gate_rate_stable": true,
+    "ppl_gap_exists": false
+  }
+}

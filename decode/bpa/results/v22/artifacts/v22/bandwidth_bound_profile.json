@@ -1,0 +1,94 @@
+{
+  "model": "qwen05b",
+  "L": 16384,
+  "decode_steps": 256,
+  "profiles": {
+    "batch_1": {
+      "INT8_all": {
+        "avg_total_ms": 9416.57,
+        "ms_per_token": 36.78,
+        "peak_gpu_mb": 6141.4,
+        "n_trials": 3
+      },
+      "g32_k4": {
+        "avg_total_ms": 9371.63,
+        "ms_per_token": 36.61,
+        "peak_gpu_mb": 6141.5,
+        "n_trials": 3
+      },
+      "dense": {
+        "avg_total_ms": 9349.73,
+        "ms_per_token": 36.52,
+        "peak_gpu_mb": 6141.5,
+        "n_trials": 3
+      }
+    },
+    "batch_4": {
+      "INT8_all": {
+        "avg_total_ms": 12762.9,
+        "ms_per_token": 49.86,
+        "peak_gpu_mb": 21616.1,
+        "n_trials": 3
+      },
+      "g32_k4": {
+        "avg_total_ms": 12767.72,
+        "ms_per_token": 49.87,
+        "peak_gpu_mb": 21616.6,
+        "n_trials": 3
+      },
+      "dense": {
+        "avg_total_ms": 12724.44,
+        "ms_per_token": 49.7,
+        "peak_gpu_mb": 21616.6,
+        "n_trials": 3
+      }
+    },
+    "batch_8": {
+      "INT8_all": {
+        "avg_total_ms": 18613.38,
+        "ms_per_token": 72.71,
+        "peak_gpu_mb": 42250.1,
+        "n_trials": 3
+      },
+      "g32_k4": {
+        "avg_total_ms": 18649.9,
+        "ms_per_token": 72.85,
+        "peak_gpu_mb": 42251.0,
+        "n_trials": 3
+      },
+      "dense": {
+        "avg_total_ms": 18650.56,
+        "ms_per_token": 72.85,
+        "peak_gpu_mb": 42251.0,
+        "n_trials": 3
+      }
+    },
+    "batch_16": {}
+  },
+  "speedup_analysis": {
+    "batch_1": {
+      "dense_ms": 36.52,
+      "g32_k4_ms": 36.61,
+      "int8_ms": 36.78,
+      "g32_vs_dense_speedup": 0.998,
+      "g32_vs_int8_speedup": 1.005,
+      "bandwidth_bound": false
+    },
+    "batch_4": {
+      "dense_ms": 49.7,
+      "g32_k4_ms": 49.87,
+      "int8_ms": 49.86,
+      "g32_vs_dense_speedup": 0.997,
+      "g32_vs_int8_speedup": 1.0,
+      "bandwidth_bound": false
+    },
+    "batch_8": {
+      "dense_ms": 72.85,
+      "g32_k4_ms": 72.85,
+      "int8_ms": 72.71,
+      "g32_vs_dense_speedup": 1.0,
+      "g32_vs_int8_speedup": 0.998,
+      "bandwidth_bound": false
+    }
+  }
+}

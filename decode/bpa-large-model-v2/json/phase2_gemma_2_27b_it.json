@@ -1,0 +1,78 @@
+{
+  "phase": "phase2_ratio_classifier",
+  "model_info": {
+    "model": "google/gemma-2-27b-it",
+    "n_params": 27227128320,
+    "n_layers": 46,
+    "n_kv_heads": 16,
+    "head_dim": 128,
+    "load_time_s": 37.2,
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 150.0,
+    "n_gpu_modules": 46,
+    "n_cpu_modules": 0
+  },
+  "int8_error": 0.3714,
+  "int6_error": 0.366,
+  "ratio": 0.9855,
+  "threshold": 3.0,
+  "needs_fp16_keys": false,
+  "details": {
+    "INT8": {
+      "avg_logit_error": 0.3714,
+      "avg_token_agreement": 0.8375,
+      "per_prompt_errors": [
+        0.4375,
+        0.25,
+        0.5371,
+        0.375,
+        0.3438,
+        0.6328,
+        0.2549,
+        0.3125,
+        0.3125,
+        0.2578
+      ],
+      "per_prompt_agrees": [
+        1.0,
+        1.0,
+        0.9688,
+        1.0,
+        0.4062,
+        1.0,
+        0.9375,
+        0.1094,
+        1.0,
+        0.9531
+      ]
+    },
+    "INT6": {
+      "avg_logit_error": 0.366,
+      "avg_token_agreement": 0.7578,
+      "per_prompt_errors": [
+        0.3516,
+        0.2188,
+        0.4688,
+        0.2969,
+        0.2969,
+        0.6602,
+        0.4375,
+        0.2969,
+        0.3516,
+        0.2812
+      ],
+      "per_prompt_agrees": [
+        0.8906,
+        0.8125,
+        0.5781,
+        1.0,
+        1.0,
+        0.3281,
+        0.9375,
+        0.0781,
+        1.0,
+        0.9531
+      ]
+    }
+  }
+}

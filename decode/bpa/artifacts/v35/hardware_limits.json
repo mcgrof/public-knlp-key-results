@@ -1,0 +1,6 @@
+{
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "sustained_bandwidth_GBs": 2890.74,
+  "peak_fp16_TFLOPs": 740.077,
+  "ridge_point_flops_per_byte": 256.02
+}

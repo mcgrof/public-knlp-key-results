@@ -1,0 +1,42 @@
+{
+  "bitter1": {
+    "beta": 0.9953,
+    "gamma": 0.0014,
+    "delta": 0.3278,
+    "n_L_points": 2,
+    "L_values": [
+      2048,
+      4096
+    ]
+  },
+  "bitter2": {
+    "beta": 0.9961,
+    "gamma": 0.0014,
+    "delta": 0.3251,
+    "n_L_points": 2,
+    "L_values": [
+      2048,
+      4096
+    ]
+  },
+  "bitter3": {
+    "beta": 0.9953,
+    "gamma": 0.0014,
+    "delta": 0.3276,
+    "n_L_points": 2,
+    "L_values": [
+      2048,
+      4096
+    ]
+  },
+  "bitter4": {
+    "beta": 0.9965,
+    "gamma": 0.0017,
+    "delta": 0.3734,
+    "n_L_points": 2,
+    "L_values": [
+      2048,
+      4096
+    ]
+  }
+}

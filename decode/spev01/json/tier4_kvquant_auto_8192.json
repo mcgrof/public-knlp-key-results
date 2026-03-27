@@ -1,0 +1,22 @@
+{
+  "tier": "4",
+  "type": "kv_quantization",
+  "timestamp": "2026-03-12T04:43:57",
+  "gpu": "H100-80GB",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "kv_cache_dtype": "auto",
+  "seq_len": 8192,
+  "num_prompts": 20,
+  "max_tokens": 256,
+  "total_input_tokens": 63266,
+  "total_output_tokens": 5120,
+  "wall_time_sec": 4.932,
+  "tokens_per_sec": 1038.12,
+  "avg_decode_latency_ms": 0.96,
+  "peak_vram_gb": 71.19,
+  "sample_outputs": [
+    "1. **Introduction to General Relativity:**\n   - **Historical Context:** General Relativity was developed by Albert Einstein in 1915 as a theory of gravitation. It is a fundamental theory in physics th",
+    "1. **Quicksort**:\n   - **Description**: Quicksort is a divide-and-conquer algorithm that works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, ac",
+    "1. **Charles Babbage (1791-1871)**: Charles Babbage is often considered the \"father of the computer.\" In the early 19th century, he designed several mechanical computers, including the Difference Engi"
+  ]
+}

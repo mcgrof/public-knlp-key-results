@@ -1,0 +1,13 @@
+{
+  "tier": "0a",
+  "type": "disk_benchmark",
+  "timestamp": "2026-03-12T04:05:40",
+  "gpu": "H100-80GB",
+  "seq_read_gbps": 1.613,
+  "seq_read_avg_lat_us": 2600.7,
+  "rand_read_iops": 36813.0,
+  "rand_read_p50_us": 419.8,
+  "rand_read_p99_us": 659.5,
+  "storage_type": "virtual_disk_vda3",
+  "note": "No physical NVMe detected. Using virtual disk. Offload tests will use /tmp (tmpfs/RAM) for best-case offload simulation."
+}

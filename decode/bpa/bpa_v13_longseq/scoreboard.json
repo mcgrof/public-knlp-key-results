@@ -1,0 +1,122 @@
+{
+  "dense": {
+    "8192": {
+      "r1": {
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 9.89,
+        "avg_p50_ms": 21.83,
+        "avg_kept": 8448.0,
+        "n_seeds": 1
+      }
+    },
+    "16384": {
+      "r1": {
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 4.46,
+        "avg_p50_ms": 36.624,
+        "avg_kept": 16640.0,
+        "n_seeds": 1
+      }
+    }
+  },
+  "bitter1": {
+    "8192": {
+      "r1": {
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 9.92,
+        "avg_p50_ms": 20.63,
+        "avg_kept": 7384.0,
+        "n_seeds": 1
+      }
+    },
+    "16384": {
+      "r1": {
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 4.46,
+        "avg_p50_ms": 34.542,
+        "avg_kept": 14757.0,
+        "n_seeds": 1
+      }
+    }
+  },
+  "bitter2": {
+    "8192": {
+      "r1": {
+        "pass_1pct": false,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 10.1,
+        "avg_p50_ms": 20.745,
+        "avg_kept": 7382.0,
+        "n_seeds": 1
+      }
+    },
+    "16384": {
+      "r1": {
+        "pass_1pct": false,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 4.51,
+        "avg_p50_ms": 34.795,
+        "avg_kept": 14755.0,
+        "n_seeds": 1
+      }
+    }
+  },
+  "bitter3": {
+    "8192": {
+      "r1": {
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 9.97,
+        "avg_p50_ms": 20.675,
+        "avg_kept": 7384.0,
+        "n_seeds": 1
+      }
+    },
+    "16384": {
+      "r1": {
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 4.45,
+        "avg_p50_ms": 34.644,
+        "avg_kept": 14757.0,
+        "n_seeds": 1
+      }
+    }
+  },
+  "bitter4": {
+    "8192": {
+      "r1": {
+        "pass_1pct": false,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 10.09,
+        "avg_p50_ms": 49.724,
+        "avg_kept": 7381.0,
+        "n_seeds": 1
+      }
+    },
+    "16384": {
+      "r1": {
+        "pass_1pct": false,
+        "pass_3pct": false,
+        "any_catastrophic": true,
+        "avg_ppl": 999999,
+        "avg_p50_ms": 0.0,
+        "avg_kept": 0.0,
+        "n_seeds": 1
+      }
+    }
+  }
+}

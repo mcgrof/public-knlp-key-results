@@ -1,0 +1,6 @@
+source_commit=d72dbf120
+source_branch=20250325-fused-quantization
+synced_from=prune:/data/vllm
+editable_project=/root/vllm-fused-git
+editable_metadata=/usr/local/lib/python3.11/dist-packages/__editable__.vllm-0.1.dev15240+g1eaacdf3d.cu124.pth
+note=H100 editable tree content synced to prune fix commit d72dbf120; dist-info version may still show older editable metadata until reinstall.

@@ -1,0 +1,26 @@
+{
+  "experiment": "exp4_ratio_classifier",
+  "gpu": "NVIDIA L40S",
+  "results": [
+    {
+      "model": "Qwen2.5-7B-Instruct",
+      "gpu": "NVIDIA L40S",
+      "logit_error_INT6": 4.78125,
+      "logit_error_INT8": 0.5,
+      "ratio_INT6_INT8": 9.5625,
+      "needs_fp16_keys": true,
+      "threshold": 3.0,
+      "elapsed_s": 2.889716625213623
+    },
+    {
+      "model": "Mistral-7B-Instruct-v0.3",
+      "gpu": "NVIDIA L40S",
+      "logit_error_INT6": 0.16145833333333334,
+      "logit_error_INT8": 0.16666666666666666,
+      "ratio_INT6_INT8": 0.9687500000000001,
+      "needs_fp16_keys": false,
+      "threshold": 3.0,
+      "elapsed_s": 2.837961196899414
+    }
+  ]
+}

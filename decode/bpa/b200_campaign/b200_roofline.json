@@ -1,0 +1,55 @@
+{
+  "gpu": "NVIDIA B200",
+  "memory_gb": 178.4,
+  "sm_count": 148,
+  "compute_capability": "10.0",
+  "peak_hbm_bandwidth_gb_s": 6549.8,
+  "peak_fp16_tflops": 1604.8,
+  "ridge_point_flop_per_byte": 245.0,
+  "approx_gather_latency_ns": 10648.0,
+  "bandwidth_by_size": [
+    {
+      "size_mb": 64,
+      "bandwidth_gb_s": 5429.335248804254
+    },
+    {
+      "size_mb": 128,
+      "bandwidth_gb_s": 6062.8770111224785
+    },
+    {
+      "size_mb": 256,
+      "bandwidth_gb_s": 6379.7638938357295
+    },
+    {
+      "size_mb": 512,
+      "bandwidth_gb_s": 6386.769807748325
+    },
+    {
+      "size_mb": 1024,
+      "bandwidth_gb_s": 6549.768241638917
+    }
+  ],
+  "flops_by_size": [
+    {
+      "M": 4096,
+      "N": 4096,
+      "K": 4096,
+      "tflops": 1468.884646771463
+    },
+    {
+      "M": 8192,
+      "N": 8192,
+      "K": 8192,
+      "tflops": 1604.7981011222766
+    },
+    {
+      "M": 16384,
+      "N": 16384,
+      "K": 16384,
+      "tflops": 1386.8217765433947
+    }
+  ],
+  "driver_version": "NVIDIA B200",
+  "pytorch_version": "2.10.0+cu128",
+  "cuda_version": "12.8"
+}

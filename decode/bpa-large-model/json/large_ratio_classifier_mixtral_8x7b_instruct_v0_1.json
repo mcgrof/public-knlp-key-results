@@ -1,0 +1,26 @@
+{
+  "experiment": "large_ratio_classifier",
+  "model_info": {
+    "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "n_params": 46702792704,
+    "n_layers": 32,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "dtype": "bfloat16",
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 150.121545728,
+    "load_time_s": 67.32457828521729,
+    "k_proj_shape": [
+      1,
+      4,
+      1024
+    ]
+  },
+  "results": {
+    "logit_error_INT6": 0.192765411734581,
+    "logit_error_INT8": 0.10571658313274383,
+    "ratio_INT6_INT8": 1.8234169703776146,
+    "needs_fp16_keys": false,
+    "threshold": 3.0
+  }
+}

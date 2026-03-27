@@ -1,0 +1,224 @@
+Creating H200 pod...
+raw_response: {'data': {'podFindAndDeployOnDemand': {'id': '2xpw7q5261yx8t', 'imageName': 'runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04', 'env': ['PUBLIC_KEY=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMMdz/nC0TOxRor+KVI0IYZRLnqzdUysRZ0c6/XQi9ua mcgrof@prune'], 'machineId': 'kxchllmtoe2w', 'machine': {'podHostId': '2xpw7q5261yx8t-6441198b'}}}}
+Pod created: 2xpw7q5261yx8t
+Waiting for pod to be ready...
+  Pod RUNNING, no runtime yet...
+  Pod RUNNING, no runtime yet...
+Pod ready: 103.196.86.37:17833
+Installing dependencies...
+  pip install: OK
+Uploading experiment code...
+  Uploaded.
+
+============================================================
+Running experiment on H200...
+============================================================
+
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+############################################################
+# mistralai/Mixtral-8x7B-Instruct-v0.1
+############################################################
+Loading mistralai/Mixtral-8x7B-Instruct-v0.1 in bfloat16...
+
+Fetching 19 files:   0%|          | 0/19 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Fetching 19 files:   5%|▌         | 1/19 [00:51<15:32, 51.83s/it]
+Fetching 19 files:  11%|█         | 2/19 [00:53<06:23, 22.53s/it]
+Fetching 19 files:  16%|█▌        | 3/19 [01:02<04:18, 16.17s/it]
+Fetching 19 files:  47%|████▋     | 9/19 [01:33<01:14,  7.47s/it]
+Fetching 19 files:  58%|█████▊    | 11/19 [01:34<00:43,  5.49s/it]
+Fetching 19 files:  63%|██████▎   | 12/19 [01:34<00:32,  4.63s/it]
+Fetching 19 files:  68%|██████▊   | 13/19 [01:35<00:23,  3.97s/it]
+Fetching 19 files:  79%|███████▉  | 15/19 [01:37<00:11,  2.83s/it]
+Fetching 19 files:  89%|████████▉ | 17/19 [01:45<00:06,  3.27s/it]
+Fetching 19 files: 100%|██████████| 19/19 [01:45<00:00,  5.56s/it]
+
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]
+Loading weights:   1%|          | 3/291 [00:01<01:53,  2.53it/s]
+Loading weights:   4%|▍         | 12/291 [00:02<00:41,  6.73it/s]
+Loading weights:   4%|▍         | 13/291 [00:02<00:40,  6.83it/s]
+Loading weights:   7%|▋         | 21/291 [00:03<00:33,  7.97it/s]
+Loading weights:   8%|▊         | 22/291 [00:03<00:33,  8.05it/s]
+Loading weights:  10%|█         | 30/291 [00:03<00:28,  9.02it/s]
+Loading weights:  11%|█         | 31/291 [00:04<00:28,  8.99it/s]
+Loading weights:  13%|█▎        | 39/291 [00:04<00:25,  9.99it/s]
+Loading weights:  14%|█▎        | 40/291 [00:04<00:25,  9.80it/s]
+Loading weights:  16%|█▋        | 48/291 [00:05<00:25,  9.53it/s]
+Loading weights:  17%|█▋        | 49/291 [00:05<00:25,  9.48it/s]
+Loading weights:  20%|█▉        | 57/291 [00:06<00:24,  9.58it/s]
+Loading weights:  20%|█▉        | 58/291 [00:06<00:25,  9.19it/s]
+Loading weights:  23%|██▎       | 66/291 [00:07<00:22,  9.94it/s]
+Loading weights:  23%|██▎       | 67/291 [00:07<00:22,  9.85it/s]
+Loading weights:  26%|██▌       | 75/291 [00:08<00:21, 10.13it/s]
+Loading weights:  26%|██▌       | 76/291 [00:08<00:21,  9.95it/s]
+Loading weights:  29%|██▉       | 84/291 [00:09<00:21,  9.56it/s]
+Loading weights:  29%|██▉       | 85/291 [00:09<00:21,  9.50it/s]
+Loading weights:  32%|███▏      | 93/291 [00:10<00:19, 10.05it/s]
+Loading weights:  32%|███▏      | 94/291 [00:10<00:19,  9.96it/s]
+Loading weights:  35%|███▌      | 102/291 [00:11<00:18, 10.34it/s]
+Loading weights:  35%|███▌      | 103/291 [00:11<00:18, 10.23it/s]
+Loading weights:  38%|███▊      | 111/291 [00:12<00:18,  9.84it/s]
+Loading weights:  38%|███▊      | 112/291 [00:12<00:18,  9.81it/s]
+Loading weights:  41%|████      | 120/291 [00:12<00:16, 10.47it/s]
+Loading weights:  42%|████▏     | 122/291 [00:13<00:15, 11.17it/s]
+Loading weights:  44%|████▍     | 129/291 [00:13<00:15, 10.45it/s]
+Loading weights:  47%|████▋     | 138/291 [00:14<00:13, 11.76it/s]
+Loading weights:  48%|████▊     | 140/291 [00:14<00:12, 12.23it/s]
+Loading weights:  51%|█████     | 147/291 [00:15<00:13, 10.86it/s]
+Loading weights:  51%|█████     | 149/291 [00:15<00:12, 11.15it/s]
+Loading weights:  54%|█████▎    | 156/291 [00:16<00:15,  8.91it/s]
+Loading weights:  57%|█████▋    | 165/291 [00:16<00:11, 11.01it/s]
+Loading weights:  57%|█████▋    | 167/291 [00:17<00:11, 11.17it/s]
+Loading weights:  60%|█████▉    | 174/291 [00:18<00:12,  9.46it/s]
+Loading weights:  63%|██████▎   | 183/291 [00:18<00:11,  9.80it/s]
+Loading weights:  64%|██████▎   | 185/291 [00:19<00:10, 10.09it/s]
+Loading weights:  66%|██████▌   | 192/291 [00:19<00:09, 10.29it/s]
+Loading weights:  69%|██████▉   | 201/291 [00:20<00:09,  9.51it/s]
+Loading weights:  70%|██████▉   | 203/291 [00:20<00:08,  9.94it/s]
+Loading weights:  72%|███████▏  | 210/291 [00:21<00:07, 10.61it/s]
+Loading weights:  73%|███████▎  | 212/291 [00:21<00:07, 11.01it/s]
+Loading weights:  75%|███████▌  | 219/291 [00:22<00:07, 10.14it/s]
+Loading weights:  78%|███████▊  | 228/291 [00:23<00:06, 10.03it/s]
+Loading weights:  79%|███████▉  | 230/291 [00:23<00:05, 10.60it/s]
+Loading weights:  81%|████████▏ | 237/291 [00:23<00:04, 11.78it/s]
+Loading weights:  85%|████████▍ | 246/291 [00:24<00:03, 14.33it/s]
+Loading weights:  88%|████████▊ | 255/291 [00:24<00:02, 16.01it/s]
+Loading weights:  91%|█████████ | 264/291 [00:25<00:01, 17.04it/s]
+Loading weights:  94%|█████████▍| 273/291 [00:25<00:00, 18.36it/s]
+Loading weights:  97%|█████████▋| 282/291 [00:26<00:00, 18.94it/s]
+Loading weights: 100%|██████████| 291/291 [00:26<00:00, 11.14it/s]
+Traceback (most recent call last):
+  File "/workspace/experiment.py", line 417, in <module>
+    result = run_all_tests(model_name, dtype_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/experiment.py", line 47, in run_all_tests
+    gpu_mem_gb = torch.cuda.get_device_properties(0).total_mem / 1e9
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'torch._C._CudaDeviceProperties' object has no attribute 'total_mem'
+Loaded in 144s
+FAILED: 'torch._C._CudaDeviceProperties' object has no attribute 'total_mem'
+Saved: /workspace/large_mixtral_8x7b_instruct_v0_1.json
+
+############################################################
+# Qwen/Qwen2.5-32B-Instruct
+############################################################
+Loading Qwen/Qwen2.5-32B-Instruct in bfloat16...
+
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]
+Fetching 17 files:   6%|▌         | 1/17 [00:46<12:26, 46.65s/it]
+Fetching 17 files: 100%|██████████| 17/17 [00:46<00:00,  2.74s/it]
+
+Loading weights:   0%|          | 0/771 [00:00<?, ?it/s]
+Loading weights:   0%|          | 2/771 [00:00<02:34,  4.97it/s]
+Loading weights:   1%|          | 6/771 [00:00<00:57, 13.27it/s]
+Loading weights:   2%|▏         | 17/771 [00:00<00:19, 38.09it/s]
+Loading weights:   4%|▎         | 28/771 [00:00<00:14, 50.66it/s]
+Loading weights:   5%|▍         | 35/771 [00:00<00:14, 50.87it/s]
+Loading weights:   5%|▌         | 42/771 [00:01<00:17, 42.14it/s]
+Loading weights:   7%|▋         | 53/771 [00:01<00:13, 51.52it/s]
+Loading weights:   8%|▊         | 64/771 [00:01<00:11, 63.67it/s]
+Loading weights:  10%|▉         | 75/771 [00:01<00:09, 74.41it/s]
+Loading weights:  11%|█▏        | 88/771 [00:01<00:09, 73.58it/s]
+Loading weights:  13%|█▎        | 100/771 [00:01<00:08, 83.58it/s]
+Loading weights:  15%|█▍        | 112/771 [00:01<00:07, 86.41it/s]
+Loading weights:  16%|█▌        | 124/771 [00:02<00:07, 86.18it/s]
+Loading weights:  17%|█▋        | 134/771 [00:02<00:07, 89.00it/s]
+Loading weights:  19%|█▊        | 144/771 [00:02<00:07, 83.31it/s]
+Loading weights:  20%|█▉        | 153/771 [00:02<00:07, 79.06it/s]
+Loading weights:  21%|██        | 162/771 [00:02<00:07, 76.75it/s]
+Loading weights:  22%|██▏       | 172/771 [00:02<00:07, 81.23it/s]
+Loading weights:  23%|██▎       | 181/771 [00:02<00:08, 72.96it/s]
+Loading weights:  25%|██▍       | 189/771 [00:03<00:11, 52.44it/s]
+Loading weights:  26%|██▌       | 198/771 [00:03<00:10, 55.32it/s]
+Loading weights:  27%|██▋       | 210/771 [00:03<00:08, 63.84it/s]
+Loading weights:  29%|██▊       | 220/771 [00:03<00:09, 59.11it/s]
+Loading weights:  30%|███       | 232/771 [00:03<00:08, 64.26it/s]
+Loading weights:  31%|███       | 239/771 [00:03<00:10, 52.43it/s]
+Loading weights:  32%|███▏      | 245/771 [00:04<00:10, 48.03it/s]
+Loading weights:  33%|███▎      | 256/771 [00:04<00:09, 53.74it/s]
+Loading weights:  35%|███▍      | 268/771 [00:04<00:08, 61.25it/s]
+Loading weights:  36%|███▌      | 275/771 [00:04<00:08, 58.16it/s]
+Loading weights:  36%|███▋      | 281/771 [00:04<00:10, 45.08it/s]
+Loading weights:  37%|███▋      | 286/771 [00:04<00:10, 44.93it/s]
+Loading weights:  38%|███▊      | 293/771 [00:05<00:10, 44.79it/s]
+Loading weights:  39%|███▉      | 304/771 [00:05<00:08, 58.30it/s]
+Loading weights:  40%|████      | 312/771 [00:05<00:07, 63.06it/s]
+Loading weights:  41%|████▏     | 319/771 [00:05<00:08, 55.67it/s]
+Loading weights:  43%|████▎     | 330/771 [00:05<00:07, 62.42it/s]
+Loading weights:  44%|████▍     | 341/771 [00:05<00:05, 72.73it/s]
+Loading weights:  46%|████▌     | 352/771 [00:05<00:05, 75.87it/s]
+Loading weights:  47%|████▋     | 363/771 [00:05<00:04, 83.86it/s]
+Loading weights:  49%|████▉     | 376/771 [00:06<00:04, 86.52it/s]
+Loading weights:  50%|████▉     | 385/771 [00:06<00:04, 86.62it/s]
+Loading weights:  51%|█████     | 394/771 [00:06<00:04, 79.57it/s]
+Loading weights:  52%|█████▏    | 403/771 [00:06<00:05, 72.47it/s]
+Loading weights:  54%|█████▎    | 413/771 [00:06<00:04, 72.36it/s]
+Loading weights:  55%|█████▌    | 426/771 [00:06<00:04, 79.21it/s]
+Loading weights:  57%|█████▋    | 438/771 [00:06<00:04, 81.34it/s]
+Loading weights:  58%|█████▊    | 449/771 [00:06<00:03, 86.68it/s]
+Loading weights:  60%|█████▉    | 459/771 [00:07<00:03, 80.46it/s]
+Loading weights:  61%|██████    | 472/771 [00:07<00:03, 81.49it/s]
+Loading weights:  63%|██████▎   | 484/771 [00:07<00:03, 89.55it/s]
+Loading weights:  64%|██████▍   | 494/771 [00:07<00:03, 90.63it/s]
+Loading weights:  65%|██████▌   | 504/771 [00:07<00:03, 81.53it/s]
+Loading weights:  67%|██████▋   | 513/771 [00:07<00:03, 77.05it/s]
+Loading weights:  68%|██████▊   | 521/771 [00:07<00:03, 77.20it/s]
+Loading weights:  69%|██████▉   | 532/771 [00:07<00:02, 84.58it/s]
+Loading weights:  70%|███████   | 541/771 [00:08<00:02, 84.82it/s]
+Loading weights:  71%|███████▏  | 550/771 [00:08<00:02, 78.61it/s]
+Loading weights:  73%|███████▎  | 559/771 [00:08<00:02, 74.05it/s]
+Loading weights:  74%|███████▍  | 569/771 [00:08<00:02, 79.49it/s]
+Loading weights:  75%|███████▌  | 580/771 [00:08<00:02, 85.23it/s]
+Loading weights:  76%|███████▋  | 589/771 [00:08<00:02, 85.10it/s]
+Loading weights:  78%|███████▊  | 598/771 [00:08<00:02, 78.03it/s]
+Loading weights:  79%|███████▊  | 606/771 [00:08<00:02, 72.16it/s]
+Loading weights:  80%|████████  | 618/771 [00:09<00:02, 76.35it/s]
+Loading weights:  82%|████████▏ | 629/771 [00:09<00:01, 84.28it/s]
+Loading weights:  83%|████████▎ | 639/771 [00:09<00:01, 78.47it/s]
+Loading weights:  85%|████████▍ | 652/771 [00:09<00:01, 90.88it/s]
+Loading weights:  86%|████████▌ | 662/771 [00:09<00:01, 90.93it/s]
+Loading weights:  87%|████████▋ | 672/771 [00:09<00:01, 83.97it/s]
+Loading weights:  88%|████████▊ | 681/771 [00:09<00:01, 78.09it/s]
+Loading weights:  89%|████████▉ | 690/771 [00:09<00:01, 71.54it/s]
+Loading weights:  91%|█████████ | 701/771 [00:10<00:00, 78.29it/s]
+Loading weights:  92%|█████████▏| 712/771 [00:10<00:00, 85.15it/s]
+Loading weights:  94%|█████████▎| 721/771 [00:10<00:00, 86.29it/s]
+Loading weights:  95%|█████████▍| 730/771 [00:10<00:00, 79.23it/s]
+Loading weights:  96%|█████████▌| 739/771 [00:10<00:00, 74.62it/s]
+Loading weights:  97%|█████████▋| 749/771 [00:10<00:00, 79.52it/s]
+Loading weights:  99%|█████████▊| 760/771 [00:10<00:00, 86.19it/s]
+Loading weights: 100%|█████████▉| 769/771 [00:10<00:00, 85.58it/s]
+Loading weights: 100%|██████████| 771/771 [00:10<00:00, 70.72it/s]
+Traceback (most recent call last):
+  File "/workspace/experiment.py", line 417, in <module>
+    result = run_all_tests(model_name, dtype_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/experiment.py", line 47, in run_all_tests
+    gpu_mem_gb = torch.cuda.get_device_properties(0).total_mem / 1e9
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'torch._C._CudaDeviceProperties' object has no attribute 'total_mem'
+Loaded in 60s
+FAILED: 'torch._C._CudaDeviceProperties' object has no attribute 'total_mem'
+Saved: /workspace/large_qwen2_5_32b_instruct.json
+
+Saved: /workspace/large_model_combined.json
+
+======================================================================
+SUMMARY
+======================================================================
+
+Mixtral-8x7B-Instruct-v0.1: FAILED
+
+Qwen2.5-32B-Instruct: FAILED
+
+DONE
+
+
+Downloading results...
+  Downloaded: large_model_combined.json
+  Downloaded: large_mixtral_8x7b_instruct_v0_1.json
+  Downloaded: large_qwen2_5_32b_instruct.json
+
+Terminating pod 2xpw7q5261yx8t...
+Pod terminated.

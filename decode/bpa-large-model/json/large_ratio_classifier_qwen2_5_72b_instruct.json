@@ -1,0 +1,28 @@
+{
+  "experiment": "large_ratio_classifier",
+  "model_info": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "model_path": "/workspace/models/Qwen2.5-72B-Instruct",
+    "n_params": 72706203648,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "dtype": "bfloat16",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "gpu_mem_gb": 85.093777408,
+    "load_time_s": 162.20280814170837,
+    "k_proj_shape": [
+      1,
+      4,
+      1024
+    ],
+    "hardware": "A100-SXM4-80GB"
+  },
+  "results": {
+    "logit_error_INT6": 0.17139609158039093,
+    "logit_error_INT8": 0.06555392816662789,
+    "ratio_INT6_INT8": 2.6145815571071305,
+    "needs_fp16_keys": false,
+    "threshold": 3.0
+  }
+}

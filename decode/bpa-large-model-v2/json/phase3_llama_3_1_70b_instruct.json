@@ -1,0 +1,24 @@
+{
+  "phase": "phase3_downstream",
+  "model_info": {
+    "model": "meta-llama/Llama-3.1-70B-Instruct",
+    "n_params": 70554000000,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "gpu": "NVIDIA H200 SXM"
+  },
+  "mmlu": {
+    "n_shots": 5,
+    "n_samples": 500,
+    "results": {
+      "FP16_baseline": {"accuracy": 0.824, "correct": 412, "total": 500},
+      "K_FP16__V_INT4": {"accuracy": 0.824, "correct": 412, "total": 500},
+      "K_INT8__V_INT4": {"accuracy": 0.824, "correct": 412, "total": 500}
+    },
+    "note": "K_INT4/V_INT4 timed out. All 3 completed configs show identical accuracy."
+  },
+  "gsm8k": {
+    "note": "Timed out before GSM8K could run."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-03-27",
+  "goal": "Execute the official paired FP16-vs-FUSED H100 inference benchmark campaign now that fused vLLM works.",
+  "strict_progress": {
+    "completed_phases": 0,
+    "total_phases": 11,
+    "remaining_phases": 11
+  },
+  "minimal_respectable_subset": {
+    "completed": 0,
+    "total": 4,
+    "remaining": 4,
+    "phases": [
+      "lm-eval",
+      "latency",
+      "throughput",
+      "NIAH"
+    ]
+  },
+  "done_enablement": [
+    "fused vLLM bring-up",
+    "short-sequence bug fix",
+    "broad correctness probes",
+    "threshold sweeps",
+    "Qwen policy sweep",
+    "Mistral policy sweep",
+    "true K/V precision-split implementation and retest"
+  ],
+  "not_blocked": [
+    "vLLM import works on H100",
+    "lm_eval installed on H100",
+    "/root/vllm-fused-git present"
+  ],
+  "current_blockers": [
+    "long-context benchmark harness repos/data missing on H100 host"
+  ],
+  "missing_h100_paths": [
+    "/root/xKV",
+    "/root/LongBench",
+    "/root/InfiniteBench",
+    "/root/RULER",
+    "/root/NIAH"
+  ]
+}

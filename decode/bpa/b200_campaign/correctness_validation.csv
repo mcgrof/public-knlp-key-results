@@ -1,0 +1,4 @@
+model,prefix_len,gen_tokens,wq_g32_agree,wq_g32_max_err,wq_g32_drift,wq_g32_kl,aq_g8_agree,aq_g8_max_err,aq_g8_drift,aq_g8_kl
+Qwen/Qwen2.5-7B,75,32,0.0938,29.0,2.8616,8.817429,0.0625,25.4023,3.1479,6.831196
+mistralai/Mistral-7B-v0.3,81,32,0.25,26.6855,1.2026,9.690538,0.25,30.2109,1.283,9.289621
+Qwen/Qwen2.5-14B,75,32,1.0,1.2188,0.1051,0.002701,1.0,0.5312,0.0544,0.001242

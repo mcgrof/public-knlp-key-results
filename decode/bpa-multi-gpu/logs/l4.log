@@ -1,0 +1,758 @@
+============================================================
+  BPA Multi-GPU: L4 — Test A: KV Asymmetry
+============================================================
+
+>>> Qwen2.5-7B-Instruct K_FP16/V_FP16
+2026-03-10 16:29:06,905 | INFO  | LiveServerless:6yweuwa6xcxv47 | API /run
+2026-03-10 16:29:07,108 | INFO  | LiveServerless:6yweuwa6xcxv47 | Started Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1
+2026-03-10 16:29:07,197 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | Status: IN_QUEUE
+2026-03-10 16:29:07,640 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .
+2026-03-10 16:29:08,894 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ..
+2026-03-10 16:29:14,135 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ...
+2026-03-10 16:29:28,369 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ....
+2026-03-10 16:29:47,355 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .....
+2026-03-10 16:30:07,120 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ......
+2026-03-10 16:30:27,034 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .......
+2026-03-10 16:30:43,671 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ........
+2026-03-10 16:31:01,809 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .........
+2026-03-10 16:31:22,867 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ..........
+2026-03-10 16:31:42,579 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ...........
+2026-03-10 16:32:03,036 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ............
+2026-03-10 16:32:23,384 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .............
+2026-03-10 16:32:43,089 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ..............
+2026-03-10 16:33:05,663 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ...............
+2026-03-10 16:33:25,876 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ................
+2026-03-10 16:33:43,049 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .................
+2026-03-10 16:34:02,560 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ..................
+2026-03-10 16:34:22,796 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ...................
+2026-03-10 16:34:45,610 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ....................
+2026-03-10 16:35:03,892 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .....................
+2026-03-10 16:35:25,653 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ......................
+2026-03-10 16:35:44,343 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .......................
+2026-03-10 16:36:04,823 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ........................
+2026-03-10 16:36:25,285 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .........................
+2026-03-10 16:36:45,132 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ..........................
+2026-03-10 16:37:05,583 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ...........................
+2026-03-10 16:37:28,178 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ............................
+2026-03-10 16:37:46,224 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .............................
+2026-03-10 16:38:06,774 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ..............................
+2026-03-10 16:38:27,227 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ...............................
+2026-03-10 16:38:45,270 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ................................
+2026-03-10 16:39:07,652 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .................................
+2026-03-10 16:39:27,041 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ..................................
+2026-03-10 16:39:49,000 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ...................................
+2026-03-10 16:40:06,526 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ....................................
+2026-03-10 16:40:26,126 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .....................................
+2026-03-10 16:40:47,139 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ......................................
+2026-03-10 16:41:07,461 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .......................................
+2026-03-10 16:41:27,769 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ........................................
+2026-03-10 16:41:47,794 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .........................................
+2026-03-10 16:42:08,829 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ..........................................
+2026-03-10 16:42:28,566 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ...........................................
+2026-03-10 16:42:48,238 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ............................................
+2026-03-10 16:43:06,449 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .............................................
+2026-03-10 16:43:26,790 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ..............................................
+2026-03-10 16:43:46,361 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ...............................................
+2026-03-10 16:44:07,624 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ................................................
+2026-03-10 16:44:29,554 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .................................................
+2026-03-10 16:44:47,485 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ..................................................
+2026-03-10 16:45:10,987 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ...................................................
+2026-03-10 16:45:28,340 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ....................................................
+2026-03-10 16:45:48,579 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .....................................................
+2026-03-10 16:46:08,191 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ......................................................
+2026-03-10 16:46:29,044 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .......................................................
+2026-03-10 16:46:48,805 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ........................................................
+2026-03-10 16:46:58,990 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | Status: IN_PROGRESS
+2026-03-10 16:46:59,490 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .
+2026-03-10 16:47:00,953 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ..
+2026-03-10 16:47:05,361 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ...
+2026-03-10 16:47:20,698 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ....
+2026-03-10 16:47:41,106 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .....
+2026-03-10 16:48:01,796 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | ......
+2026-03-10 16:48:21,522 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | .......
+2026-03-10 16:48:43,039 | INFO  | Job:cd57760c-e5be-43ef-a5cc-d32bed75933f-u1 | Status: COMPLETED
+2026-03-10 16:48:43,128 | INFO  | Worker:b7nb0wll2mjyd4 | Delay Time: 1063426 ms
+2026-03-10 16:48:43,128 | INFO  | Worker:b7nb0wll2mjyd4 | Execution Time: 110623 ms
+2026-03-10 23:46:50,504 | INFO  | Installing Python dependencies: ['torch', 'transformers', 'datasets', 'accelerate']
+2026-03-10 23:46:56,834 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]
+Fetching 4 files:  25%|##5       | 1/4 [01:04<03:14, 64.75s/it]
+Fetching 4 files: 100%|##########| 4/4 [01:05<00:00, 12.36s/it]
+Fetching 4 files: 100%|##########| 4/4 [01:05<00:00, 16.29s/it]
+
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]
+Loading weights:   1%|          | 2/339 [00:00<00:28, 11.79it/s]
+Loading weights:   9%|8         | 29/339 [00:00<00:02, 124.46it/s]
+Loading weights:  15%|#5        | 52/339 [00:00<00:01, 163.22it/s]
+Loading weights:  21%|##        | 71/339 [00:00<00:01, 162.56it/s]
+Loading weights:  26%|##6       | 89/339 [00:00<00:01, 167.33it/s]
+Loading weights:  33%|###3      | 112/339 [00:00<00:01, 185.92it/s]
+Loading weights:  39%|###8      | 132/339 [00:00<00:01, 188.40it/s]
+Loading weights:  45%|####4     | 152/339 [00:00<00:01, 181.22it/s]
+Loading weights:  51%|#####1    | 173/339 [00:01<00:00, 185.28it/s]
+Loading weights:  58%|#####7    | 196/339 [00:01<00:00, 189.45it/s]
+Loading weights:  65%|######4   | 220/339 [00:01<00:00, 198.27it/s]
+Loading weights:  71%|#######   | 240/339 [00:01<00:00, 192.25it/s]
+Loading weights:  77%|#######6  | 260/339 [00:01<00:00, 185.15it/s]
+Loading weights:  83%|########2 | 281/339 [00:01<00:00, 189.23it/s]
+Loading weights:  90%|########9 | 304/339 [00:01<00:00, 194.95it/s]
+Loading weights:  96%|#########5| 324/339 [00:01<00:00, 181.45it/s]
+Loading weights: 100%|##########| 339/339 [00:01<00:00, 176.58it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+    logit_err=0.0000 token_agree=1.0000 ppl_delta=0.00% (1177s)
+
+>>> Qwen2.5-7B-Instruct K_FP16/V_INT4
+2026-03-10 16:48:43,568 | INFO  | LiveServerless:6yweuwa6xcxv47 | API /run
+2026-03-10 16:48:43,703 | INFO  | LiveServerless:6yweuwa6xcxv47 | Started Job:e17270f0-3ed6-45fb-bc84-81a409ac7f91-u2
+2026-03-10 16:48:43,799 | INFO  | Job:e17270f0-3ed6-45fb-bc84-81a409ac7f91-u2 | Status: IN_PROGRESS
+2026-03-10 16:48:44,247 | INFO  | Job:e17270f0-3ed6-45fb-bc84-81a409ac7f91-u2 | .
+2026-03-10 16:48:45,686 | INFO  | Job:e17270f0-3ed6-45fb-bc84-81a409ac7f91-u2 | ..
+2026-03-10 16:48:51,368 | INFO  | Job:e17270f0-3ed6-45fb-bc84-81a409ac7f91-u2 | ...
+2026-03-10 16:49:08,063 | INFO  | Job:e17270f0-3ed6-45fb-bc84-81a409ac7f91-u2 | ....
+2026-03-10 16:49:27,102 | INFO  | Job:e17270f0-3ed6-45fb-bc84-81a409ac7f91-u2 | Status: COMPLETED
+2026-03-10 16:49:27,183 | INFO  | Worker:b7nb0wll2mjyd4 | Delay Time: 134 ms
+2026-03-10 16:49:27,183 | INFO  | Worker:b7nb0wll2mjyd4 | Execution Time: 39059 ms
+2026-03-10 23:48:43,801 | INFO  | Installing Python dependencies: ['torch', 'transformers', 'datasets', 'accelerate']
+
+
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/339 [00:00<00:57,  5.86it/s]
+Loading weights:   8%|8         | 28/339 [00:00<00:02, 121.56it/s]
+Loading weights:  14%|#3        | 46/339 [00:00<00:02, 142.36it/s]
+Loading weights:  19%|#9        | 65/339 [00:00<00:01, 150.96it/s]
+Loading weights:  26%|##5       | 88/339 [00:00<00:01, 168.37it/s]
+Loading weights:  31%|###1      | 106/339 [00:00<00:01, 166.74it/s]
+Loading weights:  37%|###7      | 126/339 [00:00<00:01, 169.74it/s]
+Loading weights:  44%|####3     | 149/339 [00:00<00:01, 172.40it/s]
+Loading weights:  51%|#####1    | 173/339 [00:01<00:00, 185.41it/s]
+Loading weights:  58%|#####7    | 196/339 [00:01<00:00, 192.84it/s]
+Loading weights:  64%|######3   | 216/339 [00:01<00:00, 183.12it/s]
+Loading weights:  69%|######9   | 235/339 [00:01<00:00, 171.74it/s]
+Loading weights:  76%|#######5  | 256/339 [00:01<00:00, 170.90it/s]
+Loading weights:  82%|########2 | 278/339 [00:01<00:00, 176.00it/s]
+Loading weights:  87%|########7 | 296/339 [00:01<00:00, 175.77it/s]
+Loading weights:  93%|#########2| 315/339 [00:01<00:00, 178.49it/s]
+Loading weights:  98%|#########8| 333/339 [00:02<00:00, 168.89it/s]
+Loading weights: 100%|##########| 339/339 [00:02<00:00, 168.33it/s]
+    logit_err=0.0000 token_agree=1.0000 ppl_delta=0.00% (44s)
+
+>>> Qwen2.5-7B-Instruct K_INT8/V_INT4
+2026-03-10 16:49:27,593 | INFO  | LiveServerless:6yweuwa6xcxv47 | API /run
+2026-03-10 16:49:27,725 | INFO  | LiveServerless:6yweuwa6xcxv47 | Started Job:babd07e5-68e3-4887-8bb2-b70ad50f724e-u1
+2026-03-10 16:49:27,835 | INFO  | Job:babd07e5-68e3-4887-8bb2-b70ad50f724e-u1 | Status: IN_PROGRESS
+2026-03-10 16:49:28,384 | INFO  | Job:babd07e5-68e3-4887-8bb2-b70ad50f724e-u1 | .
+2026-03-10 16:49:29,595 | INFO  | Job:babd07e5-68e3-4887-8bb2-b70ad50f724e-u1 | ..
+2026-03-10 16:49:35,108 | INFO  | Job:babd07e5-68e3-4887-8bb2-b70ad50f724e-u1 | ...
+2026-03-10 16:49:51,984 | INFO  | Job:babd07e5-68e3-4887-8bb2-b70ad50f724e-u1 | ....
+2026-03-10 16:50:11,078 | INFO  | Job:babd07e5-68e3-4887-8bb2-b70ad50f724e-u1 | Status: COMPLETED
+2026-03-10 16:50:11,173 | INFO  | Worker:b7nb0wll2mjyd4 | Delay Time: 127 ms
+2026-03-10 16:50:11,173 | INFO  | Worker:b7nb0wll2mjyd4 | Execution Time: 39565 ms
+2026-03-10 23:49:27,826 | INFO  | Installing Python dependencies: ['torch', 'transformers', 'datasets', 'accelerate']
+
+
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]
+Loading weights:   1%|          | 2/339 [00:00<00:29, 11.42it/s]
+Loading weights:   8%|8         | 28/339 [00:00<00:02, 113.81it/s]
+Loading weights:  15%|#5        | 52/339 [00:00<00:01, 151.09it/s]
+Loading weights:  20%|##        | 69/339 [00:00<00:01, 154.53it/s]
+Loading weights:  27%|##6       | 90/339 [00:00<00:01, 161.66it/s]
+Loading weights:  34%|###3      | 114/339 [00:00<00:01, 176.29it/s]
+Loading weights:  41%|####      | 138/339 [00:00<00:01, 191.22it/s]
+Loading weights:  47%|####7     | 161/339 [00:00<00:00, 198.46it/s]
+Loading weights:  54%|#####4    | 184/339 [00:01<00:00, 195.26it/s]
+Loading weights:  62%|######1   | 209/339 [00:01<00:00, 205.96it/s]
+Loading weights:  68%|######8   | 232/339 [00:01<00:00, 209.76it/s]
+Loading weights:  75%|#######4  | 254/339 [00:01<00:00, 212.54it/s]
+Loading weights:  81%|########1 | 276/339 [00:01<00:00, 192.19it/s]
+Loading weights:  87%|########7 | 296/339 [00:01<00:00, 181.39it/s]
+Loading weights:  93%|#########3| 316/339 [00:01<00:00, 175.56it/s]
+Loading weights:  99%|#########8| 334/339 [00:01<00:00, 176.66it/s]
+Loading weights: 100%|##########| 339/339 [00:01<00:00, 178.72it/s]
+    logit_err=0.0000 token_agree=1.0000 ppl_delta=0.00% (44s)
+
+>>> Qwen2.5-7B-Instruct K_INT4/V_INT4
+2026-03-10 16:50:11,696 | INFO  | LiveServerless:6yweuwa6xcxv47 | API /run
+2026-03-10 16:50:11,831 | INFO  | LiveServerless:6yweuwa6xcxv47 | Started Job:d0570709-7737-406f-bc40-667c074e5c86-u1
+2026-03-10 16:50:11,916 | INFO  | Job:d0570709-7737-406f-bc40-667c074e5c86-u1 | Status: IN_PROGRESS
+2026-03-10 16:50:12,426 | INFO  | Job:d0570709-7737-406f-bc40-667c074e5c86-u1 | .
+2026-03-10 16:50:13,805 | INFO  | Job:d0570709-7737-406f-bc40-667c074e5c86-u1 | ..
+2026-03-10 16:50:19,161 | INFO  | Job:d0570709-7737-406f-bc40-667c074e5c86-u1 | ...
+2026-03-10 16:50:35,088 | INFO  | Job:d0570709-7737-406f-bc40-667c074e5c86-u1 | ....
+2026-03-10 16:50:55,614 | INFO  | Job:d0570709-7737-406f-bc40-667c074e5c86-u1 | Status: COMPLETED
+2026-03-10 16:50:55,708 | INFO  | Worker:b7nb0wll2mjyd4 | Delay Time: 129 ms
+2026-03-10 16:50:55,708 | INFO  | Worker:b7nb0wll2mjyd4 | Execution Time: 37208 ms
+2026-03-10 23:50:11,936 | INFO  | Installing Python dependencies: ['torch', 'transformers', 'datasets', 'accelerate']
+
+
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]
+Loading weights:   1%|          | 2/339 [00:00<00:28, 11.65it/s]
+Loading weights:   8%|8         | 28/339 [00:00<00:02, 110.86it/s]
+Loading weights:  15%|#5        | 51/339 [00:00<00:01, 148.38it/s]
+Loading weights:  23%|##2       | 77/339 [00:00<00:01, 176.19it/s]
+Loading weights:  29%|##9       | 100/339 [00:00<00:01, 186.96it/s]
+Loading weights:  37%|###6      | 124/339 [00:00<00:01, 201.45it/s]
+Loading weights:  43%|####2     | 145/339 [00:00<00:00, 195.50it/s]
+Loading weights:  49%|####8     | 165/339 [00:00<00:00, 178.39it/s]
+Loading weights:  55%|#####4    | 185/339 [00:01<00:00, 181.75it/s]
+Loading weights:  61%|######    | 206/339 [00:01<00:00, 189.45it/s]
+Loading weights:  67%|######6   | 226/339 [00:01<00:00, 173.07it/s]
+Loading weights:  72%|#######1  | 244/339 [00:01<00:00, 170.22it/s]
+Loading weights:  79%|#######9  | 268/339 [00:01<00:00, 180.79it/s]
+Loading weights:  85%|########4 | 288/339 [00:01<00:00, 185.30it/s]
+Loading weights:  93%|#########3| 316/339 [00:01<00:00, 205.82it/s]
+Loading weights: 100%|##########| 339/339 [00:01<00:00, 181.30it/s]
+    logit_err=0.0000 token_agree=1.0000 ppl_delta=0.00% (45s)
+
+>>> Mistral-7B-Instruct-v0.3 K_FP16/V_FP16
+2026-03-10 16:50:56,225 | INFO  | LiveServerless:6yweuwa6xcxv47 | API /run
+2026-03-10 16:50:56,367 | INFO  | LiveServerless:6yweuwa6xcxv47 | Started Job:deca7d6c-96e9-4b13-a312-a6476c3c6d1b-u2
+2026-03-10 16:50:56,463 | INFO  | Job:deca7d6c-96e9-4b13-a312-a6476c3c6d1b-u2 | Status: IN_PROGRESS
+2026-03-10 16:50:56,920 | INFO  | Job:deca7d6c-96e9-4b13-a312-a6476c3c6d1b-u2 | .
+2026-03-10 16:50:58,451 | INFO  | Job:deca7d6c-96e9-4b13-a312-a6476c3c6d1b-u2 | ..
+2026-03-10 16:51:04,099 | INFO  | Job:deca7d6c-96e9-4b13-a312-a6476c3c6d1b-u2 | ...
+2026-03-10 16:51:17,980 | INFO  | Job:deca7d6c-96e9-4b13-a312-a6476c3c6d1b-u2 | ....
+2026-03-10 16:51:37,847 | INFO  | Job:deca7d6c-96e9-4b13-a312-a6476c3c6d1b-u2 | .....
+2026-03-10 16:51:54,991 | INFO  | Job:deca7d6c-96e9-4b13-a312-a6476c3c6d1b-u2 | ......
+2026-03-10 16:52:18,568 | INFO  | Job:deca7d6c-96e9-4b13-a312-a6476c3c6d1b-u2 | .......
+2026-03-10 16:52:39,754 | INFO  | Job:deca7d6c-96e9-4b13-a312-a6476c3c6d1b-u2 | Status: COMPLETED
+2026-03-10 16:52:39,841 | INFO  | Worker:b7nb0wll2mjyd4 | Delay Time: 129 ms
+2026-03-10 16:52:39,841 | INFO  | Worker:b7nb0wll2mjyd4 | Execution Time: 93609 ms
+2026-03-10 23:50:56,468 | INFO  | Installing Python dependencies: ['torch', 'transformers', 'datasets', 'accelerate']
+
+
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]
+Fetching 3 files:  33%|###3      | 1/3 [00:59<01:59, 59.76s/it]
+Fetching 3 files: 100%|##########| 3/3 [01:00<00:00, 15.66s/it]
+Fetching 3 files: 100%|##########| 3/3 [01:00<00:00, 20.07s/it]
+
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]
+Loading weights:   4%|4         | 13/291 [00:00<00:02, 128.46it/s]
+Loading weights:  11%|#         | 32/291 [00:00<00:01, 151.01it/s]
+Loading weights:  17%|#7        | 50/291 [00:00<00:01, 161.79it/s]
+Loading weights:  23%|##3       | 67/291 [00:00<00:01, 152.33it/s]
+Loading weights:  29%|##9       | 85/291 [00:00<00:01, 154.50it/s]
+Loading weights:  35%|###4      | 101/291 [00:00<00:01, 153.60it/s]
+Loading weights:  40%|####      | 117/291 [00:00<00:01, 146.84it/s]
+Loading weights:  45%|####5     | 132/291 [00:00<00:01, 136.92it/s]
+Loading weights:  51%|#####1    | 149/291 [00:01<00:01, 139.57it/s]
+Loading weights:  57%|#####7    | 167/291 [00:01<00:00, 145.67it/s]
+Loading weights:  63%|######3   | 184/291 [00:01<00:00, 148.85it/s]
+Loading weights:  68%|######8   | 199/291 [00:01<00:00, 141.36it/s]
+Loading weights:  74%|#######3  | 214/291 [00:01<00:00, 130.62it/s]
+Loading weights:  79%|#######9  | 230/291 [00:01<00:00, 131.68it/s]
+Loading weights:  84%|########3 | 244/291 [00:01<00:00, 133.42it/s]
+Loading weights:  89%|########8 | 258/291 [00:01<00:00, 123.18it/s]
+Loading weights:  95%|#########4| 275/291 [00:01<00:00, 133.16it/s]
+Loading weights: 100%|##########| 291/291 [00:02<00:00, 141.99it/s]
+    logit_err=0.0000 token_agree=1.0000 ppl_delta=0.00% (104s)
+
+>>> Mistral-7B-Instruct-v0.3 K_FP16/V_INT4
+2026-03-10 16:52:40,281 | INFO  | LiveServerless:6yweuwa6xcxv47 | API /run
+2026-03-10 16:52:40,407 | INFO  | LiveServerless:6yweuwa6xcxv47 | Started Job:1eb2d52a-30df-4a82-a21f-1a679a10ddae-u2
+2026-03-10 16:52:40,492 | INFO  | Job:1eb2d52a-30df-4a82-a21f-1a679a10ddae-u2 | Status: IN_PROGRESS
+2026-03-10 16:52:41,001 | INFO  | Job:1eb2d52a-30df-4a82-a21f-1a679a10ddae-u2 | .
+2026-03-10 16:52:42,191 | INFO  | Job:1eb2d52a-30df-4a82-a21f-1a679a10ddae-u2 | ..
+2026-03-10 16:52:47,086 | INFO  | Job:1eb2d52a-30df-4a82-a21f-1a679a10ddae-u2 | ...
+2026-03-10 16:53:03,333 | INFO  | Job:1eb2d52a-30df-4a82-a21f-1a679a10ddae-u2 | ....
+2026-03-10 16:53:20,157 | INFO  | Job:1eb2d52a-30df-4a82-a21f-1a679a10ddae-u2 | Status: COMPLETED
+2026-03-10 16:53:20,245 | INFO  | Worker:b7nb0wll2mjyd4 | Delay Time: 126 ms
+2026-03-10 16:53:20,245 | INFO  | Worker:b7nb0wll2mjyd4 | Execution Time: 32389 ms
+2026-03-10 23:52:40,511 | INFO  | Installing Python dependencies: ['torch', 'transformers', 'datasets', 'accelerate']
+
+
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]
+Loading weights:   4%|4         | 13/291 [00:00<00:02, 128.48it/s]
+Loading weights:  10%|9         | 28/291 [00:00<00:01, 136.95it/s]
+Loading weights:  14%|#4        | 42/291 [00:00<00:02, 122.42it/s]
+Loading weights:  20%|##        | 59/291 [00:00<00:01, 131.87it/s]
+Loading weights:  26%|##6       | 76/291 [00:00<00:01, 136.89it/s]
+Loading weights:  31%|###       | 90/291 [00:00<00:01, 133.38it/s]
+Loading weights:  36%|###5      | 104/291 [00:00<00:01, 132.50it/s]
+Loading weights:  42%|####1     | 121/291 [00:00<00:01, 135.86it/s]
+Loading weights:  46%|####6     | 135/291 [00:01<00:01, 122.91it/s]
+Loading weights:  51%|#####1    | 149/291 [00:01<00:01, 123.84it/s]
+Loading weights:  57%|#####7    | 166/291 [00:01<00:00, 134.40it/s]
+Loading weights:  62%|######1   | 180/291 [00:01<00:00, 132.24it/s]
+Loading weights:  67%|######6   | 194/291 [00:01<00:00, 130.42it/s]
+Loading weights:  73%|#######2  | 211/291 [00:01<00:00, 135.57it/s]
+Loading weights:  79%|#######8  | 229/291 [00:01<00:00, 142.05it/s]
+Loading weights:  84%|########3 | 244/291 [00:01<00:00, 140.32it/s]
+Loading weights:  89%|########9 | 259/291 [00:01<00:00, 132.13it/s]
+Loading weights:  94%|#########4| 274/291 [00:02<00:00, 136.29it/s]
+Loading weights:  99%|#########8| 288/291 [00:02<00:00, 134.73it/s]
+Loading weights: 100%|##########| 291/291 [00:02<00:00, 134.12it/s]
+    logit_err=0.0000 token_agree=1.0000 ppl_delta=0.00% (40s)
+
+>>> Mistral-7B-Instruct-v0.3 K_INT8/V_INT4
+2026-03-10 16:53:20,677 | INFO  | LiveServerless:6yweuwa6xcxv47 | API /run
+2026-03-10 16:53:20,823 | INFO  | LiveServerless:6yweuwa6xcxv47 | Started Job:8d407b6f-c4cb-48a9-88bc-90b1b89d91c9-u2
+2026-03-10 16:53:20,912 | INFO  | Job:8d407b6f-c4cb-48a9-88bc-90b1b89d91c9-u2 | Status: IN_PROGRESS
+2026-03-10 16:53:21,420 | INFO  | Job:8d407b6f-c4cb-48a9-88bc-90b1b89d91c9-u2 | .
+2026-03-10 16:53:22,660 | INFO  | Job:8d407b6f-c4cb-48a9-88bc-90b1b89d91c9-u2 | ..
+2026-03-10 16:53:27,960 | INFO  | Job:8d407b6f-c4cb-48a9-88bc-90b1b89d91c9-u2 | ...
+2026-03-10 16:53:44,545 | INFO  | Job:8d407b6f-c4cb-48a9-88bc-90b1b89d91c9-u2 | ....
+2026-03-10 16:54:01,448 | INFO  | Job:8d407b6f-c4cb-48a9-88bc-90b1b89d91c9-u2 | Status: COMPLETED
+2026-03-10 16:54:01,534 | INFO  | Worker:b7nb0wll2mjyd4 | Delay Time: 128 ms
+2026-03-10 16:54:01,534 | INFO  | Worker:b7nb0wll2mjyd4 | Execution Time: 32288 ms
+2026-03-10 23:53:20,924 | INFO  | Installing Python dependencies: ['torch', 'transformers', 'datasets', 'accelerate']
+
+
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]
+Loading weights:   4%|3         | 11/291 [00:00<00:02, 107.99it/s]
+Loading weights:   8%|8         | 24/291 [00:00<00:02, 115.01it/s]
+Loading weights:  14%|#4        | 41/291 [00:00<00:01, 129.24it/s]
+Loading weights:  20%|#9        | 58/291 [00:00<00:01, 134.65it/s]
+Loading weights:  25%|##4       | 72/291 [00:00<00:01, 131.58it/s]
+Loading weights:  30%|##9       | 86/291 [00:00<00:01, 129.43it/s]
+Loading weights:  34%|###4      | 100/291 [00:00<00:01, 132.32it/s]
+Loading weights:  39%|###9      | 114/291 [00:00<00:01, 122.53it/s]
+Loading weights:  45%|####4     | 130/291 [00:01<00:01, 131.33it/s]
+Loading weights:  49%|####9     | 144/291 [00:01<00:01, 127.01it/s]
+Loading weights:  54%|#####4    | 158/291 [00:01<00:01, 123.51it/s]
+Loading weights:  60%|######    | 175/291 [00:01<00:00, 130.19it/s]
+Loading weights:  65%|######4   | 189/291 [00:01<00:00, 130.69it/s]
+Loading weights:  70%|######9   | 203/291 [00:01<00:00, 129.84it/s]
+Loading weights:  76%|#######5  | 220/291 [00:01<00:00, 139.66it/s]
+Loading weights:  81%|########  | 235/291 [00:01<00:00, 141.63it/s]
+Loading weights:  86%|########5 | 250/291 [00:01<00:00, 137.73it/s]
+Loading weights:  91%|#########1| 266/291 [00:02<00:00, 137.61it/s]
+Loading weights:  97%|#########7| 283/291 [00:02<00:00, 139.83it/s]
+Loading weights: 100%|##########| 291/291 [00:02<00:00, 133.17it/s]
+    logit_err=0.0000 token_agree=1.0000 ppl_delta=0.00% (41s)
+
+>>> Mistral-7B-Instruct-v0.3 K_INT4/V_INT4
+2026-03-10 16:54:02,046 | INFO  | LiveServerless:6yweuwa6xcxv47 | API /run
+2026-03-10 16:54:02,183 | INFO  | LiveServerless:6yweuwa6xcxv47 | Started Job:1e208fd4-0198-4add-8fec-f7d18aaafe53-u2
+2026-03-10 16:54:02,268 | INFO  | Job:1e208fd4-0198-4add-8fec-f7d18aaafe53-u2 | Status: IN_PROGRESS
+2026-03-10 16:54:02,752 | INFO  | Job:1e208fd4-0198-4add-8fec-f7d18aaafe53-u2 | .
+2026-03-10 16:54:04,033 | INFO  | Job:1e208fd4-0198-4add-8fec-f7d18aaafe53-u2 | ..
+2026-03-10 16:54:09,387 | INFO  | Job:1e208fd4-0198-4add-8fec-f7d18aaafe53-u2 | ...
+2026-03-10 16:54:26,460 | INFO  | Job:1e208fd4-0198-4add-8fec-f7d18aaafe53-u2 | ....
+2026-03-10 16:54:35,494 | INFO  | Job:1e208fd4-0198-4add-8fec-f7d18aaafe53-u2 | Status: COMPLETED
+2026-03-10 16:54:35,577 | INFO  | Worker:b7nb0wll2mjyd4 | Delay Time: 128 ms
+2026-03-10 16:54:35,577 | INFO  | Worker:b7nb0wll2mjyd4 | Execution Time: 30931 ms
+2026-03-10 23:54:02,278 | INFO  | Installing Python dependencies: ['torch', 'transformers', 'datasets', 'accelerate']
+
+
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]
+Loading weights:   4%|4         | 13/291 [00:00<00:02, 126.63it/s]
+Loading weights:  11%|#         | 32/291 [00:00<00:01, 156.66it/s]
+Loading weights:  19%|#8        | 55/291 [00:00<00:01, 188.08it/s]
+Loading weights:  25%|##5       | 74/291 [00:00<00:01, 187.96it/s]
+Loading weights:  32%|###2      | 94/291 [00:00<00:01, 184.90it/s]
+Loading weights:  39%|###8      | 113/291 [00:00<00:01, 177.14it/s]
+Loading weights:  45%|####5     | 131/291 [00:00<00:00, 176.70it/s]
+Loading weights:  51%|#####1    | 149/291 [00:00<00:00, 173.70it/s]
+Loading weights:  59%|#####8    | 171/291 [00:00<00:00, 186.43it/s]
+Loading weights:  66%|######6   | 193/291 [00:01<00:00, 192.85it/s]
+Loading weights:  73%|#######3  | 213/291 [00:01<00:00, 175.35it/s]
+Loading weights:  80%|########  | 234/291 [00:01<00:00, 184.54it/s]
+Loading weights:  87%|########6 | 253/291 [00:01<00:00, 185.49it/s]
+Loading weights:  94%|#########4| 274/291 [00:01<00:00, 190.40it/s]
+Loading weights: 100%|##########| 291/291 [00:01<00:00, 182.91it/s]
+    logit_err=0.0000 token_agree=1.0000 ppl_delta=0.00% (34s)
+
+Saved: /data/knlp-key-results/bpa-multi-gpu/json/l4_kv_asymmetry.json
+
+============================================================
+  BPA Multi-GPU: L4 — Test B: Ratio Classifier
+============================================================
+
+>>> Ratio classifier: Qwen2.5-7B-Instruct
+2026-03-10 16:54:35,783 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_l4.py", line 507, in main
+    result = await run_ratio_classifier(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+
+>>> Ratio classifier: Mistral-7B-Instruct-v0.3
+2026-03-10 16:54:35,998 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_l4.py", line 507, in main
+    result = await run_ratio_classifier(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+
+Saved: /data/knlp-key-results/bpa-multi-gpu/json/l4_ratio.json
+
+============================================================
+  BPA Multi-GPU: L4 — Test C: Decode Latency
+============================================================
+
+>>> Latency: Qwen2.5-7B-Instruct FP16/FP16
+2026-03-10 16:54:36,189 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_l4.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+
+>>> Latency: Qwen2.5-7B-Instruct FP16/INT4
+2026-03-10 16:54:36,394 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_l4.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+
+>>> Latency: Qwen2.5-7B-Instruct INT8/INT4
+2026-03-10 16:54:36,591 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_l4.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+
+>>> Latency: Qwen2.5-7B-Instruct INT4/INT4
+2026-03-10 16:54:36,791 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_l4.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+
+>>> Latency: Mistral-7B-Instruct-v0.3 FP16/FP16
+2026-03-10 16:54:36,975 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_l4.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+
+>>> Latency: Mistral-7B-Instruct-v0.3 FP16/INT4
+2026-03-10 16:54:37,179 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_l4.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+
+>>> Latency: Mistral-7B-Instruct-v0.3 INT8/INT4
+2026-03-10 16:54:37,363 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_l4.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+
+>>> Latency: Mistral-7B-Instruct-v0.3 INT4/INT4
+2026-03-10 16:54:37,553 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_l4.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most -2.
+
+Saved: /data/knlp-key-results/bpa-multi-gpu/json/l4_latency.json
+
+============================================================
+  L4 COMPLETE — 1531s total
+============================================================
+
+Results in: /data/knlp-key-results/bpa-multi-gpu/json/l4_*.json
+Endpoints will auto-teardown after idle_timeout (300s).

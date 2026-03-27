@@ -1,0 +1,45 @@
+{
+  "experiment": "h100_latency",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "FP16/FP16",
+      "error": "HTTP request failed: Cannot connect to host api.runpod.io:443 ssl:default [Temporary failure in name resolution]"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "FP16/INT4",
+      "error": "HTTP request failed: Cannot connect to host api.runpod.io:443 ssl:default [Temporary failure in name resolution]"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "INT8/INT4",
+      "error": "HTTP request failed: Cannot connect to host api.runpod.io:443 ssl:default [Temporary failure in name resolution]"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "INT4/INT4",
+      "error": "HTTP request failed: Cannot connect to host api.runpod.io:443 ssl:default [Temporary failure in name resolution]"
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "FP16/FP16",
+      "error": "HTTP request failed: Cannot connect to host api.runpod.io:443 ssl:default [Temporary failure in name resolution]"
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "FP16/INT4",
+      "error": "HTTP request failed: Cannot connect to host api.runpod.io:443 ssl:default [Temporary failure in name resolution]"
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "INT8/INT4",
+      "error": "HTTP request failed: Cannot connect to host api.runpod.io:443 ssl:default [Temporary failure in name resolution]"
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "INT4/INT4",
+      "error": "HTTP request failed: Cannot connect to host api.runpod.io:443 ssl:default [Temporary failure in name resolution]"
+    }
+  ]
+}

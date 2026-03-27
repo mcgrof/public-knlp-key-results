@@ -1,0 +1,18 @@
+{
+  "tier": "2",
+  "type": "speculative_decode",
+  "timestamp": "2026-03-12T04:36:12",
+  "gpu": "H100-80GB",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "method": "ngram",
+  "num_speculative_tokens": 5,
+  "seq_len": 8192,
+  "num_prompts": 20,
+  "max_tokens": 256,
+  "total_input_tokens": 63266,
+  "total_output_tokens": 5120,
+  "wall_time_sec": 7.579,
+  "tokens_per_sec": 675.56,
+  "avg_decode_latency_ms": 1.48,
+  "peak_vram_gb": 71.1
+}

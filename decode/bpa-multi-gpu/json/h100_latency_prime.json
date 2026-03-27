@@ -1,0 +1,412 @@
+{
+  "experiment": "h100_latency_prime",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "gpu_memory_gb": 79.2,
+  "pytorch_version": "2.5.1+cu124",
+  "cuda_version": "12.4",
+  "timestamp": "2026-03-12T04:43:54Z",
+  "models": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "n_layers": 28,
+      "n_kv_heads": 4,
+      "head_dim": 128,
+      "latency": [
+        {
+          "precision": "FP16",
+          "batch_size": 1,
+          "context_len": 2048,
+          "mean_latency_ms": 16.611,
+          "std_latency_ms": 0.072,
+          "tokens_per_sec": 60.2,
+          "kv_bandwidth_gb_s": 7.2
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 1,
+          "context_len": 2048,
+          "mean_latency_ms": 16.597,
+          "std_latency_ms": 0.059,
+          "tokens_per_sec": 60.3,
+          "kv_bandwidth_gb_s": 7.2
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 1,
+          "context_len": 2048,
+          "mean_latency_ms": 16.568,
+          "std_latency_ms": 0.04,
+          "tokens_per_sec": 60.4,
+          "kv_bandwidth_gb_s": 7.2
+        },
+        {
+          "precision": "FP16",
+          "batch_size": 4,
+          "context_len": 2048,
+          "mean_latency_ms": 15.921,
+          "std_latency_ms": 0.058,
+          "tokens_per_sec": 251.2,
+          "kv_bandwidth_gb_s": 30.1
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 4,
+          "context_len": 2048,
+          "mean_latency_ms": 15.939,
+          "std_latency_ms": 0.062,
+          "tokens_per_sec": 251.0,
+          "kv_bandwidth_gb_s": 30.0
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 4,
+          "context_len": 2048,
+          "mean_latency_ms": 15.9,
+          "std_latency_ms": 0.138,
+          "tokens_per_sec": 251.6,
+          "kv_bandwidth_gb_s": 30.1
+        },
+        {
+          "precision": "FP16",
+          "batch_size": 16,
+          "context_len": 2048,
+          "mean_latency_ms": 30.469,
+          "std_latency_ms": 0.238,
+          "tokens_per_sec": 525.1,
+          "kv_bandwidth_gb_s": 62.9
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 16,
+          "context_len": 2048,
+          "mean_latency_ms": 30.45,
+          "std_latency_ms": 0.245,
+          "tokens_per_sec": 525.4,
+          "kv_bandwidth_gb_s": 62.9
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 16,
+          "context_len": 2048,
+          "mean_latency_ms": 30.451,
+          "std_latency_ms": 0.245,
+          "tokens_per_sec": 525.4,
+          "kv_bandwidth_gb_s": 62.9
+        },
+        {
+          "precision": "FP16",
+          "batch_size": 64,
+          "context_len": 2048,
+          "mean_latency_ms": 88.979,
+          "std_latency_ms": 0.963,
+          "tokens_per_sec": 719.3,
+          "kv_bandwidth_gb_s": 86.1
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 64,
+          "context_len": 2048,
+          "mean_latency_ms": 88.839,
+          "std_latency_ms": 0.954,
+          "tokens_per_sec": 720.4,
+          "kv_bandwidth_gb_s": 86.3
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 64,
+          "context_len": 2048,
+          "mean_latency_ms": 88.787,
+          "std_latency_ms": 0.951,
+          "tokens_per_sec": 720.8,
+          "kv_bandwidth_gb_s": 86.3
+        },
+        {
+          "precision": "FP16",
+          "batch_size": 1,
+          "context_len": 4096,
+          "mean_latency_ms": 16.683,
+          "std_latency_ms": 0.169,
+          "tokens_per_sec": 59.9,
+          "kv_bandwidth_gb_s": 14.2
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 1,
+          "context_len": 4096,
+          "mean_latency_ms": 16.635,
+          "std_latency_ms": 0.056,
+          "tokens_per_sec": 60.1,
+          "kv_bandwidth_gb_s": 14.3
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 1,
+          "context_len": 4096,
+          "mean_latency_ms": 16.578,
+          "std_latency_ms": 0.067,
+          "tokens_per_sec": 60.3,
+          "kv_bandwidth_gb_s": 14.3
+        },
+        {
+          "precision": "FP16",
+          "batch_size": 4,
+          "context_len": 4096,
+          "mean_latency_ms": 19.397,
+          "std_latency_ms": 0.085,
+          "tokens_per_sec": 206.2,
+          "kv_bandwidth_gb_s": 48.9
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 4,
+          "context_len": 4096,
+          "mean_latency_ms": 19.414,
+          "std_latency_ms": 0.095,
+          "tokens_per_sec": 206.0,
+          "kv_bandwidth_gb_s": 48.9
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 4,
+          "context_len": 4096,
+          "mean_latency_ms": 19.398,
+          "std_latency_ms": 0.066,
+          "tokens_per_sec": 206.2,
+          "kv_bandwidth_gb_s": 48.9
+        },
+        {
+          "precision": "FP16",
+          "batch_size": 16,
+          "context_len": 4096,
+          "mean_latency_ms": 50.253,
+          "std_latency_ms": 0.295,
+          "tokens_per_sec": 318.4,
+          "kv_bandwidth_gb_s": 75.5
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 16,
+          "context_len": 4096,
+          "mean_latency_ms": 50.215,
+          "std_latency_ms": 0.298,
+          "tokens_per_sec": 318.6,
+          "kv_bandwidth_gb_s": 75.6
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 16,
+          "context_len": 4096,
+          "mean_latency_ms": 50.275,
+          "std_latency_ms": 0.309,
+          "tokens_per_sec": 318.3,
+          "kv_bandwidth_gb_s": 75.5
+        }
+      ],
+      "perplexity": [
+        {
+          "precision": "FP16",
+          "perplexity": 7.34,
+          "tokens": 198559
+        },
+        {
+          "precision": "INT8",
+          "perplexity": 6.6152,
+          "tokens": 99231
+        },
+        {
+          "precision": "INT4",
+          "perplexity": 1812.4846,
+          "tokens": 99231
+        }
+      ]
+    },
+    {
+      "model": "unsloth/Llama-3.1-8B-Instruct",
+      "canonical_name": "meta-llama/Llama-3.1-8B-Instruct",
+      "n_layers": 32,
+      "n_kv_heads": 8,
+      "head_dim": 128,
+      "latency": [
+        {
+          "precision": "FP16",
+          "batch_size": 1,
+          "context_len": 2048,
+          "mean_latency_ms": 19.036,
+          "std_latency_ms": 0.195,
+          "tokens_per_sec": 52.5,
+          "kv_bandwidth_gb_s": 14.4
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 1,
+          "context_len": 2048,
+          "mean_latency_ms": 18.989,
+          "std_latency_ms": 0.17,
+          "tokens_per_sec": 52.7,
+          "kv_bandwidth_gb_s": 14.4
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 1,
+          "context_len": 2048,
+          "mean_latency_ms": 18.946,
+          "std_latency_ms": 0.055,
+          "tokens_per_sec": 52.8,
+          "kv_bandwidth_gb_s": 14.4
+        },
+        {
+          "precision": "FP16",
+          "batch_size": 4,
+          "context_len": 2048,
+          "mean_latency_ms": 19.183,
+          "std_latency_ms": 0.147,
+          "tokens_per_sec": 208.5,
+          "kv_bandwidth_gb_s": 57.1
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 4,
+          "context_len": 2048,
+          "mean_latency_ms": 19.126,
+          "std_latency_ms": 0.094,
+          "tokens_per_sec": 209.1,
+          "kv_bandwidth_gb_s": 57.2
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 4,
+          "context_len": 2048,
+          "mean_latency_ms": 19.158,
+          "std_latency_ms": 0.1,
+          "tokens_per_sec": 208.8,
+          "kv_bandwidth_gb_s": 57.1
+        },
+        {
+          "precision": "FP16",
+          "batch_size": 16,
+          "context_len": 2048,
+          "mean_latency_ms": 44.188,
+          "std_latency_ms": 0.64,
+          "tokens_per_sec": 362.1,
+          "kv_bandwidth_gb_s": 99.1
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 16,
+          "context_len": 2048,
+          "mean_latency_ms": 44.093,
+          "std_latency_ms": 0.631,
+          "tokens_per_sec": 362.9,
+          "kv_bandwidth_gb_s": 99.3
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 16,
+          "context_len": 2048,
+          "mean_latency_ms": 44.079,
+          "std_latency_ms": 0.637,
+          "tokens_per_sec": 363.0,
+          "kv_bandwidth_gb_s": 99.3
+        },
+        {
+          "precision": "FP16",
+          "batch_size": 1,
+          "context_len": 4096,
+          "mean_latency_ms": 18.902,
+          "std_latency_ms": 0.065,
+          "tokens_per_sec": 52.9,
+          "kv_bandwidth_gb_s": 28.7
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 1,
+          "context_len": 4096,
+          "mean_latency_ms": 18.908,
+          "std_latency_ms": 0.051,
+          "tokens_per_sec": 52.9,
+          "kv_bandwidth_gb_s": 28.7
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 1,
+          "context_len": 4096,
+          "mean_latency_ms": 18.867,
+          "std_latency_ms": 0.075,
+          "tokens_per_sec": 53.0,
+          "kv_bandwidth_gb_s": 28.7
+        },
+        {
+          "precision": "FP16",
+          "batch_size": 4,
+          "context_len": 4096,
+          "mean_latency_ms": 26.478,
+          "std_latency_ms": 0.145,
+          "tokens_per_sec": 151.1,
+          "kv_bandwidth_gb_s": 81.9
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 4,
+          "context_len": 4096,
+          "mean_latency_ms": 26.425,
+          "std_latency_ms": 0.152,
+          "tokens_per_sec": 151.4,
+          "kv_bandwidth_gb_s": 82.1
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 4,
+          "context_len": 4096,
+          "mean_latency_ms": 26.431,
+          "std_latency_ms": 0.14,
+          "tokens_per_sec": 151.3,
+          "kv_bandwidth_gb_s": 82.0
+        },
+        {
+          "precision": "FP16",
+          "batch_size": 16,
+          "context_len": 4096,
+          "mean_latency_ms": 75.432,
+          "std_latency_ms": 0.576,
+          "tokens_per_sec": 212.1,
+          "kv_bandwidth_gb_s": 115.0
+        },
+        {
+          "precision": "INT8",
+          "batch_size": 16,
+          "context_len": 4096,
+          "mean_latency_ms": 75.268,
+          "std_latency_ms": 0.576,
+          "tokens_per_sec": 212.6,
+          "kv_bandwidth_gb_s": 115.2
+        },
+        {
+          "precision": "INT4",
+          "batch_size": 16,
+          "context_len": 4096,
+          "mean_latency_ms": 75.253,
+          "std_latency_ms": 0.58,
+          "tokens_per_sec": 212.6,
+          "kv_bandwidth_gb_s": 115.3
+        }
+      ],
+      "perplexity": [
+        {
+          "precision": "FP16",
+          "perplexity": 7.0141,
+          "tokens": 198559
+        },
+        {
+          "precision": "INT8",
+          "perplexity": 6.3648,
+          "tokens": 99231
+        },
+        {
+          "precision": "INT4",
+          "perplexity": 6.3768,
+          "tokens": 99231
+        }
+      ]
+    }
+  ]
+}

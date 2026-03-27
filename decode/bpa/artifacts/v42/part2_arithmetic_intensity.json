@@ -1,0 +1,16 @@
+{
+  "qwen25_05b": 7.0,
+  "qwen25_1.8b": 8.0,
+  "qwen25_7b": 7.0,
+  "mistral_7b": 4.0,
+  "llama31_8b": 4.0,
+  "nemotron3_nano": 16.0,
+  "deepseek_mla": 16.0,
+  "gemma3_4b": 2.0,
+  "gemma3_12b": 2.0,
+  "gemma3n_e4b": 4.0,
+  "deepseek_r1_7b": 7.0,
+  "phi4_14b": 4.0,
+  "qwen3_8b": 4.0,
+  "mistral_small_24b": 4.0
+}

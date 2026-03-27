@@ -1,0 +1,57 @@
+{
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "modes": {
+    "fine": {
+      "mean_rate": 0.5256684124469757,
+      "std_rate": 0.025321875687720607,
+      "mean_variance": 0.0033777221105992794,
+      "mean_oracle_agreement": 0.6328399884259258,
+      "mean_extra_vs_fine": 0.0
+    },
+    "segment_8": {
+      "mean_rate": 0.990353008111318,
+      "std_rate": 0.004994305768247346,
+      "mean_variance": 0.000276100923656486,
+      "mean_oracle_agreement": 0.25836371527777774,
+      "mean_extra_vs_fine": 0.887890895207723
+    },
+    "segment_16": {
+      "mean_rate": 0.9951157569885254,
+      "std_rate": 0.002558214292127906,
+      "mean_variance": 0.00012782522389898077,
+      "mean_oracle_agreement": 0.2546614583333333,
+      "mean_extra_vs_fine": 0.8971791863441467
+    },
+    "segment_32": {
+      "mean_rate": 0.9996527830759684,
+      "std_rate": 0.00030004013696918725,
+      "mean_variance": 1.9547369163319672e-06,
+      "mean_oracle_agreement": 0.2503472222222222,
+      "mean_extra_vs_fine": 0.9060187737147013
+    },
+    "head_block": {
+      "mean_rate": 0.7119878530502319,
+      "std_rate": 0.011499968419114848,
+      "mean_variance": 0.002178852523987492,
+      "mean_oracle_agreement": 0.5005410879629629,
+      "mean_extra_vs_fine": 0.3568999369939168
+    },
+    "position_bucket": {
+      "mean_rate": 0.5887478192647299,
+      "std_rate": 0.014897109435000177,
+      "mean_variance": 0.003139768106242021,
+      "mean_oracle_agreement": 0.5863650173611111,
+      "mean_extra_vs_fine": 0.12121870865424474
+    }
+  },
+  "best_coarse_mode": "segment_32",
+  "acceptance": {
+    "variance_reduced": true,
+    "not_too_wasteful": true,
+    "best_coarse_mode": "segment_32"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "experiment": "large_decode_latency",
+  "model_info": {
+    "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "n_params": 46702792704,
+    "n_layers": 32,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "dtype": "bfloat16",
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 150.121545728,
+    "load_time_s": 67.32457828521729,
+    "k_proj_shape": [
+      1,
+      4,
+      1024
+    ]
+  },
+  "results": [
+    {
+      "label": "FP16/FP16",
+      "k_bits": 16,
+      "v_bits": 16,
+      "mean_ms_per_token": 70.0059512257576,
+      "mean_tokens_per_sec": 14.284500029827266,
+      "all_latencies": [
+        {
+          "ms_per_token": 70.01467891037464,
+          "tokens_per_sec": 14.282719217781372
+        },
+        {
+          "ms_per_token": 69.99577183276415,
+          "tokens_per_sec": 14.286577229110751
+        },
+        {
+          "ms_per_token": 70.007402934134,
+          "tokens_per_sec": 14.284203642589674
+        }
+      ]
+    },
+    {
+      "label": "FP16/INT4",
+      "k_bits": 16,
+      "v_bits": 4,
+      "mean_ms_per_token": 70.78123229245345,
+      "mean_tokens_per_sec": 14.128041334422031,
+      "all_latencies": [
+        {
+          "ms_per_token": 70.820417329669,
+          "tokens_per_sec": 14.120221790631375
+        },
+        {
+          "ms_per_token": 70.77458873391151,
+          "tokens_per_sec": 14.129365043146509
+        },
+        {
+          "ms_per_token": 70.74869081377983,
+          "tokens_per_sec": 14.134537169488208
+        }
+      ]
+    },
+    {
+      "label": "INT8/INT4",
+      "k_bits": 8,
+      "v_bits": 4,
+      "mean_ms_per_token": 71.4415451263388,
+      "mean_tokens_per_sec": 13.99745961525988,
+      "all_latencies": [
+        {
+          "ms_per_token": 71.40342094004154,
+          "tokens_per_sec": 14.004931232072398
+        },
+        {
+          "ms_per_token": 71.46220441907644,
+          "tokens_per_sec": 13.993411036352743
+        },
+        {
+          "ms_per_token": 71.45901001989841,
+          "tokens_per_sec": 13.994036577354498
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "phase": "phase1_wikitext_ppl",
+  "model_info": {
+    "model": "google/gemma-2-27b-it",
+    "n_params": 27227128320,
+    "n_layers": 46,
+    "n_kv_heads": 16,
+    "head_dim": 128,
+    "load_time_s": 35.0,
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 150.0,
+    "n_gpu_modules": 46,
+    "n_cpu_modules": 0
+  },
+  "results": {
+    "FP16_baseline": {
+      "ppl": 7.5214,
+      "n_tokens": 199902,
+      "time_s": 49.8
+    },
+    "K_FP16__V_INT4": {
+      "ppl": 7.5485,
+      "n_tokens": 199902,
+      "time_s": 46.1,
+      "ppl_delta_pct": 0.3603
+    },
+    "K_INT8__V_INT4": {
+      "ppl": 7.558,
+      "n_tokens": 199902,
+      "time_s": 43.6,
+      "ppl_delta_pct": 0.4866
+    },
+    "K_INT4__V_INT4": {
+      "ppl": 7.5838,
+      "n_tokens": 199902,
+      "time_s": 43.2,
+      "ppl_delta_pct": 0.8296
+    }
+  }
+}

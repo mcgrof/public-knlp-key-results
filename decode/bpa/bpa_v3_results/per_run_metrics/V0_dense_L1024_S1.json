@@ -1,0 +1,23 @@
+{
+  "variant": "V0_dense",
+  "seq_len": 1024,
+  "seed": 1,
+  "ppl_mean": 258.61370666503905,
+  "ppl_std": 67.91042255180109,
+  "enabled_rate": 1.0,
+  "tokens_per_query_mean": 1024.0,
+  "tokens_per_query_p50": 1024.0,
+  "tokens_per_query_p95": 1024.0,
+  "tokens_per_query_p99": 1024.0,
+  "kv_bytes_written_per_token": 36864,
+  "kv_bytes_read_per_token": 37748736.0,
+  "kv_bytes_total_per_token": 37785600.0,
+  "peak_kv_bytes": 37748736,
+  "effective_kept_tokens": 1024.0,
+  "flops_proxy": 9437184.0,
+  "flops_relative": 1.0,
+  "wall_ms_per_token": 0.3810964281001361,
+  "tokens_per_sec": 2624.007800296785,
+  "tokens_seen": 102400,
+  "n_eval_batches": 50
+}

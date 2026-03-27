@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-02-17T12:48:23.397647",
+  "phase": 3,
+  "version": "v24",
+  "model": "qwen05b",
+  "gpu_info": {
+    "device_name": "AMD Radeon Pro W7900",
+    "total_gb": 48.3,
+    "torch_version": "2.6.0+rocm6.2.4",
+    "hip_version": "6.2.41134-65d174c3e"
+  }
+}

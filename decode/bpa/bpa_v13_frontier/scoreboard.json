@@ -1,0 +1,98 @@
+{
+  "dense": {
+    "16384": {
+      "r1": {
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 4.46,
+        "avg_p50_ms": 46.029,
+        "avg_kept": 16640.0,
+        "n_seeds": 1
+      }
+    },
+    "32768": {
+      "r1": {
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 13.55,
+        "avg_p50_ms": 82.385,
+        "avg_kept": 33024.0,
+        "n_seeds": 1
+      }
+    }
+  },
+  "bitter5": {
+    "16384": {
+      "r1": {
+        "pass_1pct": false,
+        "pass_3pct": false,
+        "any_catastrophic": false,
+        "avg_ppl": 29.44,
+        "avg_p50_ms": 18.076,
+        "avg_kept": 2574.0,
+        "n_seeds": 1
+      }
+    },
+    "32768": {
+      "r1": {
+        "pass_1pct": false,
+        "pass_3pct": false,
+        "any_catastrophic": true,
+        "avg_ppl": 999999,
+        "avg_p50_ms": 30.628,
+        "avg_kept": 5134.0,
+        "n_seeds": 1
+      }
+    }
+  },
+  "bitter6": {
+    "16384": {
+      "r1": {
+        "pass_1pct": false,
+        "pass_3pct": false,
+        "any_catastrophic": true,
+        "avg_ppl": 999999,
+        "avg_p50_ms": 30.693,
+        "avg_kept": 5134.0,
+        "n_seeds": 1
+      }
+    },
+    "32768": {
+      "r1": {
+        "pass_1pct": false,
+        "pass_3pct": false,
+        "any_catastrophic": true,
+        "avg_ppl": 999999,
+        "avg_p50_ms": 37.513,
+        "avg_kept": 9230.0,
+        "n_seeds": 1
+      }
+    }
+  },
+  "bitter7": {
+    "16384": {
+      "r1": {
+        "pass_1pct": false,
+        "pass_3pct": false,
+        "any_catastrophic": true,
+        "avg_ppl": 999999,
+        "avg_p50_ms": 0.0,
+        "avg_kept": 0.0,
+        "n_seeds": 1
+      }
+    },
+    "32768": {
+      "r1": {
+        "pass_1pct": false,
+        "pass_3pct": false,
+        "any_catastrophic": true,
+        "avg_ppl": 999999,
+        "avg_p50_ms": 0.0,
+        "avg_kept": 0.0,
+        "n_seeds": 1
+      }
+    }
+  }
+}

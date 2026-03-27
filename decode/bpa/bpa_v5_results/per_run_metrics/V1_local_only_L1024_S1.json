@@ -1,0 +1,23 @@
+{
+  "variant": "V1_local_only",
+  "seq_len": 1024,
+  "seed": 1,
+  "ppl_mean": 289.50243408203124,
+  "ppl_std": 122.31067335091385,
+  "enabled_rate": 0.0,
+  "tokens_per_query_mean": 224.125,
+  "tokens_per_query_p50": 224.125,
+  "tokens_per_query_p95": 224.125,
+  "tokens_per_query_p99": 224.125,
+  "kv_bytes_written_per_token": 36864,
+  "kv_bytes_read_per_token": 9437184.0,
+  "kv_bytes_total_per_token": 9474048.0,
+  "peak_kv_bytes": 37748736,
+  "effective_kept_tokens": 224.125,
+  "flops_proxy": 2359296.0,
+  "flops_relative": 0.25,
+  "wall_ms_per_token": 0.29568379704869585,
+  "tokens_per_sec": 3381.991201348483,
+  "tokens_seen": 51200,
+  "n_eval_batches": 50
+}

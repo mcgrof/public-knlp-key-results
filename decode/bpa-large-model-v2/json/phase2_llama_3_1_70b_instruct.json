@@ -1,0 +1,35 @@
+{
+  "phase": "phase2_ratio_classifier",
+  "model_info": {
+    "model": "meta-llama/Llama-3.1-70B-Instruct",
+    "n_params": 70554000000,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "load_time_s": 67,
+    "gpu": "NVIDIA H200 SXM",
+    "gpu_mem_gb": 141.0,
+    "n_gpu_modules": 77,
+    "n_cpu_modules": 7
+  },
+  "int8_error": 0.4631,
+  "int6_error": 0.5994,
+  "ratio": 1.29,
+  "threshold": 3.0,
+  "needs_fp16_keys": false,
+  "details": {
+    "INT8": {
+      "avg_logit_error": 0.4631,
+      "avg_token_agreement": 1.0,
+      "per_prompt_errors": [0.8438, 0.2422, 0.3008, 0.2363, 0.2969, 0.1875, 0.2969, 0.1953, 0.3125, 1.7188],
+      "per_prompt_agrees": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+    },
+    "INT6": {
+      "avg_logit_error": 0.5994,
+      "avg_token_agreement": 0.9938,
+      "per_prompt_errors": [0.9375, 0.3203, 0.2598, 0.2969, 0.3281, 0.25, 0.3906, 0.25, 0.3359, 2.625],
+      "per_prompt_agrees": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.9375]
+    }
+  },
+  "note": "WikiText-103 prompts. 7 CPU-offloaded modules. Methodology matches v52/v53."
+}

@@ -1,0 +1,16 @@
+{
+  "qwen05b": {
+    "D": 24,
+    "k_star_3pct": 2,
+    "k_star_1pct": null,
+    "k_over_D_3pct": 0.0833,
+    "k_over_D_1pct": null
+  },
+  "qwen15b": {
+    "D": 28,
+    "k_star_3pct": 2,
+    "k_star_1pct": 3,
+    "k_over_D_3pct": 0.0714,
+    "k_over_D_1pct": 0.1071
+  }
+}

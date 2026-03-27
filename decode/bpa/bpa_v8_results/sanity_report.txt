@@ -1,0 +1,49 @@
+=== BPA v8 Sanity Report ===
+  V0_dense                            L= 512 W=256 C= 64 kept=256 gate_ratio=0.00 OK
+  V8_ra_value                         L= 512 W=256 C= 64 kept=234 gate_ratio=0.62 OK
+  V8_recency                          L= 512 W=256 C= 64 kept=234 gate_ratio=0.63 OK
+  V0_dense                            L= 512 W=256 C= 64 kept=256 gate_ratio=0.00 OK
+  V8_ra_value                         L= 512 W=256 C= 64 kept=234 gate_ratio=0.63 OK
+  V8_recency                          L= 512 W=256 C= 64 kept=234 gate_ratio=0.64 OK
+  V0_dense                            L= 512 W=256 C= 64 kept=256 gate_ratio=0.00 OK
+  V8_ra_value                         L= 512 W=256 C= 64 kept=235 gate_ratio=0.64 OK
+  V8_recency                          L= 512 W=256 C= 64 kept=235 gate_ratio=0.65 OK
+  V0_dense                            L= 512 W=256 C= 64 kept=256 gate_ratio=0.00 OK
+  V8_ra_value                         L= 512 W=256 C= 64 kept=235 gate_ratio=0.65 OK
+  V8_recency                          L= 512 W=256 C= 64 kept=235 gate_ratio=0.65 OK
+  V0_dense                            L= 512 W=256 C= 64 kept=256 gate_ratio=0.00 OK
+  V8_ra_value                         L= 512 W=256 C= 64 kept=232 gate_ratio=0.64 OK
+  V8_recency                          L= 512 W=256 C= 64 kept=232 gate_ratio=0.65 OK
+  V0_dense                            L= 512 W=256 C= 64 kept=256 gate_ratio=0.00 OK
+  V8_ra_value                         L= 512 W=256 C= 64 kept=232 gate_ratio=0.65 OK
+  V8_recency                          L= 512 W=256 C= 64 kept=232 gate_ratio=0.65 OK
+  V0_dense                            L=1024 W=256 C= 64 kept=512 gate_ratio=0.00 OK
+  V8_ra_value                         L=1024 W=256 C= 64 kept=356 gate_ratio=0.67 OK
+  V8_recency                          L=1024 W=256 C= 64 kept=356 gate_ratio=0.67 OK
+  V0_dense                            L=1024 W=256 C= 64 kept=512 gate_ratio=0.00 OK
+  V8_ra_value                         L=1024 W=256 C= 64 kept=356 gate_ratio=0.67 OK
+  V8_recency                          L=1024 W=256 C= 64 kept=356 gate_ratio=0.67 OK
+  V0_dense                            L=1024 W=256 C= 64 kept=512 gate_ratio=0.00 OK
+  V8_ra_value                         L=1024 W=256 C= 64 kept=356 gate_ratio=0.68 OK
+  V8_recency                          L=1024 W=256 C= 64 kept=356 gate_ratio=0.68 OK
+  V0_dense                            L=1024 W=256 C= 64 kept=512 gate_ratio=0.00 OK
+  V8_ra_value                         L=1024 W=256 C= 64 kept=356 gate_ratio=0.68 OK
+  V8_recency                          L=1024 W=256 C= 64 kept=356 gate_ratio=0.68 OK
+  V0_dense                            L=1024 W=256 C= 64 kept=512 gate_ratio=0.00 OK
+  V8_ra_value                         L=1024 W=256 C= 64 kept=355 gate_ratio=0.68 OK
+  V8_recency                          L=1024 W=256 C= 64 kept=355 gate_ratio=0.68 OK
+  V0_dense                            L=1024 W=256 C= 64 kept=512 gate_ratio=0.00 OK
+  V8_ra_value                         L=1024 W=256 C= 64 kept=355 gate_ratio=0.68 OK
+  V8_recency                          L=1024 W=256 C= 64 kept=355 gate_ratio=0.68 OK
+  V0_dense                            L=2048 W=256 C= 64 kept=1024 gate_ratio=0.00 OK
+  V8_ra_value                         L=2048 W=256 C= 64 kept=397 gate_ratio=0.65 OK
+  V8_recency                          L=2048 W=256 C= 64 kept=397 gate_ratio=0.65 OK
+  V0_dense                            L=2048 W=256 C= 64 kept=1024 gate_ratio=0.00 OK
+  V8_ra_value                         L=2048 W=256 C= 64 kept=397 gate_ratio=0.65 OK
+  V8_recency                          L=2048 W=256 C= 64 kept=397 gate_ratio=0.65 OK
+  V0_dense                            L=2048 W=256 C= 64 kept=1024 gate_ratio=0.00 OK
+  V8_ra_value                         L=2048 W=256 C= 64 kept=397 gate_ratio=0.65 OK
+  V8_recency                          L=2048 W=256 C= 64 kept=397 gate_ratio=0.65 OK
+  V0_dense                            L=2048 W=256 C= 64 kept=1024 gate_ratio=0.00 OK
+  V8_ra_value                         L=2048 W=256 C= 64 kept=397 gate_ratio=0.65 OK
+  V8_recency                          L=2048 W=256 C= 64 kept=397 gate_ratio=0.65 OK

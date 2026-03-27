@@ -1,0 +1,10 @@
+{
+  "dense": {
+    "n_thresholds": 0,
+    "learned_fraction": 0.0
+  },
+  "bitter0": {
+    "n_thresholds": 4,
+    "learned_fraction": 0.0
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "model": "qwen05b",
+  "accounting": {
+    "baseline_g32_k4": {
+      "dense_bytes_per_token": 12288,
+      "int8_bytes_per_layer": 264,
+      "int4_bytes_per_layer": 144.0,
+      "n_int8_layers": 4,
+      "n_int4_layers": 20,
+      "total_bytes_per_token": 3936.0,
+      "kv_ratio": 0.320312,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_layer": 16,
+      "scale_overhead_pct": 11.11
+    },
+    "amort_g4_S1_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 128.0,
+      "int4_bytes_per_layer": 256.0,
+      "total_bytes_per_token": 6160.0,
+      "kv_ratio": 0.501302,
+      "scale_overhead_pct": 50.0,
+      "scale_sharing_window": 1
+    },
+    "amort_g4_S1_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 128.0,
+      "int4_bytes_per_layer": 256.0,
+      "total_bytes_per_token": 6168.0,
+      "kv_ratio": 0.501953,
+      "scale_overhead_pct": 50.0,
+      "scale_sharing_window": 1
+    },
+    "amort_g4_S1_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 128.0,
+      "int4_bytes_per_layer": 256.0,
+      "total_bytes_per_token": 6176.0,
+      "kv_ratio": 0.502604,
+      "scale_overhead_pct": 50.0,
+      "scale_sharing_window": 1
+    },
+    "amort_g4_S2_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4752.0,
+      "kv_ratio": 0.386719,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 2
+    },
+    "amort_g4_S2_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4824.0,
+      "kv_ratio": 0.392578,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 2
+    },
+    "amort_g4_S2_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4896.0,
+      "kv_ratio": 0.398438,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 2
+    },
+    "amort_g4_S4_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 32.0,
+      "int4_bytes_per_layer": 160.0,
+      "total_bytes_per_token": 4048.0,
+      "kv_ratio": 0.329427,
+      "scale_overhead_pct": 20.0,
+      "scale_sharing_window": 4
+    },
+    "amort_g4_S4_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 32.0,
+      "int4_bytes_per_layer": 160.0,
+      "total_bytes_per_token": 4152.0,
+      "kv_ratio": 0.337891,
+      "scale_overhead_pct": 20.0,
+      "scale_sharing_window": 4
+    },
+    "amort_g4_S4_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 32.0,
+      "int4_bytes_per_layer": 160.0,
+      "total_bytes_per_token": 4256.0,
+      "kv_ratio": 0.346354,
+      "scale_overhead_pct": 20.0,
+      "scale_sharing_window": 4
+    },
+    "amort_g4_S8_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 16.0,
+      "int4_bytes_per_layer": 144.0,
+      "total_bytes_per_token": 3696.0,
+      "kv_ratio": 0.300781,
+      "scale_overhead_pct": 11.11,
+      "scale_sharing_window": 8
+    },
+    "amort_g4_S8_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 16.0,
+      "int4_bytes_per_layer": 144.0,
+      "total_bytes_per_token": 3816.0,
+      "kv_ratio": 0.310547,
+      "scale_overhead_pct": 11.11,
+      "scale_sharing_window": 8
+    },
+    "amort_g4_S8_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 16.0,
+      "int4_bytes_per_layer": 144.0,
+      "total_bytes_per_token": 3936.0,
+      "kv_ratio": 0.320312,
+      "scale_overhead_pct": 11.11,
+      "scale_sharing_window": 8
+    },
+    "amort_g4_S16_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 8.0,
+      "int4_bytes_per_layer": 136.0,
+      "total_bytes_per_token": 3520.0,
+      "kv_ratio": 0.286458,
+      "scale_overhead_pct": 5.88,
+      "scale_sharing_window": 16
+    },
+    "amort_g4_S16_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 8.0,
+      "int4_bytes_per_layer": 136.0,
+      "total_bytes_per_token": 3648.0,
+      "kv_ratio": 0.296875,
+      "scale_overhead_pct": 5.88,
+      "scale_sharing_window": 16
+    },
+    "amort_g4_S16_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 8.0,
+      "int4_bytes_per_layer": 136.0,
+      "total_bytes_per_token": 3776.0,
+      "kv_ratio": 0.307292,
+      "scale_overhead_pct": 5.88,
+      "scale_sharing_window": 16
+    },
+    "amort_g8_S1_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4752.0,
+      "kv_ratio": 0.386719,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 1
+    },
+    "amort_g8_S1_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4824.0,
+      "kv_ratio": 0.392578,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 1
+    },
+    "amort_g8_S1_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4896.0,
+      "kv_ratio": 0.398438,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 1
+    },
+    "amort_g8_S2_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 32.0,
+      "int4_bytes_per_layer": 160.0,
+      "total_bytes_per_token": 4048.0,
+      "kv_ratio": 0.329427,
+      "scale_overhead_pct": 20.0,
+      "scale_sharing_window": 2
+    },
+    "amort_g8_S2_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 32.0,
+      "int4_bytes_per_layer": 160.0,
+      "total_bytes_per_token": 4152.0,
+      "kv_ratio": 0.337891,
+      "scale_overhead_pct": 20.0,
+      "scale_sharing_window": 2
+    },
+    "amort_g8_S2_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 32.0,
+      "int4_bytes_per_layer": 160.0,
+      "total_bytes_per_token": 4256.0,
+      "kv_ratio": 0.346354,
+      "scale_overhead_pct": 20.0,
+      "scale_sharing_window": 2
+    },
+    "amort_g8_S4_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 16.0,
+      "int4_bytes_per_layer": 144.0,
+      "total_bytes_per_token": 3696.0,
+      "kv_ratio": 0.300781,
+      "scale_overhead_pct": 11.11,
+      "scale_sharing_window": 4
+    },
+    "amort_g8_S4_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 16.0,
+      "int4_bytes_per_layer": 144.0,
+      "total_bytes_per_token": 3816.0,
+      "kv_ratio": 0.310547,
+      "scale_overhead_pct": 11.11,
+      "scale_sharing_window": 4
+    },
+    "amort_g8_S4_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 16.0,
+      "int4_bytes_per_layer": 144.0,
+      "total_bytes_per_token": 3936.0,
+      "kv_ratio": 0.320312,
+      "scale_overhead_pct": 11.11,
+      "scale_sharing_window": 4
+    },
+    "amort_g8_S8_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 8.0,
+      "int4_bytes_per_layer": 136.0,
+      "total_bytes_per_token": 3520.0,
+      "kv_ratio": 0.286458,
+      "scale_overhead_pct": 5.88,
+      "scale_sharing_window": 8
+    },
+    "amort_g8_S8_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 8.0,
+      "int4_bytes_per_layer": 136.0,
+      "total_bytes_per_token": 3648.0,
+      "kv_ratio": 0.296875,
+      "scale_overhead_pct": 5.88,
+      "scale_sharing_window": 8
+    },
+    "amort_g8_S8_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 8.0,
+      "int4_bytes_per_layer": 136.0,
+      "total_bytes_per_token": 3776.0,
+      "kv_ratio": 0.307292,
+      "scale_overhead_pct": 5.88,
+      "scale_sharing_window": 8
+    },
+    "amort_g8_S16_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 4.0,
+      "int4_bytes_per_layer": 132.0,
+      "total_bytes_per_token": 3432.0,
+      "kv_ratio": 0.279297,
+      "scale_overhead_pct": 3.03,
+      "scale_sharing_window": 16
+    },
+    "amort_g8_S16_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 4.0,
+      "int4_bytes_per_layer": 132.0,
+      "total_bytes_per_token": 3564.0,
+      "kv_ratio": 0.290039,
+      "scale_overhead_pct": 3.03,
+      "scale_sharing_window": 16
+    },
+    "amort_g8_S16_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 4.0,
+      "int4_bytes_per_layer": 132.0,
+      "total_bytes_per_token": 3696.0,
+      "kv_ratio": 0.300781,
+      "scale_overhead_pct": 3.03,
+      "scale_sharing_window": 16
+    },
+    "scalequant_g4_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4744.0,
+      "kv_ratio": 0.386068,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 1
+    },
+    "scalequant_g4_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4812.0,
+      "kv_ratio": 0.391602,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 1
+    },
+    "scalequant_g4_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4880.0,
+      "kv_ratio": 0.397135,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 1
+    },
+    "scalequant_g8_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 32.0,
+      "int4_bytes_per_layer": 160.0,
+      "total_bytes_per_token": 4040.0,
+      "kv_ratio": 0.328776,
+      "scale_overhead_pct": 20.0,
+      "scale_sharing_window": 1
+    },
+    "scalequant_g8_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 32.0,
+      "int4_bytes_per_layer": 160.0,
+      "total_bytes_per_token": 4140.0,
+      "kv_ratio": 0.336914,
+      "scale_overhead_pct": 20.0,
+      "scale_sharing_window": 1
+    },
+    "scalequant_g8_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 32.0,
+      "int4_bytes_per_layer": 160.0,
+      "total_bytes_per_token": 4240.0,
+      "kv_ratio": 0.345052,
+      "scale_overhead_pct": 20.0,
+      "scale_sharing_window": 1
+    },
+    "sharedscale_g4_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 128.0,
+      "int4_bytes_per_layer": 256.0,
+      "total_bytes_per_token": 6160.0,
+      "kv_ratio": 0.501302,
+      "scale_overhead_pct": 50.0,
+      "scale_sharing_window": 1,
+      "note": "scales shared across 2 KV heads"
+    },
+    "sharedscale_g4_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 128.0,
+      "int4_bytes_per_layer": 256.0,
+      "total_bytes_per_token": 6168.0,
+      "kv_ratio": 0.501953,
+      "scale_overhead_pct": 50.0,
+      "scale_sharing_window": 1,
+      "note": "scales shared across 2 KV heads"
+    },
+    "sharedscale_g4_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 128.0,
+      "int4_bytes_per_layer": 256.0,
+      "total_bytes_per_token": 6176.0,
+      "kv_ratio": 0.502604,
+      "scale_overhead_pct": 50.0,
+      "scale_sharing_window": 1,
+      "note": "scales shared across 2 KV heads"
+    },
+    "sharedscale_g8_k2": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4752.0,
+      "kv_ratio": 0.386719,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 1,
+      "note": "scales shared across 2 KV heads"
+    },
+    "sharedscale_g8_k3": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4824.0,
+      "kv_ratio": 0.392578,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 1,
+      "note": "scales shared across 2 KV heads"
+    },
+    "sharedscale_g8_k4": {
+      "dense_bytes_per_token": 12288,
+      "int4_payload_per_layer": 128.0,
+      "int4_scale_per_token_per_layer": 64.0,
+      "int4_bytes_per_layer": 192.0,
+      "total_bytes_per_token": 4896.0,
+      "kv_ratio": 0.398438,
+      "scale_overhead_pct": 33.33,
+      "scale_sharing_window": 1,
+      "note": "scales shared across 2 KV heads"
+    }
+  },
+  "candidates": [
+    "amort_g8_S16_k2",
+    "amort_g4_S16_k2",
+    "amort_g8_S8_k2",
+    "amort_g8_S16_k3",
+    "amort_g4_S16_k3",
+    "amort_g8_S8_k3",
+    "amort_g4_S8_k2",
+    "amort_g8_S4_k2",
+    "amort_g8_S16_k4",
+    "amort_g4_S16_k4",
+    "amort_g8_S8_k4",
+    "amort_g4_S8_k3",
+    "amort_g8_S4_k3",
+    "amort_g4_S8_k4",
+    "amort_g8_S4_k4",
+    "scalequant_g8_k2",
+    "amort_g4_S4_k2",
+    "amort_g8_S2_k2"
+  ]
+}

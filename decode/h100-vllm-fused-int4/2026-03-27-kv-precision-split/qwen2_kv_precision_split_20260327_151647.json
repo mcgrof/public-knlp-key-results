@@ -1,0 +1,415 @@
+{
+  "model": "Qwen/Qwen2-7B-Instruct",
+  "model_tag": "qwen2",
+  "timestamp": "2026-03-27T15:20:43",
+  "classifier_verdict": "PARTIAL",
+  "baseline_samples": {
+    "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+    "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+    "med_32": "Haiku about the ocean:\nWhispers of the sea,\nEndless blue, vast and deep,",
+    "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+    "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+    "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+    "long_128": "The history of the Internet can be traced back to the late 1960s, with"
+  },
+  "policies": {
+    "kv_int4_msl48": {
+      "matches": 7,
+      "total": 7,
+      "k_precision": "int4",
+      "msl": 48,
+      "asymmetric": false,
+      "group_size": 32,
+      "elapsed_s": 24.3,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+        "med_32": "Haiku about the ocean:\nWhispers of the sea,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with"
+      }
+    },
+    "kv_int4_msl8": {
+      "matches": 0,
+      "total": 7,
+      "k_precision": "int4",
+      "msl": 8,
+      "asymmetric": false,
+      "group_size": 32,
+      "elapsed_s": 24.4,
+      "details": {
+        "short_8": {
+          "match": false,
+          "tok_rate": 0.25,
+          "first_diverge": 4
+        },
+        "short_16": {
+          "match": false,
+          "tok_rate": 0.2,
+          "first_diverge": 4
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.1,
+          "first_diverge": 2
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.45,
+          "first_diverge": 8
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.35,
+          "first_diverge": 6
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.2,
+          "first_diverge": 4
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.15,
+          "first_diverge": 3
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2=4444..2.=4222==",
+        "short_16": "Gravity is the force of that pulls us down and the earth and and keeps. things to move.",
+        "med_32": "Haiku: is,,'s vast,\nEnds whispering,'s deep,\nEnds meet",
+        "med_48": "The first 10 prime numbers are: numbers, numbers are:\n\n2,2 is divisible only",
+        "long_64": "TCP (Transmission Control Protocol)))))))))) each) each each each",
+        "long_96": "In the heart of of all,'s a cold,'s a robot named's a robot it's",
+        "long_128": "The history of of the Internet spans several decades,,,, from its inception in in in ARP"
+      }
+    },
+    "k_int8_v_int4_msl48": {
+      "matches": 7,
+      "total": 7,
+      "k_precision": "int8",
+      "msl": 48,
+      "asymmetric": false,
+      "group_size": 32,
+      "elapsed_s": 24.1,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+        "med_32": "Haiku about the ocean:\nWhispers of the sea,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with"
+      }
+    },
+    "k_int8_v_int4_msl8": {
+      "status": "failed",
+      "k_precision": "int8",
+      "msl": 8
+    },
+    "k_int8_v_int4_msl24": {
+      "status": "failed",
+      "k_precision": "int8",
+      "msl": 24
+    },
+    "k_fp16_v_int4_msl48": {
+      "matches": 7,
+      "total": 7,
+      "k_precision": "fp16",
+      "msl": 48,
+      "asymmetric": false,
+      "group_size": 32,
+      "elapsed_s": 24.1,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+        "med_32": "Haiku about the ocean:\nWhispers of the sea,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with"
+      }
+    },
+    "k_fp16_v_int4_msl8": {
+      "matches": 6,
+      "total": 7,
+      "k_precision": "fp16",
+      "msl": 8,
+      "asymmetric": false,
+      "group_size": 32,
+      "elapsed_s": 23.8,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 10
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+        "med_32": "Haiku about the ocean:\nWhispers of the waves,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with"
+      }
+    },
+    "k_fp16_v_int4_msl24": {
+      "matches": 6,
+      "total": 7,
+      "k_precision": "fp16",
+      "msl": 24,
+      "asymmetric": false,
+      "group_size": 32,
+      "elapsed_s": 23.4,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 10
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+        "med_32": "Haiku about the ocean:\nWhispers of the waves,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with"
+      }
+    },
+    "k_fp16_v_int4_msl1": {
+      "matches": 6,
+      "total": 7,
+      "k_precision": "fp16",
+      "msl": 1,
+      "asymmetric": false,
+      "group_size": 32,
+      "elapsed_s": 23.1,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 10
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+        "med_32": "Haiku about the ocean:\nWhispers of the waves,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with"
+      }
+    }
+  },
+  "kfp16_msl8_perfect": false,
+  "kint4_msl8_degraded": true,
+  "kint8_better_than_int4": false
+}

@@ -1,0 +1,91 @@
+{
+  "version": "v24",
+  "model": "qwen05b",
+  "n_layers": 24,
+  "metrics": {
+    "epsilon_thresholds": [
+      0.01,
+      0.03
+    ],
+    "k_star_definition": "min k: PASS_eps for all seeds and all L",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "L_for_k_star": [
+      8192,
+      32768
+    ]
+  },
+  "dense_ppls": {
+    "L8192_s0": 9.887199399489678,
+    "L8192_s1": 10.034815060153845,
+    "L8192_s2": 7.385154989616615,
+    "L32768_s0": 13.54671968369673,
+    "L32768_s1": 15.154900515168075,
+    "L32768_s2": 8.26553255277477
+  },
+  "int8_all": {
+    "evals": {
+      "L8192_s0": {
+        "ppl": 9.9303,
+        "delta_pct": 0.44,
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "p50_ms": 21.66,
+        "kv_bytes_ratio": 1.0
+      },
+      "L8192_s1": {
+        "ppl": 10.0086,
+        "delta_pct": -0.26,
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "p50_ms": 21.59,
+        "kv_bytes_ratio": 1.0
+      },
+      "L8192_s2": {
+        "ppl": 7.402,
+        "delta_pct": 0.23,
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "p50_ms": 21.64,
+        "kv_bytes_ratio": 1.0
+      },
+      "L32768_s0": {
+        "ppl": 13.5061,
+        "delta_pct": -0.3,
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "p50_ms": 67.96,
+        "kv_bytes_ratio": 1.0
+      },
+      "L32768_s1": {
+        "ppl": 15.05,
+        "delta_pct": -0.69,
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "p50_ms": 67.97,
+        "kv_bytes_ratio": 1.0
+      },
+      "L32768_s2": {
+        "ppl": 8.2909,
+        "delta_pct": 0.31,
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "p50_ms": 68.04,
+        "kv_bytes_ratio": 1.0
+      }
+    },
+    "max_delta": 0.69,
+    "pass_1pct": true,
+    "pass_3pct": true
+  },
+  "gpu_info": {
+    "device_name": "AMD Radeon Pro W7900",
+    "total_gb": 48.3,
+    "torch_version": "2.6.0+rocm6.2.4",
+    "hip_version": "6.2.41134-65d174c3e"
+  },
+  "timestamp": "2026-02-17T12:39:50.167915"
+}

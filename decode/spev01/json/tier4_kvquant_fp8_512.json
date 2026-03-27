@@ -1,0 +1,22 @@
+{
+  "tier": "4",
+  "type": "kv_quantization",
+  "timestamp": "2026-03-12T04:44:14",
+  "gpu": "H100-80GB",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "kv_cache_dtype": "fp8",
+  "seq_len": 512,
+  "num_prompts": 20,
+  "max_tokens": 256,
+  "total_input_tokens": 316,
+  "total_output_tokens": 4246,
+  "wall_time_sec": 4.938,
+  "tokens_per_sec": 859.78,
+  "avg_decode_latency_ms": 1.16,
+  "peak_vram_gb": 54.09,
+  "sample_outputs": [
+    " General relativity is a theory in physics that which Albert Einstein proposed 1915 and 1115. It describes the laws of physics for massive objects objects and large in scales in in in in in in in in i",
+    " Sorting algorithms is a fundamental concept in computer science and is used in a wide range of applications. databases, and data analysis. . Qu.. Qu...",
+    " The history of computing spans from the early of mechanical and analog devices to the modern digital computers. Charles Babbage, is often as of computing,, who designed the first mechanical computer,"
+  ]
+}

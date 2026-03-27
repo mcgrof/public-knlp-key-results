@@ -1,0 +1,135 @@
+{
+  "experiment": "exp2_long_context",
+  "gpu": "NVIDIA L40S",
+  "results": [
+    {
+      "model": "Qwen2.5-7B-Instruct",
+      "gpu": "NVIDIA L40S",
+      "results": [
+        {
+          "seq_len": 2048,
+          "label": "K_FP16/V_FP16",
+          "ppl": 757744.2421592454,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "seq_len": 2048,
+          "label": "K_FP16/V_INT4",
+          "k_type": "fp16",
+          "v_type": "int4",
+          "ppl": 759529.0968577899,
+          "ppl_delta_pct": 0.23554843431847342
+        },
+        {
+          "seq_len": 2048,
+          "label": "K_INT8/V_INT4",
+          "k_type": "int8",
+          "v_type": "int4",
+          "ppl": 761080.048736591,
+          "ppl_delta_pct": 0.44022856153152334
+        },
+        {
+          "seq_len": 4096,
+          "label": "K_FP16/V_FP16",
+          "ppl": 1008974.24204932,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "seq_len": 4096,
+          "label": "K_FP16/V_INT4",
+          "k_type": "fp16",
+          "v_type": "int4",
+          "ppl": 1007999.0095827295,
+          "ppl_delta_pct": -0.09665583381094914
+        },
+        {
+          "seq_len": 4096,
+          "label": "K_INT8/V_INT4",
+          "k_type": "int8",
+          "v_type": "int4",
+          "ppl": 1013972.8738220043,
+          "ppl_delta_pct": 0.4954171835478772
+        },
+        {
+          "seq_len": 8192,
+          "label": "K_FP16/V_FP16",
+          "ppl": 749490.7091916254,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "seq_len": 8192,
+          "label": "K_FP16/V_INT4",
+          "k_type": "fp16",
+          "v_type": "int4",
+          "ppl": 757570.1056368516,
+          "ppl_delta_pct": 1.0779848697444736
+        },
+        {
+          "seq_len": 8192,
+          "label": "K_INT8/V_INT4",
+          "k_type": "int8",
+          "v_type": "int4",
+          "ppl": 742897.535625044,
+          "ppl_delta_pct": -0.8796871643268934
+        }
+      ],
+      "elapsed_s": 18.164628267288208
+    },
+    {
+      "model": "Mistral-7B-Instruct-v0.3",
+      "gpu": "NVIDIA L40S",
+      "results": [
+        {
+          "seq_len": 2048,
+          "label": "K_FP16/V_FP16",
+          "ppl": 193216.01721677152,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "seq_len": 2048,
+          "label": "K_FP16/V_INT4",
+          "k_type": "fp16",
+          "v_type": "int4",
+          "ppl": 194596.46458033373,
+          "ppl_delta_pct": 0.7144580368890799
+        },
+        {
+          "seq_len": 2048,
+          "label": "K_INT8/V_INT4",
+          "k_type": "int8",
+          "v_type": "int4",
+          "ppl": 193706.41527799013,
+          "ppl_delta_pct": 0.2538081823042804
+        },
+        {
+          "seq_len": 4096,
+          "label": "K_FP16/V_FP16",
+          "ppl": 252004.7983257792,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "seq_len": 4096,
+          "label": "K_FP16/V_INT4",
+          "k_type": "fp16",
+          "v_type": "int4",
+          "ppl": 249037.0264337587,
+          "ppl_delta_pct": -1.1776648348512477
+        },
+        {
+          "seq_len": 4096,
+          "label": "K_INT8/V_INT4",
+          "k_type": "int8",
+          "v_type": "int4",
+          "ppl": 249770.3170737345,
+          "ppl_delta_pct": -0.8866820262509746
+        },
+        {
+          "seq_len": 8192,
+          "label": "K_FP16/V_FP16",
+          "error": "OOM"
+        }
+      ],
+      "elapsed_s": 7.169022083282471
+    }
+  ]
+}

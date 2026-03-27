@@ -1,0 +1,397 @@
+{
+  "experiment": "spev05_stageC",
+  "timestamp": "2026-03-16T18:45:28.163810",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "stage": "C",
+      "configs": [
+        {
+          "label": "ngram-5_FP8_ctx2048_B1",
+          "mean_latency_s": 0.8146,
+          "std_latency_s": 0.0056,
+          "tokens_per_sec": 157.13,
+          "ms_per_token": 6.364,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74495,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            0.8201,
+            0.8169,
+            0.8069
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 1,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx2048_B4",
+          "mean_latency_s": 0.8405,
+          "std_latency_s": 0.0041,
+          "tokens_per_sec": 609.15,
+          "ms_per_token": 1.642,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74495,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            0.8434,
+            0.8434,
+            0.8347
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 4,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx2048_B16",
+          "mean_latency_s": 1.2342,
+          "std_latency_s": 0.1405,
+          "tokens_per_sec": 1659.33,
+          "ms_per_token": 0.603,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74497,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.356,
+            1.0374,
+            1.3093
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 16,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx8192_B1",
+          "mean_latency_s": 0.7984,
+          "std_latency_s": 0.0041,
+          "tokens_per_sec": 160.31,
+          "ms_per_token": 6.238,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 75165,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            0.7958,
+            0.8042,
+            0.7953
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 1,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx8192_B4",
+          "mean_latency_s": 0.902,
+          "std_latency_s": 0.0268,
+          "tokens_per_sec": 567.61,
+          "ms_per_token": 1.762,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 75165,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            0.9229,
+            0.9189,
+            0.8643
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 4,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx8192_B16",
+          "mean_latency_s": 1.4294,
+          "std_latency_s": 0.0591,
+          "tokens_per_sec": 1432.77,
+          "ms_per_token": 0.698,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 75167,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.3637,
+            1.4174,
+            1.5071
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 16,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx16384_B1",
+          "mean_latency_s": 0.5998,
+          "std_latency_s": 0.0013,
+          "tokens_per_sec": 213.41,
+          "ms_per_token": 4.686,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 75381,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            0.5985,
+            0.6016,
+            0.5993
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 1,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx16384_B4",
+          "mean_latency_s": 0.7717,
+          "std_latency_s": 0.0032,
+          "tokens_per_sec": 663.45,
+          "ms_per_token": 1.507,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 75381,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            0.7675,
+            0.7724,
+            0.7753
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 4,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx16384_B16",
+          "mean_latency_s": 1.58,
+          "std_latency_s": 0.0068,
+          "tokens_per_sec": 1296.17,
+          "ms_per_token": 0.772,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 75385,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.5897,
+            1.5746,
+            1.5759
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 16,
+          "speculation": "ngram-5"
+        }
+      ]
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "stage": "C",
+      "configs": [
+        {
+          "label": "ngram-5_FP8_ctx2048_B1",
+          "mean_latency_s": 1.2436,
+          "std_latency_s": 0.0008,
+          "tokens_per_sec": 102.93,
+          "ms_per_token": 9.715,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74003,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.2425,
+            1.2436,
+            1.2446
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 1,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx2048_B4",
+          "mean_latency_s": 1.3124,
+          "std_latency_s": 0.004,
+          "tokens_per_sec": 390.13,
+          "ms_per_token": 2.563,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74005,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.3093,
+            1.318,
+            1.3099
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 4,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx2048_B16",
+          "mean_latency_s": 1.6736,
+          "std_latency_s": 0.0166,
+          "tokens_per_sec": 1223.7,
+          "ms_per_token": 0.817,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74005,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.6648,
+            1.6592,
+            1.6968
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 16,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx8192_B1",
+          "mean_latency_s": 0.4047,
+          "std_latency_s": 0.0021,
+          "tokens_per_sec": 316.28,
+          "ms_per_token": 3.162,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74749,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            0.4076,
+            0.4038,
+            0.4027
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 1,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx8192_B4",
+          "mean_latency_s": 0.5716,
+          "std_latency_s": 0.003,
+          "tokens_per_sec": 895.66,
+          "ms_per_token": 1.116,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74749,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            0.5734,
+            0.5674,
+            0.5741
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 4,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx8192_B16",
+          "mean_latency_s": 1.2638,
+          "std_latency_s": 0.0124,
+          "tokens_per_sec": 1620.53,
+          "ms_per_token": 0.617,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74749,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.2811,
+            1.2572,
+            1.2531
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 16,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx16384_B1",
+          "mean_latency_s": 0.4481,
+          "std_latency_s": 0.0019,
+          "tokens_per_sec": 285.68,
+          "ms_per_token": 3.5,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74883,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            0.4455,
+            0.4498,
+            0.4489
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 1,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx16384_B4",
+          "mean_latency_s": 0.7539,
+          "std_latency_s": 0.0002,
+          "tokens_per_sec": 679.16,
+          "ms_per_token": 1.472,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74883,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            0.7541,
+            0.7539,
+            0.7537
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 4,
+          "speculation": "ngram-5"
+        },
+        {
+          "label": "ngram-5_FP8_ctx16384_B16",
+          "mean_latency_s": 1.9707,
+          "std_latency_s": 0.0143,
+          "tokens_per_sec": 1039.2,
+          "ms_per_token": 0.962,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74885,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.991,
+            1.96,
+            1.9612
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 16,
+          "speculation": "ngram-5"
+        }
+      ]
+    }
+  ]
+}

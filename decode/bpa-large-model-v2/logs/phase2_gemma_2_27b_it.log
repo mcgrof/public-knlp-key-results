@@ -1,0 +1,124 @@
+Loading google/gemma-2-27b-it...
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]
+Fetching 12 files:   8%|▊         | 1/12 [00:11<02:10, 11.84s/it]
+Fetching 12 files:  17%|█▋        | 2/12 [00:12<00:54,  5.48s/it]
+Fetching 12 files:  75%|███████▌  | 9/12 [00:21<00:05,  1.91s/it]
+Fetching 12 files:  83%|████████▎ | 10/12 [00:23<00:03,  1.80s/it]
+Fetching 12 files:  92%|█████████▏| 11/12 [00:23<00:01,  1.55s/it]
+Fetching 12 files: 100%|██████████| 12/12 [00:23<00:00,  1.96s/it]
+
+Loading weights:   0%|          | 0/508 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/508 [00:00<02:03,  4.10it/s]
+Loading weights:   1%|          | 5/508 [00:00<00:31, 16.06it/s]
+Loading weights:   3%|▎         | 16/508 [00:00<00:11, 41.95it/s]
+Loading weights:   5%|▌         | 26/508 [00:00<00:08, 56.28it/s]
+Loading weights:   7%|▋         | 36/508 [00:00<00:07, 65.71it/s]
+Loading weights:   9%|▊         | 44/508 [00:00<00:06, 66.35it/s]
+Loading weights:  10%|█         | 52/508 [00:01<00:07, 61.30it/s]
+Loading weights:  12%|█▏        | 59/508 [00:01<00:07, 59.85it/s]
+Loading weights:  14%|█▎        | 69/508 [00:01<00:06, 66.91it/s]
+Loading weights:  15%|█▍        | 76/508 [00:01<00:06, 64.36it/s]
+Loading weights:  16%|█▋        | 83/508 [00:01<00:07, 57.86it/s]
+Loading weights:  18%|█▊        | 92/508 [00:01<00:06, 63.56it/s]
+Loading weights:  20%|██        | 103/508 [00:01<00:05, 69.41it/s]
+Loading weights:  22%|██▏       | 113/508 [00:01<00:05, 76.15it/s]
+Loading weights:  24%|██▍       | 121/508 [00:01<00:05, 73.45it/s]
+Loading weights:  25%|██▌       | 129/508 [00:02<00:05, 66.04it/s]
+Loading weights:  27%|██▋       | 136/508 [00:02<00:05, 64.06it/s]
+Loading weights:  29%|██▊       | 146/508 [00:02<00:05, 68.84it/s]
+Loading weights:  31%|███       | 157/508 [00:02<00:04, 71.25it/s]
+Loading weights:  32%|███▏      | 165/508 [00:02<00:04, 70.50it/s]
+Loading weights:  34%|███▍      | 173/508 [00:02<00:05, 63.75it/s]
+Loading weights:  35%|███▌      | 180/508 [00:02<00:05, 62.36it/s]
+Loading weights:  37%|███▋      | 190/508 [00:03<00:04, 68.16it/s]
+Loading weights:  39%|███▉      | 197/508 [00:03<00:04, 66.58it/s]
+Loading weights:  40%|████      | 204/508 [00:03<00:05, 58.10it/s]
+Loading weights:  42%|████▏     | 213/508 [00:03<00:04, 61.99it/s]
+Loading weights:  44%|████▍     | 223/508 [00:03<00:04, 67.89it/s]
+Loading weights:  45%|████▌     | 230/508 [00:03<00:04, 65.71it/s]
+Loading weights:  47%|████▋     | 237/508 [00:03<00:04, 56.65it/s]
+Loading weights:  48%|████▊     | 246/508 [00:03<00:04, 63.86it/s]
+Loading weights:  50%|█████     | 256/508 [00:04<00:03, 70.66it/s]
+Loading weights:  52%|█████▏    | 264/508 [00:04<00:03, 68.75it/s]
+Loading weights:  54%|█████▎    | 272/508 [00:04<00:03, 62.86it/s]
+Loading weights:  55%|█████▍    | 279/508 [00:04<00:03, 60.77it/s]
+Loading weights:  57%|█████▋    | 289/508 [00:04<00:03, 67.18it/s]
+Loading weights:  58%|█████▊    | 296/508 [00:04<00:03, 64.10it/s]
+Loading weights:  60%|█████▉    | 303/508 [00:04<00:03, 56.81it/s]
+Loading weights:  61%|██████▏   | 312/508 [00:05<00:03, 61.11it/s]
+Loading weights:  63%|██████▎   | 322/508 [00:05<00:02, 66.41it/s]
+Loading weights:  65%|██████▍   | 329/508 [00:05<00:02, 63.84it/s]
+Loading weights:  66%|██████▌   | 336/508 [00:05<00:03, 56.24it/s]
+Loading weights:  68%|██████▊   | 345/508 [00:05<00:02, 60.01it/s]
+Loading weights:  70%|██████▉   | 355/508 [00:05<00:02, 66.86it/s]
+Loading weights:  71%|███████▏  | 362/508 [00:05<00:02, 65.74it/s]
+Loading weights:  73%|███████▎  | 369/508 [00:05<00:02, 57.31it/s]
+Loading weights:  74%|███████▍  | 378/508 [00:06<00:02, 62.29it/s]
+Loading weights:  76%|███████▋  | 388/508 [00:06<00:01, 67.21it/s]
+Loading weights:  78%|███████▊  | 395/508 [00:06<00:01, 64.49it/s]
+Loading weights:  79%|███████▉  | 402/508 [00:06<00:01, 57.34it/s]
+Loading weights:  81%|████████  | 411/508 [00:06<00:01, 61.76it/s]
+Loading weights:  83%|████████▎ | 421/508 [00:06<00:01, 67.09it/s]
+Loading weights:  84%|████████▍ | 428/508 [00:06<00:01, 65.54it/s]
+Loading weights:  86%|████████▌ | 435/508 [00:06<00:01, 57.59it/s]
+Loading weights:  87%|████████▋ | 444/508 [00:07<00:01, 62.00it/s]
+Loading weights:  89%|████████▉ | 454/508 [00:07<00:00, 68.16it/s]
+Loading weights:  91%|█████████ | 461/508 [00:07<00:00, 66.65it/s]
+Loading weights:  92%|█████████▏| 468/508 [00:07<00:00, 58.85it/s]
+Loading weights:  94%|█████████▍| 477/508 [00:07<00:00, 63.35it/s]
+Loading weights:  96%|█████████▌| 488/508 [00:07<00:00, 68.14it/s]
+Loading weights:  98%|█████████▊| 498/508 [00:07<00:00, 74.25it/s]
+Loading weights: 100%|█████████▉| 506/508 [00:07<00:00, 74.93it/s]
+Loading weights: 100%|██████████| 508/508 [00:07<00:00, 63.69it/s]
+  Loaded in 37s: 27.2B, 46 layers, 16 KV heads, head_dim=128
+Loading WikiText-103 tokens for calibration...
+
+Generating test split:   0%|          | 0/4358 [00:00<?, ? examples/s]
+Generating test split: 100%|██████████| 4358/4358 [00:00<00:00, 624488.45 examples/s]
+
+Generating train split:   0%|          | 0/1801350 [00:00<?, ? examples/s]
+Generating train split:   7%|▋         | 120000/1801350 [00:00<00:01, 1195494.84 examples/s]
+Generating train split:  15%|█▌        | 274000/1801350 [00:00<00:01, 1278010.09 examples/s]
+Generating train split:  23%|██▎       | 407000/1801350 [00:00<00:01, 1298119.70 examples/s]
+Generating train split:  32%|███▏      | 568000/1801350 [00:00<00:00, 1412222.64 examples/s]
+Generating train split:  43%|████▎     | 772000/1801350 [00:00<00:00, 1367001.81 examples/s]
+Generating train split:  54%|█████▍    | 974675/1801350 [00:00<00:00, 1352990.29 examples/s]
+Generating train split:  65%|██████▍   | 1163675/1801350 [00:00<00:00, 1316709.05 examples/s]
+Generating train split:  75%|███████▌  | 1353675/1801350 [00:01<00:00, 1288222.11 examples/s]
+Generating train split:  86%|████████▌ | 1543675/1801350 [00:01<00:00, 1261997.23 examples/s]
+Generating train split:  97%|█████████▋| 1738675/1801350 [00:01<00:00, 1265912.67 examples/s]
+Generating train split: 100%|██████████| 1801350/1801350 [00:01<00:00, 1294906.35 examples/s]
+
+Generating validation split:   0%|          | 0/3760 [00:00<?, ? examples/s]
+Generating validation split: 100%|██████████| 3760/3760 [00:00<00:00, 945705.39 examples/s]
+  288893 tokens loaded
+
+=== Phase 2: K_INT8/V_INT4 ===
+  Seed 0: logit_err=0.4375, agree=1.0000
+  Seed 1: logit_err=0.2500, agree=1.0000
+  Seed 2: logit_err=0.5371, agree=0.9688
+  Seed 3: logit_err=0.3750, agree=1.0000
+  Seed 4: logit_err=0.3438, agree=0.4062
+  Seed 5: logit_err=0.6328, agree=1.0000
+  Seed 6: logit_err=0.2549, agree=0.9375
+  Seed 7: logit_err=0.3125, agree=0.1094
+  Seed 8: logit_err=0.3125, agree=1.0000
+  Seed 9: logit_err=0.2578, agree=0.9531
+  Avg logit error: 0.3714, avg agree: 0.8375
+
+=== Phase 2: K_INT6/V_INT4 ===
+  Seed 0: logit_err=0.3516, agree=0.8906
+  Seed 1: logit_err=0.2188, agree=0.8125
+  Seed 2: logit_err=0.4688, agree=0.5781
+  Seed 3: logit_err=0.2969, agree=1.0000
+  Seed 4: logit_err=0.2969, agree=1.0000
+  Seed 5: logit_err=0.6602, agree=0.3281
+  Seed 6: logit_err=0.4375, agree=0.9375
+  Seed 7: logit_err=0.2969, agree=0.0781
+  Seed 8: logit_err=0.3516, agree=1.0000
+  Seed 9: logit_err=0.2812, agree=0.9531
+  Avg logit error: 0.3660, avg agree: 0.7578
+
+Phase 2 complete. Ratio=0.99, needs_fp16=False

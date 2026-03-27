@@ -1,0 +1,542 @@
+{
+  "model": "Qwen/Qwen2-7B-Instruct",
+  "model_tag": "qwen2",
+  "timestamp": "2026-03-27T16:43:38",
+  "n_prompts": 12,
+  "prompt_names_orig": [
+    "short_8",
+    "short_16",
+    "med_32",
+    "med_48",
+    "long_64",
+    "long_96",
+    "long_128"
+  ],
+  "prompt_names_extra": [
+    "short_12",
+    "med_40",
+    "med_56",
+    "long_80",
+    "long_112"
+  ],
+  "baseline_samples": {
+    "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+    "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+    "med_32": "Haiku about the ocean:\nWhispers of the sea,\nEndless blue, vast and deep,",
+    "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+    "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+    "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+    "long_128": "The history of the Internet can be traced back to the late 1960s, with",
+    "short_12": "The four seasons are:\n\n1. Spring: This season typically lasts from March to May in the Northern",
+    "med_40": "In computer science, a stack and a queue are both abstract data types used for managing collections of elements",
+    "med_56": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy",
+    "long_80": "Democracy and authoritarianism are two distinct forms of government that differ significantly in their principles, struc",
+    "long_112": "The water cycle, also known as the hydrological cycle, is a continuous process that moves water around"
+  },
+  "configs": {
+    "k_fp16_v_int4_msl8_r1": {
+      "matches": 8,
+      "total": 12,
+      "k_precision": "fp16",
+      "msl": 8,
+      "repetition": 1,
+      "elapsed_s": 29.0,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 10
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_12": {
+          "match": false,
+          "tok_rate": 0.4,
+          "first_diverge": 8
+        },
+        "med_40": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_56": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_80": {
+          "match": false,
+          "tok_rate": 0.5,
+          "first_diverge": 10
+        },
+        "long_112": {
+          "match": false,
+          "tok_rate": 0.15,
+          "first_diverge": 3
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+        "med_32": "Haiku about the ocean:\nWhispers of the waves,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with",
+        "short_12": "The four seasons are:\n\n1. Spring\n2. Summer\n3. Autumn (also known as",
+        "med_40": "In computer science, a stack and a queue are both abstract data types used for managing collections of elements",
+        "med_56": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy",
+        "long_80": "Democracy and authoritarianism are two distinct forms of government, each with their own strengths and weaknesses.",
+        "long_112": "The water cycle is a continuous process that involves the movement of water on, above, and below the"
+      }
+    },
+    "k_fp16_v_int4_msl8_r2": {
+      "matches": 8,
+      "total": 12,
+      "k_precision": "fp16",
+      "msl": 8,
+      "repetition": 2,
+      "elapsed_s": 36.5,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 10
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_12": {
+          "match": false,
+          "tok_rate": 0.4,
+          "first_diverge": 8
+        },
+        "med_40": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_56": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_80": {
+          "match": false,
+          "tok_rate": 0.5,
+          "first_diverge": 10
+        },
+        "long_112": {
+          "match": false,
+          "tok_rate": 0.15,
+          "first_diverge": 3
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+        "med_32": "Haiku about the ocean:\nWhispers of the waves,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with",
+        "short_12": "The four seasons are:\n\n1. Spring\n2. Summer\n3. Autumn (also known as",
+        "med_40": "In computer science, a stack and a queue are both abstract data types used for managing collections of elements",
+        "med_56": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy",
+        "long_80": "Democracy and authoritarianism are two distinct forms of government, each with their own strengths and weaknesses.",
+        "long_112": "The water cycle is a continuous process that involves the movement of water on, above, and below the"
+      }
+    },
+    "k_int8_v_int4_msl8": {
+      "matches": 5,
+      "total": 12,
+      "k_precision": "int8",
+      "msl": 8,
+      "repetition": 1,
+      "elapsed_s": 64.3,
+      "details": {
+        "short_8": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 13
+        },
+        "short_16": {
+          "match": false,
+          "tok_rate": 0.4,
+          "first_diverge": 8
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 10
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_12": {
+          "match": false,
+          "tok_rate": 0.4,
+          "first_diverge": 8
+        },
+        "med_40": {
+          "match": false,
+          "tok_rate": 0.7,
+          "first_diverge": 10
+        },
+        "med_56": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_80": {
+          "match": false,
+          "tok_rate": 0.5,
+          "first_diverge": 10
+        },
+        "long_112": {
+          "match": false,
+          "tok_rate": 0.15,
+          "first_diverge": 3
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic operation that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects with mass towards each other, causing them to be pulled together",
+        "med_32": "Haiku about the ocean:\nWhispers of the waves,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with",
+        "short_12": "The four seasons are:\n\n1. Spring\n2. Summer\n3. Autumn (also known as",
+        "med_40": "In computer science, a stack and a queue are two fundamental data structures used to manage collections of items",
+        "med_56": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy",
+        "long_80": "Democracy and authoritarianism are two distinct forms of government, each with their own strengths and weaknesses.",
+        "long_112": "The water cycle is a continuous process that describes the movement of water on, above, and below the"
+      }
+    },
+    "k_fp16_v_int4_msl24": {
+      "matches": 9,
+      "total": 12,
+      "k_precision": "fp16",
+      "msl": 24,
+      "repetition": 1,
+      "elapsed_s": 66.1,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 10
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_12": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_40": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_56": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_80": {
+          "match": false,
+          "tok_rate": 0.5,
+          "first_diverge": 10
+        },
+        "long_112": {
+          "match": false,
+          "tok_rate": 0.15,
+          "first_diverge": 3
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+        "med_32": "Haiku about the ocean:\nWhispers of the waves,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with",
+        "short_12": "The four seasons are:\n\n1. Spring: This season typically lasts from March to May in the Northern",
+        "med_40": "In computer science, a stack and a queue are both abstract data types used for managing collections of elements",
+        "med_56": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy",
+        "long_80": "Democracy and authoritarianism are two distinct forms of government, each with their own strengths and weaknesses.",
+        "long_112": "The water cycle is a continuous process that involves the movement of water on, above, and below the"
+      }
+    },
+    "k_int8_v_int4_msl24": {
+      "matches": 7,
+      "total": 12,
+      "k_precision": "int8",
+      "msl": 24,
+      "repetition": 1,
+      "elapsed_s": 25.0,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 10
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.4,
+          "first_diverge": 8
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_12": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_40": {
+          "match": false,
+          "tok_rate": 0.75,
+          "first_diverge": 10
+        },
+        "med_56": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_80": {
+          "match": false,
+          "tok_rate": 0.5,
+          "first_diverge": 10
+        },
+        "long_112": {
+          "match": false,
+          "tok_rate": 0.15,
+          "first_diverge": 3
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+        "med_32": "Haiku about the ocean:\nWhispers of the waves,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are: 2, 3, 5, 7",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with",
+        "short_12": "The four seasons are:\n\n1. Spring: This season typically lasts from March to May in the Northern",
+        "med_40": "In computer science, a stack and a queue are two fundamental data structures used to manage collections of elements",
+        "med_56": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy",
+        "long_80": "Democracy and authoritarianism are two distinct forms of government, each with their own strengths and weaknesses.",
+        "long_112": "The water cycle is a continuous process that describes the movement of water on, above, and below the"
+      }
+    },
+    "k_fp16_v_int4_msl48": {
+      "matches": 12,
+      "total": 12,
+      "k_precision": "fp16",
+      "msl": 48,
+      "repetition": 1,
+      "elapsed_s": 25.3,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_12": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_40": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_56": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_80": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_112": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      },
+      "raw_outputs": {
+        "short_8": "2+2 is 4. This is a basic arithmetic fact that is true regardless of context",
+        "short_16": "Gravity is the force that attracts two objects towards each other based on their mass, causing objects to fall",
+        "med_32": "Haiku about the ocean:\nWhispers of the sea,\nEndless blue, vast and deep,",
+        "med_48": "The first 10 prime numbers are 2, 3, 5, 7,",
+        "long_64": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used in",
+        "long_96": "In the heart of a bustling tech hub, a robot named Artisan stood before its creator, Dr",
+        "long_128": "The history of the Internet can be traced back to the late 1960s, with",
+        "short_12": "The four seasons are:\n\n1. Spring: This season typically lasts from March to May in the Northern",
+        "med_40": "In computer science, a stack and a queue are both abstract data types used for managing collections of elements",
+        "med_56": "Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy",
+        "long_80": "Democracy and authoritarianism are two distinct forms of government that differ significantly in their principles, struc",
+        "long_112": "The water cycle, also known as the hydrological cycle, is a continuous process that moves water around"
+      }
+    }
+  }
+}

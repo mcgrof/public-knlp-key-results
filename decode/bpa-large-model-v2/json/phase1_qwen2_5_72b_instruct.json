@@ -1,0 +1,20 @@
+{
+  "phase": "phase1_wikitext_ppl",
+  "model_info": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "n_params": 72700000000,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "load_time_s": 106,
+    "gpu": "NVIDIA H200 SXM",
+    "n_gpu_modules": 74,
+    "n_cpu_modules": 10
+  },
+  "results": {
+    "FP16_baseline": {"ppl": 4.4123, "n_tokens": 199902, "time_s": 258},
+    "K_FP16__V_INT4": {"ppl": 4.4261, "n_tokens": 199902, "time_s": 252, "ppl_delta_pct": 0.3128},
+    "K_INT8__V_INT4": {"ppl": 4.4282, "n_tokens": 199902, "time_s": 253, "ppl_delta_pct": 0.3604},
+    "K_INT4__V_INT4": {"ppl": 4.4806, "n_tokens": 199902, "time_s": 250, "ppl_delta_pct": 1.5477}
+  }
+}

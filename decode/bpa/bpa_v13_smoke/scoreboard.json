@@ -1,0 +1,28 @@
+{
+  "dense": {
+    "1024": {
+      "r1": {
+        "pass_1pct": true,
+        "pass_3pct": true,
+        "any_catastrophic": false,
+        "avg_ppl": 9.34,
+        "avg_p50_ms": 10.647,
+        "avg_kept": 1088.0,
+        "n_seeds": 1
+      }
+    }
+  },
+  "bitter0": {
+    "1024": {
+      "r1": {
+        "pass_1pct": false,
+        "pass_3pct": false,
+        "any_catastrophic": false,
+        "avg_ppl": 23.37,
+        "avg_p50_ms": 10.088,
+        "avg_kept": 200.0,
+        "n_seeds": 1
+      }
+    }
+  }
+}

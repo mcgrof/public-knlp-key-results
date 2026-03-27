@@ -1,0 +1,25 @@
+{
+  "variant": "stress_corrupt",
+  "seq_len": 1024,
+  "seed": 2,
+  "far_budget": 4,
+  "mode": "stress",
+  "ppl_mean": 247.37553380330402,
+  "ppl_std": 82.46907918004507,
+  "enabled_rate": 0.69921875,
+  "effective_kept_tokens": 358.375,
+  "kv_bytes_read_per_token": 16035840.0,
+  "peak_kv_bytes": 37748736,
+  "flops_relative": 0.4248046875,
+  "wall_ms_per_token": 0.9052800405697781,
+  "gate_ms_per_token": 0.6148674456198933,
+  "fwd_ms_per_token": 0.2894794124586042,
+  "budget_mean": 4.0,
+  "budget_p95": 4.0,
+  "budget_p99": 4.0,
+  "tokens_seen": 30720,
+  "n_eval_batches": 30,
+  "extra": {
+    "ra_mode": "corrupt_nonsurgical"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "experiment": "h100_ratio",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "error": "HTTP request failed: Cannot connect to host api.runpod.io:443 ssl:default [Temporary failure in name resolution]"
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "error": "HTTP request failed: Cannot connect to host api.runpod.io:443 ssl:default [Temporary failure in name resolution]"
+    }
+  ]
+}

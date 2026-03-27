@@ -1,0 +1,30 @@
+{
+  "phase": "phase5_long_context",
+  "model_info": {
+    "model": "meta-llama/Llama-3.1-70B-Instruct",
+    "n_params": 70553706496,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "load_time_s": 88,
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 141.1,
+    "n_gpu_modules": 77,
+    "n_cpu_modules": 7
+  },
+  "results": {
+    "ctx_2048": {
+      "FP16_baseline": {"ppl": 3.998, "n_tokens": 199902},
+      "K_FP16__V_INT4": {"ppl": 4.0215, "n_tokens": 199902, "ppl_delta_pct": 0.5878},
+      "K_INT8__V_INT4": {"ppl": 4.0228, "n_tokens": 199902, "ppl_delta_pct": 0.6203},
+      "K_INT4__V_INT4": {"ppl": 4.1185, "n_tokens": 199902, "ppl_delta_pct": 3.0140}
+    },
+    "ctx_4096": {
+      "FP16_baseline": {"error": "OOM", "n_tokens": 0},
+      "K_FP16__V_INT4": {"error": "OOM", "n_tokens": 0},
+      "K_INT8__V_INT4": {"error": "OOM", "n_tokens": 0},
+      "K_INT4__V_INT4": {"error": "OOM", "n_tokens": 0}
+    }
+  },
+  "notes": "Hook-based quantization (matches Phase 1 methodology). 70B model with 7 CPU-offloaded modules OOMs at ctx=4096 on single H200. Results at ctx=2048 match Phase 1 exactly, confirming consistency."
+}

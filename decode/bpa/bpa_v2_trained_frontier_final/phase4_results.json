@@ -1,0 +1,121 @@
+{
+  "matrix": {
+    "L512_S1": {
+      "ppl_uniform_mean": 243.416650390625,
+      "ppl_uniform_std": 62.999339812441846,
+      "ppl_local_only_mean": 244.06518783569337,
+      "ppl_local_only_std": 63.00023724356098,
+      "ppl_gap_mean": 0.6485374450683594,
+      "ppl_gap_std": 1.5414466935838995,
+      "gate_enabled_rate_fine_mean": 0.5629855662584304,
+      "gate_enabled_rate_fine_std": 0.014343523556395031,
+      "gate_enabled_rate_coarse_mean": 0.7397949188947678,
+      "gate_enabled_rate_coarse_std": 0.022862204672088497,
+      "tokens_per_query_uniform_mean": 512.0,
+      "tokens_per_query_uniform_std": 0.0,
+      "tokens_per_query_gate_mean": 400.1243049621582,
+      "tokens_per_query_gate_std": 3.671942030437128,
+      "tokens_per_query_coarse_mean": 445.3874992370605,
+      "tokens_per_query_coarse_std": 5.852724396054654,
+      "seq_len": 512,
+      "seed": 1
+    },
+    "L512_S2": {
+      "ppl_uniform_mean": 240.75039367675782,
+      "ppl_uniform_std": 80.11938240319756,
+      "ppl_local_only_mean": 240.76803588867188,
+      "ppl_local_only_std": 80.3502147351173,
+      "ppl_gap_mean": 0.0176422119140625,
+      "ppl_gap_std": 1.6572908618063023,
+      "gate_enabled_rate_fine_mean": 0.5281765431165695,
+      "gate_enabled_rate_fine_std": 0.017250232071281842,
+      "gate_enabled_rate_coarse_mean": 0.7476236969232559,
+      "gate_enabled_rate_coarse_std": 0.022324443970123467,
+      "tokens_per_query_uniform_mean": 512.0,
+      "tokens_per_query_uniform_std": 0.0,
+      "tokens_per_query_gate_mean": 391.2131950378418,
+      "tokens_per_query_gate_std": 4.416059410248152,
+      "tokens_per_query_coarse_mean": 447.3916664123535,
+      "tokens_per_query_coarse_std": 5.715057656351608,
+      "seq_len": 512,
+      "seed": 2
+    },
+    "L512_S3": {
+      "ppl_uniform_mean": 249.73103866577148,
+      "ppl_uniform_std": 103.35146709006068,
+      "ppl_local_only_mean": 249.3189670562744,
+      "ppl_local_only_std": 103.16753005224979,
+      "ppl_gap_mean": -0.41207160949707033,
+      "ppl_gap_std": 1.950319405484234,
+      "gate_enabled_rate_fine_mean": 0.5133043080568314,
+      "gate_enabled_rate_fine_std": 0.021179615851125114,
+      "gate_enabled_rate_coarse_mean": 0.7969889342784882,
+      "gate_enabled_rate_coarse_std": 0.02703455591709414,
+      "tokens_per_query_uniform_mean": 512.0,
+      "tokens_per_query_uniform_std": 0.0,
+      "tokens_per_query_gate_mean": 387.4059028625488,
+      "tokens_per_query_gate_std": 5.421981657888029,
+      "tokens_per_query_coarse_mean": 460.02916717529297,
+      "tokens_per_query_coarse_std": 6.9208463147760995,
+      "seq_len": 512,
+      "seed": 3
+    }
+  },
+  "config": {
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "seq_lens": [
+      512
+    ],
+    "n_eval": 20,
+    "batch_size": 2,
+    "local_window": 256
+  },
+  "cross_seed_L512": {
+    "ppl_uniform_mean": {
+      "mean": 244.63269424438477,
+      "std": 3.765817139778493,
+      "worst": 249.73103866577148
+    },
+    "ppl_local_only_mean": {
+      "mean": 244.71739692687984,
+      "std": 3.5212344882856863,
+      "worst": 249.3189670562744
+    },
+    "ppl_gap_mean": {
+      "mean": 0.08470268249511718,
+      "std": 0.4355806252903191,
+      "worst": 0.6485374450683594
+    },
+    "gate_enabled_rate_fine_mean": {
+      "mean": 0.5348221391439437,
+      "std": 0.02081953912462647,
+      "worst": 0.5629855662584304
+    },
+    "gate_enabled_rate_coarse_mean": {
+      "mean": 0.761469183365504,
+      "std": 0.02531879367907255,
+      "worst": 0.7969889342784882
+    },
+    "tokens_per_query_gate_mean": {
+      "mean": 392.9144676208496,
+      "std": 5.329802015904376,
+      "worst": 400.1243049621582
+    },
+    "tokens_per_query_coarse_mean": {
+      "mean": 450.93611094156904,
+      "std": 6.481611181842582,
+      "worst": 460.02916717529297
+    }
+  },
+  "checks": {
+    "compute_savings_L512": true,
+    "rate_stable_L512": true,
+    "ppl_reasonable_L512": true,
+    "ppl_gap_exists_L512": true
+  },
+  "verdict": "GO"
+}

@@ -1,0 +1,26 @@
+{
+  "experiment": "large_ratio_classifier",
+  "model_info": {
+    "model": "meta-llama/Llama-3.1-70B-Instruct",
+    "n_params": 70553706496,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "dtype": "bfloat16",
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 150.120759296,
+    "load_time_s": 113.90855050086975,
+    "k_proj_shape": [
+      1,
+      4,
+      1024
+    ]
+  },
+  "results": {
+    "logit_error_INT6": 0.029504797980189325,
+    "logit_error_INT8": 0.014768526889383793,
+    "ratio_INT6_INT8": 1.997815909547387,
+    "needs_fp16_keys": false,
+    "threshold": 3.0
+  }
+}

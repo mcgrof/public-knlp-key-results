@@ -1,0 +1,77 @@
+{
+  "phase": "phase5_long_context",
+  "model_info": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "n_params": 72706203648,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "load_time_s": 24.7,
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 150.1,
+    "n_gpu_modules": 74,
+    "n_cpu_modules": 10
+  },
+  "results": {
+    "ctx_2048": {
+      "FP16_baseline": {
+        "ppl": 4.4123,
+        "n_tokens": 199902
+      },
+      "K_FP16__V_INT4": {
+        "ppl": 4.4261,
+        "n_tokens": 199902,
+        "ppl_delta_pct": 0.3128
+      },
+      "K_INT8__V_INT4": {
+        "ppl": 4.4282,
+        "n_tokens": 199902,
+        "ppl_delta_pct": 0.3604
+      },
+      "K_INT4__V_INT4": {
+        "ppl": 4.4806,
+        "n_tokens": 199902,
+        "ppl_delta_pct": 1.5479
+      }
+    },
+    "ctx_4096": {
+      "FP16_baseline": {
+        "ppl": 1.861,
+        "n_tokens": 4095
+      },
+      "K_FP16__V_INT4": {
+        "ppl": 1.8682,
+        "n_tokens": 4095,
+        "ppl_delta_pct": 0.3869
+      },
+      "K_INT8__V_INT4": {
+        "ppl": 1.8682,
+        "n_tokens": 4095,
+        "ppl_delta_pct": 0.3869
+      },
+      "K_INT4__V_INT4": {
+        "ppl": 1.8829,
+        "n_tokens": 4095,
+        "ppl_delta_pct": 1.1768
+      }
+    },
+    "ctx_8192": {
+      "FP16_baseline": {
+        "error": "OOM",
+        "n_tokens": 0
+      },
+      "K_FP16__V_INT4": {
+        "error": "OOM",
+        "n_tokens": 0
+      },
+      "K_INT8__V_INT4": {
+        "error": "OOM",
+        "n_tokens": 0
+      },
+      "K_INT4__V_INT4": {
+        "error": "OOM",
+        "n_tokens": 0
+      }
+    }
+  }
+}

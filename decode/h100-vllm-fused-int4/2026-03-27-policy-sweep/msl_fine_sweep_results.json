@@ -1,0 +1,489 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "timestamp": "2026-03-27T04:26:10",
+  "baseline": {
+    "short_8": {
+      "text": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you have",
+      "ids": [
+        220,
+        17,
+        10,
+        17,
+        16819,
+        220,
+        19,
+        13,
+        1096,
+        374,
+        264,
+        15811,
+        34784,
+        5666,
+        304,
+        37596,
+        13,
+        1416,
+        498,
+        614
+      ]
+    },
+    "short_16": {
+      "text": "Gravity is the natural force of attraction between any two objects with mass, pulling them towards each other.",
+      "ids": [
+        47490,
+        374,
+        279,
+        5810,
+        5344,
+        315,
+        32364,
+        1948,
+        894,
+        1378,
+        6171,
+        448,
+        3072,
+        11,
+        22266,
+        1105,
+        6974,
+        1817,
+        1008,
+        13
+      ]
+    },
+    "med_32": {
+      "text": "Haiku is a form of Japanese poetry that typically consists of three lines with a 5-7",
+      "ids": [
+        14101,
+        38242,
+        374,
+        264,
+        1352,
+        315,
+        10769,
+        31249,
+        429,
+        11136,
+        17167,
+        315,
+        2326,
+        5128,
+        448,
+        264,
+        220,
+        20,
+        12,
+        22
+      ]
+    },
+    "med_48": {
+      "text": "First 10 prime numbers: 2, 3, 5, 7,",
+      "ids": [
+        5512,
+        220,
+        16,
+        15,
+        10250,
+        5109,
+        25,
+        220,
+        17,
+        11,
+        220,
+        18,
+        11,
+        220,
+        20,
+        11,
+        220,
+        22,
+        11,
+        220
+      ]
+    },
+    "long_64": {
+      "text": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of the most commonly used",
+      "ids": [
+        26656,
+        320,
+        91201,
+        7779,
+        24572,
+        8,
+        323,
+        42394,
+        320,
+        1474,
+        96804,
+        24572,
+        8,
+        525,
+        1378,
+        315,
+        279,
+        1429,
+        16626,
+        1483
+      ]
+    },
+    "long_96": {
+      "text": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, its",
+      "ids": [
+        758,
+        279,
+        5103,
+        398,
+        13020,
+        14029,
+        11,
+        279,
+        12305,
+        11,
+        6941,
+        27469,
+        11,
+        14638,
+        1573,
+        264,
+        10113,
+        10041,
+        11,
+        1181
+      ]
+    },
+    "long_128": {
+      "text": "The history of the Internet is a fascinating journey from a government-funded research project to the global network that",
+      "ids": [
+        576,
+        3840,
+        315,
+        279,
+        8031,
+        374,
+        264,
+        26291,
+        11618,
+        504,
+        264,
+        3033,
+        49601,
+        3412,
+        2390,
+        311,
+        279,
+        3644,
+        3922,
+        429
+      ]
+    }
+  },
+  "sweeps": {
+    "16": {
+      "matches": 0,
+      "total": 7,
+      "details": {
+        "short_8": {
+          "match": false,
+          "tok_rate": 0.5
+        },
+        "short_16": {
+          "match": false,
+          "tok_rate": 0.35
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.15
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.2
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.05
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.4
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.15
+        }
+      }
+    },
+    "24": {
+      "matches": 0,
+      "total": 7,
+      "details": {
+        "short_8": {
+          "match": false,
+          "tok_rate": 0.85
+        },
+        "short_16": {
+          "match": false,
+          "tok_rate": 0.75
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.5
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.15
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.15
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.4
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.15
+        }
+      }
+    },
+    "32": {
+      "matches": 2,
+      "total": 7,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.9
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.65
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.75
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.45
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.2
+        }
+      }
+    },
+    "40": {
+      "matches": 5,
+      "total": 7,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.75
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.8
+        }
+      }
+    },
+    "48": {
+      "matches": 7,
+      "total": 7,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0
+        }
+      }
+    },
+    "56": {
+      "matches": 7,
+      "total": 7,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0
+        }
+      }
+    },
+    "64": {
+      "matches": 7,
+      "total": 7,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0
+        }
+      }
+    },
+    "80": {
+      "matches": 7,
+      "total": 7,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0
+        }
+      }
+    },
+    "96": {
+      "matches": 7,
+      "total": 7,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0
+        }
+      }
+    }
+  }
+}

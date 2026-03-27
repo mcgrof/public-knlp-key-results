@@ -1,0 +1,26 @@
+{
+  "experiment": "large_ratio_classifier",
+  "model_info": {
+    "model": "Qwen/Qwen2.5-32B-Instruct",
+    "n_params": 32763876352,
+    "n_layers": 64,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "dtype": "bfloat16",
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 150.121545728,
+    "load_time_s": 55.16337585449219,
+    "k_proj_shape": [
+      1,
+      4,
+      1024
+    ]
+  },
+  "results": {
+    "logit_error_INT6": 0.09267795979976653,
+    "logit_error_INT8": 0.034877965599298476,
+    "ratio_INT6_INT8": 2.657206583219711,
+    "needs_fp16_keys": false,
+    "threshold": 3.0
+  }
+}

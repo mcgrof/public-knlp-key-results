@@ -1,0 +1,59 @@
+{
+  "experiment": "large_kv_asymmetry",
+  "model_info": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "model_path": "/workspace/models/Qwen2.5-72B-Instruct",
+    "n_params": 72706203648,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "dtype": "bfloat16",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "gpu_mem_gb": 85.093777408,
+    "load_time_s": 162.20280814170837,
+    "k_proj_shape": [
+      1,
+      4,
+      1024
+    ],
+    "hardware": "A100-SXM4-80GB"
+  },
+  "results": [
+    {
+      "label": "K_FP16/V_FP16",
+      "k_bits": 16,
+      "v_bits": 16,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "elapsed_s": 2.956390380859375e-05
+    },
+    {
+      "label": "K_FP16/V_INT4",
+      "k_bits": 16,
+      "v_bits": 4,
+      "avg_logit_error": 0.3150575280189514,
+      "avg_token_agreement": 0.83466796875,
+      "avg_ppl_delta_pct": 1.275342764806987,
+      "elapsed_s": 87.93649196624756
+    },
+    {
+      "label": "K_INT8/V_INT4",
+      "k_bits": 8,
+      "v_bits": 4,
+      "avg_logit_error": 0.32159375548362734,
+      "avg_token_agreement": 0.83486328125,
+      "avg_ppl_delta_pct": 1.3294969624090822,
+      "elapsed_s": 79.28932547569275
+    },
+    {
+      "label": "K_INT4/V_INT4",
+      "k_bits": 4,
+      "v_bits": 4,
+      "avg_logit_error": 0.7885761976242065,
+      "avg_token_agreement": 0.6625,
+      "avg_ppl_delta_pct": 7.453925842977801,
+      "elapsed_s": 79.82246398925781
+    }
+  ]
+}

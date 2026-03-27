@@ -1,0 +1,473 @@
+{
+  "phase": "phase6_per_layer_sensitivity",
+  "model_info": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "n_params": 72706203648,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "load_time_s": 27.5,
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 150.1,
+    "n_gpu_modules": 74,
+    "n_cpu_modules": 10
+  },
+  "baseline_ppl": 4.4123,
+  "k_star": 0,
+  "n_layers": 80,
+  "k_star_fraction": 0.0,
+  "top10_sensitive": [
+    {
+      "layer": 56,
+      "ppl": 4.4162,
+      "ppl_delta_pct": 0.088
+    },
+    {
+      "layer": 43,
+      "ppl": 4.4141,
+      "ppl_delta_pct": 0.042
+    },
+    {
+      "layer": 52,
+      "ppl": 4.414,
+      "ppl_delta_pct": 0.04
+    },
+    {
+      "layer": 50,
+      "ppl": 4.4139,
+      "ppl_delta_pct": 0.038
+    },
+    {
+      "layer": 58,
+      "ppl": 4.4139,
+      "ppl_delta_pct": 0.036
+    },
+    {
+      "layer": 15,
+      "ppl": 4.4138,
+      "ppl_delta_pct": 0.034
+    },
+    {
+      "layer": 48,
+      "ppl": 4.4134,
+      "ppl_delta_pct": 0.026
+    },
+    {
+      "layer": 60,
+      "ppl": 4.4134,
+      "ppl_delta_pct": 0.026
+    },
+    {
+      "layer": 29,
+      "ppl": 4.4132,
+      "ppl_delta_pct": 0.022
+    },
+    {
+      "layer": 51,
+      "ppl": 4.4131,
+      "ppl_delta_pct": 0.018
+    }
+  ],
+  "layer_results": [
+    {
+      "layer": 0,
+      "ppl": 4.4126,
+      "ppl_delta_pct": 0.008
+    },
+    {
+      "layer": 1,
+      "ppl": 4.4112,
+      "ppl_delta_pct": -0.024
+    },
+    {
+      "layer": 2,
+      "ppl": 4.4108,
+      "ppl_delta_pct": -0.034
+    },
+    {
+      "layer": 3,
+      "ppl": 4.4109,
+      "ppl_delta_pct": -0.032
+    },
+    {
+      "layer": 4,
+      "ppl": 4.4114,
+      "ppl_delta_pct": -0.02
+    },
+    {
+      "layer": 5,
+      "ppl": 4.4116,
+      "ppl_delta_pct": -0.014
+    },
+    {
+      "layer": 6,
+      "ppl": 4.41,
+      "ppl_delta_pct": -0.052
+    },
+    {
+      "layer": 7,
+      "ppl": 4.4107,
+      "ppl_delta_pct": -0.036
+    },
+    {
+      "layer": 8,
+      "ppl": 4.4122,
+      "ppl_delta_pct": -0.002
+    },
+    {
+      "layer": 9,
+      "ppl": 4.4124,
+      "ppl_delta_pct": 0.002
+    },
+    {
+      "layer": 10,
+      "ppl": 4.4116,
+      "ppl_delta_pct": -0.014
+    },
+    {
+      "layer": 11,
+      "ppl": 4.4119,
+      "ppl_delta_pct": -0.008
+    },
+    {
+      "layer": 12,
+      "ppl": 4.4118,
+      "ppl_delta_pct": -0.01
+    },
+    {
+      "layer": 13,
+      "ppl": 4.4097,
+      "ppl_delta_pct": -0.058
+    },
+    {
+      "layer": 14,
+      "ppl": 4.412,
+      "ppl_delta_pct": -0.006
+    },
+    {
+      "layer": 15,
+      "ppl": 4.4138,
+      "ppl_delta_pct": 0.034
+    },
+    {
+      "layer": 16,
+      "ppl": 4.4105,
+      "ppl_delta_pct": -0.04
+    },
+    {
+      "layer": 17,
+      "ppl": 4.4094,
+      "ppl_delta_pct": -0.064
+    },
+    {
+      "layer": 18,
+      "ppl": 4.4104,
+      "ppl_delta_pct": -0.042
+    },
+    {
+      "layer": 19,
+      "ppl": 4.4105,
+      "ppl_delta_pct": -0.04
+    },
+    {
+      "layer": 20,
+      "ppl": 4.4116,
+      "ppl_delta_pct": -0.016
+    },
+    {
+      "layer": 21,
+      "ppl": 4.4118,
+      "ppl_delta_pct": -0.01
+    },
+    {
+      "layer": 22,
+      "ppl": 4.412,
+      "ppl_delta_pct": -0.006
+    },
+    {
+      "layer": 23,
+      "ppl": 4.4114,
+      "ppl_delta_pct": -0.02
+    },
+    {
+      "layer": 24,
+      "ppl": 4.4113,
+      "ppl_delta_pct": -0.022
+    },
+    {
+      "layer": 25,
+      "ppl": 4.4101,
+      "ppl_delta_pct": -0.048
+    },
+    {
+      "layer": 26,
+      "ppl": 4.4116,
+      "ppl_delta_pct": -0.014
+    },
+    {
+      "layer": 27,
+      "ppl": 4.4106,
+      "ppl_delta_pct": -0.038
+    },
+    {
+      "layer": 28,
+      "ppl": 4.411,
+      "ppl_delta_pct": -0.028
+    },
+    {
+      "layer": 29,
+      "ppl": 4.4132,
+      "ppl_delta_pct": 0.022
+    },
+    {
+      "layer": 30,
+      "ppl": 4.4127,
+      "ppl_delta_pct": 0.01
+    },
+    {
+      "layer": 31,
+      "ppl": 4.4117,
+      "ppl_delta_pct": -0.012
+    },
+    {
+      "layer": 32,
+      "ppl": 4.4118,
+      "ppl_delta_pct": -0.01
+    },
+    {
+      "layer": 33,
+      "ppl": 4.4109,
+      "ppl_delta_pct": -0.032
+    },
+    {
+      "layer": 34,
+      "ppl": 4.4108,
+      "ppl_delta_pct": -0.034
+    },
+    {
+      "layer": 35,
+      "ppl": 4.4101,
+      "ppl_delta_pct": -0.05
+    },
+    {
+      "layer": 36,
+      "ppl": 4.4107,
+      "ppl_delta_pct": -0.036
+    },
+    {
+      "layer": 37,
+      "ppl": 4.4109,
+      "ppl_delta_pct": -0.03
+    },
+    {
+      "layer": 38,
+      "ppl": 4.412,
+      "ppl_delta_pct": -0.006
+    },
+    {
+      "layer": 39,
+      "ppl": 4.4128,
+      "ppl_delta_pct": 0.012
+    },
+    {
+      "layer": 40,
+      "ppl": 4.4118,
+      "ppl_delta_pct": -0.01
+    },
+    {
+      "layer": 41,
+      "ppl": 4.4111,
+      "ppl_delta_pct": -0.026
+    },
+    {
+      "layer": 42,
+      "ppl": 4.4117,
+      "ppl_delta_pct": -0.012
+    },
+    {
+      "layer": 43,
+      "ppl": 4.4141,
+      "ppl_delta_pct": 0.042
+    },
+    {
+      "layer": 44,
+      "ppl": 4.4116,
+      "ppl_delta_pct": -0.014
+    },
+    {
+      "layer": 45,
+      "ppl": 4.4115,
+      "ppl_delta_pct": -0.018
+    },
+    {
+      "layer": 46,
+      "ppl": 4.4106,
+      "ppl_delta_pct": -0.038
+    },
+    {
+      "layer": 47,
+      "ppl": 4.412,
+      "ppl_delta_pct": -0.006
+    },
+    {
+      "layer": 48,
+      "ppl": 4.4134,
+      "ppl_delta_pct": 0.026
+    },
+    {
+      "layer": 49,
+      "ppl": 4.4126,
+      "ppl_delta_pct": 0.008
+    },
+    {
+      "layer": 50,
+      "ppl": 4.4139,
+      "ppl_delta_pct": 0.038
+    },
+    {
+      "layer": 51,
+      "ppl": 4.4131,
+      "ppl_delta_pct": 0.018
+    },
+    {
+      "layer": 52,
+      "ppl": 4.414,
+      "ppl_delta_pct": 0.04
+    },
+    {
+      "layer": 53,
+      "ppl": 4.413,
+      "ppl_delta_pct": 0.016
+    },
+    {
+      "layer": 54,
+      "ppl": 4.4125,
+      "ppl_delta_pct": 0.006
+    },
+    {
+      "layer": 55,
+      "ppl": 4.4129,
+      "ppl_delta_pct": 0.014
+    },
+    {
+      "layer": 56,
+      "ppl": 4.4162,
+      "ppl_delta_pct": 0.088
+    },
+    {
+      "layer": 57,
+      "ppl": 4.412,
+      "ppl_delta_pct": -0.006
+    },
+    {
+      "layer": 58,
+      "ppl": 4.4139,
+      "ppl_delta_pct": 0.036
+    },
+    {
+      "layer": 59,
+      "ppl": 4.4127,
+      "ppl_delta_pct": 0.01
+    },
+    {
+      "layer": 60,
+      "ppl": 4.4134,
+      "ppl_delta_pct": 0.026
+    },
+    {
+      "layer": 61,
+      "ppl": 4.4123,
+      "ppl_delta_pct": 0.0
+    },
+    {
+      "layer": 62,
+      "ppl": 4.411,
+      "ppl_delta_pct": -0.028
+    },
+    {
+      "layer": 63,
+      "ppl": 4.4125,
+      "ppl_delta_pct": 0.006
+    },
+    {
+      "layer": 64,
+      "ppl": 4.4124,
+      "ppl_delta_pct": 0.002
+    },
+    {
+      "layer": 65,
+      "ppl": 4.4123,
+      "ppl_delta_pct": 0.0
+    },
+    {
+      "layer": 66,
+      "ppl": 4.4116,
+      "ppl_delta_pct": -0.014
+    },
+    {
+      "layer": 67,
+      "ppl": 4.4111,
+      "ppl_delta_pct": -0.026
+    },
+    {
+      "layer": 68,
+      "ppl": 4.4106,
+      "ppl_delta_pct": -0.038
+    },
+    {
+      "layer": 69,
+      "ppl": 4.4126,
+      "ppl_delta_pct": 0.008
+    },
+    {
+      "layer": 70,
+      "ppl": 4.4124,
+      "ppl_delta_pct": 0.002
+    },
+    {
+      "layer": 71,
+      "ppl": 4.4122,
+      "ppl_delta_pct": -0.002
+    },
+    {
+      "layer": 72,
+      "ppl": 4.4117,
+      "ppl_delta_pct": -0.012
+    },
+    {
+      "layer": 73,
+      "ppl": 4.4125,
+      "ppl_delta_pct": 0.006
+    },
+    {
+      "layer": 74,
+      "ppl": 4.4129,
+      "ppl_delta_pct": 0.014
+    },
+    {
+      "layer": 75,
+      "ppl": 4.4113,
+      "ppl_delta_pct": -0.022
+    },
+    {
+      "layer": 76,
+      "ppl": 4.413,
+      "ppl_delta_pct": 0.016
+    },
+    {
+      "layer": 77,
+      "ppl": 4.4107,
+      "ppl_delta_pct": -0.036
+    },
+    {
+      "layer": 78,
+      "ppl": 4.4125,
+      "ppl_delta_pct": 0.006
+    },
+    {
+      "layer": 79,
+      "ppl": 4.4123,
+      "ppl_delta_pct": 0.0
+    }
+  ]
+}

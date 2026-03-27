@@ -1,0 +1,765 @@
+{
+  "experiment": "rtx5090_kv_asymmetry",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "k_bits": 16,
+      "v_bits": 16,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 853047.4350251849,
+          "ppl_quant": 853047.4350251849,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 839596.3322023732,
+          "ppl_quant": 839596.3322023732,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 821609.4685341739,
+          "ppl_quant": 821609.4685341739,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 980261.9804457659,
+          "ppl_quant": 980261.9804457659,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 898753.4945404894,
+          "ppl_quant": 898753.4945404894,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 909751.9313921564,
+          "ppl_quant": 909751.9313921564,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 962058.6295007999,
+          "ppl_quant": 962058.6295007999,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 851626.5702184804,
+          "ppl_quant": 851626.5702184804,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 846251.5781477018,
+          "ppl_quant": 846251.5781477018,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 930144.6567715417,
+          "ppl_quant": 930144.6567715417,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "label": "K_FP16/V_FP16",
+      "elapsed_s": 122.83930897712708
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "k_bits": 16,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 853047.4350251849,
+          "ppl_quant": 853047.4350251849,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 839596.3322023732,
+          "ppl_quant": 839596.3322023732,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 821609.4685341739,
+          "ppl_quant": 821609.4685341739,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 980261.9804457659,
+          "ppl_quant": 980261.9804457659,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 898753.4945404894,
+          "ppl_quant": 898753.4945404894,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 909751.9313921564,
+          "ppl_quant": 909751.9313921564,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 962058.6295007999,
+          "ppl_quant": 962058.6295007999,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 851626.5702184804,
+          "ppl_quant": 851626.5702184804,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 846251.5781477018,
+          "ppl_quant": 846251.5781477018,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 930144.6567715417,
+          "ppl_quant": 930144.6567715417,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "label": "K_FP16/V_INT4",
+      "elapsed_s": 26.118596076965332
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "k_bits": 8,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 853047.4350251849,
+          "ppl_quant": 853047.4350251849,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 839596.3322023732,
+          "ppl_quant": 839596.3322023732,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 821609.4685341739,
+          "ppl_quant": 821609.4685341739,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 980261.9804457659,
+          "ppl_quant": 980261.9804457659,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 898753.4945404894,
+          "ppl_quant": 898753.4945404894,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 909751.9313921564,
+          "ppl_quant": 909751.9313921564,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 962058.6295007999,
+          "ppl_quant": 962058.6295007999,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 851626.5702184804,
+          "ppl_quant": 851626.5702184804,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 846251.5781477018,
+          "ppl_quant": 846251.5781477018,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 930144.6567715417,
+          "ppl_quant": 930144.6567715417,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "label": "K_INT8/V_INT4",
+      "elapsed_s": 25.96322250366211
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "k_bits": 4,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 853047.4350251849,
+          "ppl_quant": 853047.4350251849,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 839596.3322023732,
+          "ppl_quant": 839596.3322023732,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 821609.4685341739,
+          "ppl_quant": 821609.4685341739,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 980261.9804457659,
+          "ppl_quant": 980261.9804457659,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 898753.4945404894,
+          "ppl_quant": 898753.4945404894,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 909751.9313921564,
+          "ppl_quant": 909751.9313921564,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 962058.6295007999,
+          "ppl_quant": 962058.6295007999,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 851626.5702184804,
+          "ppl_quant": 851626.5702184804,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 846251.5781477018,
+          "ppl_quant": 846251.5781477018,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 930144.6567715417,
+          "ppl_quant": 930144.6567715417,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "label": "K_INT4/V_INT4",
+      "elapsed_s": 25.339979887008667
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "k_bits": 16,
+      "v_bits": 16,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 207992.91278899988,
+          "ppl_quant": 207992.91278899988,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220605.33161295613,
+          "ppl_quant": 220605.33161295613,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 245470.38491252327,
+          "ppl_quant": 245470.38491252327,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 225654.48750060657,
+          "ppl_quant": 225654.48750060657,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214530.45105072003,
+          "ppl_quant": 214530.45105072003,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 185974.29119396672,
+          "ppl_quant": 185974.29119396672,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 198100.99382344948,
+          "ppl_quant": 198100.99382344948,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 226552.36560473547,
+          "ppl_quant": 226552.36560473547,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214008.35436621078,
+          "ppl_quant": 214008.35436621078,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220330.31875938064,
+          "ppl_quant": 220330.31875938064,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "label": "K_FP16/V_FP16",
+      "elapsed_s": 31.11627221107483
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "k_bits": 16,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 207992.91278899988,
+          "ppl_quant": 207992.91278899988,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220605.33161295613,
+          "ppl_quant": 220605.33161295613,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 245470.38491252327,
+          "ppl_quant": 245470.38491252327,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 225654.48750060657,
+          "ppl_quant": 225654.48750060657,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214530.45105072003,
+          "ppl_quant": 214530.45105072003,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 185974.29119396672,
+          "ppl_quant": 185974.29119396672,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 198100.99382344948,
+          "ppl_quant": 198100.99382344948,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 226552.36560473547,
+          "ppl_quant": 226552.36560473547,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214008.35436621078,
+          "ppl_quant": 214008.35436621078,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220330.31875938064,
+          "ppl_quant": 220330.31875938064,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "label": "K_FP16/V_INT4",
+      "elapsed_s": 13.689405679702759
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "k_bits": 8,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 207992.91278899988,
+          "ppl_quant": 207992.91278899988,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220605.33161295613,
+          "ppl_quant": 220605.33161295613,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 245470.38491252327,
+          "ppl_quant": 245470.38491252327,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 225654.48750060657,
+          "ppl_quant": 225654.48750060657,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214530.45105072003,
+          "ppl_quant": 214530.45105072003,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 185974.29119396672,
+          "ppl_quant": 185974.29119396672,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 198100.99382344948,
+          "ppl_quant": 198100.99382344948,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 226552.36560473547,
+          "ppl_quant": 226552.36560473547,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214008.35436621078,
+          "ppl_quant": 214008.35436621078,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220330.31875938064,
+          "ppl_quant": 220330.31875938064,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "label": "K_INT8/V_INT4",
+      "elapsed_s": 14.816123485565186
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "k_bits": 4,
+      "v_bits": 4,
+      "seq_len": 2048,
+      "n_prompts": 10,
+      "avg_logit_error": 0.0,
+      "avg_token_agreement": 1.0,
+      "avg_ppl_delta_pct": 0.0,
+      "per_prompt": [
+        {
+          "prompt_idx": 0,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 207992.91278899988,
+          "ppl_quant": 207992.91278899988,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 1,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220605.33161295613,
+          "ppl_quant": 220605.33161295613,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 2,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 245470.38491252327,
+          "ppl_quant": 245470.38491252327,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 3,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 225654.48750060657,
+          "ppl_quant": 225654.48750060657,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 4,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214530.45105072003,
+          "ppl_quant": 214530.45105072003,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 5,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 185974.29119396672,
+          "ppl_quant": 185974.29119396672,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 6,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 198100.99382344948,
+          "ppl_quant": 198100.99382344948,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 7,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 226552.36560473547,
+          "ppl_quant": 226552.36560473547,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 8,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 214008.35436621078,
+          "ppl_quant": 214008.35436621078,
+          "ppl_delta_pct": 0.0
+        },
+        {
+          "prompt_idx": 9,
+          "logit_error": 0.0,
+          "token_agreement": 1.0,
+          "ppl_base": 220330.31875938064,
+          "ppl_quant": 220330.31875938064,
+          "ppl_delta_pct": 0.0
+        }
+      ],
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "label": "K_INT4/V_INT4",
+      "elapsed_s": 15.781098365783691
+    }
+  ]
+}

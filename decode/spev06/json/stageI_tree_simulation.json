@@ -1,0 +1,262 @@
+{
+  "experiment": "spev06_stageI",
+  "timestamp": "2026-03-16T23:21:53.480537+00:00",
+  "simulations": {
+    "0.3": {
+      "acceptance_rate": 0.3,
+      "linear_k5_tokens_per_verify": 1.43,
+      "tree_w2d3_tokens_per_verify": 1.73,
+      "tree_w3d2_tokens_per_verify": 1.89,
+      "tree_w2d3_improvement": 1.209,
+      "tree_w3d2_improvement": 1.317
+    },
+    "0.5": {
+      "acceptance_rate": 0.5,
+      "linear_k5_tokens_per_verify": 1.97,
+      "tree_w2d3_tokens_per_verify": 2.41,
+      "tree_w3d2_tokens_per_verify": 2.46,
+      "tree_w2d3_improvement": 1.223,
+      "tree_w3d2_improvement": 1.25
+    },
+    "0.7": {
+      "acceptance_rate": 0.7,
+      "linear_k5_tokens_per_verify": 2.96,
+      "tree_w2d3_tokens_per_verify": 3.22,
+      "tree_w3d2_tokens_per_verify": 2.84,
+      "tree_w2d3_improvement": 1.087,
+      "tree_w3d2_improvement": 0.959
+    },
+    "0.9": {
+      "acceptance_rate": 0.9,
+      "linear_k5_tokens_per_verify": 4.69,
+      "tree_w2d3_tokens_per_verify": 3.88,
+      "tree_w3d2_tokens_per_verify": 2.99,
+      "tree_w2d3_improvement": 0.826,
+      "tree_w3d2_improvement": 0.637
+    },
+    "0.21": {
+      "acceptance_rate": 0.21,
+      "linear_k5_tokens_per_verify": 1.27,
+      "tree_w2d3_tokens_per_verify": 1.47,
+      "tree_w3d2_tokens_per_verify": 1.63,
+      "tree_w2d3_improvement": 1.162,
+      "tree_w3d2_improvement": 1.289
+    },
+    "0.22": {
+      "acceptance_rate": 0.22,
+      "linear_k5_tokens_per_verify": 1.28,
+      "tree_w2d3_tokens_per_verify": 1.5,
+      "tree_w3d2_tokens_per_verify": 1.67,
+      "tree_w2d3_improvement": 1.17,
+      "tree_w3d2_improvement": 1.299
+    },
+    "0.29": {
+      "acceptance_rate": 0.29,
+      "linear_k5_tokens_per_verify": 1.41,
+      "tree_w2d3_tokens_per_verify": 1.71,
+      "tree_w3d2_tokens_per_verify": 1.87,
+      "tree_w2d3_improvement": 1.216,
+      "tree_w3d2_improvement": 1.329
+    },
+    "0.33": {
+      "acceptance_rate": 0.33,
+      "linear_k5_tokens_per_verify": 1.49,
+      "tree_w2d3_tokens_per_verify": 1.83,
+      "tree_w3d2_tokens_per_verify": 1.99,
+      "tree_w2d3_improvement": 1.232,
+      "tree_w3d2_improvement": 1.334
+    },
+    "0.35": {
+      "acceptance_rate": 0.35,
+      "linear_k5_tokens_per_verify": 1.53,
+      "tree_w2d3_tokens_per_verify": 1.9,
+      "tree_w3d2_tokens_per_verify": 2.04,
+      "tree_w2d3_improvement": 1.242,
+      "tree_w3d2_improvement": 1.336
+    },
+    "0.39": {
+      "acceptance_rate": 0.39,
+      "linear_k5_tokens_per_verify": 1.63,
+      "tree_w2d3_tokens_per_verify": 2.03,
+      "tree_w3d2_tokens_per_verify": 2.15,
+      "tree_w2d3_improvement": 1.245,
+      "tree_w3d2_improvement": 1.323
+    },
+    "0.41": {
+      "acceptance_rate": 0.41,
+      "linear_k5_tokens_per_verify": 1.68,
+      "tree_w2d3_tokens_per_verify": 2.09,
+      "tree_w3d2_tokens_per_verify": 2.21,
+      "tree_w2d3_improvement": 1.249,
+      "tree_w3d2_improvement": 1.32
+    },
+    "0.43": {
+      "acceptance_rate": 0.43,
+      "linear_k5_tokens_per_verify": 1.73,
+      "tree_w2d3_tokens_per_verify": 2.16,
+      "tree_w3d2_tokens_per_verify": 2.27,
+      "tree_w2d3_improvement": 1.251,
+      "tree_w3d2_improvement": 1.311
+    },
+    "0.49": {
+      "acceptance_rate": 0.49,
+      "linear_k5_tokens_per_verify": 1.92,
+      "tree_w2d3_tokens_per_verify": 2.38,
+      "tree_w3d2_tokens_per_verify": 2.42,
+      "tree_w2d3_improvement": 1.239,
+      "tree_w3d2_improvement": 1.26
+    },
+    "0.55": {
+      "acceptance_rate": 0.55,
+      "linear_k5_tokens_per_verify": 2.15,
+      "tree_w2d3_tokens_per_verify": 2.61,
+      "tree_w3d2_tokens_per_verify": 2.57,
+      "tree_w2d3_improvement": 1.215,
+      "tree_w3d2_improvement": 1.196
+    },
+    "0.56": {
+      "acceptance_rate": 0.56,
+      "linear_k5_tokens_per_verify": 2.19,
+      "tree_w2d3_tokens_per_verify": 2.65,
+      "tree_w3d2_tokens_per_verify": 2.59,
+      "tree_w2d3_improvement": 1.21,
+      "tree_w3d2_improvement": 1.183
+    },
+    "0.58": {
+      "acceptance_rate": 0.58,
+      "linear_k5_tokens_per_verify": 2.28,
+      "tree_w2d3_tokens_per_verify": 2.73,
+      "tree_w3d2_tokens_per_verify": 2.64,
+      "tree_w2d3_improvement": 1.195,
+      "tree_w3d2_improvement": 1.154
+    },
+    "0.59": {
+      "acceptance_rate": 0.59,
+      "linear_k5_tokens_per_verify": 2.33,
+      "tree_w2d3_tokens_per_verify": 2.77,
+      "tree_w3d2_tokens_per_verify": 2.66,
+      "tree_w2d3_improvement": 1.188,
+      "tree_w3d2_improvement": 1.141
+    },
+    "0.6": {
+      "acceptance_rate": 0.6,
+      "linear_k5_tokens_per_verify": 2.38,
+      "tree_w2d3_tokens_per_verify": 2.81,
+      "tree_w3d2_tokens_per_verify": 2.68,
+      "tree_w2d3_improvement": 1.181,
+      "tree_w3d2_improvement": 1.125
+    },
+    "0.61": {
+      "acceptance_rate": 0.61,
+      "linear_k5_tokens_per_verify": 2.43,
+      "tree_w2d3_tokens_per_verify": 2.85,
+      "tree_w3d2_tokens_per_verify": 2.69,
+      "tree_w2d3_improvement": 1.17,
+      "tree_w3d2_improvement": 1.107
+    },
+    "0.64": {
+      "acceptance_rate": 0.64,
+      "linear_k5_tokens_per_verify": 2.59,
+      "tree_w2d3_tokens_per_verify": 2.97,
+      "tree_w3d2_tokens_per_verify": 2.75,
+      "tree_w2d3_improvement": 1.146,
+      "tree_w3d2_improvement": 1.061
+    },
+    "0.65": {
+      "acceptance_rate": 0.65,
+      "linear_k5_tokens_per_verify": 2.64,
+      "tree_w2d3_tokens_per_verify": 3.01,
+      "tree_w3d2_tokens_per_verify": 2.77,
+      "tree_w2d3_improvement": 1.138,
+      "tree_w3d2_improvement": 1.048
+    },
+    "0.67": {
+      "acceptance_rate": 0.67,
+      "linear_k5_tokens_per_verify": 2.77,
+      "tree_w2d3_tokens_per_verify": 3.09,
+      "tree_w3d2_tokens_per_verify": 2.8,
+      "tree_w2d3_improvement": 1.118,
+      "tree_w3d2_improvement": 1.013
+    },
+    "0.74": {
+      "acceptance_rate": 0.74,
+      "linear_k5_tokens_per_verify": 3.25,
+      "tree_w2d3_tokens_per_verify": 3.38,
+      "tree_w3d2_tokens_per_verify": 2.89,
+      "tree_w2d3_improvement": 1.039,
+      "tree_w3d2_improvement": 0.891
+    },
+    "0.79": {
+      "acceptance_rate": 0.79,
+      "linear_k5_tokens_per_verify": 3.62,
+      "tree_w2d3_tokens_per_verify": 3.56,
+      "tree_w3d2_tokens_per_verify": 2.94,
+      "tree_w2d3_improvement": 0.982,
+      "tree_w3d2_improvement": 0.811
+    },
+    "0.81": {
+      "acceptance_rate": 0.81,
+      "linear_k5_tokens_per_verify": 3.79,
+      "tree_w2d3_tokens_per_verify": 3.62,
+      "tree_w3d2_tokens_per_verify": 2.95,
+      "tree_w2d3_improvement": 0.957,
+      "tree_w3d2_improvement": 0.779
+    },
+    "0.83": {
+      "acceptance_rate": 0.83,
+      "linear_k5_tokens_per_verify": 3.97,
+      "tree_w2d3_tokens_per_verify": 3.69,
+      "tree_w3d2_tokens_per_verify": 2.97,
+      "tree_w2d3_improvement": 0.931,
+      "tree_w3d2_improvement": 0.748
+    },
+    "0.85": {
+      "acceptance_rate": 0.85,
+      "linear_k5_tokens_per_verify": 4.15,
+      "tree_w2d3_tokens_per_verify": 3.75,
+      "tree_w3d2_tokens_per_verify": 2.98,
+      "tree_w2d3_improvement": 0.905,
+      "tree_w3d2_improvement": 0.718
+    },
+    "0.86": {
+      "acceptance_rate": 0.86,
+      "linear_k5_tokens_per_verify": 4.25,
+      "tree_w2d3_tokens_per_verify": 3.78,
+      "tree_w3d2_tokens_per_verify": 2.98,
+      "tree_w2d3_improvement": 0.89,
+      "tree_w3d2_improvement": 0.701
+    },
+    "0.89": {
+      "acceptance_rate": 0.89,
+      "linear_k5_tokens_per_verify": 4.58,
+      "tree_w2d3_tokens_per_verify": 3.86,
+      "tree_w3d2_tokens_per_verify": 2.99,
+      "tree_w2d3_improvement": 0.842,
+      "tree_w3d2_improvement": 0.653
+    },
+    "0.96": {
+      "acceptance_rate": 0.96,
+      "linear_k5_tokens_per_verify": 5.43,
+      "tree_w2d3_tokens_per_verify": 3.98,
+      "tree_w3d2_tokens_per_verify": 3.0,
+      "tree_w2d3_improvement": 0.733,
+      "tree_w3d2_improvement": 0.552
+    },
+    "0.97": {
+      "acceptance_rate": 0.97,
+      "linear_k5_tokens_per_verify": 5.56,
+      "tree_w2d3_tokens_per_verify": 3.99,
+      "tree_w3d2_tokens_per_verify": 3.0,
+      "tree_w2d3_improvement": 0.717,
+      "tree_w3d2_improvement": 0.539
+    },
+    "1": {
+      "acceptance_rate": 1,
+      "linear_k5_tokens_per_verify": 6.0,
+      "tree_w2d3_tokens_per_verify": 4.0,
+      "tree_w3d2_tokens_per_verify": 3.0,
+      "tree_w2d3_improvement": 0.667,
+      "tree_w3d2_improvement": 0.5
+    }
+  }
+}

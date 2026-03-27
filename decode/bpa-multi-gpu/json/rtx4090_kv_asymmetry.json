@@ -1,0 +1,61 @@
+{
+  "experiment": "rtx4090_kv_asymmetry",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "K_FP16/V_FP16",
+      "k_bits": 16,
+      "v_bits": 16,
+      "error": "GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0."
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "K_FP16/V_INT4",
+      "k_bits": 16,
+      "v_bits": 4,
+      "error": "GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0."
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "K_INT8/V_INT4",
+      "k_bits": 8,
+      "v_bits": 4,
+      "error": "GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0."
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "K_INT4/V_INT4",
+      "k_bits": 4,
+      "v_bits": 4,
+      "error": "GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0."
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "K_FP16/V_FP16",
+      "k_bits": 16,
+      "v_bits": 16,
+      "error": "GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0."
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "K_FP16/V_INT4",
+      "k_bits": 16,
+      "v_bits": 4,
+      "error": "GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0."
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "K_INT8/V_INT4",
+      "k_bits": 8,
+      "v_bits": 4,
+      "error": "GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0."
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "K_INT4/V_INT4",
+      "k_bits": 4,
+      "v_bits": 4,
+      "error": "GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0."
+    }
+  ]
+}

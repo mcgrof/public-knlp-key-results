@@ -1,0 +1,22 @@
+{
+  "tier": "4",
+  "type": "kv_quantization",
+  "timestamp": "2026-03-12T04:44:32",
+  "gpu": "H100-80GB",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "kv_cache_dtype": "fp8",
+  "seq_len": 2048,
+  "num_prompts": 20,
+  "max_tokens": 256,
+  "total_input_tokens": 15836,
+  "total_output_tokens": 3728,
+  "wall_time_sec": 6.114,
+  "tokens_per_sec": 609.74,
+  "avg_decode_latency_ms": 1.64,
+  "peak_vram_gb": 52.84,
+  "sample_outputs": [
+    " I willquired about a concise explanation,.\n\n Certainly (GPT) can responsequiring for a concise explanation of the theory of generaleneral relativity and its inlications for modern physics..\n\n Here's ",
+    "1 their space,.\n\n Qu\n==================================================================\n\n## Detailed Analysis of Sorting Algorithms: including Qu their algorithms\n\n## Detailed Analysis of Sorting Algo",
+    "1\n\nThe history of computing from Charles Babbage to modern GPUs is a fascinating journey through the evolution of technology, design, and technology. technology\n\n### Early Concepts and Theories\n\n####\n"
+  ]
+}

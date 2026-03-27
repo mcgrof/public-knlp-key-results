@@ -1,0 +1,26 @@
+{
+  "variant": "dynbudget_entropy_ra_value",
+  "seq_len": 2048,
+  "seed": 2,
+  "far_budget": 4,
+  "mode": "dynamic-budget",
+  "ppl_mean": 267.7441940307617,
+  "ppl_std": 57.256050957792624,
+  "enabled_rate": 0.6997767857142855,
+  "effective_kept_tokens": 349.7423060825861,
+  "kv_bytes_read_per_token": 14054770.285714284,
+  "peak_kv_bytes": 75497472,
+  "flops_relative": 0.18616213117327007,
+  "wall_ms_per_token": 1.4046936303202529,
+  "gate_ms_per_token": 0.8735099813748093,
+  "fwd_ms_per_token": 0.5271324739624106,
+  "budget_mean": 2.7988467261904764,
+  "budget_p95": 4.0,
+  "budget_p99": 4.0,
+  "tokens_seen": 61440,
+  "n_eval_batches": 30,
+  "extra": {
+    "budget_mode": "entropy",
+    "strategy": "ra_value"
+  }
+}

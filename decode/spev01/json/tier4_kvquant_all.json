@@ -1,0 +1,118 @@
+[
+  {
+    "tier": "4",
+    "type": "kv_quantization",
+    "timestamp": "2026-03-12T04:43:30",
+    "gpu": "H100-80GB",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "kv_cache_dtype": "auto",
+    "seq_len": 512,
+    "num_prompts": 20,
+    "max_tokens": 256,
+    "total_input_tokens": 316,
+    "total_output_tokens": 5120,
+    "wall_time_sec": 4.175,
+    "tokens_per_sec": 1226.43,
+    "avg_decode_latency_ms": 0.82,
+    "peak_vram_gb": 54.09,
+    "sample_outputs": [
+      " General relativity is a theory of gravitation that was developed by Albert Einstein between 1907 and 1915. It is a geometric theory of gravitation that describes gravity as a curvature of spacetime c",
+      " Sorting algorithms are fundamental to computer science and are used in a wide range of applications, from database management to data analysis. In this analysis, we will discuss three popular sorting",
+      " The history of computing spans from the conceptualization of the first mechanical computers to the development of modern high-performance graphics processing units (GPUs). Here's a comprehensive over"
+    ]
+  },
+  {
+    "tier": "4",
+    "type": "kv_quantization",
+    "timestamp": "2026-03-12T04:43:42",
+    "gpu": "H100-80GB",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "kv_cache_dtype": "auto",
+    "seq_len": 2048,
+    "num_prompts": 20,
+    "max_tokens": 256,
+    "total_input_tokens": 15836,
+    "total_output_tokens": 5120,
+    "wall_time_sec": 3.314,
+    "tokens_per_sec": 1544.76,
+    "avg_decode_latency_ms": 0.65,
+    "peak_vram_gb": 70.35,
+    "sample_outputs": [
+      " I will provide a detailed explanation of the theory of general relativity and its implications for modern physics.\n\n### The Theory of General Relativity\n\n#### 1. **Introduction and Historical Context",
+      "1. **Quicksort**:\n   - **Description**: Quicksort is a divide-and-conquer algorithm that works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, ac",
+      "1. **Charles Babbage (1791-1871)**: Charles Babbage is often referred to as the \"father of the computer.\" He designed the first mechanical computer, the Difference Engine, in the early 1800s. Although"
+    ]
+  },
+  {
+    "tier": "4",
+    "type": "kv_quantization",
+    "timestamp": "2026-03-12T04:43:57",
+    "gpu": "H100-80GB",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "kv_cache_dtype": "auto",
+    "seq_len": 8192,
+    "num_prompts": 20,
+    "max_tokens": 256,
+    "total_input_tokens": 63266,
+    "total_output_tokens": 5120,
+    "wall_time_sec": 4.932,
+    "tokens_per_sec": 1038.12,
+    "avg_decode_latency_ms": 0.96,
+    "peak_vram_gb": 71.19,
+    "sample_outputs": [
+      "1. **Introduction to General Relativity:**\n   - **Historical Context:** General Relativity was developed by Albert Einstein in 1915 as a theory of gravitation. It is a fundamental theory in physics th",
+      "1. **Quicksort**:\n   - **Description**: Quicksort is a divide-and-conquer algorithm that works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, ac",
+      "1. **Charles Babbage (1791-1871)**: Charles Babbage is often considered the \"father of the computer.\" In the early 19th century, he designed several mechanical computers, including the Difference Engi"
+    ]
+  },
+  {
+    "tier": "4",
+    "type": "kv_quantization",
+    "timestamp": "2026-03-12T04:44:14",
+    "gpu": "H100-80GB",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "kv_cache_dtype": "fp8",
+    "seq_len": 512,
+    "num_prompts": 20,
+    "max_tokens": 256,
+    "total_input_tokens": 316,
+    "total_output_tokens": 4246,
+    "wall_time_sec": 4.938,
+    "tokens_per_sec": 859.78,
+    "avg_decode_latency_ms": 1.16,
+    "peak_vram_gb": 54.09,
+    "sample_outputs": [
+      " General relativity is a theory in physics that which Albert Einstein proposed 1915 and 1115. It describes the laws of physics for massive objects objects and large in scales in in in in in in in in i",
+      " Sorting algorithms is a fundamental concept in computer science and is used in a wide range of applications. databases, and data analysis. . Qu.. Qu...",
+      " The history of computing spans from the early of mechanical and analog devices to the modern digital computers. Charles Babbage, is often as of computing,, who designed the first mechanical computer,"
+    ]
+  },
+  {
+    "tier": "4",
+    "type": "kv_quantization",
+    "timestamp": "2026-03-12T04:44:32",
+    "gpu": "H100-80GB",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "kv_cache_dtype": "fp8",
+    "seq_len": 2048,
+    "num_prompts": 20,
+    "max_tokens": 256,
+    "total_input_tokens": 15836,
+    "total_output_tokens": 3728,
+    "wall_time_sec": 6.114,
+    "tokens_per_sec": 609.74,
+    "avg_decode_latency_ms": 1.64,
+    "peak_vram_gb": 52.84,
+    "sample_outputs": [
+      " I willquired about a concise explanation,.\n\n Certainly (GPT) can responsequiring for a concise explanation of the theory of generaleneral relativity and its inlications for modern physics..\n\n Here's ",
+      "1 their space,.\n\n Qu\n==================================================================\n\n## Detailed Analysis of Sorting Algorithms: including Qu their algorithms\n\n## Detailed Analysis of Sorting Algo",
+      "1\n\nThe history of computing from Charles Babbage to modern GPUs is a fascinating journey through the evolution of technology, design, and technology. technology\n\n### Early Concepts and Theories\n\n####\n"
+    ]
+  },
+  {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "kv_dtype": "fp8",
+    "seq_len": 8192,
+    "error": "No such file or directory: /root/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28/model-00001-of-00004.safetensors"
+  }
+]

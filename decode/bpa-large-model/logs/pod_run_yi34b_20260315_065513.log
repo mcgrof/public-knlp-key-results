@@ -1,0 +1,143 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+############################################################
+# 01-ai/Yi-1.5-34B-Chat
+############################################################
+Loading 01-ai/Yi-1.5-34B-Chat in bfloat16...
+
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]
+Fetching 15 files:   7%|▋         | 1/15 [00:12<02:51, 12.25s/it]
+Fetching 15 files:  60%|██████    | 9/15 [00:34<00:21,  3.56s/it]
+Fetching 15 files:  73%|███████▎  | 11/15 [00:35<00:11,  2.81s/it]
+Fetching 15 files:  80%|████████  | 12/15 [00:36<00:07,  2.46s/it]
+Fetching 15 files: 100%|██████████| 15/15 [00:36<00:00,  2.41s/it]
+
+Loading weights:   0%|          | 0/543 [00:00<?, ?it/s]
+Loading weights:   0%|          | 2/543 [00:00<01:32,  5.88it/s]
+Loading weights:   1%|          | 6/543 [00:00<00:34, 15.68it/s]
+Loading weights:   3%|▎         | 15/543 [00:00<00:15, 34.03it/s]
+Loading weights:   4%|▍         | 24/543 [00:00<00:11, 45.08it/s]
+Loading weights:   6%|▌         | 31/543 [00:00<00:10, 48.81it/s]
+Loading weights:   7%|▋         | 37/543 [00:00<00:11, 44.84it/s]
+Loading weights:   8%|▊         | 42/543 [00:01<00:13, 38.25it/s]
+Loading weights:   9%|▉         | 50/543 [00:01<00:10, 47.33it/s]
+Loading weights:  11%|█         | 58/543 [00:01<00:08, 54.90it/s]
+Loading weights:  12%|█▏        | 65/543 [00:01<00:08, 58.37it/s]
+Loading weights:  13%|█▎        | 72/543 [00:01<00:08, 57.73it/s]
+Loading weights:  15%|█▍        | 79/543 [00:01<00:08, 57.19it/s]
+Loading weights:  16%|█▌        | 86/543 [00:01<00:07, 60.10it/s]
+Loading weights:  17%|█▋        | 94/543 [00:02<00:08, 54.07it/s]
+Loading weights:  18%|█▊        | 100/543 [00:02<00:10, 41.97it/s]
+Loading weights:  19%|█▉        | 105/543 [00:02<00:10, 42.59it/s]
+Loading weights:  21%|██        | 112/543 [00:02<00:09, 47.55it/s]
+Loading weights:  22%|██▏       | 118/543 [00:02<00:10, 41.12it/s]
+Loading weights:  23%|██▎       | 123/543 [00:02<00:10, 42.00it/s]
+Loading weights:  24%|██▍       | 131/543 [00:02<00:08, 50.55it/s]
+Loading weights:  26%|██▌       | 139/543 [00:02<00:07, 57.51it/s]
+Loading weights:  27%|██▋       | 146/543 [00:03<00:06, 59.78it/s]
+Loading weights:  28%|██▊       | 153/543 [00:03<00:08, 46.08it/s]
+Loading weights:  29%|██▉       | 159/543 [00:03<00:08, 42.99it/s]
+Loading weights:  31%|███       | 168/543 [00:03<00:07, 49.43it/s]
+Loading weights:  33%|███▎      | 177/543 [00:03<00:06, 54.23it/s]
+Loading weights:  34%|███▍      | 184/543 [00:03<00:06, 56.83it/s]
+Loading weights:  36%|███▌      | 193/543 [00:04<00:06, 57.18it/s]
+Loading weights:  37%|███▋      | 202/543 [00:04<00:05, 60.07it/s]
+Loading weights:  39%|███▉      | 211/543 [00:04<00:05, 62.13it/s]
+Loading weights:  41%|████      | 220/543 [00:04<00:05, 63.49it/s]
+Loading weights:  42%|████▏     | 227/543 [00:04<00:04, 64.04it/s]
+Loading weights:  43%|████▎     | 234/543 [00:04<00:06, 49.82it/s]
+Loading weights:  44%|████▍     | 240/543 [00:04<00:06, 49.84it/s]
+Loading weights:  46%|████▌     | 249/543 [00:05<00:05, 54.68it/s]
+Loading weights:  48%|████▊     | 258/543 [00:05<00:04, 58.16it/s]
+Loading weights:  49%|████▉     | 265/543 [00:05<00:04, 58.08it/s]
+Loading weights:  50%|████▉     | 271/543 [00:05<00:05, 51.76it/s]
+Loading weights:  51%|█████     | 277/543 [00:05<00:05, 49.03it/s]
+Loading weights:  52%|█████▏    | 284/543 [00:05<00:04, 53.47it/s]
+Loading weights:  54%|█████▍    | 293/543 [00:05<00:04, 57.62it/s]
+Loading weights:  56%|█████▌    | 302/543 [00:05<00:03, 60.36it/s]
+Loading weights:  57%|█████▋    | 311/543 [00:06<00:03, 62.20it/s]
+Loading weights:  59%|█████▉    | 320/543 [00:06<00:03, 63.77it/s]
+Loading weights:  61%|██████    | 329/543 [00:06<00:03, 64.79it/s]
+Loading weights:  62%|██████▏   | 338/543 [00:06<00:03, 65.56it/s]
+Loading weights:  64%|██████▍   | 347/543 [00:06<00:02, 66.01it/s]
+Loading weights:  65%|██████▌   | 355/543 [00:06<00:02, 69.24it/s]
+Loading weights:  67%|██████▋   | 364/543 [00:06<00:02, 68.59it/s]
+Loading weights:  69%|██████▊   | 373/543 [00:06<00:02, 68.25it/s]
+Loading weights:  70%|███████   | 382/543 [00:07<00:02, 67.81it/s]
+Loading weights:  72%|███████▏  | 391/543 [00:07<00:02, 67.50it/s]
+Loading weights:  73%|███████▎  | 398/543 [00:07<00:02, 68.07it/s]
+Loading weights:  75%|███████▍  | 405/543 [00:07<00:02, 64.08it/s]
+Loading weights:  76%|███████▌  | 412/543 [00:07<00:02, 62.27it/s]
+Loading weights:  77%|███████▋  | 420/543 [00:07<00:02, 61.25it/s]
+Loading weights:  79%|███████▉  | 428/543 [00:07<00:01, 65.82it/s]
+Loading weights:  80%|████████  | 437/543 [00:07<00:01, 66.09it/s]
+Loading weights:  82%|████████▏ | 446/543 [00:08<00:01, 66.37it/s]
+Loading weights:  84%|████████▍ | 455/543 [00:08<00:01, 66.58it/s]
+Loading weights:  85%|████████▌ | 464/543 [00:08<00:01, 66.72it/s]
+Loading weights:  87%|████████▋ | 472/543 [00:08<00:01, 69.57it/s]
+Loading weights:  88%|████████▊ | 480/543 [00:08<00:00, 71.62it/s]
+Loading weights:  90%|████████▉ | 488/543 [00:08<00:00, 66.90it/s]
+Loading weights:  91%|█████████ | 495/543 [00:08<00:00, 64.15it/s]
+Loading weights:  92%|█████████▏| 502/543 [00:08<00:00, 61.78it/s]
+Loading weights:  94%|█████████▍| 510/543 [00:09<00:00, 60.79it/s]
+Loading weights:  95%|█████████▌| 518/543 [00:09<00:00, 64.60it/s]
+Loading weights:  97%|█████████▋| 526/543 [00:09<00:00, 68.54it/s]
+Loading weights:  99%|█████████▊| 535/543 [00:09<00:00, 67.93it/s]
+Loading weights: 100%|██████████| 543/543 [00:09<00:00, 71.09it/s]
+Loading weights: 100%|██████████| 543/543 [00:09<00:00, 56.93it/s]
+Loaded in 50s
+Transformers version: 5.3.0
+k_proj output shape: [1, 4, 1024]
+Fused QKV: False
+Model: 34.4B params, 60 layers, GPU: NVIDIA H200 (150GB)
+
+=== Test 1: KV Precision Asymmetry ===
+  Computing baseline...
+    prompt 1/5... (1s)
+    prompt 2/5... (1s)
+    prompt 3/5... (1s)
+    prompt 4/5... (1s)
+    prompt 5/5... (1s)
+  K_FP16/V_FP16... err=0.0000 agree=1.0000 ppl_d=+0.00% (0s)
+  K_FP16/V_INT4... err=0.1983 agree=0.8616 ppl_d=-3.81% (7s)
+  K_INT8/V_INT4... err=0.1984 agree=0.8627 ppl_d=-4.66% (7s)
+  K_INT4/V_INT4... err=0.4020 agree=0.7442 ppl_d=+6.62% (6s)
+
+=== Test 2: Ratio Classifier ===
+  INT6 keys... err=0.0922
+  INT8 keys... err=0.0385
+  Ratio: 2.40 (needs_fp16=False)
+
+=== Test 3: KV Cache Size ===
+  L=2048: KV_FP16=0.50GB KV_INT4=0.13GB frac=0.7% status=ok
+  L=4096: KV_FP16=1.01GB KV_INT4=0.25GB frac=1.4% status=ok
+  L=8192: KV_FP16=2.01GB KV_INT4=0.50GB frac=2.8% status=ok
+
+=== Test 4: Decode Latency ===
+  Warmup...
+  FP16/FP16... 45.0 ms/tok (22.2 tok/s)
+  FP16/INT4... 48.6 ms/tok (20.6 tok/s)
+  INT8/INT4... 52.0 ms/tok (19.2 tok/s)
+
+Saved: /workspace/large_yi_1_5_34b_chat.json
+
+======================================================================
+SUMMARY
+======================================================================
+
+Yi-1.5-34B-Chat (34.4B, D=60, loaded in 50s):
+  K_FP16/V_FP16        err=0.0000 agree=1.0000 ppl_d=+0.00%
+  K_FP16/V_INT4        err=0.1983 agree=0.8616 ppl_d=-3.81%
+  K_INT8/V_INT4        err=0.1984 agree=0.8627 ppl_d=-4.66%
+  K_INT4/V_INT4        err=0.4020 agree=0.7442 ppl_d=+6.62%
+  Ratio: 2.40 (needs_fp16=False)
+  L= 2048: KV=0.50GB (0.7%)
+  L= 4096: KV=1.01GB (1.4%)
+  L= 8192: KV=2.01GB (2.8%)
+  Lat FP16/FP16   : 45.0 ms/tok (22.2 tok/s)
+  Lat FP16/INT4   : 48.6 ms/tok (20.6 tok/s)
+  Lat INT8/INT4   : 52.0 ms/tok (19.2 tok/s)
+
+Total time: 114s
+
+DONE

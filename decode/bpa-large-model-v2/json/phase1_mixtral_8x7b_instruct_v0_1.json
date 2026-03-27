@@ -1,0 +1,17 @@
+{
+  "phase": "phase1_wikitext_ppl",
+  "model_info": {
+    "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "n_params": 46700000000,
+    "n_layers": 32,
+    "n_kv_heads": 8,
+    "load_time_s": 43,
+    "gpu": "NVIDIA H200 SXM"
+  },
+  "results": {
+    "FP16_baseline": {"ppl": 4.3072, "n_tokens": 199902, "time_s": 36},
+    "K_FP16__V_INT4": {"ppl": 4.3164, "n_tokens": 199902, "time_s": 27, "ppl_delta_pct": 0.2137},
+    "K_INT8__V_INT4": {"ppl": 4.3194, "n_tokens": 199902, "time_s": 28, "ppl_delta_pct": 0.2834},
+    "K_INT4__V_INT4": {"ppl": 4.385, "n_tokens": 199902, "time_s": 28, "ppl_delta_pct": 1.8084}
+  }
+}

@@ -1,0 +1,254 @@
+Creating H200 pod...
+raw_response: {'data': {'podFindAndDeployOnDemand': {'id': 'o8wd8ca5momgkz', 'imageName': 'runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04', 'env': ['PUBLIC_KEY=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMMdz/nC0TOxRor+KVI0IYZRLnqzdUysRZ0c6/XQi9ua mcgrof@prune', 'HF_TOKEN=HF_TOKEN_REDACTED'], 'machineId': 'kxchllmtoe2w', 'machine': {'podHostId': 'o8wd8ca5momgkz-6441198b'}}}}
+Pod created: o8wd8ca5momgkz
+Waiting for pod to be ready...
+  Pod RUNNING, no runtime yet...
+  Pod RUNNING, no runtime yet...
+  Pod RUNNING, no runtime yet...
+Pod ready: 103.196.86.37:17993
+Installing dependencies...
+  pip install: OK
+Uploading experiment code...
+  Uploaded.
+
+============================================================
+Running experiment on H200...
+============================================================
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+############################################################
+# mistralai/Mixtral-8x7B-Instruct-v0.1
+############################################################
+Loading mistralai/Mixtral-8x7B-Instruct-v0.1 in bfloat16...
+
+Fetching 19 files:   0%|          | 0/19 [00:00<?, ?it/s]
+Fetching 19 files:   5%|▌         | 1/19 [00:12<03:47, 12.62s/it]
+Fetching 19 files:  11%|█         | 2/19 [00:13<01:38,  5.81s/it]
+Fetching 19 files:  16%|█▌        | 3/19 [00:21<01:46,  6.63s/it]
+Fetching 19 files:  42%|████▏     | 8/19 [00:35<00:40,  3.67s/it]
+Fetching 19 files:  79%|███████▉  | 15/19 [00:36<00:06,  1.56s/it]
+Fetching 19 files:  84%|████████▍ | 16/19 [00:42<00:06,  2.03s/it]
+Fetching 19 files:  89%|████████▉ | 17/19 [00:42<00:03,  1.78s/it]
+Fetching 19 files:  95%|█████████▍| 18/19 [00:42<00:01,  1.53s/it]
+Fetching 19 files: 100%|██████████| 19/19 [00:42<00:00,  2.24s/it]
+
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]
+Loading weights:   1%|          | 3/291 [00:00<00:42,  6.72it/s]
+Loading weights:   4%|▍         | 12/291 [00:00<00:16, 17.34it/s]
+Loading weights:   7%|▋         | 21/291 [00:01<00:12, 22.10it/s]
+Loading weights:  10%|█         | 30/291 [00:01<00:11, 22.06it/s]
+Loading weights:  13%|█▎        | 39/291 [00:01<00:11, 21.25it/s]
+Loading weights:  16%|█▋        | 48/291 [00:02<00:10, 23.36it/s]
+Loading weights:  20%|█▉        | 57/291 [00:02<00:09, 23.60it/s]
+Loading weights:  23%|██▎       | 66/291 [00:03<00:09, 23.51it/s]
+Loading weights:  26%|██▌       | 75/291 [00:03<00:09, 22.16it/s]
+Loading weights:  29%|██▉       | 84/291 [00:03<00:09, 21.84it/s]
+Loading weights:  32%|███▏      | 93/291 [00:04<00:08, 22.51it/s]
+Loading weights:  35%|███▌      | 102/291 [00:04<00:08, 21.80it/s]
+Loading weights:  38%|███▊      | 111/291 [00:05<00:08, 21.30it/s]
+Loading weights:  41%|████      | 120/291 [00:05<00:07, 21.84it/s]
+Loading weights:  44%|████▍     | 129/291 [00:06<00:08, 20.02it/s]
+Loading weights:  47%|████▋     | 138/291 [00:06<00:07, 21.79it/s]
+Loading weights:  51%|█████     | 147/291 [00:06<00:06, 20.82it/s]
+Loading weights:  54%|█████▎    | 156/291 [00:07<00:06, 20.36it/s]
+Loading weights:  57%|█████▋    | 165/291 [00:07<00:05, 21.52it/s]
+Loading weights:  60%|█████▉    | 174/291 [00:08<00:05, 20.43it/s]
+Loading weights:  63%|██████▎   | 183/291 [00:08<00:05, 21.21it/s]
+Loading weights:  66%|██████▌   | 192/291 [00:08<00:04, 21.81it/s]
+Loading weights:  69%|██████▉   | 201/291 [00:09<00:04, 22.38it/s]
+Loading weights:  72%|███████▏  | 210/291 [00:09<00:03, 22.11it/s]
+Loading weights:  75%|███████▌  | 219/291 [00:10<00:03, 20.78it/s]
+Loading weights:  78%|███████▊  | 228/291 [00:10<00:02, 21.24it/s]
+Loading weights:  81%|████████▏ | 237/291 [00:11<00:02, 20.97it/s]
+Loading weights:  85%|████████▍ | 246/291 [00:11<00:02, 21.11it/s]
+Loading weights:  88%|████████▊ | 255/291 [00:11<00:01, 20.94it/s]
+Loading weights:  91%|█████████ | 264/291 [00:12<00:01, 21.06it/s]
+Loading weights:  94%|█████████▍| 273/291 [00:12<00:00, 20.38it/s]
+Loading weights:  97%|█████████▋| 282/291 [00:13<00:00, 20.88it/s]
+Loading weights: 100%|██████████| 291/291 [00:13<00:00, 21.92it/s]
+Loaded in 64s
+Model: 46.7B params, 32 layers, GPU: NVIDIA H200 (150GB)
+
+=== Test 1: KV Precision Asymmetry ===
+  Computing baseline...
+  K_FP16/V_FP16... err=0.0000 agree=1.0000 ppl_d=+0.00% (0s)
+  K_FP16/V_INT4... err=0.0000 agree=1.0000 ppl_d=+0.00% (3s)
+  K_INT8/V_INT4... err=0.0000 agree=1.0000 ppl_d=+0.00% (3s)
+  K_INT4/V_INT4... err=0.0000 agree=1.0000 ppl_d=+0.00% (3s)
+
+=== Test 2: Ratio Classifier ===
+  INT6 keys... err=0.0000
+  INT8 keys... Traceback (most recent call last):
+  File "/workspace/experiment.py", line 417, in <module>
+    result = run_all_tests(model_name, dtype_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/experiment.py", line 265, in run_all_tests
+    kv_per_tok = 2 * n_kv_heads * head_dim * dtype_bytes
+                 ~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: unsupported operand type(s) for *: 'int' and 'NoneType'
+err=0.0000
+  Ratio: 0.00 (needs_fp16=False)
+
+=== Test 3: KV Cache Size ===
+FAILED: unsupported operand type(s) for *: 'int' and 'NoneType'
+Saved: /workspace/large_mixtral_8x7b_instruct_v0_1.json
+
+############################################################
+# Qwen/Qwen2.5-32B-Instruct
+############################################################
+Loading Qwen/Qwen2.5-32B-Instruct in bfloat16...
+
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]
+Fetching 17 files:   6%|▌         | 1/17 [00:26<06:59, 26.24s/it]
+Fetching 17 files:  94%|█████████▍| 16/17 [00:26<00:01,  1.19s/it]
+Fetching 17 files: 100%|██████████| 17/17 [00:26<00:00,  1.57s/it]
+
+Loading weights:   0%|          | 0/771 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/771 [00:00<02:08,  6.00it/s]
+Loading weights:   0%|          | 2/771 [00:00<02:36,  4.92it/s]
+Loading weights:   1%|          | 5/771 [00:00<01:07, 11.30it/s]
+Loading weights:   2%|▏         | 17/771 [00:00<00:18, 40.93it/s]
+Loading weights:   4%|▎         | 28/771 [00:00<00:12, 59.39it/s]
+Loading weights:   5%|▍         | 36/771 [00:00<00:11, 64.38it/s]
+Loading weights:   6%|▌         | 44/771 [00:00<00:11, 62.73it/s]
+Loading weights:   7%|▋         | 53/771 [00:01<00:10, 68.54it/s]
+Loading weights:   8%|▊         | 64/771 [00:01<00:09, 78.35it/s]
+Loading weights:   9%|▉         | 73/771 [00:01<00:08, 79.89it/s]
+Loading weights:  11%|█         | 82/771 [00:01<00:09, 72.54it/s]
+Loading weights:  12%|█▏        | 90/771 [00:01<00:09, 68.66it/s]
+Loading weights:  13%|█▎        | 99/771 [00:01<00:09, 72.92it/s]
+Loading weights:  15%|█▍        | 112/771 [00:01<00:08, 77.73it/s]
+Loading weights:  16%|█▌        | 124/771 [00:01<00:07, 86.81it/s]
+Loading weights:  17%|█▋        | 133/771 [00:02<00:07, 86.34it/s]
+Loading weights:  18%|█▊        | 142/771 [00:02<00:08, 78.50it/s]
+Loading weights:  20%|█▉        | 151/771 [00:02<00:08, 73.95it/s]
+Loading weights:  21%|██        | 161/771 [00:02<00:07, 79.27it/s]
+Loading weights:  22%|██▏       | 172/771 [00:02<00:06, 85.91it/s]
+Loading weights:  23%|██▎       | 181/771 [00:02<00:06, 85.92it/s]
+Loading weights:  25%|██▍       | 190/771 [00:02<00:07, 78.27it/s]
+Loading weights:  26%|██▌       | 199/771 [00:02<00:07, 73.81it/s]
+Loading weights:  27%|██▋       | 208/771 [00:03<00:07, 76.78it/s]
+Loading weights:  29%|██▊       | 220/771 [00:03<00:06, 86.94it/s]
+Loading weights:  30%|██▉       | 229/771 [00:03<00:06, 86.84it/s]
+Loading weights:  31%|███       | 238/771 [00:03<00:06, 77.23it/s]
+Loading weights:  32%|███▏      | 246/771 [00:03<00:07, 72.22it/s]
+Loading weights:  33%|███▎      | 257/771 [00:03<00:06, 80.61it/s]
+Loading weights:  35%|███▍      | 268/771 [00:03<00:05, 87.14it/s]
+Loading weights:  36%|███▌      | 277/771 [00:03<00:05, 86.89it/s]
+Loading weights:  37%|███▋      | 286/771 [00:03<00:06, 78.69it/s]
+Loading weights:  38%|███▊      | 295/771 [00:04<00:06, 73.95it/s]
+Loading weights:  40%|███▉      | 305/771 [00:04<00:05, 79.53it/s]
+Loading weights:  41%|████      | 316/771 [00:04<00:05, 86.26it/s]
+Loading weights:  42%|████▏     | 325/771 [00:04<00:05, 86.31it/s]
+Loading weights:  43%|████▎     | 334/771 [00:04<00:05, 78.51it/s]
+Loading weights:  44%|████▍     | 343/771 [00:04<00:05, 73.84it/s]
+Loading weights:  46%|████▌     | 353/771 [00:04<00:05, 79.24it/s]
+Loading weights:  47%|████▋     | 363/771 [00:04<00:05, 74.74it/s]
+Loading weights:  49%|████▉     | 376/771 [00:05<00:04, 87.20it/s]
+Loading weights:  50%|█████     | 386/771 [00:05<00:04, 89.00it/s]
+Loading weights:  51%|█████▏    | 396/771 [00:05<00:04, 81.43it/s]
+Loading weights:  53%|█████▎    | 405/771 [00:05<00:04, 77.24it/s]
+Loading weights:  54%|█████▎    | 413/771 [00:05<00:04, 77.23it/s]
+Loading weights:  55%|█████▍    | 424/771 [00:05<00:04, 84.77it/s]
+Loading weights:  56%|█████▌    | 433/771 [00:05<00:03, 85.47it/s]
+Loading weights:  57%|█████▋    | 442/771 [00:05<00:04, 78.25it/s]
+Loading weights:  58%|█████▊    | 451/771 [00:06<00:04, 73.88it/s]
+Loading weights:  60%|█████▉    | 461/771 [00:06<00:03, 79.76it/s]
+Loading weights:  61%|██████    | 472/771 [00:06<00:03, 86.48it/s]
+Loading weights:  62%|██████▏   | 481/771 [00:06<00:03, 86.73it/s]
+Loading weights:  64%|██████▎   | 490/771 [00:06<00:03, 78.97it/s]
+Loading weights:  65%|██████▍   | 499/771 [00:06<00:03, 74.33it/s]
+Loading weights:  66%|██████▌   | 508/771 [00:06<00:03, 77.32it/s]
+Loading weights:  67%|██████▋   | 520/771 [00:06<00:02, 87.46it/s]
+Loading weights:  69%|██████▊   | 529/771 [00:06<00:02, 87.22it/s]
+Loading weights:  70%|██████▉   | 538/771 [00:07<00:02, 78.97it/s]
+Loading weights:  71%|███████   | 547/771 [00:07<00:03, 74.04it/s]
+Loading weights:  72%|███████▏  | 557/771 [00:07<00:02, 79.53it/s]
+Loading weights:  74%|███████▎  | 568/771 [00:07<00:02, 86.13it/s]
+Loading weights:  75%|███████▍  | 577/771 [00:07<00:02, 86.26it/s]
+Loading weights:  76%|███████▌  | 586/771 [00:07<00:02, 76.97it/s]
+Loading weights:  77%|███████▋  | 594/771 [00:07<00:02, 71.88it/s]
+Loading weights:  78%|███████▊  | 605/771 [00:07<00:02, 80.60it/s]
+Loading weights:  80%|███████▉  | 616/771 [00:08<00:01, 87.20it/s]
+Loading weights:  81%|████████  | 625/771 [00:08<00:01, 87.28it/s]
+Loading weights:  82%|████████▏ | 634/771 [00:08<00:01, 79.47it/s]
+Loading weights:  83%|████████▎ | 643/771 [00:08<00:01, 74.84it/s]
+Loading weights:  85%|████████▍ | 653/771 [00:08<00:01, 80.34it/s]
+Loading weights:  86%|████████▌ | 664/771 [00:08<00:01, 87.24it/s]
+Loading weights:  87%|████████▋ | 673/771 [00:08<00:01, 87.37it/s]
+Loading weights:  88%|████████▊ | 682/771 [00:08<00:01, 79.57it/s]
+Loading weights:  90%|████████▉ | 691/771 [00:09<00:01, 74.91it/s]
+Loading weights:  91%|█████████ | 701/771 [00:09<00:00, 80.34it/s]
+Loading weights:  92%|█████████▏| 712/771 [00:09<00:00, 87.35it/s]
+Loading weights:  94%|█████████▎| 721/771 [00:09<00:00, 87.18it/s]
+Loading weights:  95%|█████████▍| 730/771 [00:09<00:00, 79.24it/s]
+Loading weights:  96%|█████████▌| 739/771 [00:09<00:00, 74.48it/s]
+Loading weights:  97%|█████████▋| 748/771 [00:09<00:00, 77.62it/s]
+Loading weights:  99%|█████████▊| 760/771 [00:09<00:00, 87.88it/s]
+Loading weights: 100%|█████████▉| 770/771 [00:09<00:00, 90.14it/s]
+Loading weights: 100%|██████████| 771/771 [00:09<00:00, 77.76it/s]
+Loaded in 39s
+Model: 32.8B params, 64 layers, GPU: NVIDIA H200 (150GB)
+
+=== Test 1: KV Precision Asymmetry ===
+  Computing baseline...
+  K_FP16/V_FP16... err=0.0000 agree=1.0000 ppl_d=+0.00% (0s)
+  K_FP16/V_INT4... err=0.0000 agree=1.0000 ppl_d=+0.00% (10s)
+  K_INT8/V_INT4... err=0.0000 agree=1.0000 ppl_d=+0.00% (11s)
+  K_INT4/V_INT4... err=0.0000 agree=1.0000 ppl_d=+0.00% (10s)
+
+=== Test 2: Ratio Classifier ===
+  INT6 keys... err=0.0000
+  INT8 keys... The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+err=0.0000
+  Ratio: 0.00 (needs_fp16=False)
+
+=== Test 3: KV Cache Size ===
+  L=2048: KV_FP16=0.54GB KV_INT4=0.13GB frac=0.8% status=ok
+  L=4096: KV_FP16=1.07GB KV_INT4=0.27GB frac=1.6% status=ok
+  L=8192: KV_FP16=2.15GB KV_INT4=0.54GB frac=3.2% status=ok
+
+=== Test 4: Decode Latency ===
+  FP16/FP16... 43.1 ms/tok (23.2 tok/s)
+  FP16/INT4... 43.4 ms/tok (23.0 tok/s)
+  INT8/INT4... 43.5 ms/tok (23.0 tok/s)
+Saved: /workspace/large_qwen2_5_32b_instruct.json
+
+Saved: /workspace/large_model_combined.json
+
+======================================================================
+SUMMARY
+======================================================================
+
+Mixtral-8x7B-Instruct-v0.1: FAILED
+
+Qwen2.5-32B-Instruct (32.8B, D=64, loaded in 39s):
+  K_FP16/V_FP16        err=0.0000 agree=1.0000 ppl_d=+0.00%
+  K_FP16/V_INT4        err=0.0000 agree=1.0000 ppl_d=+0.00%
+  K_INT8/V_INT4        err=0.0000 agree=1.0000 ppl_d=+0.00%
+  K_INT4/V_INT4        err=0.0000 agree=1.0000 ppl_d=+0.00%
+  Ratio: 0.00 (needs_fp16=False)
+  L= 2048: KV=0.54GB (0.8%)
+  L= 4096: KV=1.07GB (1.6%)
+  L= 8192: KV=2.15GB (3.2%)
+  Lat FP16/FP16   : 43.1 ms/tok (23.2 tok/s)
+  Lat FP16/INT4   : 43.4 ms/tok (23.0 tok/s)
+  Lat INT8/INT4   : 43.5 ms/tok (23.0 tok/s)
+
+DONE
+
+
+Downloading results...
+  Downloaded: large_model_combined.json
+  Downloaded: large_mixtral_8x7b_instruct_v0_1.json
+  Downloaded: large_qwen2_5_32b_instruct.json
+  Wrote: /data/knlp-key-results/bpa-large-model/json/large_kv_asymmetry_qwen2_5_32b_instruct.json
+  Wrote: /data/knlp-key-results/bpa-large-model/json/large_ratio_classifier_qwen2_5_32b_instruct.json
+  Wrote: /data/knlp-key-results/bpa-large-model/json/large_kv_cache_size_qwen2_5_32b_instruct.json
+  Wrote: /data/knlp-key-results/bpa-large-model/json/large_decode_latency_qwen2_5_32b_instruct.json
+
+Terminating pod o8wd8ca5momgkz...
+Pod terminated.

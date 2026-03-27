@@ -1,0 +1,159 @@
+BPA Multi-GPU Sequential Re-run
+Time: 2026-03-10 19:59:23
+GPUs to test: 6
+Running ONE at a time to avoid quota limits.
+
+
+============================================================
+  H100 80GB (h100) — Ratio + Latency Tests
+============================================================
+
+  --- Ratio Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 19:59:23,664 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 19:59:23,860 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/h100_ratio.json
+
+  --- Latency Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 19:59:24,040 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 19:59:24,260 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/h100_latency.json
+
+  H100 80GB complete. Endpoint will auto-teardown in 300s.
+  Waiting 30s for endpoint cleanup...
+
+============================================================
+  A100 80GB (a100) — Ratio + Latency Tests
+============================================================
+
+  --- Ratio Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 19:59:54,654 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 19:59:54,880 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/a100_ratio.json
+
+  --- Latency Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 19:59:55,081 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 19:59:55,309 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/a100_latency.json
+
+  A100 80GB complete. Endpoint will auto-teardown in 300s.
+  Waiting 30s for endpoint cleanup...
+
+============================================================
+  A40/A6000 48GB (a40) — Ratio + Latency Tests
+============================================================
+
+  --- Ratio Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 20:00:25,524 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 20:00:25,756 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/a40_ratio.json
+
+  --- Latency Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 20:00:25,942 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 20:00:26,138 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/a40_latency.json
+
+  A40/A6000 48GB complete. Endpoint will auto-teardown in 300s.
+  Waiting 30s for endpoint cleanup...
+
+============================================================
+  RTX 4090 24GB (rtx4090) — Ratio + Latency Tests
+============================================================
+
+  --- Ratio Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 20:00:56,344 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 20:00:56,553 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/rtx4090_ratio.json
+
+  --- Latency Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 20:00:56,784 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 20:00:56,972 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/rtx4090_latency.json
+
+  RTX 4090 24GB complete. Endpoint will auto-teardown in 300s.
+  Waiting 30s for endpoint cleanup...
+
+============================================================
+  RTX 5090 32GB (rtx5090) — Ratio + Latency Tests
+============================================================
+
+  --- Ratio Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 20:01:27,249 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 20:01:27,437 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/rtx5090_ratio.json
+
+  --- Latency Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 20:01:27,639 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 20:01:27,833 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/rtx5090_latency.json
+
+  RTX 5090 32GB complete. Endpoint will auto-teardown in 300s.
+  Waiting 30s for endpoint cleanup...
+
+============================================================
+  L4/A5000 24GB (l4) — Ratio + Latency Tests
+============================================================
+
+  --- Ratio Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 20:01:58,122 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 20:01:58,328 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/l4_ratio.json
+
+  --- Latency Test ---
+  >>> Qwen/Qwen2.5-7B-Instruct
+2026-03-10 20:01:58,528 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  >>> mistralai/Mistral-7B-Instruct-v0.3
+2026-03-10 20:01:58,751 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+      ERROR: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+  Saved: /data/knlp-key-results/bpa-multi-gpu/json/l4_latency.json
+
+  L4/A5000 24GB complete. Endpoint will auto-teardown in 300s.
+  Waiting 30s for endpoint cleanup...
+
+============================================================
+  ALL DONE — 2026-03-10 20:02:28
+============================================================

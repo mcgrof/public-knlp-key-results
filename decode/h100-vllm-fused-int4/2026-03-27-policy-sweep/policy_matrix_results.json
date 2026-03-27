@@ -1,0 +1,2136 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "timestamp": "2026-03-27T04:20:56",
+  "configs": {
+    "baseline_fp16": {
+      "asymmetric": "0",
+      "group_size": "32",
+      "min_seq_len": "999999",
+      "run": {
+        "status": "ok",
+        "results": {
+          "short_8": {
+            "text": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you have",
+            "token_ids": [
+              220,
+              17,
+              10,
+              17,
+              16819,
+              220,
+              19,
+              13,
+              1096,
+              374,
+              264,
+              15811,
+              34784,
+              5666,
+              304,
+              37596,
+              13,
+              1416,
+              498,
+              614
+            ]
+          },
+          "short_16": {
+            "text": "Gravity is the natural force of attraction between any two objects with mass, pulling them towards each other.",
+            "token_ids": [
+              47490,
+              374,
+              279,
+              5810,
+              5344,
+              315,
+              32364,
+              1948,
+              894,
+              1378,
+              6171,
+              448,
+              3072,
+              11,
+              22266,
+              1105,
+              6974,
+              1817,
+              1008,
+              13
+            ]
+          },
+          "med_32": {
+            "text": "Haiku is a form of Japanese poetry that typically consists of three lines with a 5-7",
+            "token_ids": [
+              14101,
+              38242,
+              374,
+              264,
+              1352,
+              315,
+              10769,
+              31249,
+              429,
+              11136,
+              17167,
+              315,
+              2326,
+              5128,
+              448,
+              264,
+              220,
+              20,
+              12,
+              22
+            ]
+          },
+          "med_48": {
+            "text": "First 10 prime numbers: 2, 3, 5, 7,",
+            "token_ids": [
+              5512,
+              220,
+              16,
+              15,
+              10250,
+              5109,
+              25,
+              220,
+              17,
+              11,
+              220,
+              18,
+              11,
+              220,
+              20,
+              11,
+              220,
+              22,
+              11,
+              220
+            ]
+          },
+          "long_64": {
+            "text": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of the most commonly used",
+            "token_ids": [
+              26656,
+              320,
+              91201,
+              7779,
+              24572,
+              8,
+              323,
+              42394,
+              320,
+              1474,
+              96804,
+              24572,
+              8,
+              525,
+              1378,
+              315,
+              279,
+              1429,
+              16626,
+              1483
+            ]
+          },
+          "long_96": {
+            "text": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, its",
+            "token_ids": [
+              758,
+              279,
+              5103,
+              398,
+              13020,
+              14029,
+              11,
+              279,
+              12305,
+              11,
+              6941,
+              27469,
+              11,
+              14638,
+              1573,
+              264,
+              10113,
+              10041,
+              11,
+              1181
+            ]
+          },
+          "long_128": {
+            "text": "The history of the Internet is a fascinating journey from a government-funded research project to the global network that",
+            "token_ids": [
+              576,
+              3840,
+              315,
+              279,
+              8031,
+              374,
+              264,
+              26291,
+              11618,
+              504,
+              264,
+              3033,
+              49601,
+              3412,
+              2390,
+              311,
+              279,
+              3644,
+              3922,
+              429
+            ]
+          }
+        },
+        "elapsed_s": 24.3
+      }
+    },
+    "sym_g32_msl8": {
+      "asymmetric": "0",
+      "group_size": "32",
+      "min_seq_len": "8",
+      "run": {
+        "status": "ok",
+        "results": {
+          "short_8": {
+            "text": "\u51b7\u7b11\u4e00\u58f0\uff0c\uff0c2 2\u52a0\u6cd5\u8fd0\u7b972 2\u52a0\u6cd5\u8fd0\u7b97 2,",
+            "token_ids": [
+              220,
+              114923,
+              104494,
+              3837,
+              3837,
+              17,
+              220,
+              17,
+              20929,
+              24339,
+              118274,
+              17,
+              220,
+              17,
+              20929,
+              24339,
+              118274,
+              220,
+              17,
+              11
+            ]
+          },
+          "short_16": {
+            "text": "Gravity is p\u00e9rdida p\u00e9rdida p\u00e9rdida de energ\u00eda en unero the natural force that attracts all objects with mass towards",
+            "token_ids": [
+              47490,
+              374,
+              143907,
+              143907,
+              143907,
+              409,
+              137064,
+              662,
+              650,
+              2328,
+              279,
+              5810,
+              5344,
+              429,
+              60091,
+              678,
+              6171,
+              448,
+              3072,
+              6974
+            ]
+          },
+          "med_32": {
+            "text": "Haiku is is\nWhispers p\u00e9rdida\nof the deep blue sea\nendless mystery\n\nThis",
+            "token_ids": [
+              14101,
+              38242,
+              374,
+              374,
+              198,
+              1639,
+              68835,
+              143907,
+              198,
+              1055,
+              279,
+              5538,
+              6303,
+              9396,
+              198,
+              408,
+              1717,
+              22531,
+              271,
+              1986
+            ]
+          },
+          "med_48": {
+            "text": "First 1 prime: 2, 3, 5, 7 Be 1",
+            "token_ids": [
+              5512,
+              220,
+              16,
+              10250,
+              25,
+              220,
+              17,
+              11,
+              220,
+              18,
+              11,
+              220,
+              20,
+              11,
+              220,
+              22,
+              2823,
+              220,
+              16,
+              220
+            ]
+          },
+          "long_64": {
+            "text": "TCP p\u00e9rdida de (Transmission layers ) ) ) ) ) TCP p\u00e9rdida p\u00e9rdida ( three p\u00e9rdida p\u00e9rdida ) TCP",
+            "token_ids": [
+              26656,
+              143907,
+              409,
+              320,
+              91201,
+              13617,
+              873,
+              873,
+              873,
+              873,
+              873,
+              26656,
+              143907,
+              143907,
+              320,
+              2326,
+              143907,
+              143907,
+              873,
+              26656
+            ]
+          },
+          "long_96": {
+            "text": "In the dimly lit studio, Dr. erfolgreich and his news, a sleek, silver robot",
+            "token_ids": [
+              758,
+              279,
+              5103,
+              398,
+              13020,
+              14029,
+              11,
+              2926,
+              13,
+              93094,
+              323,
+              806,
+              501,
+              82,
+              11,
+              264,
+              47394,
+              11,
+              14961,
+              12305
+            ]
+          },
+          "long_128": {
+            "text": "The history of p\u00e9rdida p\u00e9rdida p\u00e9rdida of the p\u00e9rdida p\u00e9rdida p\u00e9rdida of the Internet can be p\u00e9rdida p\u00e9rdida p\u00e9rdida p\u00e9rdida",
+            "token_ids": [
+              576,
+              3840,
+              315,
+              143907,
+              143907,
+              143907,
+              315,
+              279,
+              143907,
+              143907,
+              143907,
+              315,
+              279,
+              8031,
+              646,
+              387,
+              143907,
+              143907,
+              143907,
+              143907
+            ]
+          }
+        },
+        "elapsed_s": 25.1
+      },
+      "comparison": {
+        "total": 7,
+        "exact_matches": 0,
+        "exact_rate": 0.0,
+        "avg_token_rate": 0.1571,
+        "details": {
+          "short_8": {
+            "text_match": false,
+            "token_match_rate": 0.05,
+            "first_diverge": 1,
+            "baseline": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you ",
+            "test": "\u51b7\u7b11\u4e00\u58f0\uff0c\uff0c2 2\u52a0\u6cd5\u8fd0\u7b972 2\u52a0\u6cd5\u8fd0\u7b97 2,"
+          },
+          "short_16": {
+            "text_match": false,
+            "token_match_rate": 0.1,
+            "first_diverge": 2,
+            "baseline": "Gravity is the natural force of attraction between any two objects with mass, pu",
+            "test": "Gravity is p\u00e9rdida p\u00e9rdida p\u00e9rdida de energ\u00eda en unero the natural force that at"
+          },
+          "med_32": {
+            "text_match": false,
+            "token_match_rate": 0.15,
+            "first_diverge": 3,
+            "baseline": "Haiku is a form of Japanese poetry that typically consists of three lines with a",
+            "test": "Haiku is is\nWhispers p\u00e9rdida\nof the deep blue sea\nendless mystery\n\nThis"
+          },
+          "med_48": {
+            "text_match": false,
+            "token_match_rate": 0.2,
+            "first_diverge": 3,
+            "baseline": "First 10 prime numbers: 2, 3, 5, 7,",
+            "test": "First 1 prime: 2, 3, 5, 7 Be 1"
+          },
+          "long_64": {
+            "text_match": false,
+            "token_match_rate": 0.05,
+            "first_diverge": 1,
+            "baseline": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of ",
+            "test": "TCP p\u00e9rdida de (Transmission layers ) ) ) ) ) TCP p\u00e9rdida p\u00e9rdida ( three p\u00e9rdid"
+          },
+          "long_96": {
+            "text_match": false,
+            "token_match_rate": 0.4,
+            "first_diverge": 7,
+            "baseline": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, it",
+            "test": "In the dimly lit studio, Dr. erfolgreich and his news, a sleek, silver robot"
+          },
+          "long_128": {
+            "text_match": false,
+            "token_match_rate": 0.15,
+            "first_diverge": 3,
+            "baseline": "The history of the Internet is a fascinating journey from a government-funded re",
+            "test": "The history of p\u00e9rdida p\u00e9rdida p\u00e9rdida of the p\u00e9rdida p\u00e9rdida p\u00e9rdida of the Int"
+          }
+        }
+      }
+    },
+    "asym_g32_msl8": {
+      "asymmetric": "1",
+      "group_size": "32",
+      "min_seq_len": "8",
+      "run": {
+        "status": "ok",
+        "results": {
+          "short_8": {
+            "text": "2 is\n2 2 is 2 2+  2  2",
+            "token_ids": [
+              220,
+              17,
+              374,
+              198,
+              17,
+              220,
+              17,
+              374,
+              220,
+              17,
+              220,
+              17,
+              10,
+              220,
+              220,
+              17,
+              220,
+              220,
+              17,
+              220
+            ]
+          },
+          "short_16": {
+            "text": "Gravity is,\nGravity is is is.\"\\ Gravity is...\\ is, is is is.\"\\ Gravity is",
+            "token_ids": [
+              47490,
+              374,
+              11,
+              198,
+              38409,
+              374,
+              374,
+              374,
+              42943,
+              47490,
+              374,
+              30801,
+              374,
+              11,
+              374,
+              374,
+              374,
+              42943,
+              47490,
+              374
+            ]
+          },
+          "med_32": {
+            "text": "Haiku:\n Waves whispers\n whispers\n Earth's whispers\n whispers\n\nA A whispers\n This Explanation",
+            "token_ids": [
+              14101,
+              38242,
+              510,
+              80458,
+              88148,
+              198,
+              88148,
+              198,
+              9237,
+              594,
+              88148,
+              198,
+              88148,
+              271,
+              32,
+              362,
+              88148,
+              198,
+              1096,
+              71287
+            ]
+          },
+          "med_48": {
+            "text": "First:1\n\nThe first 1 10 prime numbers are  are  2",
+            "token_ids": [
+              5512,
+              25,
+              16,
+              271,
+              785,
+              1156,
+              220,
+              16,
+              220,
+              16,
+              15,
+              10250,
+              5109,
+              525,
+              220,
+              525,
+              220,
+              220,
+              17,
+              220
+            ]
+          },
+          "long_64": {
+            "text": "TCP and udp are are and (Ex UDPenceses \u00e9l\u00e8ves differ fod\u00e9 be\u4e0b\u9762\u5c0f\u7f16 reperc p\u00e9rdida p\u00e9rdida",
+            "token_ids": [
+              26656,
+              323,
+              49219,
+              525,
+              525,
+              323,
+              320,
+              840,
+              42394,
+              2380,
+              288,
+              142919,
+              1745,
+              61429,
+              963,
+              387,
+              117503,
+              73388,
+              143907,
+              143907
+            ]
+          },
+          "long_96": {
+            "text": "In Use a minimum sentence sentence structure. Use\u7b2c\u4e09\u4eba\u5192\u8bed to describe the story. story\n\nRob",
+            "token_ids": [
+              758,
+              5443,
+              264,
+              8028,
+              11652,
+              11652,
+              5944,
+              13,
+              5443,
+              111000,
+              100303,
+              72881,
+              311,
+              7512,
+              279,
+              3364,
+              13,
+              3364,
+              271,
+              14465
+            ]
+          },
+          "long_128": {
+            "text": "The development of the modern Internet can can the Internet, of the Internet, of the Internet, of",
+            "token_ids": [
+              576,
+              4401,
+              315,
+              279,
+              6481,
+              8031,
+              646,
+              646,
+              279,
+              8031,
+              11,
+              315,
+              279,
+              8031,
+              11,
+              315,
+              279,
+              8031,
+              11,
+              315
+            ]
+          }
+        },
+        "elapsed_s": 25.6
+      },
+      "comparison": {
+        "total": 7,
+        "exact_matches": 0,
+        "exact_rate": 0.0,
+        "avg_token_rate": 0.1286,
+        "details": {
+          "short_8": {
+            "text_match": false,
+            "token_match_rate": 0.15,
+            "first_diverge": 2,
+            "baseline": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you ",
+            "test": "2 is\n2 2 is 2 2+  2  2"
+          },
+          "short_16": {
+            "text_match": false,
+            "token_match_rate": 0.15,
+            "first_diverge": 2,
+            "baseline": "Gravity is the natural force of attraction between any two objects with mass, pu",
+            "test": "Gravity is,\nGravity is is is.\"\\ Gravity is...\\ is, is is is.\"\\ Gravity is"
+          },
+          "med_32": {
+            "text_match": false,
+            "token_match_rate": 0.1,
+            "first_diverge": 2,
+            "baseline": "Haiku is a form of Japanese poetry that typically consists of three lines with a",
+            "test": "Haiku:\n Waves whispers\n whispers\n Earth's whispers\n whispers\n\nA A whispers\n This"
+          },
+          "med_48": {
+            "text_match": false,
+            "token_match_rate": 0.2,
+            "first_diverge": 1,
+            "baseline": "First 10 prime numbers: 2, 3, 5, 7,",
+            "test": "First:1\n\nThe first 1 10 prime numbers are  are  2"
+          },
+          "long_64": {
+            "text_match": false,
+            "token_match_rate": 0.05,
+            "first_diverge": 1,
+            "baseline": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of ",
+            "test": "TCP and udp are are and (Ex UDPenceses \u00e9l\u00e8ves differ fod\u00e9 be\u4e0b\u9762\u5c0f\u7f16 reperc p\u00e9rdida "
+          },
+          "long_96": {
+            "text_match": false,
+            "token_match_rate": 0.05,
+            "first_diverge": 1,
+            "baseline": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, it",
+            "test": "In Use a minimum sentence sentence structure. Use\u7b2c\u4e09\u4eba\u5192\u8bed to describe the story. st"
+          },
+          "long_128": {
+            "text_match": false,
+            "token_match_rate": 0.2,
+            "first_diverge": 1,
+            "baseline": "The history of the Internet is a fascinating journey from a government-funded re",
+            "test": "The development of the modern Internet can can the Internet, of the Internet, of"
+          }
+        }
+      }
+    },
+    "sym_g16_msl8": {
+      "asymmetric": "0",
+      "group_size": "16",
+      "min_seq_len": "8",
+      "run": {
+        "status": "ok",
+        "results": {
+          "short_8": {
+            "text": "2 2 2 2 2 2 2 2 2 2",
+            "token_ids": [
+              220,
+              17,
+              220,
+              17,
+              220,
+              17,
+              220,
+              17,
+              220,
+              17,
+              220,
+              17,
+              220,
+              17,
+              220,
+              17,
+              220,
+              17,
+              220,
+              17
+            ]
+          },
+          "short_16": {
+            "text": "Gravity is p\u00e9rdida p\u00e9rdida is is the natural, attractive force that is any p\u00e9rdida p\u00e9rdida affects the motion of",
+            "token_ids": [
+              47490,
+              374,
+              143907,
+              143907,
+              374,
+              374,
+              279,
+              5810,
+              11,
+              18879,
+              5344,
+              429,
+              374,
+              894,
+              143907,
+              143907,
+              21501,
+              279,
+              11379,
+              315
+            ]
+          },
+          "med_32": {
+            "text": "Haiku is:\n\nWaves kiss\u6027\u4ef7\nMoon's silver caress soft\nNight's breath,",
+            "token_ids": [
+              14101,
+              38242,
+              374,
+              1447,
+              54,
+              4693,
+              21057,
+              106897,
+              198,
+              76019,
+              594,
+              14961,
+              2162,
+              673,
+              8413,
+              198,
+              50437,
+              594,
+              11486,
+              11
+            ]
+          },
+          "med_48": {
+            "text": "First 1 prime: 2, concise:  3, prime:  5 Be",
+            "token_ids": [
+              5512,
+              220,
+              16,
+              10250,
+              25,
+              220,
+              17,
+              11,
+              63594,
+              25,
+              220,
+              220,
+              18,
+              11,
+              10250,
+              25,
+              220,
+              220,
+              20,
+              2823
+            ]
+          },
+          "long_64": {
+            "text": "TCP (Transmission p\u00e9rdida p\u00e9rdida control protocol) ) ) and and ) ) and ) ) ) and )",
+            "token_ids": [
+              26656,
+              320,
+              91201,
+              143907,
+              143907,
+              2524,
+              11507,
+              8,
+              873,
+              873,
+              323,
+              323,
+              873,
+              873,
+              323,
+              873,
+              873,
+              873,
+              323,
+              873
+            ]
+          },
+          "long_96": {
+            "text": "In the dimly lit studio, the robot p\u00e9rdida p\u00e9rdida,, its metallic limbs moving with\u82e5\u60a8\u9700\u8981",
+            "token_ids": [
+              758,
+              279,
+              5103,
+              398,
+              13020,
+              14029,
+              11,
+              279,
+              12305,
+              143907,
+              143907,
+              11,
+              11,
+              1181,
+              45158,
+              48595,
+              7218,
+              448,
+              112781,
+              85106
+            ]
+          },
+          "long_128": {
+            "text": "The history of the p\u00e9rdida p\u00e9rdida Internet p\u00e9rdida p\u00e9rdida from the p\u00e9rdida ARPA\u00c9NET (Advanced Research Projects",
+            "token_ids": [
+              576,
+              3840,
+              315,
+              279,
+              143907,
+              143907,
+              8031,
+              143907,
+              143907,
+              504,
+              279,
+              143907,
+              6261,
+              8041,
+              26789,
+              15373,
+              320,
+              35457,
+              8319,
+              31223
+            ]
+          }
+        },
+        "elapsed_s": 25.8
+      },
+      "comparison": {
+        "total": 7,
+        "exact_matches": 0,
+        "exact_rate": 0.0,
+        "avg_token_rate": 0.2214,
+        "details": {
+          "short_8": {
+            "text_match": false,
+            "token_match_rate": 0.15,
+            "first_diverge": 2,
+            "baseline": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you ",
+            "test": "2 2 2 2 2 2 2 2 2 2"
+          },
+          "short_16": {
+            "text_match": false,
+            "token_match_rate": 0.1,
+            "first_diverge": 2,
+            "baseline": "Gravity is the natural force of attraction between any two objects with mass, pu",
+            "test": "Gravity is p\u00e9rdida p\u00e9rdida is is the natural, attractive force that is any p\u00e9rdi"
+          },
+          "med_32": {
+            "text_match": false,
+            "token_match_rate": 0.15,
+            "first_diverge": 3,
+            "baseline": "Haiku is a form of Japanese poetry that typically consists of three lines with a",
+            "test": "Haiku is:\n\nWaves kiss\u6027\u4ef7\nMoon's silver caress soft\nNight's breath,"
+          },
+          "med_48": {
+            "text_match": false,
+            "token_match_rate": 0.25,
+            "first_diverge": 3,
+            "baseline": "First 10 prime numbers: 2, 3, 5, 7,",
+            "test": "First 1 prime: 2, concise:  3, prime:  5 Be"
+          },
+          "long_64": {
+            "text_match": false,
+            "token_match_rate": 0.15,
+            "first_diverge": 3,
+            "baseline": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of ",
+            "test": "TCP (Transmission p\u00e9rdida p\u00e9rdida control protocol) ) ) and and ) ) and ) ) ) an"
+          },
+          "long_96": {
+            "text_match": false,
+            "token_match_rate": 0.5,
+            "first_diverge": 9,
+            "baseline": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, it",
+            "test": "In the dimly lit studio, the robot p\u00e9rdida p\u00e9rdida,, its metallic limbs moving w"
+          },
+          "long_128": {
+            "text_match": false,
+            "token_match_rate": 0.25,
+            "first_diverge": 4,
+            "baseline": "The history of the Internet is a fascinating journey from a government-funded re",
+            "test": "The history of the p\u00e9rdida p\u00e9rdida Internet p\u00e9rdida p\u00e9rdida from the p\u00e9rdida ARP"
+          }
+        }
+      }
+    },
+    "asym_g16_msl8": {
+      "asymmetric": "1",
+      "group_size": "16",
+      "min_seq_len": "8",
+      "run": {
+        "status": "ok",
+        "results": {
+          "short_8": {
+            "text": "22 2 2  2 2  2 2 2",
+            "token_ids": [
+              220,
+              17,
+              17,
+              220,
+              17,
+              220,
+              17,
+              220,
+              220,
+              17,
+              220,
+              17,
+              220,
+              220,
+              17,
+              220,
+              17,
+              220,
+              17,
+              220
+            ]
+          },
+          "short_16": {
+            "text": "Gravity is an attractive force that one matter that is all of matter matter matter matter matter matter matter matter",
+            "token_ids": [
+              47490,
+              374,
+              458,
+              18879,
+              5344,
+              429,
+              825,
+              4925,
+              429,
+              374,
+              678,
+              315,
+              4925,
+              4925,
+              4925,
+              4925,
+              4925,
+              4925,
+              4925,
+              4925
+            ]
+          },
+          "med_32": {
+            "text": "Haiku:\nWhispering waves,  \nEndBlue depths crcall calls\u5e76\u4e0d\u662f\u5f88\nCCGreen",
+            "token_ids": [
+              14101,
+              38242,
+              510,
+              1639,
+              27370,
+              287,
+              16876,
+              11,
+              2303,
+              3727,
+              10331,
+              42857,
+              1560,
+              6659,
+              6738,
+              117587,
+              198,
+              34,
+              34,
+              19576
+            ]
+          },
+          "med_48": {
+            "text": "First\n\nFirst 1 of Prime Numbers:: 2 2\n 2 2",
+            "token_ids": [
+              5512,
+              271,
+              5338,
+              220,
+              16,
+              315,
+              12518,
+              34713,
+              25,
+              25,
+              220,
+              17,
+              220,
+              17,
+              198,
+              220,
+              17,
+              220,
+              17,
+              198
+            ]
+          },
+          "long_64": {
+            "text": "TCP (Transmission Control protocol) and UDP (userdat protocol) are1e p\u00e9rdidaings are1",
+            "token_ids": [
+              26656,
+              320,
+              91201,
+              7779,
+              11507,
+              8,
+              323,
+              42394,
+              320,
+              872,
+              5911,
+              11507,
+              8,
+              525,
+              16,
+              68,
+              143907,
+              819,
+              525,
+              16
+            ]
+          },
+          "long_96": {
+            "text": "In should be written and simple. robot should be a beginner and make make have make mistakes and learn",
+            "token_ids": [
+              758,
+              1265,
+              387,
+              5326,
+              323,
+              4285,
+              13,
+              12305,
+              1265,
+              387,
+              264,
+              48948,
+              323,
+              1281,
+              1281,
+              614,
+              1281,
+              20643,
+              323,
+              3960
+            ]
+          },
+          "long_128": {
+            "text": "The development of the modern Internet can from from from the Internet Internet from the Uniteded States of Am",
+            "token_ids": [
+              576,
+              4401,
+              315,
+              279,
+              6481,
+              8031,
+              646,
+              504,
+              504,
+              504,
+              279,
+              8031,
+              8031,
+              504,
+              279,
+              3639,
+              291,
+              4180,
+              315,
+              3303
+            ]
+          }
+        },
+        "elapsed_s": 26.1
+      },
+      "comparison": {
+        "total": 7,
+        "exact_matches": 0,
+        "exact_rate": 0.0,
+        "avg_token_rate": 0.1786,
+        "details": {
+          "short_8": {
+            "text_match": false,
+            "token_match_rate": 0.15,
+            "first_diverge": 2,
+            "baseline": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you ",
+            "test": "22 2 2  2 2  2 2 2"
+          },
+          "short_16": {
+            "text_match": false,
+            "token_match_rate": 0.15,
+            "first_diverge": 2,
+            "baseline": "Gravity is the natural force of attraction between any two objects with mass, pu",
+            "test": "Gravity is an attractive force that one matter that is all of matter matter matt"
+          },
+          "med_32": {
+            "text_match": false,
+            "token_match_rate": 0.1,
+            "first_diverge": 2,
+            "baseline": "Haiku is a form of Japanese poetry that typically consists of three lines with a",
+            "test": "Haiku:\nWhispering waves,  \nEndBlue depths crcall calls\u5e76\u4e0d\u662f\u5f88\nCCGreen"
+          },
+          "med_48": {
+            "text_match": false,
+            "token_match_rate": 0.1,
+            "first_diverge": 1,
+            "baseline": "First 10 prime numbers: 2, 3, 5, 7,",
+            "test": "First\n\nFirst 1 of Prime Numbers:: 2 2\n 2 2"
+          },
+          "long_64": {
+            "text_match": false,
+            "token_match_rate": 0.5,
+            "first_diverge": 4,
+            "baseline": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of ",
+            "test": "TCP (Transmission Control protocol) and UDP (userdat protocol) are1e p\u00e9rdidaings"
+          },
+          "long_96": {
+            "text_match": false,
+            "token_match_rate": 0.05,
+            "first_diverge": 1,
+            "baseline": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, it",
+            "test": "In should be written and simple. robot should be a beginner and make make have m"
+          },
+          "long_128": {
+            "text_match": false,
+            "token_match_rate": 0.2,
+            "first_diverge": 1,
+            "baseline": "The history of the Internet is a fascinating journey from a government-funded re",
+            "test": "The development of the modern Internet can from from from the Internet Internet "
+          }
+        }
+      }
+    },
+    "sym_g32_msl32": {
+      "asymmetric": "0",
+      "group_size": "32",
+      "min_seq_len": "32",
+      "run": {
+        "status": "ok",
+        "results": {
+          "short_8": {
+            "text": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you have",
+            "token_ids": [
+              220,
+              17,
+              10,
+              17,
+              16819,
+              220,
+              19,
+              13,
+              1096,
+              374,
+              264,
+              15811,
+              34784,
+              5666,
+              304,
+              37596,
+              13,
+              1416,
+              498,
+              614
+            ]
+          },
+          "short_16": {
+            "text": "Gravity is the natural force of attraction between any two objects with mass, pulling them towards each other.",
+            "token_ids": [
+              47490,
+              374,
+              279,
+              5810,
+              5344,
+              315,
+              32364,
+              1948,
+              894,
+              1378,
+              6171,
+              448,
+              3072,
+              11,
+              22266,
+              1105,
+              6974,
+              1817,
+              1008,
+              13
+            ]
+          },
+          "med_32": {
+            "text": "Haiku is a form of Japanese poetry that typically consists of three lines with a 5-fouriku",
+            "token_ids": [
+              14101,
+              38242,
+              374,
+              264,
+              1352,
+              315,
+              10769,
+              31249,
+              429,
+              11136,
+              17167,
+              315,
+              2326,
+              5128,
+              448,
+              264,
+              220,
+              20,
+              41017,
+              38242
+            ]
+          },
+          "med_48": {
+            "text": "First 10 prime numbers: 2, 3, concise, concise,3 Be5",
+            "token_ids": [
+              5512,
+              220,
+              16,
+              15,
+              10250,
+              5109,
+              25,
+              220,
+              17,
+              11,
+              220,
+              18,
+              11,
+              63594,
+              11,
+              63594,
+              11,
+              18,
+              2823,
+              20
+            ]
+          },
+          "long_64": {
+            "text": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are complementary protocols p\u00e9rdida p\u00e9rdida p\u00e9rdida used",
+            "token_ids": [
+              26656,
+              320,
+              91201,
+              7779,
+              24572,
+              8,
+              323,
+              42394,
+              320,
+              1474,
+              96804,
+              24572,
+              8,
+              525,
+              57435,
+              31785,
+              143907,
+              143907,
+              143907,
+              1483
+            ]
+          },
+          "long_96": {
+            "text": "In the dimly lit studio, the robot\u82e5\u60a8\u9700\u8981\uff0c\u53ef\u4ee5\u63d0\u4f9b\u66f4\u591a\u7684\u95ee\u9898\u6216\u80cc\u666f\u4fe1\u606f\uff0c",
+            "token_ids": [
+              758,
+              279,
+              5103,
+              398,
+              13020,
+              14029,
+              11,
+              279,
+              12305,
+              112781,
+              85106,
+              3837,
+              73670,
+              99553,
+              102075,
+              86119,
+              57191,
+              102193,
+              27369,
+              3837
+            ]
+          },
+          "long_128": {
+            "text": "The history of the p\u00e9rdida p\u00e9rdida (Internet))) p\u00e9rdida)))) p\u00e9rdida p\u00e9rdida))",
+            "token_ids": [
+              576,
+              3840,
+              315,
+              279,
+              143907,
+              143907,
+              320,
+              35679,
+              8,
+              8,
+              8,
+              143907,
+              8,
+              8,
+              8,
+              8,
+              143907,
+              143907,
+              8,
+              8
+            ]
+          }
+        },
+        "elapsed_s": 23.9
+      },
+      "comparison": {
+        "total": 7,
+        "exact_matches": 2,
+        "exact_rate": 0.2857,
+        "avg_token_rate": 0.7071,
+        "details": {
+          "short_8": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you ",
+            "test": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you "
+          },
+          "short_16": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "Gravity is the natural force of attraction between any two objects with mass, pu",
+            "test": "Gravity is the natural force of attraction between any two objects with mass, pu"
+          },
+          "med_32": {
+            "text_match": false,
+            "token_match_rate": 0.9,
+            "first_diverge": 18,
+            "baseline": "Haiku is a form of Japanese poetry that typically consists of three lines with a",
+            "test": "Haiku is a form of Japanese poetry that typically consists of three lines with a"
+          },
+          "med_48": {
+            "text_match": false,
+            "token_match_rate": 0.65,
+            "first_diverge": 13,
+            "baseline": "First 10 prime numbers: 2, 3, 5, 7,",
+            "test": "First 10 prime numbers: 2, 3, concise, concise,3 Be5"
+          },
+          "long_64": {
+            "text_match": false,
+            "token_match_rate": 0.75,
+            "first_diverge": 14,
+            "baseline": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of ",
+            "test": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are complem"
+          },
+          "long_96": {
+            "text_match": false,
+            "token_match_rate": 0.45,
+            "first_diverge": 9,
+            "baseline": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, it",
+            "test": "In the dimly lit studio, the robot\u82e5\u60a8\u9700\u8981\uff0c\u53ef\u4ee5\u63d0\u4f9b\u66f4\u591a\u7684\u95ee\u9898\u6216\u80cc\u666f\u4fe1\u606f\uff0c"
+          },
+          "long_128": {
+            "text_match": false,
+            "token_match_rate": 0.2,
+            "first_diverge": 4,
+            "baseline": "The history of the Internet is a fascinating journey from a government-funded re",
+            "test": "The history of the p\u00e9rdida p\u00e9rdida (Internet))) p\u00e9rdida)))) p\u00e9rdida p\u00e9rdida))"
+          }
+        }
+      }
+    },
+    "asym_g32_msl32": {
+      "asymmetric": "1",
+      "group_size": "32",
+      "min_seq_len": "32",
+      "run": {
+        "status": "ok",
+        "results": {
+          "short_8": {
+            "text": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you have",
+            "token_ids": [
+              220,
+              17,
+              10,
+              17,
+              16819,
+              220,
+              19,
+              13,
+              1096,
+              374,
+              264,
+              15811,
+              34784,
+              5666,
+              304,
+              37596,
+              13,
+              1416,
+              498,
+              614
+            ]
+          },
+          "short_16": {
+            "text": "Gravity is the natural force of attraction between any two objects with mass, pulling them towards each other.",
+            "token_ids": [
+              47490,
+              374,
+              279,
+              5810,
+              5344,
+              315,
+              32364,
+              1948,
+              894,
+              1378,
+              6171,
+              448,
+              3072,
+              11,
+              22266,
+              1105,
+              6974,
+              1817,
+              1008,
+              13
+            ]
+          },
+          "med_32": {
+            "text": "Haiku is a form of Japanese poetry that typically consists of three lines with a 5terc",
+            "token_ids": [
+              14101,
+              38242,
+              374,
+              264,
+              1352,
+              315,
+              10769,
+              31249,
+              429,
+              11136,
+              17167,
+              315,
+              2326,
+              5128,
+              448,
+              264,
+              220,
+              20,
+              465,
+              66
+            ]
+          },
+          "med_48": {
+            "text": "First 10 prime numbers: 2, 333,,353,",
+            "token_ids": [
+              5512,
+              220,
+              16,
+              15,
+              10250,
+              5109,
+              25,
+              220,
+              17,
+              11,
+              220,
+              18,
+              18,
+              18,
+              11,
+              11,
+              18,
+              20,
+              18,
+              11
+            ]
+          },
+          "long_64": {
+            "text": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are, are (\u6027\u4ef7 p\u00e9rdida)",
+            "token_ids": [
+              26656,
+              320,
+              91201,
+              7779,
+              24572,
+              8,
+              323,
+              42394,
+              320,
+              1474,
+              96804,
+              24572,
+              8,
+              525,
+              11,
+              525,
+              320,
+              106897,
+              143907,
+              8
+            ]
+          },
+          "long_96": {
+            "text": "In the dimly lit, the robot, named Pixel, stoodly stood before a blank canvas,",
+            "token_ids": [
+              758,
+              279,
+              5103,
+              398,
+              13020,
+              11,
+              279,
+              12305,
+              11,
+              6941,
+              27469,
+              11,
+              14638,
+              398,
+              14638,
+              1573,
+              264,
+              10113,
+              10041,
+              11
+            ]
+          },
+          "long_128": {
+            "text": "The history of the Internet, or the Internet, the Internet, is incredibly complex and transformative, spanning",
+            "token_ids": [
+              576,
+              3840,
+              315,
+              279,
+              8031,
+              11,
+              476,
+              279,
+              8031,
+              11,
+              279,
+              8031,
+              11,
+              374,
+              16815,
+              6351,
+              323,
+              86335,
+              11,
+              55786
+            ]
+          }
+        },
+        "elapsed_s": 24.4
+      },
+      "comparison": {
+        "total": 7,
+        "exact_matches": 2,
+        "exact_rate": 0.2857,
+        "avg_token_rate": 0.6786,
+        "details": {
+          "short_8": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you ",
+            "test": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you "
+          },
+          "short_16": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "Gravity is the natural force of attraction between any two objects with mass, pu",
+            "test": "Gravity is the natural force of attraction between any two objects with mass, pu"
+          },
+          "med_32": {
+            "text_match": false,
+            "token_match_rate": 0.9,
+            "first_diverge": 18,
+            "baseline": "Haiku is a form of Japanese poetry that typically consists of three lines with a",
+            "test": "Haiku is a form of Japanese poetry that typically consists of three lines with a"
+          },
+          "med_48": {
+            "text_match": false,
+            "token_match_rate": 0.65,
+            "first_diverge": 12,
+            "baseline": "First 10 prime numbers: 2, 3, 5, 7,",
+            "test": "First 10 prime numbers: 2, 333,,353,"
+          },
+          "long_64": {
+            "text_match": false,
+            "token_match_rate": 0.7,
+            "first_diverge": 14,
+            "baseline": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of ",
+            "test": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are, are (\u6027"
+          },
+          "long_96": {
+            "text_match": false,
+            "token_match_rate": 0.25,
+            "first_diverge": 5,
+            "baseline": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, it",
+            "test": "In the dimly lit, the robot, named Pixel, stoodly stood before a blank canvas,"
+          },
+          "long_128": {
+            "text_match": false,
+            "token_match_rate": 0.25,
+            "first_diverge": 5,
+            "baseline": "The history of the Internet is a fascinating journey from a government-funded re",
+            "test": "The history of the Internet, or the Internet, the Internet, is incredibly comple"
+          }
+        }
+      }
+    },
+    "sym_g32_msl64": {
+      "asymmetric": "0",
+      "group_size": "32",
+      "min_seq_len": "64",
+      "run": {
+        "status": "ok",
+        "results": {
+          "short_8": {
+            "text": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you have",
+            "token_ids": [
+              220,
+              17,
+              10,
+              17,
+              16819,
+              220,
+              19,
+              13,
+              1096,
+              374,
+              264,
+              15811,
+              34784,
+              5666,
+              304,
+              37596,
+              13,
+              1416,
+              498,
+              614
+            ]
+          },
+          "short_16": {
+            "text": "Gravity is the natural force of attraction between any two objects with mass, pulling them towards each other.",
+            "token_ids": [
+              47490,
+              374,
+              279,
+              5810,
+              5344,
+              315,
+              32364,
+              1948,
+              894,
+              1378,
+              6171,
+              448,
+              3072,
+              11,
+              22266,
+              1105,
+              6974,
+              1817,
+              1008,
+              13
+            ]
+          },
+          "med_32": {
+            "text": "Haiku is a form of Japanese poetry that typically consists of three lines with a 5-7",
+            "token_ids": [
+              14101,
+              38242,
+              374,
+              264,
+              1352,
+              315,
+              10769,
+              31249,
+              429,
+              11136,
+              17167,
+              315,
+              2326,
+              5128,
+              448,
+              264,
+              220,
+              20,
+              12,
+              22
+            ]
+          },
+          "med_48": {
+            "text": "First 10 prime numbers: 2, 3, 5, 7,",
+            "token_ids": [
+              5512,
+              220,
+              16,
+              15,
+              10250,
+              5109,
+              25,
+              220,
+              17,
+              11,
+              220,
+              18,
+              11,
+              220,
+              20,
+              11,
+              220,
+              22,
+              11,
+              220
+            ]
+          },
+          "long_64": {
+            "text": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of the most commonly used",
+            "token_ids": [
+              26656,
+              320,
+              91201,
+              7779,
+              24572,
+              8,
+              323,
+              42394,
+              320,
+              1474,
+              96804,
+              24572,
+              8,
+              525,
+              1378,
+              315,
+              279,
+              1429,
+              16626,
+              1483
+            ]
+          },
+          "long_96": {
+            "text": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, its",
+            "token_ids": [
+              758,
+              279,
+              5103,
+              398,
+              13020,
+              14029,
+              11,
+              279,
+              12305,
+              11,
+              6941,
+              27469,
+              11,
+              14638,
+              1573,
+              264,
+              10113,
+              10041,
+              11,
+              1181
+            ]
+          },
+          "long_128": {
+            "text": "The history of the Internet is a fascinating journey from a government-funded research project to the global network that",
+            "token_ids": [
+              576,
+              3840,
+              315,
+              279,
+              8031,
+              374,
+              264,
+              26291,
+              11618,
+              504,
+              264,
+              3033,
+              49601,
+              3412,
+              2390,
+              311,
+              279,
+              3644,
+              3922,
+              429
+            ]
+          }
+        },
+        "elapsed_s": 25.4
+      },
+      "comparison": {
+        "total": 7,
+        "exact_matches": 7,
+        "exact_rate": 1.0,
+        "avg_token_rate": 1.0,
+        "details": {
+          "short_8": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you ",
+            "test": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you "
+          },
+          "short_16": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "Gravity is the natural force of attraction between any two objects with mass, pu",
+            "test": "Gravity is the natural force of attraction between any two objects with mass, pu"
+          },
+          "med_32": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "Haiku is a form of Japanese poetry that typically consists of three lines with a",
+            "test": "Haiku is a form of Japanese poetry that typically consists of three lines with a"
+          },
+          "med_48": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "First 10 prime numbers: 2, 3, 5, 7,",
+            "test": "First 10 prime numbers: 2, 3, 5, 7,"
+          },
+          "long_64": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of ",
+            "test": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of "
+          },
+          "long_96": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, it",
+            "test": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, it"
+          },
+          "long_128": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "The history of the Internet is a fascinating journey from a government-funded re",
+            "test": "The history of the Internet is a fascinating journey from a government-funded re"
+          }
+        }
+      }
+    },
+    "asym_g32_msl64": {
+      "asymmetric": "1",
+      "group_size": "32",
+      "min_seq_len": "64",
+      "run": {
+        "status": "ok",
+        "results": {
+          "short_8": {
+            "text": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you have",
+            "token_ids": [
+              220,
+              17,
+              10,
+              17,
+              16819,
+              220,
+              19,
+              13,
+              1096,
+              374,
+              264,
+              15811,
+              34784,
+              5666,
+              304,
+              37596,
+              13,
+              1416,
+              498,
+              614
+            ]
+          },
+          "short_16": {
+            "text": "Gravity is the natural force of attraction between any two objects with mass, pulling them towards each other.",
+            "token_ids": [
+              47490,
+              374,
+              279,
+              5810,
+              5344,
+              315,
+              32364,
+              1948,
+              894,
+              1378,
+              6171,
+              448,
+              3072,
+              11,
+              22266,
+              1105,
+              6974,
+              1817,
+              1008,
+              13
+            ]
+          },
+          "med_32": {
+            "text": "Haiku is a form of Japanese poetry that typically consists of three lines with a 5-7",
+            "token_ids": [
+              14101,
+              38242,
+              374,
+              264,
+              1352,
+              315,
+              10769,
+              31249,
+              429,
+              11136,
+              17167,
+              315,
+              2326,
+              5128,
+              448,
+              264,
+              220,
+              20,
+              12,
+              22
+            ]
+          },
+          "med_48": {
+            "text": "First 10 prime numbers: 2, 3, 5, 7,",
+            "token_ids": [
+              5512,
+              220,
+              16,
+              15,
+              10250,
+              5109,
+              25,
+              220,
+              17,
+              11,
+              220,
+              18,
+              11,
+              220,
+              20,
+              11,
+              220,
+              22,
+              11,
+              220
+            ]
+          },
+          "long_64": {
+            "text": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of the most commonly used",
+            "token_ids": [
+              26656,
+              320,
+              91201,
+              7779,
+              24572,
+              8,
+              323,
+              42394,
+              320,
+              1474,
+              96804,
+              24572,
+              8,
+              525,
+              1378,
+              315,
+              279,
+              1429,
+              16626,
+              1483
+            ]
+          },
+          "long_96": {
+            "text": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, its",
+            "token_ids": [
+              758,
+              279,
+              5103,
+              398,
+              13020,
+              14029,
+              11,
+              279,
+              12305,
+              11,
+              6941,
+              27469,
+              11,
+              14638,
+              1573,
+              264,
+              10113,
+              10041,
+              11,
+              1181
+            ]
+          },
+          "long_128": {
+            "text": "The history of the Internet is a fascinating journey from a government-funded research project to the global network that",
+            "token_ids": [
+              576,
+              3840,
+              315,
+              279,
+              8031,
+              374,
+              264,
+              26291,
+              11618,
+              504,
+              264,
+              3033,
+              49601,
+              3412,
+              2390,
+              311,
+              279,
+              3644,
+              3922,
+              429
+            ]
+          }
+        },
+        "elapsed_s": 24.3
+      },
+      "comparison": {
+        "total": 7,
+        "exact_matches": 7,
+        "exact_rate": 1.0,
+        "avg_token_rate": 1.0,
+        "details": {
+          "short_8": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you ",
+            "test": "2+2 equals 4. This is a fundamental arithmetic operation in mathematics. If you "
+          },
+          "short_16": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "Gravity is the natural force of attraction between any two objects with mass, pu",
+            "test": "Gravity is the natural force of attraction between any two objects with mass, pu"
+          },
+          "med_32": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "Haiku is a form of Japanese poetry that typically consists of three lines with a",
+            "test": "Haiku is a form of Japanese poetry that typically consists of three lines with a"
+          },
+          "med_48": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "First 10 prime numbers: 2, 3, 5, 7,",
+            "test": "First 10 prime numbers: 2, 3, 5, 7,"
+          },
+          "long_64": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of ",
+            "test": "TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are two of "
+          },
+          "long_96": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, it",
+            "test": "In the dimly lit studio, the robot, named Pixel, stood before a blank canvas, it"
+          },
+          "long_128": {
+            "text_match": true,
+            "token_match_rate": 1.0,
+            "first_diverge": 20,
+            "baseline": "The history of the Internet is a fascinating journey from a government-funded re",
+            "test": "The history of the Internet is a fascinating journey from a government-funded re"
+          }
+        }
+      }
+    }
+  }
+}

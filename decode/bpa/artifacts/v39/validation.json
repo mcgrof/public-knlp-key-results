@@ -1,0 +1,44 @@
+[
+  {
+    "config": "gemma3_4b",
+    "max_abs_error": 0.000244140625,
+    "max_rel_error": 0.000912408725025309,
+    "pass": true
+  },
+  {
+    "config": "gemma3_12b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.00039682538392542244,
+    "pass": true
+  },
+  {
+    "config": "gemma3n_e4b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.0005125576412154168,
+    "pass": true
+  },
+  {
+    "config": "deepseek_r1_7b",
+    "max_abs_error": 0.0001220703125,
+    "max_rel_error": 0.000431034467538645,
+    "pass": true
+  },
+  {
+    "config": "phi4_14b",
+    "max_abs_error": 0.000244140625,
+    "max_rel_error": 0.0008576329029771495,
+    "pass": true
+  },
+  {
+    "config": "qwen3_8b",
+    "max_abs_error": 0.000244140625,
+    "max_rel_error": 0.0008718395503831317,
+    "pass": true
+  },
+  {
+    "config": "mistral_small_24b",
+    "max_abs_error": 0.000244140625,
+    "max_rel_error": 0.0007440475963718828,
+    "pass": true
+  }
+]

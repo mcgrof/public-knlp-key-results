@@ -1,0 +1,126 @@
+{
+  "stage": "A",
+  "test_name": "hardware_storage_tier_benchmark",
+  "experiment": "SPEv-03",
+  "timestamp": "2026-03-15T14:09:56.505856+00:00",
+  "gpu": {
+    "gpu_name": "NVIDIA A100-SXM4-80GB",
+    "memory_total_mib": 81920,
+    "memory_used_mib": 0,
+    "memory_free_mib": 81152,
+    "temperature_c": 37,
+    "power_draw_w": 67.1
+  },
+  "cpu_cores": 128,
+  "system_memory_gb": "total        used        free      shared  buff/cache   available\nMem:            2003          97         216           6        1689        1888\nSwap:              0           0           0",
+  "disk_layout": "Filesystem                         Size  Used Avail Use% Mounted on\noverlay                            120G   29G   92G  24% /\ntmpfs                               64M     0   64M   0% /dev\nmfs#us-md-1.runpod.net:9421        299T  172T  128T  58% /workspace\nshm                                117G     0  117G   0% /dev/shm\n/dev/mapper/ubuntu--vg-ubuntu--lv  1.8T   22G  1.7T   2% /usr/bin/nvidia-smi\n/dev/mapper/vg_data-lv_data         28T  856G   28T   3% /etc/hosts\ntmpfs                              201G  5.1M  201G   1% /run/nvidia-persistenced/socket\ntmpfs                              4.0K  4.0K     0 100% /run/nvidia-ctk-hook4f3ff297-ebba-4f25-8ec6-848235d55caf\ntmpfs                             1002G     0 1002G   0% /proc/acpi\ntmpfs                             1002G     0 1002G   0% /proc/scsi\ntmpfs                             1002G     0 1002G   0% /sys/devices/virtual/powercap\ntmpfs                             1002G     0 1002G   0% /sys/firmware",
+  "has_nvme_device": false,
+  "lsblk": "NAME         SIZE TYPE MOUNTPOINT\nsr0         1024M rom  \nnvme0n1      3.5T disk \nnvme3n1      3.5T disk \nnvme1n1      3.5T disk \nnvme5n1      3.5T disk \nnvme7n1      3.5T disk \nnvme2n1      3.5T disk \nnvme4n1      1.7T disk \n|-nvme4n1p1    1G part \n|-nvme4n1p2    2G part \n`-nvme4n1p3  1.7T part \nnvme6n1      1.7T disk \nnvme9n1      3.5T disk \nnvme8n1      3.5T disk",
+  "storage_tier_benchmarks": [
+    {
+      "tier_name": "tmpfs_devshm",
+      "path": "/dev/shm",
+      "seq_write_speed": "2.2 GB/s",
+      "seq_write_raw": "268435456 bytes (268 MB, 256 MiB) copied, 0.11976 s, 2.2 GB/s",
+      "seq_read_speed": "5.8 GB/s",
+      "seq_read_raw": "268435456 bytes (268 MB, 256 MiB) copied, 0.0465215 s, 5.8 GB/s",
+      "random_4k_read_iops": 406627.0,
+      "random_4k_read_latency_us": 2.5
+    },
+    {
+      "tier_name": "overlay_tmp",
+      "path": "/tmp",
+      "seq_write_speed": "2.8 GB/s",
+      "seq_write_raw": "268435456 bytes (268 MB, 256 MiB) copied, 0.0947492 s, 2.8 GB/s",
+      "seq_read_speed": "1.6 GB/s",
+      "seq_read_raw": "268435456 bytes (268 MB, 256 MiB) copied, 0.16859 s, 1.6 GB/s",
+      "random_4k_read_iops": 389532.0,
+      "random_4k_read_latency_us": 2.6
+    },
+    {
+      "tier_name": "nfs_workspace",
+      "path": "/workspace",
+      "seq_write_speed": "593 MB/s",
+      "seq_write_raw": "268435456 bytes (268 MB, 256 MiB) copied, 0.453021 s, 593 MB/s",
+      "seq_read_speed": "886 MB/s",
+      "seq_read_raw": "268435456 bytes (268 MB, 256 MiB) copied, 0.302909 s, 886 MB/s",
+      "random_4k_read_iops": 10013.0,
+      "random_4k_read_latency_us": 99.9
+    }
+  ],
+  "cpu_to_gpu_staging": [
+    {
+      "context_length": 2048,
+      "kv_size_mb": 112.0,
+      "transfer_time_ms": 5.65,
+      "bandwidth_gbps": 20.78,
+      "min_time_ms": 5.62,
+      "max_time_ms": 5.7
+    },
+    {
+      "context_length": 4096,
+      "kv_size_mb": 224.0,
+      "transfer_time_ms": 11.24,
+      "bandwidth_gbps": 20.9,
+      "min_time_ms": 11.12,
+      "max_time_ms": 11.36
+    },
+    {
+      "context_length": 8192,
+      "kv_size_mb": 448.0,
+      "transfer_time_ms": 21.97,
+      "bandwidth_gbps": 21.39,
+      "min_time_ms": 21.52,
+      "max_time_ms": 22.69
+    },
+    {
+      "context_length": 16384,
+      "kv_size_mb": 896.0,
+      "transfer_time_ms": 42.41,
+      "bandwidth_gbps": 22.15,
+      "min_time_ms": 41.35,
+      "max_time_ms": 44.37
+    },
+    {
+      "context_length": 24576,
+      "kv_size_mb": 1344.0,
+      "transfer_time_ms": 60.42,
+      "bandwidth_gbps": 23.33,
+      "min_time_ms": 58.63,
+      "max_time_ms": 62.53
+    },
+    {
+      "context_length": 32768,
+      "kv_size_mb": 1792.0,
+      "transfer_time_ms": 77.75,
+      "bandwidth_gbps": 24.17,
+      "min_time_ms": 76.98,
+      "max_time_ms": 78.22
+    },
+    {
+      "context_length": 8192,
+      "kv_size_mb": 448.0,
+      "transfer_time_ms": 25.46,
+      "bandwidth_gbps": 18.45,
+      "mode": "async_non_blocking"
+    },
+    {
+      "context_length": 32768,
+      "kv_size_mb": 1792.0,
+      "transfer_time_ms": 77.3,
+      "bandwidth_gbps": 24.31,
+      "mode": "async_non_blocking"
+    }
+  ],
+  "model_context_limit": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "max_position_embeddings": 32768,
+    "kv_per_token_bytes": 57344,
+    "kv_at_32k_mb": 1792.0
+  },
+  "notes": [
+    "Storage tiers tested: tmpfs (/dev/shm), overlay (/tmp), NFS (/workspace)",
+    "CPU\u2192GPU staging measures pin_memory transfer at KV cache sizes",
+    "Qwen2.5-7B-Instruct has 32K max context (no rope scaling)"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "question": "Do the Qwen paper classifier findings contradict the current H100 vLLM policy sweep?",
+  "answer": "No direct contradiction yet.",
+  "paper_claim": {
+    "models": ["Qwen2.5-7B", "Qwen2-7B"],
+    "claim": "Qwen-class 7B models show strong K/V sensitivity asymmetry; K needs much higher precision than V.",
+    "example_policies": ["K_FP16/V_INT4", "K_INT8/V_INT4"]
+  },
+  "vllm_h100_tested_knobs": [
+    "symmetric INT4 vs zero-point asymmetric INT4",
+    "GROUP_SIZE=32 vs 16",
+    "VLLM_FUSED_INT4_MIN_SEQ_LEN sweep"
+  ],
+  "zero_point_asymmetric_int4": {
+    "meaning": "Use min/max range plus a stored zero-point offset per group instead of symmetric abs-max quantization around a fixed signed center.",
+    "what_it_is_not": "It is not a true K/V precision split like K_INT8/V_INT4 or K_FP16/V_INT4."
+  },
+  "vllm_h100_qwen25_result": {
+    "best_policy": {
+      "asymmetric": false,
+      "group_size": 32,
+      "min_seq_len": 48
+    },
+    "interpretation": "The currently implemented vLLM zero-point-asymmetric INT4 quantizer did not beat the symmetric INT4 path, but this is not the same as testing true K/V asymmetric precision."
+  },
+  "bug_or_limitation": {
+    "best_current_answer": "Primarily a limitation of the currently implemented vLLM policy space, not proof that the paper classifier was wrong.",
+    "reason": "The backend exposes zero-point-asymmetric INT4, but not yet a true K/V precision split policy family."
+  },
+  "core_reconciliation": "The paper and vLLM sweep tested different policy axes. The paper tested K/V precision asymmetry. The current vLLM sweep tested quantizer asymmetry and threshold gating.",
+  "next_required_verification": [
+    "K_INT8/V_INT4 inside vLLM fused decode",
+    "K_FP16/V_INT4 inside vLLM fused decode"
+  ]
+}

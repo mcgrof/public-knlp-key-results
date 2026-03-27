@@ -1,0 +1,61 @@
+{
+  "experiment": "a40_kv_asymmetry",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "K_FP16/V_FP16",
+      "k_bits": 16,
+      "v_bits": 16,
+      "error": "Remote execution failed: 500 Server Error: Internal Server Error for url: https://api.runpod.ai/v2/wea2wfq2knzgm4/status/74adac3b-00bf-4817-b160-5f12dfca6149-u2\nTraceback (most recent call last):\n  File \"/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/stubs/live_serverless.py\", line 158, in ExecuteFunction\n    job = await self.server.run(payload)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py\", line 952, in run\n    job_status = await asyncio.to_thread(job.status)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.13/asyncio/threads.py\", line 25, in to_thread\n    return await loop.run_in_executor(None, func_call)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.13/concurrent/futures/thread.py\", line 59, in run\n    result = self.fn(*self.args, **self.kwargs)\n  File \"/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod/endpoint/runner.py\", line 135, in status\n    return self._fetch_job()[\"status\"]\n           ~~~~~~~~~~~~~~~^^\n  File \"/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod/endpoint/runner.py\", line 122, in _fetch_job\n    job_state = self.rp_client.get(endpoint=status_url)\n  File \"/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod/endpoint/runner.py\", line 94, in get\n    return self._request(\"GET\", endpoint, timeout=timeout)\n           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod/endpoint/runner.py\", line 85, in _request\n    response.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/home/mcgrof/envs/runpod/lib/python3.13/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: https://api.runpod.ai/v2/wea2wfq2knzgm4/status/74adac3b-00bf-4817-b160-5f12dfca6149-u2\n"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "K_FP16/V_INT4",
+      "k_bits": 16,
+      "v_bits": 4,
+      "error": "Remote execution failed: int too large to convert to float\nTraceback (most recent call last):\n  File \"/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/stubs/live_serverless.py\", line 158, in ExecuteFunction\n    job = await self.server.run(payload)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py\", line 968, in run\n    current_pace = get_backoff_delay(attempt)\n  File \"/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/utils/backoff.py\", line 33, in get_backoff_delay\n    delay = base * (2**attempt)\n            ~~~~~^~~~~~~~~~~~~~\nOverflowError: int too large to convert to float\n"
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "K_INT8/V_INT4",
+      "k_bits": 8,
+      "v_bits": 4,
+      "error": "GraphQL errors: Something went wrong. Please try again later or contact support."
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "label": "K_INT4/V_INT4",
+      "k_bits": 4,
+      "v_bits": 4,
+      "error": "GraphQL errors: Something went wrong. Please try again later or contact support."
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "K_FP16/V_FP16",
+      "k_bits": 16,
+      "v_bits": 16,
+      "error": "GraphQL errors: Something went wrong. Please try again later or contact support."
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "K_FP16/V_INT4",
+      "k_bits": 16,
+      "v_bits": 4,
+      "error": "GraphQL errors: Something went wrong. Please try again later or contact support."
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "K_INT8/V_INT4",
+      "k_bits": 8,
+      "v_bits": 4,
+      "error": "GraphQL errors: Something went wrong. Please try again later or contact support."
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "label": "K_INT4/V_INT4",
+      "k_bits": 4,
+      "v_bits": 4,
+      "error": "GraphQL errors: Something went wrong. Please try again later or contact support."
+    }
+  ]
+}

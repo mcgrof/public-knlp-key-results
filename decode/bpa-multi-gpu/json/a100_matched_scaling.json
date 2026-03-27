@@ -1,0 +1,407 @@
+{
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "batch_sizes": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "context_lengths": [
+    1024,
+    2048,
+    4096,
+    8192,
+    16384,
+    32768
+  ],
+  "rows": [
+    {
+      "B": 1,
+      "T": 1024,
+      "mean_ms": 0.0561,
+      "std_ms": 0.0021,
+      "tokens_per_sec": 17829.5593,
+      "kv_bytes_MB": 4.1943,
+      "bw_GBs": 74.7826
+    },
+    {
+      "B": 1,
+      "T": 2048,
+      "mean_ms": 0.0661,
+      "std_ms": 0.0012,
+      "tokens_per_sec": 15126.1175,
+      "kv_bytes_MB": 8.3886,
+      "bw_GBs": 126.8871
+    },
+    {
+      "B": 1,
+      "T": 4096,
+      "mean_ms": 0.0856,
+      "std_ms": 0.002,
+      "tokens_per_sec": 11680.3558,
+      "kv_bytes_MB": 16.7772,
+      "bw_GBs": 195.9639
+    },
+    {
+      "B": 1,
+      "T": 8192,
+      "mean_ms": 0.1235,
+      "std_ms": 0.0017,
+      "tokens_per_sec": 8094.234,
+      "kv_bytes_MB": 33.5544,
+      "bw_GBs": 271.5974
+    },
+    {
+      "B": 1,
+      "T": 16384,
+      "mean_ms": 0.2037,
+      "std_ms": 0.0034,
+      "tokens_per_sec": 4909.9073,
+      "kv_bytes_MB": 67.1089,
+      "bw_GBs": 329.4983
+    },
+    {
+      "B": 1,
+      "T": 32768,
+      "mean_ms": 0.3712,
+      "std_ms": 0.005,
+      "tokens_per_sec": 2693.9278,
+      "kv_bytes_MB": 134.2177,
+      "bw_GBs": 361.5729
+    },
+    {
+      "B": 2,
+      "T": 1024,
+      "mean_ms": 0.0655,
+      "std_ms": 0.0018,
+      "tokens_per_sec": 30522.4842,
+      "kv_bytes_MB": 8.3886,
+      "bw_GBs": 128.0206
+    },
+    {
+      "B": 2,
+      "T": 2048,
+      "mean_ms": 0.0881,
+      "std_ms": 0.0022,
+      "tokens_per_sec": 22710.1434,
+      "kv_bytes_MB": 16.7772,
+      "bw_GBs": 190.5065
+    },
+    {
+      "B": 2,
+      "T": 4096,
+      "mean_ms": 0.128,
+      "std_ms": 0.0027,
+      "tokens_per_sec": 15631.0016,
+      "kv_bytes_MB": 33.5544,
+      "bw_GBs": 262.2447
+    },
+    {
+      "B": 2,
+      "T": 8192,
+      "mean_ms": 0.2096,
+      "std_ms": 0.0042,
+      "tokens_per_sec": 9540.7795,
+      "kv_bytes_MB": 67.1089,
+      "bw_GBs": 320.1354
+    },
+    {
+      "B": 2,
+      "T": 16384,
+      "mean_ms": 0.3664,
+      "std_ms": 0.0045,
+      "tokens_per_sec": 5458.8104,
+      "kv_bytes_MB": 134.2177,
+      "bw_GBs": 366.3346
+    },
+    {
+      "B": 2,
+      "T": 32768,
+      "mean_ms": 0.6792,
+      "std_ms": 0.008,
+      "tokens_per_sec": 2944.8469,
+      "kv_bytes_MB": 268.4355,
+      "bw_GBs": 395.2507
+    },
+    {
+      "B": 4,
+      "T": 1024,
+      "mean_ms": 0.1186,
+      "std_ms": 0.0018,
+      "tokens_per_sec": 33721.7057,
+      "kv_bytes_MB": 16.7772,
+      "bw_GBs": 141.4391
+    },
+    {
+      "B": 4,
+      "T": 2048,
+      "mean_ms": 0.1996,
+      "std_ms": 0.0008,
+      "tokens_per_sec": 20043.0012,
+      "kv_bytes_MB": 33.5544,
+      "bw_GBs": 168.1329
+    },
+    {
+      "B": 4,
+      "T": 4096,
+      "mean_ms": 0.3618,
+      "std_ms": 0.0011,
+      "tokens_per_sec": 11056.5129,
+      "kv_bytes_MB": 67.1089,
+      "bw_GBs": 185.4975
+    },
+    {
+      "B": 4,
+      "T": 8192,
+      "mean_ms": 0.686,
+      "std_ms": 0.0016,
+      "tokens_per_sec": 5831.1669,
+      "kv_bytes_MB": 134.2177,
+      "bw_GBs": 195.6615
+    },
+    {
+      "B": 4,
+      "T": 16384,
+      "mean_ms": 1.2014,
+      "std_ms": 0.1158,
+      "tokens_per_sec": 3329.364,
+      "kv_bytes_MB": 268.4355,
+      "bw_GBs": 223.4298
+    },
+    {
+      "B": 4,
+      "T": 32768,
+      "mean_ms": 2.1569,
+      "std_ms": 0.0018,
+      "tokens_per_sec": 1854.4946,
+      "kv_bytes_MB": 536.8709,
+      "bw_GBs": 248.9061
+    },
+    {
+      "B": 8,
+      "T": 1024,
+      "mean_ms": 0.1398,
+      "std_ms": 0.0012,
+      "tokens_per_sec": 57237.1541,
+      "kv_bytes_MB": 33.5544,
+      "bw_GBs": 240.07
+    },
+    {
+      "B": 8,
+      "T": 2048,
+      "mean_ms": 0.2444,
+      "std_ms": 0.0008,
+      "tokens_per_sec": 32737.5284,
+      "kv_bytes_MB": 67.1089,
+      "bw_GBs": 274.6223
+    },
+    {
+      "B": 8,
+      "T": 4096,
+      "mean_ms": 0.4527,
+      "std_ms": 0.0015,
+      "tokens_per_sec": 17670.4928,
+      "kv_bytes_MB": 134.2177,
+      "bw_GBs": 296.4617
+    },
+    {
+      "B": 8,
+      "T": 8192,
+      "mean_ms": 0.8848,
+      "std_ms": 0.0076,
+      "tokens_per_sec": 9041.141,
+      "kv_bytes_MB": 268.4355,
+      "bw_GBs": 303.3704
+    },
+    {
+      "B": 8,
+      "T": 16384,
+      "mean_ms": 1.7488,
+      "std_ms": 0.0012,
+      "tokens_per_sec": 4574.5815,
+      "kv_bytes_MB": 536.8709,
+      "bw_GBs": 306.995
+    },
+    {
+      "B": 8,
+      "T": 32768,
+      "mean_ms": 3.5093,
+      "std_ms": 0.0361,
+      "tokens_per_sec": 2279.6271,
+      "kv_bytes_MB": 1073.7418,
+      "bw_GBs": 305.9664
+    },
+    {
+      "B": 16,
+      "T": 1024,
+      "mean_ms": 0.2203,
+      "std_ms": 0.0012,
+      "tokens_per_sec": 72627.3204,
+      "kv_bytes_MB": 67.1089,
+      "bw_GBs": 304.6211
+    },
+    {
+      "B": 16,
+      "T": 2048,
+      "mean_ms": 0.3977,
+      "std_ms": 0.0015,
+      "tokens_per_sec": 40235.3635,
+      "kv_bytes_MB": 134.2177,
+      "bw_GBs": 337.5187
+    },
+    {
+      "B": 16,
+      "T": 4096,
+      "mean_ms": 0.7578,
+      "std_ms": 0.0104,
+      "tokens_per_sec": 21113.5965,
+      "kv_bytes_MB": 268.4355,
+      "bw_GBs": 354.2274
+    },
+    {
+      "B": 16,
+      "T": 8192,
+      "mean_ms": 1.5327,
+      "std_ms": 0.0172,
+      "tokens_per_sec": 10439.3134,
+      "kv_bytes_MB": 536.8709,
+      "bw_GBs": 350.2852
+    },
+    {
+      "B": 16,
+      "T": 16384,
+      "mean_ms": 3.0625,
+      "std_ms": 0.0282,
+      "tokens_per_sec": 5224.5435,
+      "kv_bytes_MB": 1073.7418,
+      "bw_GBs": 350.6132
+    },
+    {
+      "B": 16,
+      "T": 32768,
+      "mean_ms": 6.1695,
+      "std_ms": 0.0505,
+      "tokens_per_sec": 2593.3944,
+      "kv_bytes_MB": 2147.4836,
+      "bw_GBs": 348.0795
+    },
+    {
+      "B": 32,
+      "T": 1024,
+      "mean_ms": 0.4257,
+      "std_ms": 0.0021,
+      "tokens_per_sec": 75168.4348,
+      "kv_bytes_MB": 134.2177,
+      "bw_GBs": 315.2793
+    },
+    {
+      "B": 32,
+      "T": 2048,
+      "mean_ms": 0.7858,
+      "std_ms": 0.0046,
+      "tokens_per_sec": 40720.7586,
+      "kv_bytes_MB": 268.4355,
+      "bw_GBs": 341.5905
+    },
+    {
+      "B": 32,
+      "T": 4096,
+      "mean_ms": 1.5346,
+      "std_ms": 0.0392,
+      "tokens_per_sec": 20851.8577,
+      "kv_bytes_MB": 536.8709,
+      "bw_GBs": 349.8361
+    },
+    {
+      "B": 32,
+      "T": 8192,
+      "mean_ms": 3.1485,
+      "std_ms": 0.023,
+      "tokens_per_sec": 10163.7205,
+      "kv_bytes_MB": 1073.7418,
+      "bw_GBs": 341.0379
+    },
+    {
+      "B": 32,
+      "T": 16384,
+      "mean_ms": 6.1043,
+      "std_ms": 0.0407,
+      "tokens_per_sec": 5242.1985,
+      "kv_bytes_MB": 2147.4836,
+      "bw_GBs": 351.798
+    },
+    {
+      "B": 32,
+      "T": 32768,
+      "mean_ms": 12.2402,
+      "std_ms": 0.0695,
+      "tokens_per_sec": 2614.3339,
+      "kv_bytes_MB": 4294.9673,
+      "bw_GBs": 350.89
+    },
+    {
+      "B": 64,
+      "T": 1024,
+      "mean_ms": 0.7759,
+      "std_ms": 0.0008,
+      "tokens_per_sec": 82489.1681,
+      "kv_bytes_MB": 268.4355,
+      "bw_GBs": 345.9846
+    },
+    {
+      "B": 64,
+      "T": 2048,
+      "mean_ms": 1.4769,
+      "std_ms": 0.0247,
+      "tokens_per_sec": 43333.9075,
+      "kv_bytes_MB": 536.8709,
+      "bw_GBs": 363.5112
+    },
+    {
+      "B": 64,
+      "T": 4096,
+      "mean_ms": 3.0205,
+      "std_ms": 0.0428,
+      "tokens_per_sec": 21188.4761,
+      "kv_bytes_MB": 1073.7418,
+      "bw_GBs": 355.4836
+    },
+    {
+      "B": 64,
+      "T": 8192,
+      "mean_ms": 6.0335,
+      "std_ms": 0.0932,
+      "tokens_per_sec": 10607.3958,
+      "kv_bytes_MB": 2147.4836,
+      "bw_GBs": 355.9251
+    },
+    {
+      "B": 64,
+      "T": 16384,
+      "mean_ms": 11.8573,
+      "std_ms": 0.0602,
+      "tokens_per_sec": 5397.536,
+      "kv_bytes_MB": 4294.9673,
+      "bw_GBs": 362.2225
+    },
+    {
+      "B": 64,
+      "T": 32768,
+      "mean_ms": 23.885,
+      "std_ms": 0.5031,
+      "tokens_per_sec": 2679.5081,
+      "kv_bytes_MB": 8589.9346,
+      "bw_GBs": 359.6375
+    }
+  ],
+  "hill_fit_T4096": {
+    "Smax": 26485.595125,
+    "B_half": 1.836,
+    "gamma": 0.425,
+    "fit_method": "local_grid_search_no_scipy",
+    "sse": 28958501.68559903
+  }
+}

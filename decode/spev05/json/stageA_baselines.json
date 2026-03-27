@@ -1,0 +1,775 @@
+{
+  "experiment": "spev05_stageA",
+  "timestamp": "2026-03-16T18:31:04.711357",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "results": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "stage": "A",
+      "configs": [
+        {
+          "label": "FP16_ctx2048_B1",
+          "mean_latency_s": 1.7177,
+          "std_latency_s": 0.0036,
+          "tokens_per_sec": 74.52,
+          "ms_per_token": 13.419,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73591,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.7141,
+            1.7226,
+            1.7163
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 2048,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx2048_B4",
+          "mean_latency_s": 1.782,
+          "std_latency_s": 0.0168,
+          "tokens_per_sec": 287.31,
+          "ms_per_token": 3.481,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73591,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.8058,
+            1.7699,
+            1.7704
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 2048,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx2048_B16",
+          "mean_latency_s": 1.8594,
+          "std_latency_s": 0.0246,
+          "tokens_per_sec": 1101.43,
+          "ms_per_token": 0.908,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73593,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.8937,
+            1.8471,
+            1.8373
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 2048,
+          "batch_size": 16,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx8192_B1",
+          "mean_latency_s": 1.7541,
+          "std_latency_s": 0.0069,
+          "tokens_per_sec": 72.97,
+          "ms_per_token": 13.704,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74261,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.7614,
+            1.7563,
+            1.7448
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 8192,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx8192_B4",
+          "mean_latency_s": 1.7894,
+          "std_latency_s": 0.0127,
+          "tokens_per_sec": 286.13,
+          "ms_per_token": 3.495,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74261,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.8064,
+            1.7758,
+            1.7861
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 8192,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx8192_B16",
+          "mean_latency_s": 1.9654,
+          "std_latency_s": 0.0023,
+          "tokens_per_sec": 1042.03,
+          "ms_per_token": 0.96,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74263,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.9686,
+            1.9638,
+            1.9638
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 8192,
+          "batch_size": 16,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx16384_B1",
+          "mean_latency_s": 1.7632,
+          "std_latency_s": 0.0016,
+          "tokens_per_sec": 72.6,
+          "ms_per_token": 13.775,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74479,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.7654,
+            1.762,
+            1.7621
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 16384,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx16384_B4",
+          "mean_latency_s": 1.8652,
+          "std_latency_s": 0.008,
+          "tokens_per_sec": 274.51,
+          "ms_per_token": 3.643,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74479,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.8746,
+            1.8549,
+            1.8659
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 16384,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx16384_B16",
+          "mean_latency_s": 2.292,
+          "std_latency_s": 0.0103,
+          "tokens_per_sec": 893.53,
+          "ms_per_token": 1.119,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74479,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            2.306,
+            2.2888,
+            2.2813
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 16384,
+          "batch_size": 16,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx2048_B1",
+          "mean_latency_s": 1.6608,
+          "std_latency_s": 0.0102,
+          "tokens_per_sec": 77.07,
+          "ms_per_token": 12.975,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74007,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.6612,
+            1.6731,
+            1.6481
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx2048_B4",
+          "mean_latency_s": 1.6807,
+          "std_latency_s": 0.0157,
+          "tokens_per_sec": 304.63,
+          "ms_per_token": 3.283,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74007,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.7029,
+            1.6701,
+            1.6693
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx2048_B16",
+          "mean_latency_s": 1.7646,
+          "std_latency_s": 0.0084,
+          "tokens_per_sec": 1160.62,
+          "ms_per_token": 0.862,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74007,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.7759,
+            1.7621,
+            1.7557
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 16,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx8192_B1",
+          "mean_latency_s": 1.7149,
+          "std_latency_s": 0.0247,
+          "tokens_per_sec": 74.64,
+          "ms_per_token": 13.398,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74677,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.7483,
+            1.7073,
+            1.6892
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx8192_B4",
+          "mean_latency_s": 1.7144,
+          "std_latency_s": 0.0158,
+          "tokens_per_sec": 298.65,
+          "ms_per_token": 3.348,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74677,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.7309,
+            1.693,
+            1.7192
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx8192_B16",
+          "mean_latency_s": 1.8991,
+          "std_latency_s": 0.0133,
+          "tokens_per_sec": 1078.42,
+          "ms_per_token": 0.927,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74677,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.9177,
+            1.8918,
+            1.8877
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 16,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx16384_B1",
+          "mean_latency_s": 1.7307,
+          "std_latency_s": 0.005,
+          "tokens_per_sec": 73.96,
+          "ms_per_token": 13.521,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74893,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.7256,
+            1.7376,
+            1.729
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx16384_B4",
+          "mean_latency_s": 1.774,
+          "std_latency_s": 0.0172,
+          "tokens_per_sec": 288.62,
+          "ms_per_token": 3.465,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74893,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.7918,
+            1.7793,
+            1.7507
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx16384_B16",
+          "mean_latency_s": 2.2519,
+          "std_latency_s": 0.0051,
+          "tokens_per_sec": 909.47,
+          "ms_per_token": 1.1,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74893,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            2.2535,
+            2.2571,
+            2.2449
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 16,
+          "speculation": "none"
+        }
+      ]
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "stage": "A",
+      "configs": [
+        {
+          "label": "FP16_ctx2048_B1",
+          "mean_latency_s": 1.9046,
+          "std_latency_s": 0.0101,
+          "tokens_per_sec": 67.2,
+          "ms_per_token": 14.88,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73433,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.9184,
+            1.9011,
+            1.8944
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 2048,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx2048_B4",
+          "mean_latency_s": 1.9362,
+          "std_latency_s": 0.0421,
+          "tokens_per_sec": 264.44,
+          "ms_per_token": 3.782,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73433,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.9948,
+            1.9158,
+            1.8978
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 2048,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx2048_B16",
+          "mean_latency_s": 2.3309,
+          "std_latency_s": 0.0094,
+          "tokens_per_sec": 878.62,
+          "ms_per_token": 1.138,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73435,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            2.3432,
+            2.3203,
+            2.3293
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 2048,
+          "batch_size": 16,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx8192_B1",
+          "mean_latency_s": 1.899,
+          "std_latency_s": 0.0116,
+          "tokens_per_sec": 67.4,
+          "ms_per_token": 14.836,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74225,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.9118,
+            1.9015,
+            1.8837
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 8192,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx8192_B4",
+          "mean_latency_s": 1.9678,
+          "std_latency_s": 0.0172,
+          "tokens_per_sec": 260.19,
+          "ms_per_token": 3.843,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74225,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.9921,
+            1.9554,
+            1.956
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 8192,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx8192_B16",
+          "mean_latency_s": 2.4743,
+          "std_latency_s": 0.0068,
+          "tokens_per_sec": 827.72,
+          "ms_per_token": 1.208,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74225,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            2.4653,
+            2.4816,
+            2.4759
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 8192,
+          "batch_size": 16,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx16384_B1",
+          "mean_latency_s": 1.93,
+          "std_latency_s": 0.0058,
+          "tokens_per_sec": 66.32,
+          "ms_per_token": 15.078,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74361,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.9332,
+            1.9218,
+            1.935
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 16384,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx16384_B4",
+          "mean_latency_s": 2.0195,
+          "std_latency_s": 0.021,
+          "tokens_per_sec": 253.52,
+          "ms_per_token": 3.944,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74361,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            2.0479,
+            1.9978,
+            2.0129
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 16384,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP16_ctx16384_B16",
+          "mean_latency_s": 3.2965,
+          "std_latency_s": 0.0064,
+          "tokens_per_sec": 621.27,
+          "ms_per_token": 1.61,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74361,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.2934,
+            3.2907,
+            3.3054
+          ],
+          "kv_dtype": "FP16",
+          "context_len": 16384,
+          "batch_size": 16,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx2048_B1",
+          "mean_latency_s": 1.8034,
+          "std_latency_s": 0.0126,
+          "tokens_per_sec": 70.98,
+          "ms_per_token": 14.089,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73875,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.8212,
+            1.7954,
+            1.7935
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx2048_B4",
+          "mean_latency_s": 1.7605,
+          "std_latency_s": 0.0044,
+          "tokens_per_sec": 290.83,
+          "ms_per_token": 3.438,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73875,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.763,
+            1.7642,
+            1.7543
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx2048_B16",
+          "mean_latency_s": 1.8134,
+          "std_latency_s": 0.0055,
+          "tokens_per_sec": 1129.38,
+          "ms_per_token": 0.885,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 73877,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.8211,
+            1.8089,
+            1.8101
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 2048,
+          "batch_size": 16,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx8192_B1",
+          "mean_latency_s": 1.7787,
+          "std_latency_s": 0.0041,
+          "tokens_per_sec": 71.96,
+          "ms_per_token": 13.896,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74621,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.7842,
+            1.7777,
+            1.7744
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx8192_B4",
+          "mean_latency_s": 1.8068,
+          "std_latency_s": 0.0145,
+          "tokens_per_sec": 283.38,
+          "ms_per_token": 3.529,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74621,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.8225,
+            1.8103,
+            1.7875
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx8192_B16",
+          "mean_latency_s": 2.5971,
+          "std_latency_s": 0.0055,
+          "tokens_per_sec": 788.56,
+          "ms_per_token": 1.268,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74621,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            2.5932,
+            2.5933,
+            2.6049
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 8192,
+          "batch_size": 16,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx16384_B1",
+          "mean_latency_s": 1.7955,
+          "std_latency_s": 0.0033,
+          "tokens_per_sec": 71.29,
+          "ms_per_token": 14.027,
+          "total_output_tokens": 128,
+          "n_prompts": 1,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74755,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.7989,
+            1.7965,
+            1.791
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 1,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx16384_B4",
+          "mean_latency_s": 1.9004,
+          "std_latency_s": 0.0036,
+          "tokens_per_sec": 269.42,
+          "ms_per_token": 3.712,
+          "total_output_tokens": 512,
+          "n_prompts": 4,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74755,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            1.9051,
+            1.8965,
+            1.8995
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 4,
+          "speculation": "none"
+        },
+        {
+          "label": "FP8_ctx16384_B16",
+          "mean_latency_s": 3.7031,
+          "std_latency_s": 0.0058,
+          "tokens_per_sec": 553.05,
+          "ms_per_token": 1.808,
+          "total_output_tokens": 2048,
+          "n_prompts": 16,
+          "gen_tokens_requested": 128,
+          "peak_vram_mb": 74755,
+          "n_measure_runs": 3,
+          "raw_latencies_s": [
+            3.7084,
+            3.695,
+            3.706
+          ],
+          "kv_dtype": "FP8",
+          "context_len": 16384,
+          "batch_size": 16,
+          "speculation": "none"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "phase": "phase5_long_context_v1_INVALID",
+  "note": "INVALID: Used cache-based quantization (post-forward). Replaced by v2 hook-based approach.",
+  "model_info": {
+    "model": "meta-llama/Llama-3.1-70B-Instruct",
+    "n_params": 70553706496,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 141.1,
+    "n_gpu_modules": 77,
+    "n_cpu_modules": 7
+  },
+  "results": {
+    "ctx_2048": {
+      "FP16_baseline": {"ppl": 3.2151, "n_tokens": 50175, "note": "cache-based quant did not affect PPL"},
+      "K_FP16__V_INT4": {"ppl": 3.2151, "n_tokens": 50175, "note": "identical to FP16 — quantization applied post-forward"},
+      "K_INT8__V_INT4": {"ppl": 3.2151, "n_tokens": 50175, "note": "identical to FP16 — quantization applied post-forward"}
+    },
+    "ctx_4096": {
+      "FP16_baseline": {"error": "OOM", "n_tokens": 0},
+      "K_FP16__V_INT4": {"error": "OOM", "n_tokens": 0},
+      "K_INT8__V_INT4": {"error": "OOM", "n_tokens": 0}
+    }
+  }
+}

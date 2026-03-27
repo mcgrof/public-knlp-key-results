@@ -1,0 +1,25 @@
+{
+  "variant": "stress_shuffled",
+  "seq_len": 512,
+  "seed": 2,
+  "far_budget": 4,
+  "mode": "stress",
+  "ppl_mean": 246.23969904581705,
+  "ppl_std": 115.87008227384341,
+  "enabled_rate": 0.69921875,
+  "effective_kept_tokens": 281.75,
+  "kv_bytes_read_per_token": 16035840.0,
+  "peak_kv_bytes": 18874368,
+  "flops_relative": 0.849609375,
+  "wall_ms_per_token": 0.7149248231144156,
+  "gate_ms_per_token": 0.46807603757770266,
+  "fwd_ms_per_token": 0.24789106646494474,
+  "budget_mean": 4.0,
+  "budget_p95": 4.0,
+  "budget_p99": 4.0,
+  "tokens_seen": 15360,
+  "n_eval_batches": 30,
+  "extra": {
+    "ra_mode": "shuffled"
+  }
+}

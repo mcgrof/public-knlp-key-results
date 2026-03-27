@@ -1,0 +1,28 @@
+{
+  "phase": "phase4_decode_latency",
+  "model_info": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "n_params": 72704000000,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "load_time_s": 23,
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 141.1,
+    "n_gpu_modules": 74,
+    "n_cpu_modules": 10
+  },
+  "results": {
+    "ctx_2048": {
+      "FP16/FP16": {"error": "OOM_or_crash", "context_len": 2048},
+      "FP16/INT4": {"error": "OOM_or_crash", "context_len": 2048},
+      "INT8/INT4": {"error": "OOM_or_crash", "context_len": 2048}
+    },
+    "ctx_4096": {
+      "FP16/FP16": {"error": "OOM", "context_len": 4096},
+      "FP16/INT4": {"error": "OOM", "context_len": 4096},
+      "INT8/INT4": {"error": "OOM", "context_len": 4096}
+    }
+  },
+  "notes": "Qwen2.5-72B with 10 CPU-offloaded modules crashes during decode latency measurement at ctx=2048 on single H200. Process dies silently (likely GPU OOM during KV cache generation + decode). More CPU-offloaded modules than Llama-70B (10 vs 7) leaves less GPU headroom."
+}

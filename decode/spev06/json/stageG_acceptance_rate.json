@@ -1,0 +1,357 @@
+{
+  "experiment": "spev06_stageG",
+  "timestamp": "2026-03-16T23:20:44.848421+00:00",
+  "analysis": [
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 2048,
+      "batch_size": 1,
+      "baseline_tps": 73.3,
+      "spec_tps": 410.35,
+      "speedup": 5.5982,
+      "estimated_acceptance_rate": 1
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 2048,
+      "batch_size": 4,
+      "baseline_tps": 289.64,
+      "spec_tps": 1397.3,
+      "speedup": 4.8243,
+      "estimated_acceptance_rate": 0.9561
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 2048,
+      "batch_size": 16,
+      "baseline_tps": 1110.76,
+      "spec_tps": 3960.68,
+      "speedup": 3.5657,
+      "estimated_acceptance_rate": 0.6414
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 4096,
+      "batch_size": 1,
+      "baseline_tps": 74.38,
+      "spec_tps": 379.54,
+      "speedup": 5.1027,
+      "estimated_acceptance_rate": 1
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 4096,
+      "batch_size": 4,
+      "baseline_tps": 286.73,
+      "spec_tps": 1272.96,
+      "speedup": 4.4396,
+      "estimated_acceptance_rate": 0.8599
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 4096,
+      "batch_size": 16,
+      "baseline_tps": 1078.75,
+      "spec_tps": 3697.58,
+      "speedup": 3.4277,
+      "estimated_acceptance_rate": 0.6069
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 8192,
+      "batch_size": 1,
+      "baseline_tps": 73.06,
+      "spec_tps": 310.34,
+      "speedup": 4.2477,
+      "estimated_acceptance_rate": 0.8119
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 8192,
+      "batch_size": 4,
+      "baseline_tps": 280.77,
+      "spec_tps": 960.82,
+      "speedup": 3.4221,
+      "estimated_acceptance_rate": 0.6055
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 8192,
+      "batch_size": 16,
+      "baseline_tps": 1008.87,
+      "spec_tps": 2741.17,
+      "speedup": 2.7171,
+      "estimated_acceptance_rate": 0.4293
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 16384,
+      "batch_size": 1,
+      "baseline_tps": 72.18,
+      "spec_tps": 230.01,
+      "speedup": 3.1866,
+      "estimated_acceptance_rate": 0.5467
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 16384,
+      "batch_size": 4,
+      "baseline_tps": 271.99,
+      "spec_tps": 655.73,
+      "speedup": 2.4109,
+      "estimated_acceptance_rate": 0.3527
+    },
+    {
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "context_len": 16384,
+      "batch_size": 16,
+      "baseline_tps": 806.37,
+      "spec_tps": 1745.28,
+      "speedup": 2.1644,
+      "estimated_acceptance_rate": 0.2911
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 2048,
+      "batch_size": 1,
+      "baseline_tps": 67.51,
+      "spec_tps": 389.94,
+      "speedup": 5.776,
+      "estimated_acceptance_rate": 1
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 2048,
+      "batch_size": 4,
+      "baseline_tps": 267.24,
+      "spec_tps": 1308.62,
+      "speedup": 4.8968,
+      "estimated_acceptance_rate": 0.9742
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 2048,
+      "batch_size": 16,
+      "baseline_tps": 872.14,
+      "spec_tps": 3633.09,
+      "speedup": 4.1657,
+      "estimated_acceptance_rate": 0.7914
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 4096,
+      "batch_size": 1,
+      "baseline_tps": 67.85,
+      "spec_tps": 354.17,
+      "speedup": 5.2199,
+      "estimated_acceptance_rate": 1
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 4096,
+      "batch_size": 4,
+      "baseline_tps": 263.61,
+      "spec_tps": 1092.49,
+      "speedup": 4.1443,
+      "estimated_acceptance_rate": 0.7861
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 4096,
+      "batch_size": 16,
+      "baseline_tps": 847.73,
+      "spec_tps": 3103.32,
+      "speedup": 3.6607,
+      "estimated_acceptance_rate": 0.6652
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 8192,
+      "batch_size": 1,
+      "baseline_tps": 66.73,
+      "spec_tps": 287.21,
+      "speedup": 4.3041,
+      "estimated_acceptance_rate": 0.826
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 8192,
+      "batch_size": 4,
+      "baseline_tps": 255.43,
+      "spec_tps": 881.33,
+      "speedup": 3.4504,
+      "estimated_acceptance_rate": 0.6126
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 8192,
+      "batch_size": 16,
+      "baseline_tps": 782.15,
+      "spec_tps": 2669.85,
+      "speedup": 3.4135,
+      "estimated_acceptance_rate": 0.6034
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 16384,
+      "batch_size": 1,
+      "baseline_tps": 65.53,
+      "spec_tps": 212.88,
+      "speedup": 3.2486,
+      "estimated_acceptance_rate": 0.5621
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 16384,
+      "batch_size": 4,
+      "baseline_tps": 248.26,
+      "spec_tps": 598.73,
+      "speedup": 2.4117,
+      "estimated_acceptance_rate": 0.3529
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 16384,
+      "batch_size": 16,
+      "baseline_tps": 575.3,
+      "spec_tps": 1705.62,
+      "speedup": 2.9647,
+      "estimated_acceptance_rate": 0.4912
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 32768,
+      "batch_size": 1,
+      "baseline_tps": 64.97,
+      "spec_tps": 139.18,
+      "speedup": 2.1422,
+      "estimated_acceptance_rate": 0.2856
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 32768,
+      "batch_size": 4,
+      "baseline_tps": 198.73,
+      "spec_tps": 367.66,
+      "speedup": 1.85,
+      "estimated_acceptance_rate": 0.2125
+    },
+    {
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "context_len": 32768,
+      "batch_size": 16,
+      "baseline_tps": 377.09,
+      "spec_tps": 960.75,
+      "speedup": 2.5478,
+      "estimated_acceptance_rate": 0.387
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 2048,
+      "batch_size": 1,
+      "baseline_tps": 68.49,
+      "spec_tps": 422.66,
+      "speedup": 6.1711,
+      "estimated_acceptance_rate": 1
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 2048,
+      "batch_size": 4,
+      "baseline_tps": 269.83,
+      "spec_tps": 1377.94,
+      "speedup": 5.1067,
+      "estimated_acceptance_rate": 1
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 2048,
+      "batch_size": 16,
+      "baseline_tps": 878.34,
+      "spec_tps": 3862.14,
+      "speedup": 4.3971,
+      "estimated_acceptance_rate": 0.8493
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 4096,
+      "batch_size": 1,
+      "baseline_tps": 67.38,
+      "spec_tps": 378.85,
+      "speedup": 5.6226,
+      "estimated_acceptance_rate": 1
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 4096,
+      "batch_size": 4,
+      "baseline_tps": 267.08,
+      "spec_tps": 1059.96,
+      "speedup": 3.9687,
+      "estimated_acceptance_rate": 0.7422
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 4096,
+      "batch_size": 16,
+      "baseline_tps": 865.56,
+      "spec_tps": 3098.58,
+      "speedup": 3.5799,
+      "estimated_acceptance_rate": 0.645
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 8192,
+      "batch_size": 1,
+      "baseline_tps": 66.7,
+      "spec_tps": 303.07,
+      "speedup": 4.5438,
+      "estimated_acceptance_rate": 0.8859
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 8192,
+      "batch_size": 4,
+      "baseline_tps": 260.4,
+      "spec_tps": 862.42,
+      "speedup": 3.3119,
+      "estimated_acceptance_rate": 0.578
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 8192,
+      "batch_size": 16,
+      "baseline_tps": 814.53,
+      "spec_tps": 2161.56,
+      "speedup": 2.6538,
+      "estimated_acceptance_rate": 0.4134
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 16384,
+      "batch_size": 1,
+      "baseline_tps": 66.37,
+      "spec_tps": 222.71,
+      "speedup": 3.3556,
+      "estimated_acceptance_rate": 0.5889
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 16384,
+      "batch_size": 4,
+      "baseline_tps": 251.97,
+      "spec_tps": 589.12,
+      "speedup": 2.3381,
+      "estimated_acceptance_rate": 0.3345
+    },
+    {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "context_len": 16384,
+      "batch_size": 16,
+      "baseline_tps": 593.21,
+      "spec_tps": 1109.04,
+      "speedup": 1.8696,
+      "estimated_acceptance_rate": 0.2174
+    }
+  ]
+}

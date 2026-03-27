@@ -1,0 +1,551 @@
+{
+  "model": "Qwen/Qwen2-7B-Instruct",
+  "timestamp": "2026-03-27T14:26:38",
+  "critical_msls": [
+    32,
+    40,
+    48
+  ],
+  "configs": {
+    "sym_g32_msl32": {
+      "matches": 2,
+      "total": 7,
+      "msl": 32,
+      "asymmetric": false,
+      "group_size": 32,
+      "elapsed_s": 24.4,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.8,
+          "first_diverge": 16
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.65,
+          "first_diverge": 11
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.65,
+          "first_diverge": 13
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.2,
+          "first_diverge": 4
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.3,
+          "first_diverge": 6
+        }
+      }
+    },
+    "sym_g16_msl32": {
+      "matches": 2,
+      "total": 7,
+      "msl": 32,
+      "asymmetric": false,
+      "group_size": 16,
+      "elapsed_s": 25.2,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.85,
+          "first_diverge": 16
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.55,
+          "first_diverge": 11
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.8,
+          "first_diverge": 13
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.45,
+          "first_diverge": 7
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.3,
+          "first_diverge": 6
+        }
+      }
+    },
+    "asym_g32_msl32": {
+      "matches": 2,
+      "total": 7,
+      "msl": 32,
+      "asymmetric": true,
+      "group_size": 32,
+      "elapsed_s": 25.3,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.8,
+          "first_diverge": 15
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.7,
+          "first_diverge": 11
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.65,
+          "first_diverge": 13
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.25,
+          "first_diverge": 5
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.2,
+          "first_diverge": 4
+        }
+      }
+    },
+    "asym_g16_msl32": {
+      "matches": 2,
+      "total": 7,
+      "msl": 32,
+      "asymmetric": true,
+      "group_size": 16,
+      "elapsed_s": 26.0,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": false,
+          "tok_rate": 0.75,
+          "first_diverge": 15
+        },
+        "med_48": {
+          "match": false,
+          "tok_rate": 0.55,
+          "first_diverge": 11
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.65,
+          "first_diverge": 13
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.3,
+          "first_diverge": 5
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.3,
+          "first_diverge": 4
+        }
+      }
+    },
+    "sym_g32_msl40": {
+      "matches": 4,
+      "total": 7,
+      "msl": 40,
+      "asymmetric": false,
+      "group_size": 32,
+      "elapsed_s": 26.3,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 19
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.6,
+          "first_diverge": 12
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.6,
+          "first_diverge": 12
+        }
+      }
+    },
+    "sym_g16_msl40": {
+      "matches": 4,
+      "total": 7,
+      "msl": 40,
+      "asymmetric": false,
+      "group_size": 16,
+      "elapsed_s": 27.7,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 19
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.6,
+          "first_diverge": 12
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.6,
+          "first_diverge": 12
+        }
+      }
+    },
+    "asym_g32_msl40": {
+      "matches": 4,
+      "total": 7,
+      "msl": 40,
+      "asymmetric": true,
+      "group_size": 32,
+      "elapsed_s": 26.0,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": false,
+          "tok_rate": 0.95,
+          "first_diverge": 19
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.6,
+          "first_diverge": 12
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.6,
+          "first_diverge": 12
+        }
+      }
+    },
+    "asym_g16_msl40": {
+      "matches": 5,
+      "total": 7,
+      "msl": 40,
+      "asymmetric": true,
+      "group_size": 16,
+      "elapsed_s": 25.1,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": false,
+          "tok_rate": 0.7,
+          "first_diverge": 12
+        },
+        "long_128": {
+          "match": false,
+          "tok_rate": 0.6,
+          "first_diverge": 12
+        }
+      }
+    },
+    "sym_g32_msl48": {
+      "matches": 7,
+      "total": 7,
+      "msl": 48,
+      "asymmetric": false,
+      "group_size": 32,
+      "elapsed_s": 24.4,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      }
+    },
+    "sym_g16_msl48": {
+      "matches": 7,
+      "total": 7,
+      "msl": 48,
+      "asymmetric": false,
+      "group_size": 16,
+      "elapsed_s": 24.3,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      }
+    },
+    "asym_g32_msl48": {
+      "matches": 7,
+      "total": 7,
+      "msl": 48,
+      "asymmetric": true,
+      "group_size": 32,
+      "elapsed_s": 23.1,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      }
+    },
+    "asym_g16_msl48": {
+      "matches": 7,
+      "total": 7,
+      "msl": 48,
+      "asymmetric": true,
+      "group_size": 16,
+      "elapsed_s": 24.2,
+      "details": {
+        "short_8": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "short_16": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_32": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "med_48": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_64": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_96": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        },
+        "long_128": {
+          "match": true,
+          "tok_rate": 1.0,
+          "first_diverge": 20
+        }
+      }
+    }
+  }
+}

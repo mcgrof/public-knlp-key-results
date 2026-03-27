@@ -1,0 +1,35 @@
+{
+  "experiment": "spev06",
+  "completed": "2026-03-16T23:23:55.085491+00:00",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "models": [
+    "Qwen/Qwen2.5-7B-Instruct",
+    "mistralai/Mistral-7B-Instruct-v0.3",
+    "meta-llama/Llama-3.1-8B-Instruct"
+  ],
+  "context_lengths": [
+    2048,
+    4096,
+    8192,
+    16384,
+    32768
+  ],
+  "batch_sizes": [
+    1,
+    4,
+    16
+  ],
+  "stages_completed": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "G",
+    "H",
+    "I",
+    "J",
+    "F"
+  ],
+  "stages_failed": []
+}

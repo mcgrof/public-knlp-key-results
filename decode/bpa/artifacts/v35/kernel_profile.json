@@ -1,0 +1,127 @@
+{
+  "hardware_limits": {
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "sustained_bandwidth_GBs": 2890.74,
+    "peak_fp16_TFLOPs": 740.077,
+    "ridge_point_flops_per_byte": 256.02
+  },
+  "validation": [
+    {
+      "config": "qwen25_05b",
+      "max_abs_error": 0.0001220703125,
+      "max_rel_error": 0.0004061738288896182,
+      "pass": true
+    },
+    {
+      "config": "qwen25_1.8b",
+      "max_abs_error": 0.0001220703125,
+      "max_rel_error": 0.00045372049130273023,
+      "pass": true
+    },
+    {
+      "config": "qwen25_7b",
+      "max_abs_error": 0.0001220703125,
+      "max_rel_error": 0.000473036878547218,
+      "pass": true
+    },
+    {
+      "config": "mistral_7b",
+      "max_abs_error": 0.0001220703125,
+      "max_rel_error": 0.00047892718427504073,
+      "pass": true
+    },
+    {
+      "config": "llama31_8b",
+      "max_abs_error": 0.0001220703125,
+      "max_rel_error": 0.0003878975827088557,
+      "pass": true
+    }
+  ],
+  "head_dim_results": {
+    "head_dims": [
+      32,
+      64,
+      128,
+      256
+    ],
+    "P0_ms": [
+      0.052874203538522124,
+      0.06560399779118598,
+      0.08152600494213402,
+      0.1328121987171471
+    ],
+    "P3_ms": [
+      0.17314200231339782,
+      0.2021919994149357,
+      0.3484203974949196,
+      0.5484024004545063
+    ]
+  },
+  "bandwidth_scaling": {
+    "R_values": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "config": "qwen25_05b",
+    "P0_ms": [
+      0.06964600179344416,
+      0.08978619589470327,
+      0.13058199838269502,
+      0.21637619647663087
+    ],
+    "P1_ms": [
+      0.27806640428025275,
+      0.5251384020084515,
+      1.00028479937464,
+      1.9527618016581982
+    ],
+    "P3_ms": [
+      0.2010082040214911,
+      0.20175419631414115,
+      0.20274420094210654,
+      0.2013981982599944
+    ],
+    "P5_ms": [
+      0.20004819962196052,
+      0.19905419903807342,
+      0.2011340024182573,
+      0.1993040059460327
+    ]
+  },
+  "decode_summary": {
+    "qwen25_05b": {
+      "speedup_min": 0.26,
+      "speedup_max": 3.27,
+      "speedup_mean": 1.63,
+      "n_configs": 36
+    },
+    "qwen25_1.8b": {
+      "speedup_min": 0.31,
+      "speedup_max": 3.53,
+      "speedup_mean": 1.78,
+      "n_configs": 36
+    },
+    "qwen25_7b": {
+      "speedup_min": 0.43,
+      "speedup_max": 3.28,
+      "speedup_mean": 2.06,
+      "n_configs": 36
+    },
+    "mistral_7b": {
+      "speedup_min": 0.5,
+      "speedup_max": 3.59,
+      "speedup_mean": 2.28,
+      "n_configs": 36
+    },
+    "llama31_8b": {
+      "speedup_min": 0.51,
+      "speedup_max": 3.61,
+      "speedup_mean": 2.29,
+      "n_configs": 36
+    }
+  },
+  "prefill_summary": {},
+  "timestamp": "2026-03-04T23:46:35.948758"
+}

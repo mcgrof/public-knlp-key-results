@@ -1,0 +1,5 @@
+pipeline,perplexity,tokens_evaluated,tokens_per_sec,elapsed_sec
+FP16_baseline,6.8031,198559,53561.0,3.7
+INT4_weight_g32,592.276,99231,19496.0,5.1
+INT4_activation_g8,309.9881,99231,19629.9,5.1
+INT4_fused_g4,82.9064,99231,19651.9,5.0

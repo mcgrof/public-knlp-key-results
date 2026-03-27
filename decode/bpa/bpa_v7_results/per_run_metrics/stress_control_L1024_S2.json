@@ -1,0 +1,25 @@
+{
+  "variant": "stress_control",
+  "seq_len": 1024,
+  "seed": 2,
+  "far_budget": 4,
+  "mode": "stress",
+  "ppl_mean": 247.6584019978841,
+  "ppl_std": 82.70951302078119,
+  "enabled_rate": 0.69921875,
+  "effective_kept_tokens": 358.375,
+  "kv_bytes_read_per_token": 16035840.0,
+  "peak_kv_bytes": 37748736,
+  "flops_relative": 0.4248046875,
+  "wall_ms_per_token": 0.924872111681907,
+  "gate_ms_per_token": 0.6301685643848032,
+  "fwd_ms_per_token": 0.292866070594755,
+  "budget_mean": 4.0,
+  "budget_p95": 4.0,
+  "budget_p99": 4.0,
+  "tokens_seen": 30720,
+  "n_eval_batches": 30,
+  "extra": {
+    "ra_mode": "normal"
+  }
+}

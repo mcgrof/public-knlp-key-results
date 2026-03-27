@@ -1,0 +1,135 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+############################################################
+# google/gemma-2-27b-it
+############################################################
+Loading google/gemma-2-27b-it in bfloat16...
+
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]
+Fetching 12 files:   8%|▊         | 1/12 [00:11<02:07, 11.63s/it]
+Fetching 12 files:  17%|█▋        | 2/12 [00:12<00:50,  5.06s/it]
+Fetching 12 files:  75%|███████▌  | 9/12 [00:20<00:05,  1.74s/it]
+Fetching 12 files:  83%|████████▎ | 10/12 [00:21<00:03,  1.72s/it]
+Fetching 12 files: 100%|██████████| 12/12 [00:21<00:00,  1.83s/it]
+
+Loading weights:   0%|          | 0/508 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/508 [00:00<02:43,  3.10it/s]
+Loading weights:   1%|          | 4/508 [00:00<00:45, 11.15it/s]
+Loading weights:   3%|▎         | 14/508 [00:00<00:13, 35.43it/s]
+Loading weights:   4%|▎         | 19/508 [00:00<00:12, 39.05it/s]
+Loading weights:   5%|▌         | 26/508 [00:00<00:10, 44.60it/s]
+Loading weights:   7%|▋         | 36/508 [00:00<00:08, 56.07it/s]
+Loading weights:   8%|▊         | 43/508 [00:01<00:08, 57.67it/s]
+Loading weights:  10%|▉         | 50/508 [00:01<00:08, 51.43it/s]
+Loading weights:  12%|█▏        | 59/508 [00:01<00:07, 57.80it/s]
+Loading weights:  14%|█▎        | 69/508 [00:01<00:06, 64.38it/s]
+Loading weights:  15%|█▍        | 76/508 [00:01<00:06, 62.47it/s]
+Loading weights:  16%|█▋        | 83/508 [00:01<00:07, 55.29it/s]
+Loading weights:  18%|█▊        | 92/508 [00:01<00:06, 60.28it/s]
+Loading weights:  20%|██        | 102/508 [00:01<00:06, 66.00it/s]
+Loading weights:  21%|██▏       | 109/508 [00:02<00:06, 64.46it/s]
+Loading weights:  23%|██▎       | 116/508 [00:02<00:06, 56.30it/s]
+Loading weights:  25%|██▍       | 125/508 [00:02<00:06, 60.30it/s]
+Loading weights:  27%|██▋       | 135/508 [00:02<00:05, 66.00it/s]
+Loading weights:  28%|██▊       | 142/508 [00:02<00:05, 64.03it/s]
+Loading weights:  29%|██▉       | 149/508 [00:02<00:06, 55.43it/s]
+Loading weights:  31%|███       | 158/508 [00:02<00:05, 58.66it/s]
+Loading weights:  33%|███▎      | 168/508 [00:03<00:05, 64.46it/s]
+Loading weights:  34%|███▍      | 175/508 [00:03<00:05, 62.47it/s]
+Loading weights:  36%|███▌      | 182/508 [00:03<00:05, 54.75it/s]
+Loading weights:  38%|███▊      | 191/508 [00:03<00:05, 58.55it/s]
+Loading weights:  40%|███▉      | 201/508 [00:03<00:04, 64.41it/s]
+Loading weights:  41%|████      | 208/508 [00:03<00:04, 63.50it/s]
+Loading weights:  42%|████▏     | 215/508 [00:03<00:05, 55.51it/s]
+Loading weights:  44%|████▍     | 224/508 [00:04<00:04, 59.97it/s]
+Loading weights:  46%|████▌     | 234/508 [00:04<00:04, 65.51it/s]
+Loading weights:  47%|████▋     | 241/508 [00:04<00:04, 62.82it/s]
+Loading weights:  49%|████▉     | 248/508 [00:04<00:04, 55.71it/s]
+Loading weights:  51%|█████     | 257/508 [00:04<00:04, 60.17it/s]
+Loading weights:  53%|█████▎    | 267/508 [00:04<00:03, 65.58it/s]
+Loading weights:  54%|█████▍    | 274/508 [00:04<00:03, 64.26it/s]
+Loading weights:  55%|█████▌    | 281/508 [00:04<00:04, 56.10it/s]
+Loading weights:  57%|█████▋    | 290/508 [00:05<00:03, 60.22it/s]
+Loading weights:  59%|█████▉    | 300/508 [00:05<00:03, 65.81it/s]
+Loading weights:  60%|██████    | 307/508 [00:05<00:03, 63.15it/s]
+Loading weights:  62%|██████▏   | 314/508 [00:05<00:03, 55.40it/s]
+Loading weights:  64%|██████▎   | 323/508 [00:05<00:03, 60.06it/s]
+Loading weights:  66%|██████▌   | 333/508 [00:05<00:02, 65.61it/s]
+Loading weights:  67%|██████▋   | 340/508 [00:05<00:02, 62.14it/s]
+Loading weights:  68%|██████▊   | 347/508 [00:06<00:02, 55.91it/s]
+Loading weights:  70%|███████   | 356/508 [00:06<00:02, 59.86it/s]
+Loading weights:  72%|███████▏  | 366/508 [00:06<00:02, 65.41it/s]
+Loading weights:  73%|███████▎  | 373/508 [00:06<00:02, 64.10it/s]
+Loading weights:  75%|███████▍  | 380/508 [00:06<00:02, 55.67it/s]
+Loading weights:  77%|███████▋  | 389/508 [00:06<00:01, 60.26it/s]
+Loading weights:  79%|███████▊  | 399/508 [00:06<00:01, 65.82it/s]
+Loading weights:  80%|███████▉  | 406/508 [00:06<00:01, 64.37it/s]
+Loading weights:  81%|████████▏ | 413/508 [00:07<00:01, 55.50it/s]
+Loading weights:  83%|████████▎ | 422/508 [00:07<00:01, 59.98it/s]
+Loading weights:  85%|████████▌ | 432/508 [00:07<00:01, 64.94it/s]
+Loading weights:  86%|████████▋ | 439/508 [00:07<00:01, 63.57it/s]
+Loading weights:  88%|████████▊ | 446/508 [00:07<00:01, 55.00it/s]
+Loading weights:  90%|████████▉ | 455/508 [00:07<00:00, 59.52it/s]
+Loading weights:  92%|█████████▏| 465/508 [00:07<00:00, 65.09it/s]
+Loading weights:  93%|█████████▎| 472/508 [00:08<00:00, 62.60it/s]
+Loading weights:  94%|█████████▍| 479/508 [00:08<00:00, 55.69it/s]
+Loading weights:  96%|█████████▌| 488/508 [00:08<00:00, 60.10it/s]
+Loading weights:  98%|█████████▊| 498/508 [00:08<00:00, 65.88it/s]
+Loading weights:  99%|█████████▉| 505/508 [00:08<00:00, 62.72it/s]
+Loading weights: 100%|██████████| 508/508 [00:08<00:00, 59.10it/s]
+Loaded in 36s
+Transformers version: 5.3.0
+k_proj output shape: [1, 4, 2048]
+Fused QKV: False
+Model: 27.2B params, 46 layers, GPU: NVIDIA H200 (150GB)
+
+=== Test 1: KV Precision Asymmetry ===
+  Computing baseline...
+    prompt 1/5... (2s)
+    prompt 2/5... (2s)
+    prompt 3/5... (2s)
+    prompt 4/5... (2s)
+    prompt 5/5... (2s)
+  K_FP16/V_FP16... err=0.0000 agree=1.0000 ppl_d=+0.00% (0s)
+  K_FP16/V_INT4... err=0.6412 agree=0.7115 ppl_d=-1.28% (17s)
+  K_INT8/V_INT4... err=0.7128 agree=0.7312 ppl_d=-1.72% (17s)
+  K_INT4/V_INT4... err=0.8532 agree=0.6176 ppl_d=-15.74% (17s)
+
+=== Test 2: Ratio Classifier ===
+  INT6 keys... err=0.2893
+  INT8 keys... err=0.1895
+  Ratio: 1.53 (needs_fp16=False)
+
+=== Test 3: KV Cache Size ===
+  L=2048: KV_FP16=0.77GB KV_INT4=0.19GB frac=1.4% status=ok
+  L=4096: KV_FP16=1.54GB KV_INT4=0.39GB frac=2.8% status=ok
+  L=8192: KV_FP16=3.09GB KV_INT4=0.77GB frac=5.4% status=ok
+
+=== Test 4: Decode Latency ===
+  Warmup...
+  FP16/FP16... 10.7 ms/tok (93.1 tok/s)
+  FP16/INT4... 8.9 ms/tok (112.1 tok/s)
+  INT8/INT4... 9.1 ms/tok (109.3 tok/s)
+
+Saved: /workspace/large_gemma_2_27b_it.json
+
+======================================================================
+SUMMARY
+======================================================================
+
+gemma-2-27b-it (27.2B, D=46, loaded in 36s):
+  K_FP16/V_FP16        err=0.0000 agree=1.0000 ppl_d=+0.00%
+  K_FP16/V_INT4        err=0.6412 agree=0.7115 ppl_d=-1.28%
+  K_INT8/V_INT4        err=0.7128 agree=0.7312 ppl_d=-1.72%
+  K_INT4/V_INT4        err=0.8532 agree=0.6176 ppl_d=-15.74%
+  Ratio: 1.53 (needs_fp16=False)
+  L= 2048: KV=0.77GB (1.4%)
+  L= 4096: KV=1.54GB (2.8%)
+  L= 8192: KV=3.09GB (5.4%)
+  Lat FP16/FP16   : 10.7 ms/tok (93.1 tok/s)
+  Lat FP16/INT4   : 8.9 ms/tok (112.1 tok/s)
+  Lat INT8/INT4   : 9.1 ms/tok (109.3 tok/s)
+
+Total time: 131s
+
+DONE

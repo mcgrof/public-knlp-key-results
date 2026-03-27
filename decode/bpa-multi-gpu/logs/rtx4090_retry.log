@@ -1,0 +1,708 @@
+============================================================
+  BPA Multi-GPU: RTX4090 — Test A: KV Asymmetry
+============================================================
+
+>>> Qwen2.5-7B-Instruct K_FP16/V_FP16
+2026-03-13 15:45:24,472 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 454, in main
+    result = await run_kv_asymmetry(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Qwen2.5-7B-Instruct K_FP16/V_INT4
+2026-03-13 15:45:24,675 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 454, in main
+    result = await run_kv_asymmetry(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Qwen2.5-7B-Instruct K_INT8/V_INT4
+2026-03-13 15:45:24,905 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 454, in main
+    result = await run_kv_asymmetry(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Qwen2.5-7B-Instruct K_INT4/V_INT4
+2026-03-13 15:45:25,092 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 454, in main
+    result = await run_kv_asymmetry(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Mistral-7B-Instruct-v0.3 K_FP16/V_FP16
+2026-03-13 15:45:25,313 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 454, in main
+    result = await run_kv_asymmetry(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Mistral-7B-Instruct-v0.3 K_FP16/V_INT4
+2026-03-13 15:45:25,510 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 454, in main
+    result = await run_kv_asymmetry(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Mistral-7B-Instruct-v0.3 K_INT8/V_INT4
+2026-03-13 15:45:25,708 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 454, in main
+    result = await run_kv_asymmetry(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Mistral-7B-Instruct-v0.3 K_INT4/V_INT4
+2026-03-13 15:45:25,912 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 454, in main
+    result = await run_kv_asymmetry(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+Saved: /data/knlp-key-results/bpa-multi-gpu/json/rtx4090_kv_asymmetry.json
+
+============================================================
+  BPA Multi-GPU: RTX4090 — Test B: Ratio Classifier
+============================================================
+
+>>> Ratio classifier: Qwen2.5-7B-Instruct
+2026-03-13 15:45:26,119 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 507, in main
+    result = await run_ratio_classifier(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Ratio classifier: Mistral-7B-Instruct-v0.3
+2026-03-13 15:45:26,318 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 507, in main
+    result = await run_ratio_classifier(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+Saved: /data/knlp-key-results/bpa-multi-gpu/json/rtx4090_ratio.json
+
+============================================================
+  BPA Multi-GPU: RTX4090 — Test C: Decode Latency
+============================================================
+
+>>> Latency: Qwen2.5-7B-Instruct FP16/FP16
+2026-03-13 15:45:26,506 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Latency: Qwen2.5-7B-Instruct FP16/INT4
+2026-03-13 15:45:26,738 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Latency: Qwen2.5-7B-Instruct INT8/INT4
+2026-03-13 15:45:26,928 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Latency: Qwen2.5-7B-Instruct INT4/INT4
+2026-03-13 15:45:27,149 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Latency: Mistral-7B-Instruct-v0.3 FP16/FP16
+2026-03-13 15:45:27,363 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Latency: Mistral-7B-Instruct-v0.3 FP16/INT4
+2026-03-13 15:45:27,549 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Latency: Mistral-7B-Instruct-v0.3 INT8/INT4
+2026-03-13 15:45:27,740 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+>>> Latency: Mistral-7B-Instruct-v0.3 INT4/INT4
+2026-03-13 15:45:27,967 | ERROR | LiveServerless:None failed to deploy: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+Traceback (most recent call last):
+  File "/data/knlp/scripts/bpa_runpod_rtx4090.py", line 559, in main
+    result = await run_latency(
+             ^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/client.py", line 285, in wrapper
+    remote_resource = await resource_manager.get_or_deploy_resource(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        resource_config
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 297, in get_or_deploy_resource
+    deployed_resource = await self._deploy_with_error_context(config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/resource_manager.py", line 198, in _deploy_with_error_context
+    return await config._do_deploy()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/resources/serverless.py", line 688, in _do_deploy
+    result = await client.save_endpoint(payload)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 301, in save_endpoint
+    result = await self._execute_graphql(mutation, variables)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 200, in _execute_graphql
+    return await self._execute_graphql_once(query, variables)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mcgrof/envs/runpod/lib/python3.13/site-packages/runpod_flash/core/api/runpod.py", line 175, in _execute_graphql_once
+    raise _GraphQLErrorResponse(
+        f"GraphQL errors: {error_msg}", sanitized_errors
+    )
+runpod_flash.core.api.runpod._GraphQLErrorResponse: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+    FAILED: GraphQL errors: Max workers across all endpoints must not exceed your workers quota (5). Reduce the max workers for other endpoints or lower the max worker count for this endpoint to at most 0.
+
+Saved: /data/knlp-key-results/bpa-multi-gpu/json/rtx4090_latency.json
+
+============================================================
+  RTX4090 COMPLETE — 4s total
+============================================================
+
+Results in: /data/knlp-key-results/bpa-multi-gpu/json/rtx4090_*.json
+Endpoints will auto-teardown after idle_timeout (300s).

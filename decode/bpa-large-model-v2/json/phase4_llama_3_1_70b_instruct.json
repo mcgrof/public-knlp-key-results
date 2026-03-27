@@ -1,0 +1,55 @@
+{
+  "phase": "phase4_decode_latency",
+  "model_info": {
+    "model": "meta-llama/Llama-3.1-70B-Instruct",
+    "n_params": 70553706496,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "load_time_s": 456,
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 141.1,
+    "n_gpu_modules": 77,
+    "n_cpu_modules": 7
+  },
+  "results": {
+    "ctx_2048": {
+      "FP16/FP16": {
+        "mean_ms_per_token": 895.5,
+        "std_ms_per_token": null,
+        "tokens_per_sec": 1.1,
+        "n_measure": 10,
+        "config": "FP16/FP16",
+        "context_len": 2048
+      },
+      "FP16/INT4": {
+        "mean_ms_per_token": 872.4,
+        "std_ms_per_token": null,
+        "tokens_per_sec": 1.1,
+        "n_measure": 10,
+        "config": "FP16/INT4",
+        "context_len": 2048
+      },
+      "INT8/INT4": {
+        "mean_ms_per_token": 893.2,
+        "std_ms_per_token": null,
+        "tokens_per_sec": 1.1,
+        "n_measure": 10,
+        "config": "INT8/INT4",
+        "context_len": 2048
+      }
+    },
+    "ctx_4096": {
+      "FP16/FP16": {"error": "OOM", "context_len": 4096},
+      "FP16/INT4": {"error": "OOM", "context_len": 4096},
+      "INT8/INT4": {"error": "OOM", "context_len": 4096}
+    }
+  },
+  "notes": "70B model with 7 CPU-offloaded modules on single H200. ctx=4096 OOMs. Results reconstructed from stdout (SCP download failed intermittently).",
+  "speedup_v_int4_vs_fp16": {
+    "ctx_2048": {
+      "ms_saved": 23.1,
+      "speedup_pct": 2.58
+    }
+  }
+}

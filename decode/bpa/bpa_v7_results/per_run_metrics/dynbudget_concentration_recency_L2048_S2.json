@@ -1,0 +1,26 @@
+{
+  "variant": "dynbudget_concentration_recency",
+  "seq_len": 2048,
+  "seed": 2,
+  "far_budget": 4,
+  "mode": "dynamic-budget",
+  "ppl_mean": 278.3283391316732,
+  "ppl_std": 59.57683136112696,
+  "enabled_rate": 0.6997767857142855,
+  "effective_kept_tokens": 349.0381556919665,
+  "kv_bytes_read_per_token": 14003177.142857144,
+  "peak_kv_bytes": 75497472,
+  "flops_relative": 0.185478755405971,
+  "wall_ms_per_token": 1.3851560665898432,
+  "gate_ms_per_token": 0.8490155705658253,
+  "fwd_ms_per_token": 0.5202861925681646,
+  "budget_mean": 2.7808779761904763,
+  "budget_p95": 4.0,
+  "budget_p99": 4.0,
+  "tokens_seen": 61440,
+  "n_eval_batches": 30,
+  "extra": {
+    "budget_mode": "concentration",
+    "strategy": "recency"
+  }
+}

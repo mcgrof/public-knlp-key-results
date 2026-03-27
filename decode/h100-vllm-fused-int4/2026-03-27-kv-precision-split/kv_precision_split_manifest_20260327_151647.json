@@ -1,0 +1,9 @@
+{
+  "experiment": "kv_precision_split",
+  "timestamp": "2026-03-27T15:24:44",
+  "description": "Tests paper claim: Qwen-class 7B models need higher K precision than V. Compares K_INT4, K_INT8, K_FP16 with V always INT4.",
+  "models": {
+    "qwen2": "PARTIAL",
+    "qwen25": "PARTIAL"
+  }
+}

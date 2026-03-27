@@ -1,0 +1,62 @@
+{
+  "model": "qwen7b",
+  "k": 2,
+  "protected": [
+    0,
+    27
+  ],
+  "kv_ratio": 0.297433,
+  "evals": {
+    "L8192_s0": {
+      "dense_ppl": 6.1847,
+      "quant_ppl": 6.2015,
+      "delta_pct": 0.27,
+      "pass_3pct": true,
+      "pass_1pct": true,
+      "p50_ms": 22.56
+    },
+    "L8192_s1": {
+      "dense_ppl": 5.7881,
+      "quant_ppl": 5.7788,
+      "delta_pct": -0.16,
+      "pass_3pct": true,
+      "pass_1pct": true,
+      "p50_ms": 22.56
+    },
+    "L8192_s2": {
+      "dense_ppl": 3.0523,
+      "quant_ppl": 3.1084,
+      "delta_pct": 1.84,
+      "pass_3pct": true,
+      "pass_1pct": false,
+      "p50_ms": 22.56
+    },
+    "L32768_s0": {
+      "dense_ppl": 8.2759,
+      "quant_ppl": 8.3804,
+      "delta_pct": 1.26,
+      "pass_3pct": true,
+      "pass_1pct": false,
+      "p50_ms": 25.6
+    },
+    "L32768_s1": {
+      "dense_ppl": 10.7258,
+      "quant_ppl": 10.617,
+      "delta_pct": -1.01,
+      "pass_3pct": true,
+      "pass_1pct": false,
+      "p50_ms": 25.61
+    },
+    "L32768_s2": {
+      "dense_ppl": 5.6017,
+      "quant_ppl": 5.8045,
+      "delta_pct": 3.62,
+      "pass_3pct": false,
+      "pass_1pct": false,
+      "p50_ms": 25.55
+    }
+  },
+  "max_delta": 3.62,
+  "pass_3pct": false,
+  "pass_1pct": false
+}

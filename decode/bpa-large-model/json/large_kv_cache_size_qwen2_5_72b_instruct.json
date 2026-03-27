@@ -1,0 +1,56 @@
+{
+  "experiment": "large_kv_cache_size",
+  "model_info": {
+    "model": "Qwen/Qwen2.5-72B-Instruct",
+    "model_path": "/workspace/models/Qwen2.5-72B-Instruct",
+    "n_params": 72706203648,
+    "n_layers": 80,
+    "n_kv_heads": 8,
+    "head_dim": 128,
+    "dtype": "bfloat16",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "gpu_mem_gb": 85.093777408,
+    "load_time_s": 162.20280814170837,
+    "k_proj_shape": [
+      1,
+      4,
+      1024
+    ],
+    "hardware": "A100-SXM4-80GB"
+  },
+  "results": {
+    "model_size_gb": 145.412407296,
+    "per_seq_len": [
+      {
+        "seq_len": 2048,
+        "kv_cache_fp16_gb": 0.67108864,
+        "kv_cache_int4_gb": 0.16777216,
+        "kv_savings_gb": 0.5033164800000001,
+        "kv_fraction_of_total_fp16": 0.004593870345860341,
+        "gpu_mem_peak_gb": 76.537071104,
+        "gpu_mem_used_gb": 3.818930176000009,
+        "status": "ok"
+      },
+      {
+        "seq_len": 4096,
+        "kv_cache_fp16_gb": 1.34217728,
+        "kv_cache_int4_gb": 0.33554432,
+        "kv_savings_gb": 1.0066329600000001,
+        "kv_fraction_of_total_fp16": 0.00914572641037272,
+        "gpu_mem_peak_gb": -1,
+        "gpu_mem_used_gb": -1,
+        "status": "oom"
+      },
+      {
+        "seq_len": 8192,
+        "kv_cache_fp16_gb": 2.68435456,
+        "kv_cache_int4_gb": 0.67108864,
+        "kv_savings_gb": 2.0132659200000003,
+        "kv_fraction_of_total_fp16": 0.018125680307649793,
+        "gpu_mem_peak_gb": -1,
+        "gpu_mem_used_gb": -1,
+        "status": "oom"
+      }
+    ]
+  }
+}

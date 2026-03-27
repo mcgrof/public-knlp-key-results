@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen2.5-7B",
+  "gpu": "NVIDIA B200",
+  "pipeline": "FP16_baseline",
+  "results": {
+    "hellaswag": 78.92,
+    "mmlu": 71.95,
+    "gsm8k": 83.09
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "experiment": "large_kv_cache_size",
+  "model_info": {
+    "model": "google/gemma-2-27b-it",
+    "n_params": 27227128320,
+    "n_layers": 46,
+    "n_kv_heads": 16,
+    "head_dim": 128,
+    "dtype": "bfloat16",
+    "gpu": "NVIDIA H200",
+    "gpu_mem_gb": 150.0217344,
+    "load_time_s": 35.70090293884277,
+    "k_proj_shape": [
+      1,
+      4,
+      2048
+    ]
+  },
+  "results": {
+    "model_size_gb": 54.45425664,
+    "per_seq_len": [
+      {
+        "seq_len": 2048,
+        "kv_cache_fp16_gb": 0.771751936,
+        "kv_cache_int4_gb": 0.192937984,
+        "kv_savings_gb": 0.578813952,
+        "kv_fraction_of_total_fp16": 0.013974429003644966,
+        "gpu_mem_peak_gb": 57.37920256,
+        "gpu_mem_used_gb": 2.8878064640000005,
+        "status": "ok"
+      },
+      {
+        "seq_len": 4096,
+        "kv_cache_fp16_gb": 1.543503872,
+        "kv_cache_int4_gb": 0.385875968,
+        "kv_savings_gb": 1.157627904,
+        "kv_fraction_of_total_fp16": 0.02756367143770394,
+        "gpu_mem_peak_gb": 63.503574528,
+        "gpu_mem_used_gb": 7.195405823999998,
+        "status": "ok"
+      },
+      {
+        "seq_len": 8192,
+        "kv_cache_fp16_gb": 3.087007744,
+        "kv_cache_int4_gb": 0.771751936,
+        "kv_savings_gb": 2.315255808,
+        "kv_fraction_of_total_fp16": 0.053648590746962765,
+        "gpu_mem_peak_gb": 83.39093248,
+        "gpu_mem_used_gb": 25.262435840000002,
+        "status": "ok"
+      }
+    ]
+  }
+}

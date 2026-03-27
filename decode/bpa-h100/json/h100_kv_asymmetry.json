@@ -1,0 +1,276 @@
+{
+  "experiment": "exp1_kv_asymmetry",
+  "gpu": "NVIDIA L40S",
+  "results": [
+    {
+      "model": "Qwen2.5-7B-Instruct",
+      "gpu": "NVIDIA L40S",
+      "summary": [
+        {
+          "label": "K_FP16/V_FP16",
+          "avg_logit_error": 0.0,
+          "n_valid": 3
+        },
+        {
+          "label": "K_FP16/V_INT4",
+          "avg_logit_error": 0.8333333333333334,
+          "n_valid": 3
+        },
+        {
+          "label": "K_INT8/V_INT4",
+          "avg_logit_error": 1.4375,
+          "n_valid": 3
+        },
+        {
+          "label": "K_INT6/V_INT4",
+          "avg_logit_error": 4.86328125,
+          "n_valid": 3
+        },
+        {
+          "label": "K_INT4/V_INT4",
+          "avg_logit_error": 7.703776041666667,
+          "n_valid": 3
+        }
+      ],
+      "raw": [
+        {
+          "seed": 0,
+          "label": "K_FP16/V_FP16",
+          "logit_error": 0.0
+        },
+        {
+          "seed": 0,
+          "label": "K_FP16/V_INT4",
+          "k_type": "fp16",
+          "v_type": "int4",
+          "logit_error": 1.4375
+        },
+        {
+          "seed": 0,
+          "label": "K_INT8/V_INT4",
+          "k_type": "int8",
+          "v_type": "int4",
+          "logit_error": 1.359375
+        },
+        {
+          "seed": 0,
+          "label": "K_INT6/V_INT4",
+          "k_type": "int6",
+          "v_type": "int4",
+          "logit_error": 1.55859375
+        },
+        {
+          "seed": 0,
+          "label": "K_INT4/V_INT4",
+          "k_type": "int4",
+          "v_type": "int4",
+          "logit_error": 7.955078125
+        },
+        {
+          "seed": 1,
+          "label": "K_FP16/V_FP16",
+          "logit_error": 0.0
+        },
+        {
+          "seed": 1,
+          "label": "K_FP16/V_INT4",
+          "k_type": "fp16",
+          "v_type": "int4",
+          "logit_error": 0.5625
+        },
+        {
+          "seed": 1,
+          "label": "K_INT8/V_INT4",
+          "k_type": "int8",
+          "v_type": "int4",
+          "logit_error": 2.5
+        },
+        {
+          "seed": 1,
+          "label": "K_INT6/V_INT4",
+          "k_type": "int6",
+          "v_type": "int4",
+          "logit_error": 7.046875
+        },
+        {
+          "seed": 1,
+          "label": "K_INT4/V_INT4",
+          "k_type": "int4",
+          "v_type": "int4",
+          "logit_error": 9.21875
+        },
+        {
+          "seed": 2,
+          "label": "K_FP16/V_FP16",
+          "logit_error": 0.0
+        },
+        {
+          "seed": 2,
+          "label": "K_FP16/V_INT4",
+          "k_type": "fp16",
+          "v_type": "int4",
+          "logit_error": 0.5
+        },
+        {
+          "seed": 2,
+          "label": "K_INT8/V_INT4",
+          "k_type": "int8",
+          "v_type": "int4",
+          "logit_error": 0.453125
+        },
+        {
+          "seed": 2,
+          "label": "K_INT6/V_INT4",
+          "k_type": "int6",
+          "v_type": "int4",
+          "logit_error": 5.984375
+        },
+        {
+          "seed": 2,
+          "label": "K_INT4/V_INT4",
+          "k_type": "int4",
+          "v_type": "int4",
+          "logit_error": 5.9375
+        }
+      ],
+      "prompt_len": 1024,
+      "n_prompts": 3,
+      "elapsed_s": 5.750365495681763
+    },
+    {
+      "model": "Mistral-7B-Instruct-v0.3",
+      "gpu": "NVIDIA L40S",
+      "summary": [
+        {
+          "label": "K_FP16/V_FP16",
+          "avg_logit_error": 0.0,
+          "n_valid": 3
+        },
+        {
+          "label": "K_FP16/V_INT4",
+          "avg_logit_error": 0.19205729166666666,
+          "n_valid": 3
+        },
+        {
+          "label": "K_INT8/V_INT4",
+          "avg_logit_error": 0.1875,
+          "n_valid": 3
+        },
+        {
+          "label": "K_INT6/V_INT4",
+          "avg_logit_error": 0.19791666666666666,
+          "n_valid": 3
+        },
+        {
+          "label": "K_INT4/V_INT4",
+          "avg_logit_error": 0.5638020833333334,
+          "n_valid": 3
+        }
+      ],
+      "raw": [
+        {
+          "seed": 0,
+          "label": "K_FP16/V_FP16",
+          "logit_error": 0.0
+        },
+        {
+          "seed": 0,
+          "label": "K_FP16/V_INT4",
+          "k_type": "fp16",
+          "v_type": "int4",
+          "logit_error": 0.158203125
+        },
+        {
+          "seed": 0,
+          "label": "K_INT8/V_INT4",
+          "k_type": "int8",
+          "v_type": "int4",
+          "logit_error": 0.1875
+        },
+        {
+          "seed": 0,
+          "label": "K_INT6/V_INT4",
+          "k_type": "int6",
+          "v_type": "int4",
+          "logit_error": 0.203125
+        },
+        {
+          "seed": 0,
+          "label": "K_INT4/V_INT4",
+          "k_type": "int4",
+          "v_type": "int4",
+          "logit_error": 0.59765625
+        },
+        {
+          "seed": 1,
+          "label": "K_FP16/V_FP16",
+          "logit_error": 0.0
+        },
+        {
+          "seed": 1,
+          "label": "K_FP16/V_INT4",
+          "k_type": "fp16",
+          "v_type": "int4",
+          "logit_error": 0.21484375
+        },
+        {
+          "seed": 1,
+          "label": "K_INT8/V_INT4",
+          "k_type": "int8",
+          "v_type": "int4",
+          "logit_error": 0.1875
+        },
+        {
+          "seed": 1,
+          "label": "K_INT6/V_INT4",
+          "k_type": "int6",
+          "v_type": "int4",
+          "logit_error": 0.1875
+        },
+        {
+          "seed": 1,
+          "label": "K_INT4/V_INT4",
+          "k_type": "int4",
+          "v_type": "int4",
+          "logit_error": 0.5625
+        },
+        {
+          "seed": 2,
+          "label": "K_FP16/V_FP16",
+          "logit_error": 0.0
+        },
+        {
+          "seed": 2,
+          "label": "K_FP16/V_INT4",
+          "k_type": "fp16",
+          "v_type": "int4",
+          "logit_error": 0.203125
+        },
+        {
+          "seed": 2,
+          "label": "K_INT8/V_INT4",
+          "k_type": "int8",
+          "v_type": "int4",
+          "logit_error": 0.1875
+        },
+        {
+          "seed": 2,
+          "label": "K_INT6/V_INT4",
+          "k_type": "int6",
+          "v_type": "int4",
+          "logit_error": 0.203125
+        },
+        {
+          "seed": 2,
+          "label": "K_INT4/V_INT4",
+          "k_type": "int4",
+          "v_type": "int4",
+          "logit_error": 0.53125
+        }
+      ],
+      "prompt_len": 1024,
+      "n_prompts": 3,
+      "elapsed_s": 4.603339672088623
+    }
+  ]
+}

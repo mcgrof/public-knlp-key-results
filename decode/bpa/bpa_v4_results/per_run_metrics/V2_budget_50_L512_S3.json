@@ -1,0 +1,23 @@
+{
+  "variant": "V2_budget_50",
+  "seq_len": 512,
+  "seed": 3,
+  "ppl_mean": 242.2714614868164,
+  "ppl_std": 76.45559191993102,
+  "enabled_rate": 0.5,
+  "tokens_per_query_mean": 236.2471484375,
+  "tokens_per_query_p50": 236.197265625,
+  "tokens_per_query_p95": 238.07119140625,
+  "tokens_per_query_p99": 238.33498046875,
+  "kv_bytes_written_per_token": 36864,
+  "kv_bytes_read_per_token": 14155776.0,
+  "kv_bytes_total_per_token": 14192640.0,
+  "peak_kv_bytes": 18874368,
+  "effective_kept_tokens": 236.2471484375,
+  "flops_proxy": 3538944.0,
+  "flops_relative": 0.75,
+  "wall_ms_per_token": 0.5899283560211188,
+  "tokens_per_sec": 1695.121093592933,
+  "tokens_seen": 51200,
+  "n_eval_batches": 50
+}

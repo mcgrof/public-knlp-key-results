@@ -1,0 +1,842 @@
+[
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.00048828125,
+    "mean_err": 4.291534423828125e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.00048828125,
+    "mean_err": 4.291534423828125e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 4.291534423828125e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 64,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.00048828125,
+    "mean_err": 4.57763671875e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 64,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 4.57763671875e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 64,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.0009765625,
+    "mean_err": 4.667043685913086e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 64,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.0009765625,
+    "mean_err": 4.667043685913086e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.000244140625,
+    "mean_err": 2.6524066925048828e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.000244140625,
+    "mean_err": 2.6524066925048828e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 2.6524066925048828e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 256,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.00048828125,
+    "mean_err": 2.7179718017578125e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 256,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 2.7179718017578125e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 256,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.00048828125,
+    "mean_err": 2.676248550415039e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 256,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 2.676248550415039e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.000244140625,
+    "mean_err": 1.895427703857422e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.000244140625,
+    "mean_err": 1.895427703857422e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 1.895427703857422e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 512,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.000244140625,
+    "mean_err": 1.913309097290039e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 512,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 1.913309097290039e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 512,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.000244140625,
+    "mean_err": 1.9311904907226562e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 1,
+    "T": 512,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 1.9311904907226562e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.0009765625,
+    "mean_err": 4.649162292480469e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.0009765625,
+    "mean_err": 4.649162292480469e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.0009765625,
+    "mean_err": 4.649162292480469e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 64,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.0009765625,
+    "mean_err": 4.839897155761719e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 64,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.0009765625,
+    "mean_err": 4.839897155761719e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 64,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.0009765625,
+    "mean_err": 4.583597183227539e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 64,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.0009765625,
+    "mean_err": 4.583597183227539e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.000244140625,
+    "mean_err": 2.568960189819336e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.000244140625,
+    "mean_err": 2.580881118774414e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 2.580881118774414e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 256,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.00048828125,
+    "mean_err": 2.568960189819336e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 256,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 2.568960189819336e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 256,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.00048828125,
+    "mean_err": 2.6226043701171875e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 256,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 2.6226043701171875e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.000244140625,
+    "mean_err": 2.014636993408203e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.000244140625,
+    "mean_err": 2.014636993408203e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 2.014636993408203e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 512,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.000244140625,
+    "mean_err": 1.9311904907226562e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 512,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 1.9311904907226562e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 512,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.00048828125,
+    "mean_err": 1.9311904907226562e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_05b",
+    "B": 2,
+    "T": 512,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 1.9311904907226562e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.00048828125,
+    "mean_err": 4.416704177856445e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.00048828125,
+    "mean_err": 4.416704177856445e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 4.416704177856445e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 64,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.0009765625,
+    "mean_err": 4.661083221435547e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 64,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.0009765625,
+    "mean_err": 4.661083221435547e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 64,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.0009765625,
+    "mean_err": 4.6372413635253906e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 64,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.0009765625,
+    "mean_err": 4.6372413635253906e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.000244140625,
+    "mean_err": 2.4974346160888672e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.000244140625,
+    "mean_err": 2.4974346160888672e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 2.4974346160888672e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 256,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.00048828125,
+    "mean_err": 2.5153160095214844e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 256,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 2.5153160095214844e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 256,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.00048828125,
+    "mean_err": 2.580881118774414e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 256,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 2.580881118774414e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.913309097290039e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.913309097290039e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.0001220703125,
+    "mean_err": 1.913309097290039e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 512,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.000244140625,
+    "mean_err": 1.8894672393798828e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 512,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 1.8894672393798828e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 512,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.00048828125,
+    "mean_err": 1.8537044525146484e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 1,
+    "T": 512,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 1.8537044525146484e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.00048828125,
+    "mean_err": 4.6193599700927734e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.00048828125,
+    "mean_err": 4.6193599700927734e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 64,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 4.6193599700927734e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 64,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.0009765625,
+    "mean_err": 4.64320182800293e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 64,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.0009765625,
+    "mean_err": 4.64320182800293e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 64,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.0009765625,
+    "mean_err": 4.601478576660156e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 64,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.0009765625,
+    "mean_err": 4.601478576660156e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.000244140625,
+    "mean_err": 2.5272369384765625e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.000244140625,
+    "mean_err": 2.5272369384765625e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 256,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 2.5272369384765625e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 256,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.00048828125,
+    "mean_err": 2.562999725341797e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 256,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 2.562999725341797e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 256,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.00048828125,
+    "mean_err": 2.5391578674316406e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 256,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.00048828125,
+    "mean_err": 2.5391578674316406e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P2",
+    "max_err": 0.000244140625,
+    "mean_err": 1.9311904907226562e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P3",
+    "max_err": 0.000244140625,
+    "mean_err": 1.9311904907226562e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 512,
+    "M": 1,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 1.9311904907226562e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 512,
+    "M": 32,
+    "pipeline": "P4",
+    "max_err": 0.000244140625,
+    "mean_err": 1.8715858459472656e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 512,
+    "M": 32,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 1.8715858459472656e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 512,
+    "M": 128,
+    "pipeline": "P4",
+    "max_err": 0.000244140625,
+    "mean_err": 1.8715858459472656e-05,
+    "pass": true
+  },
+  {
+    "config": "qwen25_7b",
+    "B": 2,
+    "T": 512,
+    "M": 128,
+    "pipeline": "P5",
+    "max_err": 0.000244140625,
+    "mean_err": 1.8715858459472656e-05,
+    "pass": true
+  }
+]
