@@ -1,0 +1,11 @@
+{
+  "final/best_val_loss": 5.685823917388916,
+  "final/best_val_perplexity": 294.66052099166706,
+  "iteration": 2000,
+  "learning_rate": 0.000995,
+  "sparsity": 0.13840806910985978,
+  "train_loss": 5.7293739199638365,
+  "train_perplexity": 307.7765153124471,
+  "val_loss": 5.685823917388916,
+  "val_perplexity": 294.66052099166706
+}
